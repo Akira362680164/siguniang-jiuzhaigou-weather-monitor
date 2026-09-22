@@ -74,7 +74,13 @@ HISTORICAL_DAILY_VARIABLES = [
     "snowfall_sum",
     "precipitation_hours",
 ]
-HISTORICAL_HOURLY_VARIABLES = ["cloud_cover"]
+HISTORICAL_HOURLY_VARIABLES = ["precipitation", "rain", "snowfall", "cloud_cover"]
+HISTORICAL_DAYPARTS = (
+    ("night_00_06", 0, 6),
+    ("morning_06_12", 6, 12),
+    ("afternoon_12_18", 12, 18),
+    ("evening_18_24", 18, 24),
+)
 MODEL_SPECS = {
     "hres": {
         "label": "ECMWF IFS HRES 9 km",
@@ -478,17 +484,64 @@ def historical_daily_rows(payload: dict) -> list[dict]:
         raise OpenMeteoError("HISTORICAL_DAILY_ARRAY_LENGTH_MISMATCH")
 
     cloud_by_date: dict[str, list[float]] = {}
+    daypart_by_date: dict[str, dict[str, dict[str, object]]] = {}
     hourly = payload.get("hourly") if isinstance(payload.get("hourly"), dict) else {}
     hourly_times = hourly.get("time") if isinstance(hourly.get("time"), list) else []
-    hourly_cloud = hourly.get("cloud_cover") if isinstance(hourly.get("cloud_cover"), list) else []
-    for raw_time, raw_value in zip(hourly_times, hourly_cloud):
-        if raw_value is None:
-            continue
+    hourly_values = {
+        variable: hourly.get(variable) if isinstance(hourly.get(variable), list) else []
+        for variable in HISTORICAL_HOURLY_VARIABLES
+    }
+    for index, raw_time in enumerate(hourly_times):
         try:
-            day = parse_local_api_time(raw_time).date().isoformat()
-            cloud_by_date.setdefault(day, []).append(float(raw_value))
+            parsed_time = parse_local_api_time(raw_time)
+            day = parsed_time.date().isoformat()
+            hour = parsed_time.hour
         except (TypeError, ValueError):
             continue
+        daypart = next(
+            (name for name, start_hour, end_hour in HISTORICAL_DAYPARTS if start_hour <= hour < end_hour),
+            None,
+        )
+        if daypart is None:
+            continue
+        bucket = daypart_by_date.setdefault(day, {}).setdefault(
+            daypart,
+            {
+                "precipitation_mm": 0.0,
+                "rain_mm": 0.0,
+                "snowfall_cm": 0.0,
+                "precipitation_hours": 0,
+                "cloud_values": [],
+                "hours_available": 0,
+            },
+        )
+        bucket["hours_available"] += 1
+        for variable, output_key in (
+            ("precipitation", "precipitation_mm"),
+            ("rain", "rain_mm"),
+            ("snowfall", "snowfall_cm"),
+        ):
+            values = hourly_values[variable]
+            value = values[index] if index < len(values) else None
+            if value is None:
+                continue
+            try:
+                numeric = float(value)
+            except (TypeError, ValueError):
+                continue
+            bucket[output_key] += numeric
+            if variable == "precipitation" and numeric > 0:
+                bucket["precipitation_hours"] += 1
+        cloud_values = hourly_values["cloud_cover"]
+        cloud_value = cloud_values[index] if index < len(cloud_values) else None
+        if cloud_value is not None:
+            try:
+                numeric_cloud = float(cloud_value)
+            except (TypeError, ValueError):
+                numeric_cloud = None
+            if numeric_cloud is not None:
+                cloud_by_date.setdefault(day, []).append(numeric_cloud)
+                bucket["cloud_values"].append(numeric_cloud)
 
     mappings = {
         "temperature_2m_mean": "temperature_mean_c",
@@ -506,6 +559,19 @@ def historical_daily_rows(payload: dict) -> list[dict]:
             values = daily.get(source_key)
             value = values[index] if isinstance(values, list) and index < len(values) else None
             row[output_key] = round_or_none(value)
+        dayparts = {}
+        for daypart, _, _ in HISTORICAL_DAYPARTS:
+            bucket = daypart_by_date.get(raw_date, {}).get(daypart, {})
+            cloud_values = bucket.get("cloud_values", [])
+            dayparts[daypart] = {
+                "precipitation_mm": round(float(bucket.get("precipitation_mm", 0.0)), 3),
+                "rain_mm": round(float(bucket.get("rain_mm", 0.0)), 3),
+                "snowfall_cm": round(float(bucket.get("snowfall_cm", 0.0)), 3),
+                "precipitation_hours": int(bucket.get("precipitation_hours", 0)),
+                "cloud_cover_mean_pct": round(mean(cloud_values), 3) if cloud_values else None,
+                "hours_available": int(bucket.get("hours_available", 0)),
+            }
+        row["dayparts"] = dayparts
         cloud_values = cloud_by_date.get(raw_date, [])
         row["cloud_cover_mean_pct"] = round(mean(cloud_values), 3) if cloud_values else None
         row["cloud_cover_hours_available"] = len(cloud_values)
@@ -530,6 +596,80 @@ def historical_window_summary(rows: list[dict]) -> dict:
         count = count_above(threshold)
         return round(count / len(precipitation), 3) if count is not None else None
 
+    total_precipitation = sum(precipitation) if precipitation else None
+    precipitation_hours = values("precipitation_hours")
+    total_precipitation_hours = sum(precipitation_hours) if precipitation_hours else None
+    daypart_total_precipitation = 0.0
+    daypart_total_precipitation_hours = 0.0
+    for row in rows:
+        row_dayparts = row.get("dayparts") if isinstance(row.get("dayparts"), dict) else {}
+        for item in row_dayparts.values():
+            if not isinstance(item, dict):
+                continue
+            if isinstance(item.get("precipitation_mm"), (int, float)):
+                daypart_total_precipitation += float(item["precipitation_mm"])
+            if isinstance(item.get("precipitation_hours"), (int, float)):
+                daypart_total_precipitation_hours += float(item["precipitation_hours"])
+    precipitation_share_denominator = (
+        daypart_total_precipitation if daypart_total_precipitation > 0 else total_precipitation
+    )
+    precipitation_hours_share_denominator = (
+        daypart_total_precipitation_hours if daypart_total_precipitation_hours > 0 else total_precipitation_hours
+    )
+    daypart_summary = {}
+    for daypart, _, _ in HISTORICAL_DAYPARTS:
+        part_rows = [
+            row.get("dayparts", {}).get(daypart, {})
+            for row in rows
+            if isinstance(row.get("dayparts"), dict)
+        ]
+        part_precipitation = [
+            float(item["precipitation_mm"])
+            for item in part_rows
+            if isinstance(item.get("precipitation_mm"), (int, float))
+        ]
+        part_rain = [
+            float(item["rain_mm"])
+            for item in part_rows
+            if isinstance(item.get("rain_mm"), (int, float))
+        ]
+        part_snowfall = [
+            float(item["snowfall_cm"])
+            for item in part_rows
+            if isinstance(item.get("snowfall_cm"), (int, float))
+        ]
+        part_hours = [
+            float(item["precipitation_hours"])
+            for item in part_rows
+            if isinstance(item.get("precipitation_hours"), (int, float))
+        ]
+        part_available = [
+            float(item["hours_available"])
+            for item in part_rows
+            if isinstance(item.get("hours_available"), (int, float))
+        ]
+        part_total = sum(part_precipitation)
+        part_hour_total = sum(part_hours)
+        daypart_summary[daypart] = {
+            "precipitation_total_mm": round(part_total, 3) if part_precipitation else None,
+            "rain_total_mm": round(sum(part_rain), 3) if part_rain else None,
+            "snowfall_total_cm": round(sum(part_snowfall), 3) if part_snowfall else None,
+            "precipitation_hours": round(part_hour_total, 3) if part_hours else None,
+            "hours_available": round(sum(part_available), 3) if part_available else None,
+            "days_with_precipitation": sum(value > 0 for value in part_precipitation) if part_precipitation else None,
+            "days_with_data": sum(value > 0 for value in part_available) if part_available else None,
+            "share_of_precipitation_mm": (
+                round(part_total / precipitation_share_denominator, 3)
+                if precipitation_share_denominator not in (None, 0)
+                else None
+            ),
+            "share_of_precipitation_hours": (
+                round(part_hour_total / precipitation_hours_share_denominator, 3)
+                if precipitation_hours_share_denominator not in (None, 0)
+                else None
+            ),
+        }
+
     return {
         "days": len(rows),
         "days_with_precipitation_data": len(precipitation),
@@ -549,6 +689,7 @@ def historical_window_summary(rows: list[dict]) -> dict:
         "precipitation_day_fraction_gt_0_5mm": fraction_above(0.5),
         "precipitation_day_fraction_gt_2mm": fraction_above(2),
         "precipitation_day_fraction_gt_5mm": fraction_above(5),
+        "daypart_summary": daypart_summary,
     }
 
 

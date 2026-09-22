@@ -80,8 +80,20 @@ class PipelineUnitTests(unittest.TestCase):
             "elevation": 3000,
             "timezone": "Asia/Shanghai",
             "hourly": {
-                "time": ["2025-10-24T00:00", "2025-10-24T12:00", "2025-10-25T00:00"],
-                "cloud_cover": [20, 80, 60],
+                "time": [
+                    "2025-10-24T00:00",
+                    "2025-10-24T06:00",
+                    "2025-10-24T12:00",
+                    "2025-10-24T18:00",
+                    "2025-10-25T00:00",
+                    "2025-10-25T06:00",
+                    "2025-10-25T12:00",
+                    "2025-10-25T18:00",
+                ],
+                "precipitation": [0.1, 0.1, 0.2, 0.2, 0.5, 1.0, 1.5, 2.2],
+                "rain": [0.1, 0.1, 0.2, 0.2, 0.5, 0.5, 0.5, 0.5],
+                "snowfall": [0, 0, 0, 0, 0, 0.8, 1.0, 1.4],
+                "cloud_cover": [20, 30, 80, 90, 60, 70, 75, 85],
             },
             "daily": {
                 "time": ["2025-10-24", "2025-10-25"],
@@ -95,11 +107,16 @@ class PipelineUnitTests(unittest.TestCase):
             },
         }
         rows = pipeline.historical_daily_rows(payload)
-        self.assertEqual(rows[0]["cloud_cover_mean_pct"], 50.0)
+        self.assertEqual(rows[0]["cloud_cover_mean_pct"], 55.0)
+        self.assertEqual(rows[0]["dayparts"]["morning_06_12"]["precipitation_mm"], 0.1)
+        self.assertEqual(rows[0]["dayparts"]["afternoon_12_18"]["snowfall_cm"], 0.0)
         summary = pipeline.historical_window_summary(rows)
         self.assertEqual(summary["precipitation_total_mm"], 5.8)
         self.assertEqual(summary["precipitation_days_gt_5mm"], 1)
         self.assertEqual(summary["precipitation_day_fraction_gt_0_5mm"], 1.0)
+        self.assertEqual(summary["daypart_summary"]["afternoon_12_18"]["precipitation_total_mm"], 1.7)
+        self.assertEqual(summary["daypart_summary"]["afternoon_12_18"]["days_with_precipitation"], 2)
+        self.assertEqual(summary["daypart_summary"]["evening_18_24"]["share_of_precipitation_hours"], 0.25)
 
     def test_validate_payload_keeps_optional_cloud_warning_as_partial(self):
         point = {"id": "P", "latitude": 31.1, "longitude": 102.9}
