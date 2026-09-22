@@ -41,8 +41,9 @@ ENDPOINTS = {
     "hres": "https://api.open-meteo.com/v1/ecmwf",
     "gfs": "https://api.open-meteo.com/v1/gfs",
     "ensemble": "https://ensemble-api.open-meteo.com/v1/ensemble",
+    "historical": "https://archive-api.open-meteo.com/v1/archive",
 }
-ALLOWED_HOSTS = {"api.open-meteo.com", "ensemble-api.open-meteo.com"}
+ALLOWED_HOSTS = {"api.open-meteo.com", "ensemble-api.open-meteo.com", "archive-api.open-meteo.com"}
 
 STANDARD_VARIABLES = [
     "temperature_2m",
@@ -64,6 +65,16 @@ ENSEMBLE_VARIABLES = [
 ]
 GEFS_REQUIRED_VARIABLES = ["temperature_2m", "precipitation", "snowfall", "cloud_cover"]
 GEFS_OPTIONAL_VARIABLES = ["cloud_cover_low", "wind_gusts_10m"]
+HISTORICAL_DAILY_VARIABLES = [
+    "temperature_2m_mean",
+    "temperature_2m_min",
+    "temperature_2m_max",
+    "precipitation_sum",
+    "rain_sum",
+    "snowfall_sum",
+    "precipitation_hours",
+]
+HISTORICAL_HOURLY_VARIABLES = ["cloud_cover"]
 MODEL_SPECS = {
     "hres": {
         "label": "ECMWF IFS HRES 9 km",
@@ -210,6 +221,20 @@ def load_config(path: Path = CONFIG_PATH) -> dict:
             raise ValueError(f"target group {group_id} references missing points: {sorted(missing)}")
     if not target_dates:
         raise ValueError("target_groups must contain at least one target date")
+    historical = config.get("historical_comparison")
+    if not isinstance(historical, dict):
+        raise ValueError("historical_comparison must be configured")
+    years = historical.get("years")
+    window_days = historical.get("window_days_each_side")
+    if (
+        not isinstance(years, list)
+        or len(years) != 3
+        or any(isinstance(year, bool) or not isinstance(year, int) for year in years)
+        or len(set(years)) != len(years)
+    ):
+        raise ValueError("historical_comparison.years must contain three unique integer years")
+    if isinstance(window_days, bool) or not isinstance(window_days, int) or window_days < 0 or window_days > 14:
+        raise ValueError("historical_comparison.window_days_each_side must be an integer from 0 to 14")
     return config
 
 
@@ -237,7 +262,14 @@ class ApiClient:
         self.retries = retries
         self.ssl_context = ssl.create_default_context(cafile=certifi.where()) if certifi else ssl.create_default_context()
 
-    def get_json(self, endpoint: str, params: dict[str, object], label: str) -> tuple[dict, str]:
+    def get_json(
+        self,
+        endpoint: str,
+        params: dict[str, object],
+        label: str,
+        *,
+        allow_array: bool = False,
+    ) -> tuple[dict | list, str]:
         host = urlparse(endpoint).hostname
         if host not in ALLOWED_HOSTS:
             raise OpenMeteoError(f"HOST_NOT_ALLOWLISTED:{host}")
@@ -249,7 +281,7 @@ class ApiClient:
                 with urlopen(request, timeout=self.timeout, context=self.ssl_context) as response:
                     body = response.read().decode("utf-8")
                 payload = json.loads(body)
-                if not isinstance(payload, dict):
+                if not isinstance(payload, dict) and not (allow_array and isinstance(payload, list)):
                     raise OpenMeteoError("RESPONSE_NOT_OBJECT")
                 return payload, url
             except HTTPError as error:
@@ -371,6 +403,248 @@ def daily_metrics(hourly: dict, module: str | None = None) -> list[dict]:
             "precision_class": ",".join(dict.fromkeys(classes)) if classes else None,
         })
     return result
+
+
+def historical_policy(config: dict) -> tuple[list[int], int]:
+    policy = config.get("historical_comparison")
+    if not isinstance(policy, dict):
+        raise ValueError("historical_comparison policy is required")
+    years = policy.get("years")
+    window_days = policy.get("window_days_each_side")
+    if (
+        not isinstance(years, list)
+        or len(years) != 3
+        or any(isinstance(year, bool) or not isinstance(year, int) for year in years)
+        or len(set(years)) != len(years)
+    ):
+        raise ValueError("historical_comparison.years must contain three unique integer years")
+    if isinstance(window_days, bool) or not isinstance(window_days, int) or window_days < 0 or window_days > 14:
+        raise ValueError("historical_comparison.window_days_each_side must be an integer from 0 to 14")
+    return years, window_days
+
+
+def historical_windows(config: dict) -> tuple[dict, dict]:
+    years, window_days = historical_policy(config)
+    groups = {}
+    global_windows = {}
+    for group_id, group in config["target_groups"].items():
+        by_year = {}
+        for year in years:
+            target_dates = [
+                dt.date.fromisoformat(raw_date).replace(year=year)
+                for raw_date in group["dates"]
+            ]
+            start = min(target_dates) - dt.timedelta(days=window_days)
+            end = max(target_dates) + dt.timedelta(days=window_days)
+            by_year[str(year)] = {
+                "start": start.isoformat(),
+                "end": end.isoformat(),
+                "target_dates": [value.isoformat() for value in target_dates],
+            }
+            current = global_windows.setdefault(str(year), {"start": start.isoformat(), "end": end.isoformat()})
+            current["start"] = min(current["start"], start.isoformat())
+            current["end"] = max(current["end"], end.isoformat())
+        groups[group_id] = {
+            "name": group["name"],
+            "point_ids": group["point_ids"],
+            "window_days_each_side": window_days,
+            "by_year": by_year,
+        }
+    return groups, global_windows
+
+
+def historical_request_params(config: dict, start_date: str, end_date: str) -> dict[str, object]:
+    points = active_points(config)
+    return {
+        "latitude": ",".join(str(point["latitude"]) for point in points.values()),
+        "longitude": ",".join(str(point["longitude"]) for point in points.values()),
+        "timezone": TIMEZONE_NAME,
+        "cell_selection": "nearest",
+        "elevation": ",".join("nan" for _ in points),
+        "start_date": start_date,
+        "end_date": end_date,
+        "daily": ",".join(HISTORICAL_DAILY_VARIABLES),
+        "hourly": ",".join(HISTORICAL_HOURLY_VARIABLES),
+    }
+
+
+def historical_daily_rows(payload: dict) -> list[dict]:
+    daily = payload.get("daily") if isinstance(payload.get("daily"), dict) else {}
+    dates = daily.get("time") if isinstance(daily.get("time"), list) else []
+    if not dates:
+        return []
+    lengths = [len(values) for key, values in daily.items() if key != "time" and isinstance(values, list)]
+    if lengths and any(length != len(dates) for length in lengths):
+        raise OpenMeteoError("HISTORICAL_DAILY_ARRAY_LENGTH_MISMATCH")
+
+    cloud_by_date: dict[str, list[float]] = {}
+    hourly = payload.get("hourly") if isinstance(payload.get("hourly"), dict) else {}
+    hourly_times = hourly.get("time") if isinstance(hourly.get("time"), list) else []
+    hourly_cloud = hourly.get("cloud_cover") if isinstance(hourly.get("cloud_cover"), list) else []
+    for raw_time, raw_value in zip(hourly_times, hourly_cloud):
+        if raw_value is None:
+            continue
+        try:
+            day = parse_local_api_time(raw_time).date().isoformat()
+            cloud_by_date.setdefault(day, []).append(float(raw_value))
+        except (TypeError, ValueError):
+            continue
+
+    mappings = {
+        "temperature_2m_mean": "temperature_mean_c",
+        "temperature_2m_min": "temperature_min_c",
+        "temperature_2m_max": "temperature_max_c",
+        "precipitation_sum": "precipitation_mm",
+        "rain_sum": "rain_mm",
+        "snowfall_sum": "snowfall_cm",
+        "precipitation_hours": "precipitation_hours",
+    }
+    rows = []
+    for index, raw_date in enumerate(dates):
+        row = {"date": raw_date}
+        for source_key, output_key in mappings.items():
+            values = daily.get(source_key)
+            value = values[index] if isinstance(values, list) and index < len(values) else None
+            row[output_key] = round_or_none(value)
+        cloud_values = cloud_by_date.get(raw_date, [])
+        row["cloud_cover_mean_pct"] = round(mean(cloud_values), 3) if cloud_values else None
+        row["cloud_cover_hours_available"] = len(cloud_values)
+        rows.append(row)
+    return rows
+
+
+def historical_window_summary(rows: list[dict]) -> dict:
+    def values(key: str) -> list[float]:
+        return [float(row[key]) for row in rows if isinstance(row.get(key), (int, float))]
+
+    precipitation = values("precipitation_mm")
+    temperatures = values("temperature_mean_c")
+    temperature_mins = values("temperature_min_c")
+    temperature_maxes = values("temperature_max_c")
+    cloud = values("cloud_cover_mean_pct")
+
+    def count_above(threshold: float) -> int | None:
+        return sum(value > threshold for value in precipitation) if precipitation else None
+
+    def fraction_above(threshold: float) -> float | None:
+        count = count_above(threshold)
+        return round(count / len(precipitation), 3) if count is not None else None
+
+    return {
+        "days": len(rows),
+        "days_with_precipitation_data": len(precipitation),
+        "temperature_mean_c": round(mean(temperatures), 3) if temperatures else None,
+        "temperature_min_c": round(min(temperature_mins), 3) if temperature_mins else None,
+        "temperature_max_c": round(max(temperature_maxes), 3) if temperature_maxes else None,
+        "cloud_cover_mean_pct": round(mean(cloud), 3) if cloud else None,
+        "precipitation_total_mm": round(sum(precipitation), 3) if precipitation else None,
+        "precipitation_mean_mm": round(mean(precipitation), 3) if precipitation else None,
+        "precipitation_median_mm": round(median(precipitation), 3) if precipitation else None,
+        "precipitation_hours_total": round(sum(values("precipitation_hours")), 3) if values("precipitation_hours") else None,
+        "rain_total_mm": round(sum(values("rain_mm")), 3) if values("rain_mm") else None,
+        "snowfall_total_cm": round(sum(values("snowfall_cm")), 3) if values("snowfall_cm") else None,
+        "precipitation_days_gt_0_5mm": count_above(0.5),
+        "precipitation_days_gt_2mm": count_above(2),
+        "precipitation_days_gt_5mm": count_above(5),
+        "precipitation_day_fraction_gt_0_5mm": fraction_above(0.5),
+        "precipitation_day_fraction_gt_2mm": fraction_above(2),
+        "precipitation_day_fraction_gt_5mm": fraction_above(5),
+    }
+
+
+def run_historical_comparison(config: dict, client: ApiClient, generated_at: str, data_date: str) -> dict:
+    years, window_days = historical_policy(config)
+    group_windows, global_windows = historical_windows(config)
+    point_ids = list(active_points(config))
+    result_groups = copy.deepcopy(group_windows)
+    requests = {}
+    failures = {}
+
+    for year in years:
+        year_key = str(year)
+        global_window = global_windows[year_key]
+        params = historical_request_params(config, global_window["start"], global_window["end"])
+        try:
+            payloads, url = client.get_json(
+                ENDPOINTS["historical"],
+                params,
+                f"historical:{year}",
+                allow_array=True,
+            )
+            if not isinstance(payloads, list) or len(payloads) != len(point_ids):
+                raise OpenMeteoError("HISTORICAL_POINT_COUNT_MISMATCH")
+            point_payloads = dict(zip(point_ids, payloads))
+            point_rows = {}
+            for point_id in point_ids:
+                payload = point_payloads[point_id]
+                if not isinstance(payload, dict):
+                    raise OpenMeteoError(f"HISTORICAL_POINT_NOT_OBJECT:{point_id}")
+                point_rows[point_id] = historical_daily_rows(payload)
+            requests[year_key] = {
+                "url": url,
+                "parameters": params,
+                "requested_point_ids": point_ids,
+                "returned_points": [
+                    {
+                        "point_id": point_id,
+                        "latitude": point_payloads[point_id].get("latitude"),
+                        "longitude": point_payloads[point_id].get("longitude"),
+                        "elevation": point_payloads[point_id].get("elevation"),
+                        "timezone": point_payloads[point_id].get("timezone"),
+                    }
+                    for point_id in point_ids
+                ],
+            }
+            for group_id, group in result_groups.items():
+                group_window = group["by_year"][year_key]
+                start = group_window["start"]
+                end = group_window["end"]
+                group_points = {}
+                for point_id in group["point_ids"]:
+                    rows = [row for row in point_rows[point_id] if start <= row["date"] <= end]
+                    rows_by_date = {row["date"]: row for row in rows}
+                    payload = point_payloads[point_id]
+                    group_points[point_id] = {
+                        "point": config["points"][point_id],
+                        "response": response_meta(payload, url),
+                        "target_dates": {
+                            target_date: rows_by_date.get(target_date)
+                            for target_date in group_window["target_dates"]
+                        },
+                        "daily": rows,
+                        "window_summary": historical_window_summary(rows),
+                    }
+                group["by_year"][year_key] = {
+                    **group_window,
+                    "status": "OK",
+                    "points": group_points,
+                }
+        except Exception as error:
+            reason = f"{type(error).__name__}:{error}"
+            failures[year_key] = reason
+            for group in result_groups.values():
+                group["by_year"][year_key] = {
+                    **group["by_year"][year_key],
+                    "status": "FAILED",
+                    "error": reason,
+                }
+
+    status = "OK" if len(requests) == len(years) else "PARTIAL" if requests else "FAILED"
+    return module_header(
+        "historical_comparison",
+        generated_at,
+        data_date,
+        status,
+        source="Open-Meteo Historical Weather API",
+        endpoint=ENDPOINTS["historical"],
+        years=years,
+        window_days_each_side=window_days,
+        query_windows=global_windows,
+        target_groups=result_groups,
+        requests=requests,
+        failures=failures,
+        interpretation_boundary="历史值来自Open-Meteo再分析格点，用于季节和近日期对照，不是景区内气象站实测；不同海拔和沟段存在局地差异。",
+    )
 
 
 def response_meta(payload: dict, url: str) -> dict:
@@ -991,6 +1265,7 @@ def build_summary(target_summary: dict) -> dict:
             "gfs": "data/latest/gfs.json",
             "ensemble": "data/latest/ensemble.json",
             "gefs": "data/latest/gefs.json",
+            "historical_comparison": "data/latest/historical_comparison.json",
         },
         "interpretation_boundary": target_summary["interpretation_boundary"],
     }
@@ -1042,6 +1317,7 @@ def write_outputs(now_local: dt.datetime, status: dict, summary: dict, target_su
         "gfs.json": modules["gfs"],
         "ensemble.json": modules["ensemble"],
         "gefs.json": public_gefs,
+        "historical_comparison.json": modules["historical_comparison"],
     }
     for filename, value in artifacts.items():
         write_json(LATEST_DIR / filename, value)
@@ -1077,6 +1353,11 @@ def run_pipeline(now_utc: dt.datetime) -> dict:
     except Exception as error:
         log(f"[gefs] MODULE FAILED: {type(error).__name__}:{error}")
         modules["gefs"] = failed_module("gefs", generated_at, data_date, error)
+    try:
+        modules["historical_comparison"] = run_historical_comparison(config, client, generated_at, data_date)
+    except Exception as error:
+        log(f"[historical_comparison] MODULE FAILED: {type(error).__name__}:{error}")
+        modules["historical_comparison"] = failed_module("historical_comparison", generated_at, data_date, error)
     try:
         target_summary = build_target_summary(config, generated_at, data_date, modules)
     except Exception as error:

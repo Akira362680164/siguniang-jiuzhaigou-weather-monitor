@@ -48,7 +48,7 @@ jobs:
           from pathlib import Path
 
           latest = Path("data/latest")
-          required = ["status.json", "summary.json", "target_summary.json", "hres.json", "gfs.json", "ensemble.json", "gefs.json"]
+          required = ["status.json", "summary.json", "target_summary.json", "hres.json", "gfs.json", "ensemble.json", "gefs.json", "historical_comparison.json"]
           missing = [name for name in required if not (latest / name).is_file()]
           if missing:
               raise SystemExit("GENERATED_ARTIFACTS_MISSING:" + ",".join(missing))

@@ -22,6 +22,11 @@
     "gefs_long_days": 35,
     "notes": "HRES/GFS负责近中期，ECMWF集合和GEFS负责不确定性与远期趋势；未进入模型窗口的目标日保持未覆盖，不用邻近日替代。"
   },
+  "historical_comparison": {
+    "years": [2023, 2024, 2025],
+    "window_days_each_side": 3,
+    "notes": "以目标日期块为中心，向前后各取3个日历日；使用Open-Meteo Historical Weather API做已发生天气的再分析对照，不把历史格点当作景区实测站。"
+  },
   "points": {
     "SQG_SHUANGQIAO": {
       "name": "四姑娘山·双桥沟游客中心",

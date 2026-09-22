@@ -64,6 +64,43 @@ class PipelineUnitTests(unittest.TestCase):
         self.assertEqual(pipeline.MODEL_SPECS["ensemble"]["temporal_resolution"], "hourly_3")
         self.assertEqual(pipeline.GEFS_SPECS["long_range"]["temporal_resolution"], "hourly_3")
 
+    def test_historical_windows_cover_target_block_and_nearby_days(self):
+        config = pipeline.load_config()
+        groups, global_windows = pipeline.historical_windows(config)
+        siguniang = groups["siguniang_2026_10_24_25"]["by_year"]["2025"]
+        jiuzhaigou = groups["jiuzhaigou_2026_10_31_11_01"]["by_year"]["2025"]
+        self.assertEqual((siguniang["start"], siguniang["end"]), ("2025-10-21", "2025-10-28"))
+        self.assertEqual((jiuzhaigou["start"], jiuzhaigou["end"]), ("2025-10-28", "2025-11-04"))
+        self.assertEqual(global_windows["2025"], {"start": "2025-10-21", "end": "2025-11-04"})
+
+    def test_historical_rows_and_window_summary(self):
+        payload = {
+            "latitude": 31.1,
+            "longitude": 102.9,
+            "elevation": 3000,
+            "timezone": "Asia/Shanghai",
+            "hourly": {
+                "time": ["2025-10-24T00:00", "2025-10-24T12:00", "2025-10-25T00:00"],
+                "cloud_cover": [20, 80, 60],
+            },
+            "daily": {
+                "time": ["2025-10-24", "2025-10-25"],
+                "temperature_2m_mean": [2, 3],
+                "temperature_2m_min": [-2, -1],
+                "temperature_2m_max": [6, 7],
+                "precipitation_sum": [0.6, 5.2],
+                "rain_sum": [0.6, 2.0],
+                "snowfall_sum": [0, 3.2],
+                "precipitation_hours": [2, 8],
+            },
+        }
+        rows = pipeline.historical_daily_rows(payload)
+        self.assertEqual(rows[0]["cloud_cover_mean_pct"], 50.0)
+        summary = pipeline.historical_window_summary(rows)
+        self.assertEqual(summary["precipitation_total_mm"], 5.8)
+        self.assertEqual(summary["precipitation_days_gt_5mm"], 1)
+        self.assertEqual(summary["precipitation_day_fraction_gt_0_5mm"], 1.0)
+
     def test_validate_payload_keeps_optional_cloud_warning_as_partial(self):
         point = {"id": "P", "latitude": 31.1, "longitude": 102.9}
         payload = {
@@ -142,7 +179,24 @@ class PipelineUnitTests(unittest.TestCase):
             {"hres": {"points": {}}, "gfs": {"points": {}}, "ensemble": {"points": {}}, "gefs": {"points": {}}},
         )
         status = pipeline.build_status(config, "2026-09-22T00:00:00Z", "2026-09-22", {"hres": {"status": "OK"}}, target)
-        for schema_name, instance in (("target_summary.schema.json", target), ("status.schema.json", status)):
+        historical_instance = {
+            "schema_version": "1.0.0",
+            "module": "historical_comparison",
+            "status": "OK",
+            "generated_at": "2026-09-22T00:00:00Z",
+            "data_date": "2026-09-22",
+            "source": "Open-Meteo Historical Weather API",
+            "years": [2023, 2024, 2025],
+            "window_days_each_side": 3,
+            "query_windows": {},
+            "target_groups": {},
+            "requests": {},
+        }
+        for schema_name, instance in (
+            ("target_summary.schema.json", target),
+            ("status.schema.json", status),
+            ("historical_comparison.schema.json", historical_instance),
+        ):
             schema = json.loads((ROOT / "schemas" / schema_name).read_text(encoding="utf-8"))
             errors = list(Draft202012Validator(schema, format_checker=Draft202012Validator.FORMAT_CHECKER).iter_errors(instance))
             self.assertEqual(errors, [], msg=f"{schema_name}: {errors}")

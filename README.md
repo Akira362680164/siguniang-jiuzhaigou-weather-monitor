@@ -18,6 +18,7 @@
 - [gfs.json](https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/data/latest/gfs.json)：NOAA GFS 近 16 日；
 - [ensemble.json](https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/data/latest/ensemble.json)：ECMWF 51 成员集合；
 - [gefs.json](https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/data/latest/gefs.json)：NOAA GEFS 0.25°近程与 0.5°远期集合。
+- [historical_comparison.json](https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/data/latest/historical_comparison.json)：2023、2024、2025 对应日期及前后 3 天的历史再分析对比。
 
 ## 预报窗口和解释
 
@@ -36,6 +37,8 @@
 降水是区间累计量，逐日统计只把接口返回的每个区间值相加一次。集合和 GEFS 请求使用 `hourly_3` 原生粒度，避免对模型原生 3 小时输出做额外的步长猜测；标准 Forecast API 的逐小时降水则按接口返回的逐小时区间值累计。`precipitation_gt_0_5mm` 只表示当天有可测降水，判断是否值得担心应同时看 `precipitation_gt_2mm`、`precipitation_gt_5mm`、累计量和集合分歧。
 
 35 日 GEFS 的“有降水概率”容易表现为整个可用月份的背景信号，不能解读成某一天已经锁定会下大雨。尤其在 30 天以上提前量，应优先看中位数、P10/P90、`precipitation_gt_5mm` 和不同模型后续收敛；高概率的 0.5 mm 阈值本身不等于影响行程的降雨。
+
+历史对比按目标日期块前后各 3 天展开：四姑娘山为每年 10/21—10/28，九寨沟为每年 10/28—11/4，覆盖 2023—2025 三个完整年份。`historical_comparison.json` 使用 Open-Meteo Historical Weather API 的再分析格点记录已发生天气，用来回答“去年是否也这样”和“目标日前后是否只是单日异常”；它不是景区实测站，也不能替代当前年份的临近预报。
 
 ## 固定点位
 
@@ -58,5 +61,6 @@ python3 src/pipeline.py
 - [Open-Meteo Forecast API](https://open-meteo.com/en/docs)
 - [Open-Meteo Ensemble API](https://open-meteo.com/en/docs/ensemble-api)
 - [Open-Meteo GFS 0.5°文档](https://open-meteo.com/en/docs/ensemble-api#gfs-ensemble-05)
+- [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api)
 
 天气、景区开放、道路、景交和住宿仍需在临行前按当次证据复核。
