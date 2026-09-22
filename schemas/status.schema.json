@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "module", "generated_at", "data_date", "pipeline_status", "modules", "target_coverage"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "module": {"const": "status"},
+    "generated_at": {"type": "string"},
+    "data_date": {"type": "string", "format": "date"},
+    "pipeline_status": {"enum": ["OK", "PARTIAL", "FAILED"]},
+    "modules": {"type": "object", "additionalProperties": {"type": "string"}},
+    "target_coverage": {"type": "object"}
+  },
+  "additionalProperties": true
+}

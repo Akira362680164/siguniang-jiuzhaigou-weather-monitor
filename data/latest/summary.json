@@ -1,0 +1,63 @@
+{
+  "artifacts": {
+    "ensemble": "data/latest/ensemble.json",
+    "gefs": "data/latest/gefs.json",
+    "gfs": "data/latest/gfs.json",
+    "hres": "data/latest/hres.json",
+    "target_summary": "data/latest/target_summary.json"
+  },
+  "data_date": "2026-09-22",
+  "generated_at": "2026-09-22T00:00:00Z",
+  "interpretation_boundary": "温度、降水、云量均为对应模型返回格点的预报聚合；四姑娘山高位路段和九寨沟沟内不同海拔会产生局地差异。",
+  "module": "summary",
+  "schema_version": "1.0.0",
+  "status": "OK",
+  "target_dates": [
+    "2026-10-24",
+    "2026-10-25",
+    "2026-10-31",
+    "2026-11-01"
+  ],
+  "target_groups": {
+    "jiuzhaigou_2026_10_31_11_01": {
+      "dates": {
+        "2026-10-31": {
+          "coverage_status": "NOT_YET_AVAILABLE",
+          "points_available": 0,
+          "points_total": 4,
+          "temperature_mean_range_c": null
+        },
+        "2026-11-01": {
+          "coverage_status": "NOT_YET_AVAILABLE",
+          "points_available": 0,
+          "points_total": 4,
+          "temperature_mean_range_c": null
+        }
+      },
+      "name": "九寨沟秋景窗口"
+    },
+    "siguniang_2026_10_24_25": {
+      "dates": {
+        "2026-10-24": {
+          "coverage_status": "PARTIAL",
+          "points_available": 3,
+          "points_total": 3,
+          "temperature_mean_range_c": [
+            1.118,
+            1.965
+          ]
+        },
+        "2026-10-25": {
+          "coverage_status": "PARTIAL",
+          "points_available": 3,
+          "points_total": 3,
+          "temperature_mean_range_c": [
+            0.881,
+            1.861
+          ]
+        }
+      },
+      "name": "四姑娘山周边：双桥沟 / 毕棚沟 / 理小路"
+    }
+  }
+}

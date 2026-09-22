@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "namespace": "siguniang_jiuzhaigou",
+  "timezone": "Asia/Shanghai",
+  "target_groups": {
+    "siguniang_2026_10_24_25": {
+      "name": "四姑娘山周边：双桥沟 / 毕棚沟 / 理小路",
+      "dates": ["2026-10-24", "2026-10-25"],
+      "point_ids": ["SQG_SHUANGQIAO", "BPG_CENTER", "LXL_HIGH_PASS"]
+    },
+    "jiuzhaigou_2026_10_31_11_01": {
+      "name": "九寨沟秋景窗口",
+      "dates": ["2026-10-31", "2026-11-01"],
+      "point_ids": ["JZG_TREESHENG", "JZG_NORILANG", "JZG_PRIMEVAL", "JZG_LONGHAI"]
+    }
+  },
+  "forecast_policy": {
+    "hres_days": 15,
+    "gfs_days": 16,
+    "ecmwf_ensemble_days": 7,
+    "gefs_near_days": 10,
+    "gefs_long_days": 35,
+    "notes": "HRES/GFS负责近中期，ECMWF集合和GEFS负责不确定性与远期趋势；未进入模型窗口的目标日保持未覆盖，不用邻近日替代。"
+  },
+  "points": {
+    "SQG_SHUANGQIAO": {
+      "name": "四姑娘山·双桥沟游客中心",
+      "region": "siguniang",
+      "role": "core",
+      "status": "VERIFIED",
+      "latitude": 31.1035,
+      "longitude": 102.9239,
+      "coordinate_note": "沿用本项目路线资料中的双桥沟游客中心代表点；景区内部各沟段会有海拔和天气差异。"
+    },
+    "BPG_CENTER": {
+      "name": "毕棚沟·游客中心",
+      "region": "siguniang",
+      "role": "core",
+      "status": "VERIFIED",
+      "latitude": 31.3806,
+      "longitude": 102.9944,
+      "coordinate_note": "游客中心/入口代表点；沟内景交终点和高海拔景点不能由此点完全代表。"
+    },
+    "LXL_HIGH_PASS": {
+      "name": "理小路·高位垭口代表点",
+      "region": "lixiaolu",
+      "role": "route_high_point",
+      "status": "VERIFIED",
+      "latitude": 31.4000,
+      "longitude": 102.8400,
+      "coordinate_note": "理小路高位段路线天气代表点，不是官方气象站或单一景区入口；用于观察高海拔路段温度、降水、云量和结冰风险趋势。"
+    },
+    "JZG_TREESHENG": {
+      "name": "九寨沟·树正寨/中段",
+      "region": "jiuzhaigou",
+      "role": "route_mid",
+      "status": "VERIFIED",
+      "latitude": 33.198939,
+      "longitude": 103.897435,
+      "coordinate_note": "树正寨区域代表点；住宿与沟内开放规则仍需按官方当日信息复核。"
+    },
+    "JZG_NORILANG": {
+      "name": "九寨沟·诺日朗中心",
+      "region": "jiuzhaigou",
+      "role": "route_mid_high",
+      "status": "VERIFIED",
+      "latitude": 33.2800,
+      "longitude": 103.9060,
+      "coordinate_note": "诺日朗中心代表点，用于九寨沟中上段天气趋势。"
+    },
+    "JZG_PRIMEVAL": {
+      "name": "九寨沟·原始森林",
+      "region": "jiuzhaigou",
+      "role": "route_high",
+      "status": "VERIFIED",
+      "latitude": 33.3470,
+      "longitude": 103.8650,
+      "coordinate_note": "原始森林上段代表点，温度、云量和降雪信号可能明显区别于沟口。"
+    },
+    "JZG_LONGHAI": {
+      "name": "九寨沟·长海",
+      "region": "jiuzhaigou",
+      "role": "route_high",
+      "status": "VERIFIED",
+      "latitude": 33.036228,
+      "longitude": 103.932113,
+      "coordinate_note": "长海代表点；用于观察则查洼沟高海拔窗口。"
+    }
+  }
+}

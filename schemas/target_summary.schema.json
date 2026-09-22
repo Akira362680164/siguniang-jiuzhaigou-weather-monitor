@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["schema_version", "module", "generated_at", "data_date", "target_groups", "target_dates"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "module": {"const": "target_summary"},
+    "generated_at": {"type": "string"},
+    "data_date": {"type": "string", "format": "date"},
+    "target_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+    "target_groups": {"type": "object"}
+  },
+  "additionalProperties": true
+}
