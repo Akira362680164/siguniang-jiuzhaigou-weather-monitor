@@ -33,7 +33,7 @@
 
 近期期重点看 `temperature_min_c`、`temperature_max_c`、`night_min_c`、`precipitation_mm`、`snowfall_cm`、`cloud_cover_mean_pct` 和 `cloud_cover_low_mean_pct`。集合模块另外给出中位数、P10/P90、降水/降雪/低温/高云量概率。
 
-降水是累计量，不能把 Open-Meteo 为展示而插值重复的 3 小时平台值逐小时相加。集合和 GEFS 请求使用 `hourly_3` 原生粒度；HRES/GFS 在进入粗粒度预报段后按对应步长去重，再计算逐日累计和概率。`precipitation_gt_0_5mm` 只表示当天有可测降水，判断是否值得担心应同时看 `precipitation_gt_2mm`、`precipitation_gt_5mm`、累计量和集合分歧。
+降水是区间累计量，逐日统计只把接口返回的每个区间值相加一次。集合和 GEFS 请求使用 `hourly_3` 原生粒度，避免对模型原生 3 小时输出做额外的步长猜测；标准 Forecast API 的逐小时降水则按接口返回的逐小时区间值累计。`precipitation_gt_0_5mm` 只表示当天有可测降水，判断是否值得担心应同时看 `precipitation_gt_2mm`、`precipitation_gt_5mm`、累计量和集合分歧。
 
 ## 固定点位
 
