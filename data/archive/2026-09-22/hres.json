@@ -4,12 +4,12 @@
   "excluded_points": {},
   "failed_points": 0,
   "forecast_days": 15,
-  "generated_at": "2026-09-22T00:00:00Z",
+  "generated_at": "2026-09-22T06:32:09Z",
   "interpretation_boundary": "返回格点和模型分辨率会限制景区内部精度；逐日值是预报聚合，不是现场实况。",
   "model": "ECMWF IFS HRES 9 km",
   "model_id": "ecmwf_ifs",
   "module": "hres",
-  "partial_points": 7,
+  "partial_points": 0,
   "points": {
     "BPG_CENTER": {
       "daily": [
@@ -252,21 +252,21 @@
           "wind_speed_mean_kmh": 2.979
         },
         {
-          "cloud_cover_low_mean_pct": 36.696,
-          "cloud_cover_mean_pct": 76.304,
+          "cloud_cover_low_mean_pct": 38.095,
+          "cloud_cover_mean_pct": 78.333,
           "complete": true,
           "date": "2026-10-06",
-          "hours_available": 23,
+          "hours_available": 21,
           "night_min_c": 1.5,
           "precipitation_mm": 2.1,
           "precision_class": "trend_only_6h_plus",
-          "relative_humidity_mean_pct": 83.783,
+          "relative_humidity_mean_pct": 82.762,
           "snowfall_cm": 0.0,
           "temperature_max_c": 11.3,
-          "temperature_mean_c": 5.17,
+          "temperature_mean_c": 5.267,
           "temperature_min_c": 1.5,
           "wind_gust_max_kmh": 28.1,
-          "wind_speed_mean_kmh": 2.878
+          "wind_speed_mean_kmh": 2.895
         }
       ],
       "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -628,8 +628,6 @@
           52,
           53,
           54,
-          55,
-          55,
           55
         ],
         "cloud_cover_low": [
@@ -989,9 +987,7 @@
           6,
           11,
           18,
-          21,
-          22,
-          22
+          21
         ],
         "precipitation": [
           0.2,
@@ -1350,9 +1346,7 @@
           0.2,
           0.2,
           0.2,
-          0.2,
-          null,
-          null
+          0.2
         ],
         "relative_humidity_2m": [
           99,
@@ -1711,9 +1705,7 @@
           68,
           78,
           88,
-          93,
-          95,
-          94
+          93
         ],
         "snowfall": [
           0.0,
@@ -2072,9 +2064,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          null,
-          null
+          0.0
         ],
         "temperature_2m": [
           6.2,
@@ -2433,9 +2423,7 @@
           8.4,
           6.9,
           5.2,
-          4.4,
-          4.1,
-          4.2
+          4.4
         ],
         "time": [
           "2026-09-22T00:00",
@@ -2794,9 +2782,7 @@
           "2026-10-06T17:00",
           "2026-10-06T18:00",
           "2026-10-06T19:00",
-          "2026-10-06T20:00",
-          "2026-10-06T21:00",
-          "2026-10-06T22:00"
+          "2026-10-06T20:00"
         ],
         "wind_gusts_10m": [
           15.8,
@@ -3154,8 +3140,6 @@
           26.3,
           27.0,
           27.4,
-          28.1,
-          28.1,
           28.1,
           28.1
         ],
@@ -3516,8 +3500,6 @@
           4.0,
           3.6,
           3.0,
-          2.7,
-          2.7,
           2.7
         ]
       },
@@ -3541,19 +3523,16 @@
           "edge_trim_status": "TRIMMED",
           "leading_missing_rows_removed": 0,
           "original_timestep_count": 360,
-          "retained_timestep_count": 359,
-          "trailing_missing_rows_removed": 1
+          "retained_timestep_count": 357,
+          "trailing_missing_rows_removed": 3
         },
-        "final_status": "PARTIAL",
+        "final_status": "PASS",
         "grid_distance_km": 13.287,
         "grid_distance_limit_km": 16.0,
         "missing_variables": [],
         "optional_missing_variables": [],
-        "optional_null_variables": [
-          "precipitation",
-          "snowfall"
-        ],
-        "reason": "OPTIONAL_VARIABLE_NULL:precipitation,snowfall",
+        "optional_null_variables": [],
+        "reason": null,
         "requested_coordinate": {
           "latitude": 31.3806,
           "longitude": 102.9944
@@ -3583,13 +3562,13 @@
       },
       "response": {
         "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=31.3806&longitude=102.9944&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cprecipitation%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Cwind_speed_10m%2Cwind_gusts_10m%2Crelative_humidity_2m",
-        "generationtime_ms": 1.0095834732055664,
+        "generationtime_ms": 0.4571676254272461,
         "grid_coordinate": {
           "latitude": 31.5,
           "longitude": 103.0
         },
         "model_run_initialization": null,
-        "retrieval_time": "2026-09-22T06:25:19Z",
+        "retrieval_time": "2026-09-22T06:32:10Z",
         "returned_elevation": 3593.0,
         "returned_model": null,
         "returned_model_id": null,
@@ -3597,7 +3576,7 @@
         "utc_offset_seconds": 28800
       },
       "source": "Open-Meteo",
-      "status": "PARTIAL"
+      "status": "PASS"
     },
     "JZG_LONGHAI": {
       "daily": [
@@ -3840,21 +3819,21 @@
           "wind_speed_mean_kmh": 3.617
         },
         {
-          "cloud_cover_low_mean_pct": 35.174,
-          "cloud_cover_mean_pct": 63.391,
+          "cloud_cover_low_mean_pct": 34.095,
+          "cloud_cover_mean_pct": 60.0,
           "complete": true,
           "date": "2026-10-06",
-          "hours_available": 23,
+          "hours_available": 21,
           "night_min_c": -3.0,
           "precipitation_mm": 4.8,
           "precision_class": "trend_only_6h_plus",
-          "relative_humidity_mean_pct": 86.261,
+          "relative_humidity_mean_pct": 84.952,
           "snowfall_cm": 0.42,
           "temperature_max_c": 9.9,
-          "temperature_mean_c": 2.322,
+          "temperature_mean_c": 2.333,
           "temperature_min_c": -3.0,
           "wind_gust_max_kmh": 26.6,
-          "wind_speed_mean_kmh": 3.113
+          "wind_speed_mean_kmh": 3.033
         }
       ],
       "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -4216,8 +4195,6 @@
           94,
           97,
           98,
-          99,
-          99,
           99
         ],
         "cloud_cover_low": [
@@ -4577,9 +4554,7 @@
           20,
           30,
           40,
-          45,
-          47,
-          46
+          45
         ],
         "precipitation": [
           0.0,
@@ -4938,9 +4913,7 @@
           0.6,
           0.6,
           0.6,
-          0.6,
-          null,
-          null
+          0.6
         ],
         "relative_humidity_2m": [
           99,
@@ -5299,9 +5272,7 @@
           74,
           84,
           94,
-          99,
-          100,
-          100
+          99
         ],
         "snowfall": [
           0.0,
@@ -5660,9 +5631,7 @@
           0.07,
           0.07,
           0.07,
-          0.07,
-          null,
-          null
+          0.07
         ],
         "temperature_2m": [
           4.8,
@@ -6021,9 +5990,7 @@
           6.9,
           5.2,
           3.3,
-          2.5,
-          2.1,
-          2.3
+          2.5
         ],
         "time": [
           "2026-09-22T00:00",
@@ -6382,9 +6349,7 @@
           "2026-10-06T17:00",
           "2026-10-06T18:00",
           "2026-10-06T19:00",
-          "2026-10-06T20:00",
-          "2026-10-06T21:00",
-          "2026-10-06T22:00"
+          "2026-10-06T20:00"
         ],
         "wind_gusts_10m": [
           6.8,
@@ -6741,8 +6706,6 @@
           25.9,
           25.9,
           26.3,
-          26.6,
-          26.6,
           26.6,
           26.6,
           26.6
@@ -7104,8 +7067,6 @@
           1.6,
           1.8,
           3.1,
-          3.7,
-          4.2,
           3.7
         ]
       },
@@ -7129,19 +7090,16 @@
           "edge_trim_status": "TRIMMED",
           "leading_missing_rows_removed": 0,
           "original_timestep_count": 360,
-          "retained_timestep_count": 359,
-          "trailing_missing_rows_removed": 1
+          "retained_timestep_count": 357,
+          "trailing_missing_rows_removed": 3
         },
-        "final_status": "PARTIAL",
+        "final_status": "PASS",
         "grid_distance_km": 7.503,
         "grid_distance_limit_km": 16.0,
         "missing_variables": [],
         "optional_missing_variables": [],
-        "optional_null_variables": [
-          "precipitation",
-          "snowfall"
-        ],
-        "reason": "OPTIONAL_VARIABLE_NULL:precipitation,snowfall",
+        "optional_null_variables": [],
+        "reason": null,
         "requested_coordinate": {
           "latitude": 33.036228,
           "longitude": 103.932113
@@ -7171,13 +7129,13 @@
       },
       "response": {
         "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.036228&longitude=103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cprecipitation%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Cwind_speed_10m%2Cwind_gusts_10m%2Crelative_humidity_2m",
-        "generationtime_ms": 3.4044981002807617,
+        "generationtime_ms": 0.22399425506591797,
         "grid_coordinate": {
           "latitude": 33.0,
           "longitude": 104.0
         },
         "model_run_initialization": null,
-        "retrieval_time": "2026-09-22T06:25:33Z",
+        "retrieval_time": "2026-09-22T06:32:13Z",
         "returned_elevation": 3596.0,
         "returned_model": null,
         "returned_model_id": null,
@@ -7185,7 +7143,7 @@
         "utc_offset_seconds": 28800
       },
       "source": "Open-Meteo",
-      "status": "PARTIAL"
+      "status": "PASS"
     },
     "JZG_NORILANG": {
       "daily": [
@@ -7428,21 +7386,21 @@
           "wind_speed_mean_kmh": 3.008
         },
         {
-          "cloud_cover_low_mean_pct": 32.957,
-          "cloud_cover_mean_pct": 84.652,
+          "cloud_cover_low_mean_pct": 32.952,
+          "cloud_cover_mean_pct": 84.143,
           "complete": true,
           "date": "2026-10-06",
-          "hours_available": 23,
+          "hours_available": 21,
           "night_min_c": 2.1,
           "precipitation_mm": 0.6,
           "precision_class": "trend_only_6h_plus",
-          "relative_humidity_mean_pct": 81.304,
+          "relative_humidity_mean_pct": 80.048,
           "snowfall_cm": 0.0,
           "temperature_max_c": 13.8,
-          "temperature_mean_c": 6.587,
+          "temperature_mean_c": 6.671,
           "temperature_min_c": 2.1,
           "wind_gust_max_kmh": 33.5,
-          "wind_speed_mean_kmh": 3.548
+          "wind_speed_mean_kmh": 3.629
         }
       ],
       "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -7804,9 +7762,7 @@
           72,
           79,
           86,
-          89,
-          90,
-          90
+          89
         ],
         "cloud_cover_low": [
           68,
@@ -8165,9 +8121,7 @@
           14,
           21,
           29,
-          32,
-          33,
-          33
+          32
         ],
         "precipitation": [
           0.0,
@@ -8526,9 +8480,7 @@
           0.1,
           0.1,
           0.1,
-          0.1,
-          null,
-          null
+          0.1
         ],
         "relative_humidity_2m": [
           100,
@@ -8887,9 +8839,7 @@
           65,
           76,
           88,
-          93,
-          95,
-          94
+          93
         ],
         "snowfall": [
           0.0,
@@ -9248,9 +9198,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          null,
-          null
+          0.0
         ],
         "temperature_2m": [
           7.2,
@@ -9609,9 +9557,7 @@
           10.6,
           8.8,
           6.9,
-          6.0,
-          5.6,
-          5.8
+          6.0
         ],
         "time": [
           "2026-09-22T00:00",
@@ -9970,9 +9916,7 @@
           "2026-10-06T17:00",
           "2026-10-06T18:00",
           "2026-10-06T19:00",
-          "2026-10-06T20:00",
-          "2026-10-06T21:00",
-          "2026-10-06T22:00"
+          "2026-10-06T20:00"
         ],
         "wind_gusts_10m": [
           8.6,
@@ -10328,8 +10272,6 @@
           31.3,
           32.4,
           33.1,
-          33.5,
-          33.5,
           33.5,
           33.5,
           33.5,
@@ -10692,8 +10634,6 @@
           6.1,
           5.1,
           3.6,
-          2.9,
-          2.5,
           2.9
         ]
       },
@@ -10717,19 +10657,16 @@
           "edge_trim_status": "TRIMMED",
           "leading_missing_rows_removed": 0,
           "original_timestep_count": 360,
-          "retained_timestep_count": 359,
-          "trailing_missing_rows_removed": 1
+          "retained_timestep_count": 357,
+          "trailing_missing_rows_removed": 3
         },
-        "final_status": "PARTIAL",
+        "final_status": "PASS",
         "grid_distance_km": 9.355,
         "grid_distance_limit_km": 16.0,
         "missing_variables": [],
         "optional_missing_variables": [],
-        "optional_null_variables": [
-          "precipitation",
-          "snowfall"
-        ],
-        "reason": "OPTIONAL_VARIABLE_NULL:precipitation,snowfall",
+        "optional_null_variables": [],
+        "reason": null,
         "requested_coordinate": {
           "latitude": 33.28,
           "longitude": 103.906
@@ -10759,13 +10696,13 @@
       },
       "response": {
         "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.28&longitude=103.906&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cprecipitation%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Cwind_speed_10m%2Cwind_gusts_10m%2Crelative_humidity_2m",
-        "generationtime_ms": 0.20647048950195312,
+        "generationtime_ms": 0.35822391510009766,
         "grid_coordinate": {
           "latitude": 33.25,
           "longitude": 104.0
         },
         "model_run_initialization": null,
-        "retrieval_time": "2026-09-22T06:25:27Z",
+        "retrieval_time": "2026-09-22T06:32:12Z",
         "returned_elevation": 3061.0,
         "returned_model": null,
         "returned_model_id": null,
@@ -10773,7 +10710,7 @@
         "utc_offset_seconds": 28800
       },
       "source": "Open-Meteo",
-      "status": "PARTIAL"
+      "status": "PASS"
     },
     "JZG_PRIMEVAL": {
       "daily": [
@@ -11016,21 +10953,21 @@
           "wind_speed_mean_kmh": 3.417
         },
         {
-          "cloud_cover_low_mean_pct": 28.957,
-          "cloud_cover_mean_pct": 63.696,
+          "cloud_cover_low_mean_pct": 30.429,
+          "cloud_cover_mean_pct": 61.857,
           "complete": true,
           "date": "2026-10-06",
-          "hours_available": 23,
+          "hours_available": 21,
           "night_min_c": -1.7,
           "precipitation_mm": 1.2,
           "precision_class": "trend_only_6h_plus",
-          "relative_humidity_mean_pct": 72.957,
+          "relative_humidity_mean_pct": 72.143,
           "snowfall_cm": 0.0,
           "temperature_max_c": 15.7,
-          "temperature_mean_c": 5.443,
+          "temperature_mean_c": 5.486,
           "temperature_min_c": -1.7,
-          "wind_gust_max_kmh": 42.8,
-          "wind_speed_mean_kmh": 3.217
+          "wind_gust_max_kmh": 42.1,
+          "wind_speed_mean_kmh": 3.381
         }
       ],
       "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -11392,9 +11329,7 @@
           66,
           73,
           79,
-          82,
-          83,
-          83
+          82
         ],
         "cloud_cover_low": [
           76,
@@ -11753,8 +11688,6 @@
           4,
           7,
           11,
-          13,
-          14,
           13
         ],
         "precipitation": [
@@ -12114,9 +12047,7 @@
           0.1,
           0.1,
           0.1,
-          0.1,
-          null,
-          null
+          0.1
         ],
         "relative_humidity_2m": [
           99,
@@ -12475,9 +12406,7 @@
           50,
           62,
           74,
-          80,
-          82,
-          81
+          80
         ],
         "snowfall": [
           0.0,
@@ -12836,9 +12765,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          null,
-          null
+          0.0
         ],
         "temperature_2m": [
           7.2,
@@ -13197,9 +13124,7 @@
           11.5,
           9.1,
           6.5,
-          5.3,
-          4.9,
-          5.1
+          5.3
         ],
         "time": [
           "2026-09-22T00:00",
@@ -13558,9 +13483,7 @@
           "2026-10-06T17:00",
           "2026-10-06T18:00",
           "2026-10-06T19:00",
-          "2026-10-06T20:00",
-          "2026-10-06T21:00",
-          "2026-10-06T22:00"
+          "2026-10-06T20:00"
         ],
         "wind_gusts_10m": [
           10.4,
@@ -13919,9 +13842,7 @@
           33.5,
           37.1,
           40.7,
-          42.1,
-          42.8,
-          42.5
+          42.1
         ],
         "wind_speed_10m": [
           2.3,
@@ -14280,8 +14201,6 @@
           3.2,
           2.5,
           1.8,
-          1.5,
-          1.5,
           1.5
         ]
       },
@@ -14305,19 +14224,16 @@
           "edge_trim_status": "TRIMMED",
           "leading_missing_rows_removed": 0,
           "original_timestep_count": 360,
-          "retained_timestep_count": 359,
-          "trailing_missing_rows_removed": 1
+          "retained_timestep_count": 357,
+          "trailing_missing_rows_removed": 3
         },
-        "final_status": "PARTIAL",
+        "final_status": "PASS",
         "grid_distance_km": 15.185,
         "grid_distance_limit_km": 16.0,
         "missing_variables": [],
         "optional_missing_variables": [],
-        "optional_null_variables": [
-          "precipitation",
-          "snowfall"
-        ],
-        "reason": "OPTIONAL_VARIABLE_NULL:precipitation,snowfall",
+        "optional_null_variables": [],
+        "reason": null,
         "requested_coordinate": {
           "latitude": 33.347,
           "longitude": 103.865
@@ -14347,13 +14263,13 @@
       },
       "response": {
         "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.347&longitude=103.865&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cprecipitation%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Cwind_speed_10m%2Cwind_gusts_10m%2Crelative_humidity_2m",
-        "generationtime_ms": 0.20265579223632812,
+        "generationtime_ms": 0.22161006927490234,
         "grid_coordinate": {
           "latitude": 33.25,
           "longitude": 103.75
         },
         "model_run_initialization": null,
-        "retrieval_time": "2026-09-22T06:25:30Z",
+        "retrieval_time": "2026-09-22T06:32:12Z",
         "returned_elevation": 3277.0,
         "returned_model": null,
         "returned_model_id": null,
@@ -14361,7 +14277,7 @@
         "utc_offset_seconds": 28800
       },
       "source": "Open-Meteo",
-      "status": "PARTIAL"
+      "status": "PASS"
     },
     "JZG_TREESHENG": {
       "daily": [
@@ -14604,21 +14520,21 @@
           "wind_speed_mean_kmh": 3.008
         },
         {
-          "cloud_cover_low_mean_pct": 32.957,
-          "cloud_cover_mean_pct": 84.652,
+          "cloud_cover_low_mean_pct": 32.952,
+          "cloud_cover_mean_pct": 84.143,
           "complete": true,
           "date": "2026-10-06",
-          "hours_available": 23,
+          "hours_available": 21,
           "night_min_c": 2.1,
           "precipitation_mm": 0.6,
           "precision_class": "trend_only_6h_plus",
-          "relative_humidity_mean_pct": 81.304,
+          "relative_humidity_mean_pct": 80.048,
           "snowfall_cm": 0.0,
           "temperature_max_c": 13.8,
-          "temperature_mean_c": 6.587,
+          "temperature_mean_c": 6.671,
           "temperature_min_c": 2.1,
           "wind_gust_max_kmh": 33.5,
-          "wind_speed_mean_kmh": 3.548
+          "wind_speed_mean_kmh": 3.629
         }
       ],
       "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -14980,9 +14896,7 @@
           72,
           79,
           86,
-          89,
-          90,
-          90
+          89
         ],
         "cloud_cover_low": [
           68,
@@ -15341,9 +15255,7 @@
           14,
           21,
           29,
-          32,
-          33,
-          33
+          32
         ],
         "precipitation": [
           0.0,
@@ -15702,9 +15614,7 @@
           0.1,
           0.1,
           0.1,
-          0.1,
-          null,
-          null
+          0.1
         ],
         "relative_humidity_2m": [
           100,
@@ -16063,9 +15973,7 @@
           65,
           76,
           88,
-          93,
-          95,
-          94
+          93
         ],
         "snowfall": [
           0.0,
@@ -16424,9 +16332,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          null,
-          null
+          0.0
         ],
         "temperature_2m": [
           7.2,
@@ -16785,9 +16691,7 @@
           10.6,
           8.8,
           6.9,
-          6.0,
-          5.6,
-          5.8
+          6.0
         ],
         "time": [
           "2026-09-22T00:00",
@@ -17146,9 +17050,7 @@
           "2026-10-06T17:00",
           "2026-10-06T18:00",
           "2026-10-06T19:00",
-          "2026-10-06T20:00",
-          "2026-10-06T21:00",
-          "2026-10-06T22:00"
+          "2026-10-06T20:00"
         ],
         "wind_gusts_10m": [
           8.6,
@@ -17504,8 +17406,6 @@
           31.3,
           32.4,
           33.1,
-          33.5,
-          33.5,
           33.5,
           33.5,
           33.5,
@@ -17868,8 +17768,6 @@
           6.1,
           5.1,
           3.6,
-          2.9,
-          2.5,
           2.9
         ]
       },
@@ -17893,19 +17791,16 @@
           "edge_trim_status": "TRIMMED",
           "leading_missing_rows_removed": 0,
           "original_timestep_count": 360,
-          "retained_timestep_count": 359,
-          "trailing_missing_rows_removed": 1
+          "retained_timestep_count": 357,
+          "trailing_missing_rows_removed": 3
         },
-        "final_status": "PARTIAL",
+        "final_status": "PASS",
         "grid_distance_km": 11.102,
         "grid_distance_limit_km": 16.0,
         "missing_variables": [],
         "optional_missing_variables": [],
-        "optional_null_variables": [
-          "precipitation",
-          "snowfall"
-        ],
-        "reason": "OPTIONAL_VARIABLE_NULL:precipitation,snowfall",
+        "optional_null_variables": [],
+        "reason": null,
         "requested_coordinate": {
           "latitude": 33.198939,
           "longitude": 103.897435
@@ -17935,13 +17830,13 @@
       },
       "response": {
         "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.198939&longitude=103.897435&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cprecipitation%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Cwind_speed_10m%2Cwind_gusts_10m%2Crelative_humidity_2m",
-        "generationtime_ms": 5.4579973220825195,
+        "generationtime_ms": 2.8744935989379883,
         "grid_coordinate": {
           "latitude": 33.25,
           "longitude": 104.0
         },
         "model_run_initialization": null,
-        "retrieval_time": "2026-09-22T06:25:24Z",
+        "retrieval_time": "2026-09-22T06:32:11Z",
         "returned_elevation": 3061.0,
         "returned_model": null,
         "returned_model_id": null,
@@ -17949,7 +17844,7 @@
         "utc_offset_seconds": 28800
       },
       "source": "Open-Meteo",
-      "status": "PARTIAL"
+      "status": "PASS"
     },
     "LXL_HIGH_PASS": {
       "daily": [
@@ -18192,21 +18087,21 @@
           "wind_speed_mean_kmh": 2.263
         },
         {
-          "cloud_cover_low_mean_pct": 25.304,
-          "cloud_cover_mean_pct": 62.043,
+          "cloud_cover_low_mean_pct": 27.714,
+          "cloud_cover_mean_pct": 67.571,
           "complete": true,
           "date": "2026-10-06",
-          "hours_available": 23,
+          "hours_available": 21,
           "night_min_c": 1.7,
           "precipitation_mm": 3.6,
           "precision_class": "trend_only_6h_plus",
-          "relative_humidity_mean_pct": 78.739,
+          "relative_humidity_mean_pct": 78.0,
           "snowfall_cm": 0.42,
           "temperature_max_c": 10.3,
-          "temperature_mean_c": 4.522,
+          "temperature_mean_c": 4.719,
           "temperature_min_c": 1.7,
           "wind_gust_max_kmh": 29.2,
-          "wind_speed_mean_kmh": 1.7
+          "wind_speed_mean_kmh": 1.719
         }
       ],
       "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -18568,9 +18463,7 @@
           25,
           16,
           8,
-          5,
-          4,
-          4
+          5
         ],
         "cloud_cover_low": [
           57,
@@ -18923,8 +18816,6 @@
           31,
           20,
           8,
-          0,
-          0,
           0,
           0,
           0,
@@ -19290,9 +19181,7 @@
           0.1,
           0.1,
           0.1,
-          0.1,
-          null,
-          null
+          0.1
         ],
         "relative_humidity_2m": [
           99,
@@ -19651,9 +19540,7 @@
           58,
           68,
           80,
-          85,
-          87,
-          86
+          85
         ],
         "snowfall": [
           0.0,
@@ -20012,9 +19899,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          null,
-          null
+          0.0
         ],
         "temperature_2m": [
           5.1,
@@ -20373,9 +20258,7 @@
           7.0,
           5.3,
           3.5,
-          2.7,
-          2.4,
-          2.5
+          2.7
         ],
         "time": [
           "2026-09-22T00:00",
@@ -20734,9 +20617,7 @@
           "2026-10-06T17:00",
           "2026-10-06T18:00",
           "2026-10-06T19:00",
-          "2026-10-06T20:00",
-          "2026-10-06T21:00",
-          "2026-10-06T22:00"
+          "2026-10-06T20:00"
         ],
         "wind_gusts_10m": [
           19.1,
@@ -21095,8 +20976,6 @@
           27.0,
           28.1,
           28.8,
-          29.2,
-          29.2,
           29.2
         ],
         "wind_speed_10m": [
@@ -21456,8 +21335,6 @@
           1.5,
           1.1,
           1.3,
-          1.5,
-          1.5,
           1.5
         ]
       },
@@ -21481,19 +21358,16 @@
           "edge_trim_status": "TRIMMED",
           "leading_missing_rows_removed": 0,
           "original_timestep_count": 360,
-          "retained_timestep_count": 359,
-          "trailing_missing_rows_removed": 1
+          "retained_timestep_count": 357,
+          "trailing_missing_rows_removed": 3
         },
-        "final_status": "PARTIAL",
+        "final_status": "PASS",
         "grid_distance_km": 14.019,
         "grid_distance_limit_km": 16.0,
         "missing_variables": [],
         "optional_missing_variables": [],
-        "optional_null_variables": [
-          "precipitation",
-          "snowfall"
-        ],
-        "reason": "OPTIONAL_VARIABLE_NULL:precipitation,snowfall",
+        "optional_null_variables": [],
+        "reason": null,
         "requested_coordinate": {
           "latitude": 31.4,
           "longitude": 102.84
@@ -21523,13 +21397,13 @@
       },
       "response": {
         "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=31.4&longitude=102.84&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cprecipitation%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Cwind_speed_10m%2Cwind_gusts_10m%2Crelative_humidity_2m",
-        "generationtime_ms": 0.21970272064208984,
+        "generationtime_ms": 0.23663043975830078,
         "grid_coordinate": {
           "latitude": 31.5,
           "longitude": 102.75
         },
         "model_run_initialization": null,
-        "retrieval_time": "2026-09-22T06:25:22Z",
+        "retrieval_time": "2026-09-22T06:32:10Z",
         "returned_elevation": 3927.0,
         "returned_model": null,
         "returned_model_id": null,
@@ -21537,7 +21411,7 @@
         "utc_offset_seconds": 28800
       },
       "source": "Open-Meteo",
-      "status": "PARTIAL"
+      "status": "PASS"
     },
     "SQG_SHUANGQIAO": {
       "daily": [
@@ -21780,21 +21654,21 @@
           "wind_speed_mean_kmh": 2.421
         },
         {
-          "cloud_cover_low_mean_pct": 61.174,
-          "cloud_cover_mean_pct": 97.0,
+          "cloud_cover_low_mean_pct": 59.143,
+          "cloud_cover_mean_pct": 96.714,
           "complete": true,
           "date": "2026-10-06",
-          "hours_available": 23,
+          "hours_available": 21,
           "night_min_c": 1.0,
           "precipitation_mm": 4.8,
           "precision_class": "trend_only_6h_plus",
-          "relative_humidity_mean_pct": 96.261,
+          "relative_humidity_mean_pct": 96.0,
           "snowfall_cm": 0.21,
           "temperature_max_c": 5.0,
-          "temperature_mean_c": 2.678,
+          "temperature_mean_c": 2.662,
           "temperature_min_c": 1.0,
           "wind_gust_max_kmh": 28.4,
-          "wind_speed_mean_kmh": 2.391
+          "wind_speed_mean_kmh": 2.514
         }
       ],
       "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -22156,8 +22030,6 @@
           95,
           97,
           99,
-          100,
-          100,
           100
         ],
         "cloud_cover_low": [
@@ -22517,9 +22389,7 @@
           36,
           53,
           72,
-          80,
-          83,
-          82
+          80
         ],
         "precipitation": [
           0.1,
@@ -22878,9 +22748,7 @@
           0.3,
           0.3,
           0.3,
-          0.3,
-          null,
-          null
+          0.3
         ],
         "relative_humidity_2m": [
           100,
@@ -23239,8 +23107,6 @@
           94,
           96,
           98,
-          99,
-          99,
           99
         ],
         "snowfall": [
@@ -23600,9 +23466,7 @@
           0.0,
           0.0,
           0.0,
-          0.0,
-          null,
-          null
+          0.0
         ],
         "temperature_2m": [
           4.5,
@@ -23961,8 +23825,6 @@
           4.2,
           3.7,
           3.2,
-          2.9,
-          2.8,
           2.9
         ],
         "time": [
@@ -24322,9 +24184,7 @@
           "2026-10-06T17:00",
           "2026-10-06T18:00",
           "2026-10-06T19:00",
-          "2026-10-06T20:00",
-          "2026-10-06T21:00",
-          "2026-10-06T22:00"
+          "2026-10-06T20:00"
         ],
         "wind_gusts_10m": [
           10.8,
@@ -24683,8 +24543,6 @@
           28.1,
           27.7,
           27.0,
-          26.6,
-          26.6,
           26.6
         ],
         "wind_speed_10m": [
@@ -25044,8 +24902,6 @@
           3.7,
           2.2,
           1.0,
-          1.1,
-          1.1,
           1.1
         ]
       },
@@ -25069,19 +24925,16 @@
           "edge_trim_status": "TRIMMED",
           "leading_missing_rows_removed": 0,
           "original_timestep_count": 360,
-          "retained_timestep_count": 359,
-          "trailing_missing_rows_removed": 1
+          "retained_timestep_count": 357,
+          "trailing_missing_rows_removed": 3
         },
-        "final_status": "PARTIAL",
+        "final_status": "PASS",
         "grid_distance_km": 13.602,
         "grid_distance_limit_km": 16.0,
         "missing_variables": [],
         "optional_missing_variables": [],
-        "optional_null_variables": [
-          "precipitation",
-          "snowfall"
-        ],
-        "reason": "OPTIONAL_VARIABLE_NULL:precipitation,snowfall",
+        "optional_null_variables": [],
+        "reason": null,
         "requested_coordinate": {
           "latitude": 31.1035,
           "longitude": 102.9239
@@ -25111,13 +24964,13 @@
       },
       "response": {
         "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=31.1035&longitude=102.9239&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cprecipitation%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Cwind_speed_10m%2Cwind_gusts_10m%2Crelative_humidity_2m",
-        "generationtime_ms": 0.22017955780029297,
+        "generationtime_ms": 2.257704734802246,
         "grid_coordinate": {
           "latitude": 31.0,
           "longitude": 103.0
         },
         "model_run_initialization": null,
-        "retrieval_time": "2026-09-22T06:25:16Z",
+        "retrieval_time": "2026-09-22T06:32:09Z",
         "returned_elevation": 3752.0,
         "returned_model": null,
         "returned_model_id": null,
@@ -25125,11 +24978,11 @@
         "utc_offset_seconds": 28800
       },
       "source": "Open-Meteo",
-      "status": "PARTIAL"
+      "status": "PASS"
     }
   },
   "schema_version": "1.0.0",
   "source": "Open-Meteo",
-  "status": "PARTIAL",
-  "successful_points": 0
+  "status": "OK",
+  "successful_points": 7
 }
