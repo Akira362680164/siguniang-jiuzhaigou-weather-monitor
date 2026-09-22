@@ -84,6 +84,7 @@ MODEL_SPECS = {
         "model_id": "ecmwf_ifs025_ensemble",
         "forecast_days": 7,
         "grid_limit_km": 38.0,
+        "temporal_resolution": "hourly_3",
     },
 }
 GEFS_SPECS = {
@@ -93,6 +94,7 @@ GEFS_SPECS = {
         "forecast_days": 10,
         "grid_limit_km": 30.0,
         "resolution": "0.25° (~25 km)",
+        "temporal_resolution": "hourly_3",
     },
     "long_range": {
         "label": "NOAA GEFS 0.5°",
@@ -100,6 +102,7 @@ GEFS_SPECS = {
         "forecast_days": 35,
         "grid_limit_km": 45.0,
         "resolution": "0.5° (~50 km)",
+        "temporal_resolution": "hourly_3",
     },
 }
 
@@ -287,6 +290,36 @@ def values_at(hourly: dict, key: str, indices: list[int]) -> list[float]:
     return result
 
 
+def accumulation_values(
+    hourly: dict,
+    key: str,
+    indices: list[int],
+    parsed_times: list[dt.datetime],
+    first_time: dt.datetime,
+    *,
+    module: str | None = None,
+    native_step_hours: int = 1,
+) -> list[float]:
+    """Read accumulated variables without summing interpolated plateaus twice."""
+    values = hourly.get(key)
+    if not isinstance(values, list):
+        return []
+    result = []
+    for index in indices:
+        if index >= len(values) or values[index] is None:
+            continue
+        lead = (parsed_times[index] - first_time).total_seconds() / 3600
+        step = native_step_hours
+        if module == "hres":
+            step = 1 if lead < 90 else 3 if lead < 144 else 6
+        elif module == "gfs":
+            step = 1 if lead < 120 else 3
+        if step > 1 and int(round(lead)) % step != 0:
+            continue
+        result.append(float(values[index]))
+    return result
+
+
 def percentile(values: list[float], probability: float) -> float | None:
     if not values:
         return None
@@ -350,6 +383,20 @@ def daily_metrics(hourly: dict, module: str | None = None) -> list[dict]:
             precision_class((parsed[index] - first_time).total_seconds() / 3600, module)
             for index in indices
         ] if module else []
+        precipitation_values = accumulation_values(
+            hourly, "precipitation", indices, parsed, first_time, module=module
+        )
+        snowfall_values = accumulation_values(
+            hourly, "snowfall", indices, parsed, first_time, module=module
+        )
+        accumulation_steps = sorted({
+            1 if module == "hres" and (parsed[index] - first_time).total_seconds() / 3600 < 90 else
+            3 if module == "hres" and (parsed[index] - first_time).total_seconds() / 3600 < 144 else
+            6 if module == "hres" else
+            1 if module == "gfs" and (parsed[index] - first_time).total_seconds() / 3600 < 120 else
+            3 if module == "gfs" else 1
+            for index in indices
+        })
         result.append({
             "date": day,
             "hours_available": len(indices),
@@ -358,14 +405,15 @@ def daily_metrics(hourly: dict, module: str | None = None) -> list[dict]:
             "temperature_max_c": round(max(temperatures), 3) if temperatures else None,
             "temperature_mean_c": round(mean(temperatures), 3) if temperatures else None,
             "night_min_c": round(min(night_temperatures), 3) if night_temperatures else None,
-            "precipitation_mm": round(sum(values_at(hourly, "precipitation", indices)), 3),
-            "snowfall_cm": round(sum(values_at(hourly, "snowfall", indices)), 3),
+            "precipitation_mm": round(sum(precipitation_values), 3),
+            "snowfall_cm": round(sum(snowfall_values), 3),
             "cloud_cover_mean_pct": round(mean(values_at(hourly, "cloud_cover", indices)), 3) if values_at(hourly, "cloud_cover", indices) else None,
             "cloud_cover_low_mean_pct": round(mean(values_at(hourly, "cloud_cover_low", indices)), 3) if values_at(hourly, "cloud_cover_low", indices) else None,
             "wind_speed_mean_kmh": round(mean(values_at(hourly, "wind_speed_10m", indices)), 3) if values_at(hourly, "wind_speed_10m", indices) else None,
             "wind_gust_max_kmh": round(max(values_at(hourly, "wind_gusts_10m", indices)), 3) if values_at(hourly, "wind_gusts_10m", indices) else None,
             "relative_humidity_mean_pct": round(mean(values_at(hourly, "relative_humidity_2m", indices)), 3) if values_at(hourly, "relative_humidity_2m", indices) else None,
             "precision_class": ",".join(dict.fromkeys(classes)) if classes else None,
+            "accumulation_step_hours": accumulation_steps,
         })
     return result
 
@@ -614,7 +662,12 @@ def member_statistics(values: list[float], expected_members: int) -> dict:
     return result
 
 
-def member_daily_distributions(hourly: dict, expected_members: int) -> list[dict]:
+def member_daily_distributions(
+    hourly: dict,
+    expected_members: int,
+    *,
+    native_step_hours: int = 1,
+) -> list[dict]:
     times = hourly.get("time") if isinstance(hourly.get("time"), list) else []
     if not times:
         return []
@@ -630,8 +683,22 @@ def member_daily_distributions(hourly: dict, expected_members: int) -> list[dict
         for key in temp_keys:
             temperatures = values_at(hourly, key, indices)
             night_temperatures = values_at(hourly, key, night_indices)
-            precipitation = values_at(hourly, key.replace("temperature_2m", "precipitation"), indices)
-            snowfall = values_at(hourly, key.replace("temperature_2m", "snowfall"), indices)
+            precipitation = accumulation_values(
+                hourly,
+                key.replace("temperature_2m", "precipitation"),
+                indices,
+                parsed,
+                parsed[0],
+                native_step_hours=native_step_hours,
+            )
+            snowfall = accumulation_values(
+                hourly,
+                key.replace("temperature_2m", "snowfall"),
+                indices,
+                parsed,
+                parsed[0],
+                native_step_hours=native_step_hours,
+            )
             cloud = values_at(hourly, key.replace("temperature_2m", "cloud_cover"), indices)
             low_cloud = values_at(hourly, key.replace("temperature_2m", "cloud_cover_low"), indices)
             gusts = values_at(hourly, key.replace("temperature_2m", "wind_gusts_10m"), indices)
@@ -674,6 +741,7 @@ def member_daily_distributions(hourly: dict, expected_members: int) -> list[dict
             "probabilities": {
                 "precipitation_gt_0_5mm": round(sum(value > 0.5 for value in precipitation) / len(precipitation), 3) if precipitation else None,
                 "precipitation_gt_2mm": round(sum(value > 2 for value in precipitation) / len(precipitation), 3) if precipitation else None,
+                "precipitation_gt_5mm": round(sum(value > 5 for value in precipitation) / len(precipitation), 3) if precipitation else None,
                 "snowfall_gt_0_5cm": round(sum(value > 0.5 for value in snowfall) / len(snowfall), 3) if snowfall else None,
                 "cloud_cover_gt_70pct": round(sum(value > 70 for value in cloud) / len(cloud), 3) if cloud else None,
                 "cloud_cover_low_gt_50pct": round(sum(value > 50 for value in low_cloud) / len(low_cloud), 3) if low_cloud else None,
@@ -713,12 +781,17 @@ def run_ensemble(config: dict, client: ApiClient, generated_at: str, data_date: 
             forecast_days=spec["forecast_days"],
             grid_limit_km=spec["grid_limit_km"],
             module="ensemble",
-            extra_params={"models": spec["model_id"]},
+            extra_params={
+                "models": spec["model_id"],
+                "temporal_resolution": spec["temporal_resolution"],
+            },
         )
         if record.get("status") in {"PASS", "PARTIAL"}:
             check = validate_member_count(record.get("hourly", {}), ENSEMBLE_VARIABLES, 51)
             record["member_check"] = check
-            record["ensemble_daily"] = member_daily_distributions(record["hourly"], 51)
+            record["ensemble_daily"] = member_daily_distributions(
+                record["hourly"], 51, native_step_hours=3
+            )
             if not check["usable"]:
                 record["status"] = "INVALID"
                 record["qa"]["final_status"] = "INVALID"
@@ -735,6 +808,7 @@ def run_ensemble(config: dict, client: ApiClient, generated_at: str, data_date: 
         model=spec["label"],
         model_id=spec["model_id"],
         resolution="0.25° (~25 km)",
+        temporal_resolution=spec["temporal_resolution"],
         members_total=51,
         forecast_days=spec["forecast_days"],
         points=records,
@@ -765,14 +839,19 @@ def run_gefs(config: dict, client: ApiClient, generated_at: str, data_date: str,
                 forecast_days=spec["forecast_days"],
                 grid_limit_km=spec["grid_limit_km"],
                 module=f"gefs_{segment}",
-                extra_params={"models": spec["model_id"]},
+                extra_params={
+                    "models": spec["model_id"],
+                    "temporal_resolution": spec["temporal_resolution"],
+                },
             )
             raw_segments[segment] = record
             public_record = copy.deepcopy(record)
             if record.get("status") in {"PASS", "PARTIAL"}:
                 member_check = validate_member_count(record.get("hourly", {}), variables, 31)
                 record["member_check"] = member_check
-                record["ensemble_daily"] = member_daily_distributions(record["hourly"], 31)
+                record["ensemble_daily"] = member_daily_distributions(
+                    record["hourly"], 31, native_step_hours=3
+                )
                 public_record = copy.deepcopy(record)
                 public_record.pop("hourly", None)
                 public_record["raw_archive_path"] = raw_archive_path
@@ -785,6 +864,7 @@ def run_gefs(config: dict, client: ApiClient, generated_at: str, data_date: str,
                 "model": spec["label"],
                 "model_id": spec["model_id"],
                 "resolution": spec["resolution"],
+                "temporal_resolution": spec["temporal_resolution"],
                 "forecast_days": spec["forecast_days"],
                 "record": public_record,
             }

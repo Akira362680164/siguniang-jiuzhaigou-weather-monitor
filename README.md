@@ -33,6 +33,8 @@
 
 近期期重点看 `temperature_min_c`、`temperature_max_c`、`night_min_c`、`precipitation_mm`、`snowfall_cm`、`cloud_cover_mean_pct` 和 `cloud_cover_low_mean_pct`。集合模块另外给出中位数、P10/P90、降水/降雪/低温/高云量概率。
 
+降水是累计量，不能把 Open-Meteo 为展示而插值重复的 3 小时平台值逐小时相加。集合和 GEFS 请求使用 `hourly_3` 原生粒度；HRES/GFS 在进入粗粒度预报段后按对应步长去重，再计算逐日累计和概率。`precipitation_gt_0_5mm` 只表示当天有可测降水，判断是否值得担心应同时看 `precipitation_gt_2mm`、`precipitation_gt_5mm`、累计量和集合分歧。
+
 ## 固定点位
 
 坐标注册表见 [`config/points.json`](config/points.json)。双桥沟和毕棚沟使用游客中心代表点；理小路使用高位垭口代表点；九寨沟拆成树正寨、诺日朗、原始森林和长海，避免用沟口一个点替代整条沟的海拔梯度。

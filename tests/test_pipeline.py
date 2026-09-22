@@ -48,6 +48,22 @@ class PipelineUnitTests(unittest.TestCase):
         self.assertEqual(day["cloud_cover_mean_pct"], 50.0)
         self.assertEqual(day["temperature_min_c"], -5.0)
 
+    def test_accumulation_deduplicates_three_hour_plateaus(self):
+        times = [f"2026-09-22T{hour:02d}:00" for hour in range(6)]
+        hourly = {"time": times}
+        for suffix in ("", "_member01"):
+            hourly[f"temperature_2m{suffix}"] = [1] * 6
+            hourly[f"precipitation{suffix}"] = [0.8, 0.8, 0.8, 0.0, 0.0, 0.0]
+            hourly[f"snowfall{suffix}"] = [0] * 6
+        day = pipeline.member_daily_distributions(hourly, 2, native_step_hours=3)[0]
+        self.assertEqual(day["precipitation_mm"]["mean"], 0.8)
+        self.assertEqual(day["probabilities"]["precipitation_gt_0_5mm"], 1.0)
+        self.assertEqual(day["probabilities"]["precipitation_gt_5mm"], 0.0)
+
+    def test_coarse_model_specs_declare_native_three_hour_resolution(self):
+        self.assertEqual(pipeline.MODEL_SPECS["ensemble"]["temporal_resolution"], "hourly_3")
+        self.assertEqual(pipeline.GEFS_SPECS["long_range"]["temporal_resolution"], "hourly_3")
+
     def test_validate_payload_keeps_optional_cloud_warning_as_partial(self):
         point = {"id": "P", "latitude": 31.1, "longitude": 102.9}
         payload = {
