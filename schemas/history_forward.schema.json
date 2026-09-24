@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/history_forward.schema.json",
+  "title": "Siguniang-Jiuzhaigou historical forward weather path",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "module",
+    "status",
+    "generated_at",
+    "data_date",
+    "forecast_date",
+    "anchor_date",
+    "cutoff_date",
+    "history_years",
+    "window_definitions",
+    "points",
+    "regions",
+    "excluded_points"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "module": {"type": "string", "const": "history_forward"},
+    "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "SKIPPED"]},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "forecast_date": {"type": "string", "format": "date"},
+    "anchor_date": {"type": "string", "format": "date"},
+    "cutoff_date": {"type": "string", "format": "date"},
+    "history_years": {"type": "array", "const": [2023, 2024, 2025]},
+    "window_definitions": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["window", "start_date", "end_date", "cutoff_date", "status"],
+        "properties": {
+          "window": {"type": "string", "enum": ["d0_7", "d8_15", "d16_to_11_01"]},
+          "start_date": {"type": ["string", "null"], "format": "date"},
+          "end_date": {"type": ["string", "null"], "format": "date"},
+          "cutoff_date": {"type": "string", "format": "date"},
+          "status": {"type": "string", "enum": ["OK", "UNAVAILABLE", "NOT_APPLICABLE"]}
+        },
+        "additionalProperties": true
+      }
+    },
+    "points": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/point_result"}
+    },
+    "regions": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/region_result"}
+    },
+    "successful_fetches": {"type": "integer", "minimum": 0},
+    "failed_fetches": {"type": "integer", "minimum": 0},
+    "expected_fetches": {"type": "integer", "minimum": 0}
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "window": {
+      "type": "object",
+      "required": ["status", "start_date", "end_date", "daily", "metrics", "usable_for_cross_year_comparison"],
+      "properties": {
+        "status": {"type": "string", "enum": ["OK", "INVALID", "UNAVAILABLE", "NOT_APPLICABLE"]},
+        "start_date": {"type": ["string", "null"], "format": "date"},
+        "end_date": {"type": ["string", "null"], "format": "date"},
+        "daily": {"type": "array"},
+        "metrics": {"type": ["object", "null"]},
+        "usable_for_cross_year_comparison": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "year_result": {
+      "type": "object",
+      "required": ["status", "request", "response", "qa", "daily", "d0_7", "d8_15", "d16_to_11_01"],
+      "properties": {
+        "status": {"type": "string", "enum": ["PASS", "INVALID"]},
+        "request": {"type": "object"},
+        "response": {"type": ["object", "null"]},
+        "qa": {"type": "object"},
+        "daily": {"type": "array"},
+        "d0_7": {"$ref": "#/$defs/window"},
+        "d8_15": {"$ref": "#/$defs/window"},
+        "d16_to_11_01": {"$ref": "#/$defs/window"}
+      },
+      "additionalProperties": true
+    },
+    "point_result": {
+      "type": "object",
+      "required": ["point_id", "status", "same_grid_qa", "years"],
+      "properties": {
+        "point_id": {"type": "string"},
+        "status": {"type": "string", "enum": ["OK", "FAILED", "NOT_APPLICABLE"]},
+        "same_grid_qa": {"type": "object"},
+        "years": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/$defs/year_result"}
+        }
+      },
+      "additionalProperties": true
+    },
+    "region_result": {
+      "type": "object",
+      "required": ["region", "status", "usable_for_main_chain", "cross_year_comparison_usable", "same_grid_qa", "years"],
+      "properties": {
+        "region": {"type": "string"},
+        "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "UNAVAILABLE", "NOT_APPLICABLE"]},
+        "usable_for_main_chain": {"type": "boolean"},
+        "cross_year_comparison_usable": {"type": "boolean"},
+        "same_grid_qa": {"type": ["object", "null"]},
+        "years": {
+          "type": "object",
+          "additionalProperties": {"$ref": "#/$defs/year_result"}
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

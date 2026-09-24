@@ -1,15 +1,91 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/status.schema.json",
+  "title": "Siguniang-Jiuzhaigou pipeline status",
   "type": "object",
-  "required": ["schema_version", "module", "generated_at", "data_date", "pipeline_status", "modules", "target_coverage"],
+  "required": ["schema_version", "generated_at", "data_date", "pipeline_status", "modules", "points"],
   "properties": {
-    "schema_version": {"type": "string"},
-    "module": {"const": "status"},
-    "generated_at": {"type": "string"},
-    "data_date": {"type": "string", "format": "date"},
-    "pipeline_status": {"enum": ["OK", "PARTIAL", "FAILED"]},
-    "modules": {"type": "object", "additionalProperties": {"type": "string"}},
-    "target_coverage": {"type": "object"}
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": ["string", "null"]},
+    "history_years": {"type": "array", "items": {"type": "integer"}},
+    "pipeline_status": {"type": "string", "enum": ["OK", "PARTIAL", "DEGRADED", "FAILED"]},
+    "modules": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "SKIPPED", "INVALID"]}
+    },
+    "module_details": {"type": "object"},
+    "variable_status": {
+      "type": "object",
+      "description": "Per-model per-variable availability, keyed by model family. A variable missing from the source is reported OPTIONAL_UNAVAILABLE / REQUIRED_UNAVAILABLE and is never substituted from another model.",
+      "properties": {
+        "ecmwf_deterministic_hres": {"$ref": "#/$defs/variableStatus"},
+        "ecmwf_ensemble": {"$ref": "#/$defs/variableStatus"},
+        "gfs_deterministic": {"$ref": "#/$defs/variableStatus"},
+        "gefs_ensemble": {"$ref": "#/$defs/variableStatus"}
+      },
+      "additionalProperties": true
+    },
+    "variable_model_policy": {
+      "type": "object",
+      "properties": {
+        "models": {"type": "array", "items": {"type": "string"}},
+        "independent": {"type": "boolean"},
+        "cross_model_averaging": {"type": "boolean", "const": false},
+        "unavailable_values_are_null": {"type": "boolean"},
+        "note": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "points": {"type": "object"},
+    "route_slots": {"type": "object"},
+    "manual_phenology_baseline": {"type": ["object", "null"]},
+    "failure_policy": {"type": "string"},
+    "target_coverage": {
+      "type": "object",
+      "description": "Per target group / target date coverage. Reported in addition to the upstream forecast modules: this monitor is trip-facing, so the status artifact also states which model family actually covers each target day.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "coverage_status": {
+              "type": "string",
+              "enum": [
+                "HRES_AVAILABLE",
+                "GFS_AVAILABLE",
+                "ECMWF_ENSEMBLE_AVAILABLE",
+                "GEFS_LONG_RANGE_AVAILABLE",
+                "PARTIAL",
+                "NOT_YET_AVAILABLE"
+              ]
+            },
+            "points_available": {"type": "integer", "minimum": 0},
+            "points_total": {"type": "integer", "minimum": 0},
+            "target_date_in_model_window": {"type": "boolean"}
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "target_dates": {"type": "array", "items": {"type": "string", "format": "date"}}
+  },
+  "$defs": {
+    "variableStatus": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "enum": [
+          "OK",
+          "PARTIAL",
+          "REQUIRED_UNAVAILABLE",
+          "OPTIONAL_UNAVAILABLE",
+          "MISSING",
+          "ARRAY_LENGTH_MISMATCH",
+          "NULL_ARRAY"
+        ]
+      }
+    }
   },
   "additionalProperties": true
 }

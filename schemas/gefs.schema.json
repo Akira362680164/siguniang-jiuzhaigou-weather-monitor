@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/gefs.schema.json",
+  "title": "Siguniang-Jiuzhaigou independent GEFS ensemble module",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "module",
+    "status",
+    "generated_at",
+    "data_date",
+    "source",
+    "endpoint",
+    "near_range_model_id",
+    "long_range_model_id",
+    "members_total",
+    "forecast_cutoff_date",
+    "points",
+    "excluded_points",
+    "qa",
+    "interpretation_boundary"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "module": {"type": "string", "const": "gefs"},
+    "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "SKIPPED"]},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "source": {"type": "string", "const": "Open-Meteo"},
+    "endpoint": {"type": "string", "format": "uri"},
+    "near_range_model_id": {"type": "string", "const": "ncep_gefs025"},
+    "long_range_model_id": {"type": "string", "const": "ncep_gefs05"},
+    "members_total": {"type": "integer", "const": 31},
+    "members_valid": {"type": ["integer", "null"], "minimum": 0},
+    "successful_points": {"type": "integer", "minimum": 0},
+    "partial_points": {"type": "integer", "minimum": 0},
+    "failed_points": {"type": "integer", "minimum": 0},
+    "usable_points": {"type": "integer", "minimum": 0},
+    "coverage_start": {"type": ["string", "null"], "format": "date"},
+    "coverage_end": {"type": ["string", "null"], "format": "date"},
+    "forecast_cutoff_date": {"type": "string", "const": "2026-11-01", "format": "date"},
+    "missing_variables": {"type": "array", "items": {"type": "string"}},
+    "required_missing_variables": {"type": "array", "items": {"type": "string"}},
+    "optional_missing_variables": {"type": "array", "items": {"type": "string"}},
+    "requested_variables": {"type": "array", "items": {"type": "string"}},
+    "required_variables": {"type": "array", "items": {"type": "string"}},
+    "optional_variables": {"type": "array", "items": {"type": "string"}},
+    "variable_status": {
+      "type": "object",
+      "description": "Availability of every requested GEFS variable. Layered cloud that Open-Meteo GEFS returns as null arrays for western Sichuan is reported OPTIONAL_UNAVAILABLE and never inferred from the total cloud cover.",
+      "additionalProperties": {"type": "string"}
+    },
+    "cloud_layer_status": {
+      "type": "object",
+      "properties": {
+        "cloud_cover": {"type": "string"},
+        "cloud_cover_low": {"type": "string"},
+        "cloud_cover_mid": {"type": "string"},
+        "cloud_cover_high": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "point_status_summary": {"type": "object"},
+    "stale": {"type": "boolean"},
+    "points": {"type": "object", "additionalProperties": {"$ref": "#/$defs/point"}},
+    "excluded_points": {"type": "object"},
+    "qa": {"type": "object"},
+    "interpretation_boundary": {"type": "string"}
+  },
+  "$defs": {
+    "point": {
+      "type": "object",
+      "required": ["point_id", "status", "usable_for_main_chain", "near_range", "long_range", "qa"],
+      "properties": {
+        "point_id": {"type": "string"},
+        "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "SKIPPED"]},
+        "usable_for_main_chain": {"type": "boolean", "const": true},
+        "near_range": {"$ref": "#/$defs/segment"},
+        "long_range": {"$ref": "#/$defs/segment"},
+        "qa": {"type": "object"}
+      },
+      "additionalProperties": true
+    },
+    "segment": {
+      "type": "object",
+      "required": ["status", "segment", "model_id", "resolution", "members_total", "members_valid", "missing_variables", "daily", "windows", "event_phases", "qa"],
+      "properties": {
+        "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED"]},
+        "segment": {"type": "string", "enum": ["near_range", "long_range"]},
+        "model_id": {"type": "string"},
+        "resolution": {"type": "string"},
+        "members_total": {"type": "integer", "minimum": 0},
+        "members_valid": {"type": "integer", "minimum": 0},
+        "missing_variables": {"type": "array", "items": {"type": "string"}},
+        "required_missing_variables": {"type": "array", "items": {"type": "string"}},
+        "optional_missing_variables": {"type": "array", "items": {"type": "string"}},
+        "daily": {"type": "array"},
+        "windows": {"type": "object"},
+        "event_phases": {"type": "object"},
+        "event_day_distribution": {"type": "object"},
+        "qa": {"type": "object"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

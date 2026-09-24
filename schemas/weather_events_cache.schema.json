@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/weather_events_cache.schema.json",
+  "title": "Derived weather event cache",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "cache_schema_version",
+    "cache_kind",
+    "namespace",
+    "year",
+    "point_id",
+    "identity",
+    "daily",
+    "cached_dates",
+    "source_fingerprints_by_date",
+    "date_range",
+    "rule_versions",
+    "last_update"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "cache_schema_version": {"type": "string", "const": "1.0.0"},
+    "cache_kind": {"type": "string", "const": "derived_weather_events"},
+    "namespace": {"type": "string", "const": "siguniang_jiuzhaigou"},
+    "year": {"type": "integer"},
+    "point_id": {"type": "string"},
+    "source_history_cache_key": {"type": ["string", "null"]},
+    "source_history_cache_path": {"type": ["string", "null"]},
+    "identity": {"type": "object"},
+    "daily": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "source_state", "complete"],
+        "properties": {
+          "date": {"type": "string", "format": "date"},
+          "source_state": {"type": "string", "enum": ["finalized_history", "forecast"]},
+          "complete": {"type": "boolean"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "cached_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+    "source_fingerprints_by_date": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "date_range": {
+      "type": "object",
+      "required": ["start_date", "end_date"],
+      "properties": {
+        "start_date": {"type": ["string", "null"], "format": "date"},
+        "end_date": {"type": ["string", "null"], "format": "date"}
+      },
+      "additionalProperties": true
+    },
+    "rule_versions": {"type": "object"},
+    "cache_update": {"type": "object"},
+    "last_update": {"type": "string", "format": "date-time"}
+  },
+  "additionalProperties": true
+}

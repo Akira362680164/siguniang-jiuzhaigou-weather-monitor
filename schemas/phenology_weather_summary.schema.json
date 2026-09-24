@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/phenology_weather_summary.schema.json",
+  "title": "Siguniang-Jiuzhaigou compact weather statistics summary",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "module",
+    "generated_at",
+    "data_date",
+    "forecast_date",
+    "source",
+    "model_policy",
+    "window_definitions",
+    "weather_only",
+    "interpretation_boundary",
+    "regions"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "module": {"type": "string", "const": "phenology_weather_summary"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "forecast_date": {"type": "string", "format": "date"},
+    "source": {"type": "string", "const": "Open-Meteo"},
+    "model_policy": {"type": "object", "required": ["historical", "forecast_2026", "timezone", "cell_selection", "elevation", "grid_deduplication", "siguniang_aggregation"], "properties": {"jiuzhaigou_aggregation": {"type": "string"}}, "additionalProperties": true},
+    "window_definitions": {"type": "object", "additionalProperties": {"type": "object"}},
+    "weather_only": {"type": "boolean", "const": true},
+    "interpretation_boundary": {"type": "string"},
+    "regions": {"type": "object", "additionalProperties": {"$ref": "#/$defs/region"}}
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "light_window": {
+      "type": "object",
+      "required": ["status", "start_date", "end_date", "expected_days", "days_available", "missing_dates"],
+      "properties": {
+        "status": {"type": "string", "enum": ["OK", "PARTIAL", "INVALID", "UNAVAILABLE"]},
+        "usable_for_main_chain": {"type": "boolean"},
+        "usable_for_trend_reference": {"type": "boolean"},
+        "availability_note": {"type": ["string", "null"]},
+        "start_date": {"type": ["string", "null"], "format": "date"},
+        "end_date": {"type": ["string", "null"], "format": "date"},
+        "expected_days": {"type": "integer", "minimum": 0},
+        "days_available": {"type": "integer", "minimum": 0},
+        "missing_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+        "incomplete_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+        "temperature_mean_c": {"type": ["number", "null"]},
+        "temperature_max_mean_c": {"type": ["number", "null"]},
+        "night_min_mean_c": {"type": ["number", "null"]},
+        "absolute_min_night_c": {"type": ["number", "null"]},
+        "nights_below_15c": {"type": ["number", "null"]},
+        "nights_below_10c": {"type": ["number", "null"]},
+        "nights_below_5c": {"type": ["number", "null"]},
+        "nights_below_2c": {"type": ["number", "null"]},
+        "nights_below_0c": {"type": ["number", "null"]},
+        "diurnal_temperature_range_mean_c": {"type": ["number", "null"]},
+        "precipitation_total_mm": {"type": ["number", "null"]},
+        "snowfall_total_cm": {"type": ["number", "null"]},
+        "average_daily_sunshine_duration_seconds": {"type": ["number", "null"]},
+        "average_daily_shortwave_radiation_w_m2": {"type": ["number", "null"]},
+        "max_wind_gust_kmh": {"type": ["number", "null"]},
+        "strong_wind_day_count": {"type": ["number", "null"]},
+        "grid_count": {"type": ["integer", "null" ]}
+      },
+      "not": {"anyOf": [{"required": ["hourly"]}, {"required": ["daily"]}]},
+      "additionalProperties": true
+    },
+    "sampling": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {"type": "string", "enum": ["OK", "PARTIAL", "INVALID", "FAILED", "UNAVAILABLE"]},
+        "requested_points": {"type": "integer", "minimum": 0},
+        "verified_points": {"type": "integer", "minimum": 0},
+        "unique_model_grids": {"type": "integer", "minimum": 0},
+        "grid_coordinates": {"type": "array"}
+      },
+      "additionalProperties": true
+    },
+    "year": {
+      "type": "object",
+      "properties": {
+        "d0_7": {"$ref": "#/$defs/light_window"},
+        "d8_15": {"$ref": "#/$defs/light_window"},
+        "d16_to_11_01": {"$ref": "#/$defs/light_window"}
+      },
+      "additionalProperties": true
+    },
+    "region": {
+      "type": "object",
+      "properties": {
+        "sampling": {"$ref": "#/$defs/sampling"},
+        "years": {"type": "object", "additionalProperties": {"$ref": "#/$defs/year"}},
+        "subregions": {"type": "object", "additionalProperties": {"$ref": "#/$defs/region"}},
+        "composite": {"$ref": "#/$defs/region"},
+        "weather_events": {"type": "object"}
+      },
+      "additionalProperties": true
+    }
+  }
+}

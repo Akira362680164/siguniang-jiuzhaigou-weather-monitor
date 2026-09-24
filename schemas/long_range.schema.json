@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/long_range.schema.json",
+  "title": "Siguniang-Jiuzhaigou 16-35 day long-range background",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "module",
+    "status",
+    "generated_at",
+    "data_date",
+    "source",
+    "endpoint",
+    "model",
+    "model_id",
+    "ensemble_members",
+    "expected_ensemble_members",
+    "requested_forecast_days",
+    "forecast_horizon_days",
+    "forecast_lead_days",
+    "interpretation_boundary",
+    "regions"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "module": {"type": "string", "const": "long_range_background"},
+    "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED"]},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "source": {"type": "string", "const": "Open-Meteo"},
+    "endpoint": {"type": "string", "format": "uri"},
+    "model": {"type": "string"},
+    "model_id": {"type": "string", "const": "ncep_gefs05"},
+    "ensemble_members": {"type": ["integer", "null"], "minimum": 0},
+    "expected_ensemble_members": {"type": "integer", "const": 31},
+    "requested_forecast_days": {"type": "integer", "minimum": 0},
+    "required_forecast_days": {"type": "integer", "minimum": 0},
+    "forecast_horizon_days": {"type": ["integer", "null"], "minimum": 0},
+    "forecast_lead_days": {"type": ["integer", "null"], "minimum": 0},
+    "forecast_horizon_status": {"type": "string", "enum": ["PASS", "PARTIAL", "FAILED"]},
+    "interpretation_boundary": {"type": "string"},
+    "regions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status", "usable_for_main_chain", "windows", "overall_16_35d", "qa"],
+        "properties": {
+          "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "UNAVAILABLE"]},
+          "usable_for_main_chain": {"type": "boolean"},
+          "windows": {"type": "array", "items": {"type": "object"}},
+          "overall_16_35d": {"type": "object"},
+          "qa": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "excluded_points": {"type": "object"},
+    "aggregation": {"type": "object"},
+    "qa": {"type": "object"},
+    "raw_hourly_included": {"type": "boolean"},
+    "raw_snapshot_retention_days": {"type": "integer", "minimum": 0}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/weather_events.schema.json",
+  "title": "Siguniang-Jiuzhaigou derived weather events and mechanical weather stress",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "module",
+    "status",
+    "generated_at",
+    "data_date",
+    "source",
+    "finalized_history",
+    "forecast",
+    "regions",
+    "cooling_episode_candidates",
+    "weather_event_cache",
+    "qa",
+    "interpretation_boundary"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "module": {"type": "string", "const": "weather_events"},
+    "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "SKIPPED"]},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "source": {"type": "string", "const": "Open-Meteo"},
+    "finalized_history": {"$ref": "#/$defs/source_layer"},
+    "forecast": {"$ref": "#/$defs/source_layer"},
+    "regions": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/region"}
+    },
+    "cooling_episode_candidates": {"type": "object"},
+    "weather_event_cache": {"type": "object"},
+    "qa": {"type": "object"},
+    "excluded_points": {"type": "object"},
+    "successful_points": {"type": "integer", "minimum": 0},
+    "failed_points": {"type": "integer", "minimum": 0},
+    "interpretation_boundary": {"type": "string"}
+  },
+  "$defs": {
+    "source_layer": {
+      "type": "object",
+      "required": ["source_state"],
+      "properties": {
+        "source_state": {"type": "string", "enum": ["finalized_history", "forecast"]},
+        "source": {"type": "string"},
+        "model": {"type": "string"},
+        "points": {"type": "object"},
+        "forecast_date": {"type": "string", "format": "date"},
+        "cutoff_date": {"type": "string", "format": "date"},
+        "historical_promotion_allowed": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "region": {
+      "type": "object",
+      "properties": {
+        "status": {"type": "string"},
+        "usable_for_main_chain": {"type": "boolean"},
+        "sampling": {},
+        "same_grid_qa": {},
+        "finalized_history": {},
+        "forecast": {},
+        "subregions": {},
+        "composite": {},
+        "cooling_episode_candidates": {}
+      },
+      "additionalProperties": true
+    },
+    "daily_event": {
+      "type": "object",
+      "required": ["date", "source_state", "complete"],
+      "properties": {
+        "date": {"type": "string", "format": "date"},
+        "source_state": {"type": "string", "enum": ["finalized_history", "forecast"]},
+        "complete": {"type": "boolean"},
+        "dtr_c": {"type": ["number", "null"]},
+        "temperature_mean_c": {"type": ["number", "null"]},
+        "temperature_min_c": {"type": ["number", "null"]},
+        "temperature_max_c": {"type": ["number", "null"]},
+        "night_min_c": {"type": ["number", "null"]},
+        "precipitation_mm": {"type": ["number", "null"]},
+        "snowfall_cm": {"type": ["number", "null"]},
+        "wind_speed_mean_kmh": {"type": ["number", "null"]},
+        "wind_gust_max_kmh": {"type": ["number", "null"]},
+        "source_fingerprint": {"type": "string"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

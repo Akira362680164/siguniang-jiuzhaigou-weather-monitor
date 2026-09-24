@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/module.schema.json",
+  "title": "Siguniang-Jiuzhaigou module envelope",
+  "type": "object",
+  "required": ["schema_version", "module", "status", "generated_at", "data_date"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "module": {"type": "string", "enum": ["hres", "history", "history_forward", "ensemble", "gfs", "gefs", "single_runs", "spatial_sampling", "long_range_background", "grid_registry", "phenology_weather_summary", "weather_events"]},
+    "status": {"type": "string", "enum": ["OK", "PARTIAL", "FAILED", "SKIPPED"]},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "history_years": {"type": "array", "items": {"type": "integer"}},
+    "requested_variables": {"type": "array", "items": {"type": "string"}},
+    "required_variables": {"type": "array", "items": {"type": "string"}},
+    "optional_variables": {"type": "array", "items": {"type": "string"}},
+    "variable_status": {
+      "type": "object",
+      "description": "Per-variable availability: OK, PARTIAL, REQUIRED_UNAVAILABLE, OPTIONAL_UNAVAILABLE, MISSING, ARRAY_LENGTH_MISMATCH or NULL_ARRAY. A missing variable is never filled from another model.",
+      "additionalProperties": {"type": "string"}
+    },
+    "required_unavailable_variables": {"type": "array", "items": {"type": "string"}},
+    "optional_unavailable_variables": {"type": "array", "items": {"type": "string"}},
+    "unavailable_variables": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

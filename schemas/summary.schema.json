@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/summary.schema.json",
+  "title": "Siguniang-Jiuzhaigou machine-readable weather summary",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "data_date",
+    "forecast_date",
+    "completed_history_date",
+    "visit_dates",
+    "regions",
+    "interpretation_boundary"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "forecast_date": {"type": "string", "format": "date"},
+    "completed_history_date": {"type": "string", "format": "date"},
+    "history_years": {"type": "array", "items": {"type": "integer"}},
+    "visit_dates": {"type": "object", "additionalProperties": {"type": "array", "items": {"type": "string", "format": "date"}}},
+    "phenology_weather_summary_path": {"type": "string", "const": "data/latest/phenology_weather_summary.json"},
+    "weather_events_path": {"type": "string", "const": "data/latest/weather_events.json"},
+    "gefs_path": {"type": "string", "const": "data/latest/gefs.json"},
+    "target_window_brief": {
+      "type": "object",
+      "properties": {
+        "status": {"type": "string"},
+        "generated_at": {"type": ["string", "null"], "format": "date-time"},
+        "forecast_date": {"type": "string", "format": "date"},
+        "cutoff_date": {"type": "string", "const": "2026-11-01", "format": "date"},
+        "dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+        "days": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {"$ref": "#/$defs/targetWindowLocation"}
+          }
+        },
+        "itinerary_focus": {"type": "object"},
+        "window_overview": {
+          "type": "object",
+          "properties": {
+            "main_weather_window": {"type": "object"},
+            "cold_air_window": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "precip_window": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "snow_window": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "clearest_days_ec": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "clearest_days_gfs": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "ensemble_best_supported_clear_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "highest_low_cloud_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "highest_mid_cloud_flat_light_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "best_high_cloud_texture_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "low_visibility_related_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "fog_favourable_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "highest_wind_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "highest_snow_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "largest_model_disagreement_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "single_ensemble_only_dates": {"type": "array", "items": {"type": "string", "format": "date"}}
+          },
+          "additionalProperties": true
+        },
+        "verified_location_ids": {"type": "array", "items": {"type": "string"}},
+        "excluded_location_ids": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "regions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "visit_date",
+          "usable_for_main_chain",
+          "weather_driver_vs_2025",
+          "forecast_0_7d",
+          "forecast_8_15d",
+          "forecast_16_35d",
+          "ensemble",
+          "gfs_crosscheck",
+          "leaf_loss_weather_risk",
+          "qa"
+        ],
+        "properties": {
+          "visit_date": {"type": "string", "format": "date"},
+          "usable_for_main_chain": {"type": "boolean"},
+          "core_point_id": {"type": ["string", "null"]},
+          "weather_driver_vs_2025": {
+            "type": "object",
+            "required": ["direction", "strength", "evidence"],
+            "properties": {
+              "direction": {"type": "string", "enum": ["LEADING", "SYNC", "LAGGING", "UNDETERMINED"]},
+              "strength": {"type": "string", "enum": ["WEAK", "MODERATE", "STRONG"]},
+              "evidence": {"type": "object"}
+            },
+            "additionalProperties": true
+          },
+          "weather_driver_vs_2023": {
+            "type": "object",
+            "required": ["direction", "strength", "evidence"],
+            "properties": {
+              "direction": {"type": "string", "enum": ["LEADING", "SYNC", "LAGGING", "UNDETERMINED"]},
+              "strength": {"type": "string", "enum": ["WEAK", "MODERATE", "STRONG"]},
+              "evidence": {"type": "object"}
+            },
+            "additionalProperties": true
+          },
+          "weather_driver_vs_2024": {
+            "type": "object",
+            "required": ["direction", "strength", "evidence"],
+            "properties": {
+              "direction": {"type": "string", "enum": ["LEADING", "SYNC", "LAGGING", "UNDETERMINED"]},
+              "strength": {"type": "string", "enum": ["WEAK", "MODERATE", "STRONG"]},
+              "evidence": {"type": "object"}
+            },
+            "additionalProperties": true
+          },
+          "forecast_0_7d": {"type": "object"},
+          "forecast_8_15d": {"type": "object"},
+          "forecast_16_35d": {"type": "object"},
+          "ensemble": {"type": "object"},
+          "gfs_crosscheck": {"type": "object"},
+          "leaf_loss_weather_risk": {"type": "object"},
+          "weather_events": {"type": "object"},
+          "qa": {"type": "object"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "manual_phenology_baseline": {"type": ["object", "null"]},
+    "interpretation_boundary": {"type": "string"}
+  },
+  "$defs": {
+    "deterministicCompact": {
+      "type": "object",
+      "properties": {
+        "available": {"type": "boolean"},
+        "status": {"type": "string"},
+        "reason": {"type": ["string", "null"]},
+        "cloud": {"type": ["number", "null"]},
+        "low_cloud": {"type": ["number", "null"]},
+        "mid_cloud": {"type": ["number", "null"]},
+        "high_cloud": {"type": ["number", "null"]},
+        "precip_mm": {"type": ["number", "null"]},
+        "rain_mm": {"type": ["number", "null"]},
+        "snow_cm": {"type": ["number", "null"]},
+        "gust_kmh": {"type": ["number", "null"]},
+        "wind_speed_kmh": {"type": ["number", "null"]},
+        "wind_direction_deg": {"type": ["number", "null"]},
+        "wind_direction_resultant_length": {"type": ["number", "null"]},
+        "temp_min_c": {"type": ["number", "null"]},
+        "temp_mean_c": {"type": ["number", "null"]},
+        "temp_max_c": {"type": ["number", "null"]},
+        "dew_point_c": {"type": ["number", "null"]},
+        "relative_humidity_pct": {"type": ["number", "null"]},
+        "sunshine_or_shortwave": {
+          "type": ["object", "null"],
+          "properties": {
+            "variable": {"type": ["string", "null"]},
+            "value": {"type": ["number", "null"]}
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true,
+      "description": "EC HRES or GFS deterministic compact view. A null value means the variable was unavailable at the source and was never substituted."
+    },
+    "ensembleCompact": {
+      "type": "object",
+      "properties": {
+        "available": {"type": "boolean"},
+        "status": {"type": "string"},
+        "reason": {"type": ["string", "null"]},
+        "model_id": {"type": ["string", "null"]},
+        "resolution": {"type": ["string", "null"]},
+        "members_valid": {"type": ["integer", "null"]},
+        "cloud_median": {"type": ["number", "null"]},
+        "low_cloud_median": {"type": ["number", "null"]},
+        "mid_cloud_median": {"type": ["number", "null"]},
+        "high_cloud_median": {"type": ["number", "null"]},
+        "p_cloud_gt_50": {"type": ["number", "null"]},
+        "p_cloud_gt_70": {"type": ["number", "null"]},
+        "p_low_cloud_gt_50": {"type": ["number", "null"]},
+        "p_mid_cloud_gt_50": {"type": ["number", "null"]},
+        "p_high_cloud_gt_50": {"type": ["number", "null"]},
+        "p_precip": {"type": ["number", "null"]},
+        "p_snow": {"type": ["number", "null"]},
+        "wind_speed_median": {"type": ["number", "null"]},
+        "gust_median": {"type": ["number", "null"]},
+        "gust_p90": {"type": ["number", "null"]},
+        "temp_p10": {"type": ["number", "null"]},
+        "temp_median": {"type": ["number", "null"]},
+        "temp_p90": {"type": ["number", "null"]},
+        "dew_point_median": {"type": ["number", "null"]},
+        "relative_humidity_median": {"type": ["number", "null"]},
+        "layer_availability": {
+          "type": "object",
+          "additionalProperties": {"type": "boolean"}
+        }
+      },
+      "additionalProperties": true,
+      "description": "EC ensemble or GEFS compact view. Mid/high cloud medians stay null when the source returns null arrays; the total cloud cover is never used as a substitute."
+    },
+    "viewingConditions": {
+      "type": "object",
+      "properties": {
+        "cloud_signal": {"type": ["string", "null"]},
+        "total_cloud_signal": {"type": ["string", "null"]},
+        "low_cloud_signal": {"type": ["string", "null"]},
+        "mid_cloud_signal": {"type": ["string", "null"]},
+        "high_cloud_signal": {"type": ["string", "null"]},
+        "precip_signal": {"type": ["string", "null"]},
+        "snow_signal": {"type": ["string", "null"]},
+        "wind_signal": {"type": ["string", "null"]},
+        "visibility_related_signal": {"type": ["string", "null"]},
+        "model_agreement": {"type": ["string", "null"]},
+        "layer_sources": {
+          "type": "object",
+          "description": "Which independent source supplied each cloud layer: gefs, ecmwf_ensemble or UNAVAILABLE.",
+          "additionalProperties": {"type": "string"}
+        },
+        "notes": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true,
+      "description": "Layered cloud is judged separately. High cloud is texture potential, not automatically bad weather."
+    },
+    "fogInputs": {
+      "type": "object",
+      "properties": {
+        "status": {"type": "string"},
+        "reason": {"type": ["string", "null"]},
+        "date": {"type": "string", "format": "date"},
+        "previous_12h_precip_mm": {"type": ["number", "null"]},
+        "previous_24h_precip_mm": {"type": ["number", "null"]},
+        "night_relative_humidity": {"type": ["number", "null"]},
+        "night_dew_point": {"type": ["number", "null"]},
+        "night_temp": {"type": ["number", "null"]},
+        "night_temp_dewpoint_spread": {"type": ["number", "null"]},
+        "pre_dawn_wind_speed": {"type": ["number", "null"]},
+        "pre_dawn_gust": {"type": ["number", "null"]},
+        "night_total_cloud": {"type": ["number", "null"]},
+        "night_low_cloud": {"type": ["number", "null"]},
+        "night_mid_cloud": {"type": ["number", "null"]},
+        "night_high_cloud": {"type": ["number", "null"]},
+        "moisture_signal": {"type": "string"},
+        "radiative_cooling_signal": {"type": "string"},
+        "wind_signal": {"type": "string"},
+        "system_low_cloud_risk": {"type": "string"},
+        "probability_published": {"type": "boolean", "const": false},
+        "interpretation": {"type": "string"}
+      },
+      "additionalProperties": true,
+      "description": "Raw overnight indicators. No fog probability is published; probability_published is always false."
+    },
+    "targetWindowSlot": {
+      "type": "object",
+      "properties": {
+        "ec_det": {"$ref": "#/$defs/deterministicCompact"},
+        "gfs_det": {"$ref": "#/$defs/deterministicCompact"},
+        "ec_ens": {"$ref": "#/$defs/ensembleCompact"},
+        "gefs": {"$ref": "#/$defs/ensembleCompact"},
+        "gfs_support": {"type": "object"},
+        "gfs_deterministic_vs_gefs": {"type": "object"},
+        "model_consistency": {"type": "object"},
+        "ensemble_agreement": {"type": ["string", "null"]},
+        "ensemble_agreement_notes": {"type": "array", "items": {"type": "string"}},
+        "viewing_conditions": {"$ref": "#/$defs/viewingConditions"}
+      },
+      "additionalProperties": true
+    },
+    "targetWindowLocation": {
+      "type": "object",
+      "properties": {
+        "location_id": {"type": "string"},
+        "location_name": {"type": ["string", "null"]},
+        "usable_for_main_chain": {"type": "boolean"},
+        "forecast_granularity": {"type": "string"},
+        "daily": {
+          "type": "object",
+          "properties": {
+            "ec_det": {"$ref": "#/$defs/deterministicCompact"},
+            "gfs_det": {"$ref": "#/$defs/deterministicCompact"}
+          },
+          "additionalProperties": true
+        },
+        "morning": {"$ref": "#/$defs/targetWindowSlot"},
+        "afternoon": {"$ref": "#/$defs/targetWindowSlot"},
+        "night": {"$ref": "#/$defs/targetWindowSlot"},
+        "fog_inputs": {"$ref": "#/$defs/fogInputs"},
+        "event_phase": {"type": "object"}
+      },
+      "additionalProperties": true
+    },
+    "variableStatus": {
+      "type": "object",
+      "description": "Per-variable availability for one model: OK, PARTIAL, REQUIRED_UNAVAILABLE or OPTIONAL_UNAVAILABLE.",
+      "additionalProperties": {"type": "string"}
+    }
+  },
+  "additionalProperties": true
+}

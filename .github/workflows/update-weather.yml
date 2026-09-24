@@ -2,8 +2,15 @@ name: Update Western Sichuan Weather Monitor
 
 on:
   workflow_dispatch:
+    inputs:
+      refresh_history:
+        description: "Revalidate all historical cache ranges against Open-Meteo"
+        required: false
+        default: false
+        type: boolean
   schedule:
-    # Beijing time: 02:17, 08:17, 14:17, 20:17, after the main model cycles.
+    # Run 17 minutes after the 00/06/12/18 UTC model cycles.
+    # Beijing times: 02:17, 08:17, 14:17, 20:17.
     - cron: "17 0,6,12,18 * * *"
 
 permissions:
@@ -19,12 +26,12 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -37,9 +44,14 @@ jobs:
       - name: Fetch Open-Meteo data and write artifacts
         id: pipeline
         continue-on-error: true
-        run: python src/pipeline.py
+        run: |
+          if [ "${{ inputs.refresh_history }}" = "true" ]; then
+            python src/pipeline.py --refresh-history
+          else
+            python src/pipeline.py
+          fi
 
-      - name: Check generated artifacts
+      - name: Check generated artifact freshness
         id: artifacts
         if: always() && steps.pipeline.outcome != 'skipped'
         run: |
@@ -48,32 +60,84 @@ jobs:
           from pathlib import Path
 
           latest = Path("data/latest")
-          required = ["status.json", "summary.json", "target_summary.json", "hres.json", "gfs.json", "ensemble.json", "gefs.json", "historical_comparison.json"]
+          required = [
+              "status.json",
+              "summary.json",
+              "hres.json",
+              "history_comparison.json",
+              "historical_comparison.json",
+              "history_forward.json",
+              "ensemble.json",
+              "gfs.json",
+              "single_runs.json",
+              "spatial_sampling.json",
+              "long_range.json",
+              "gefs.json",
+              "target_summary.json",
+              "phenology_weather_summary.json",
+              "weather_events.json",
+          ]
           missing = [name for name in required if not (latest / name).is_file()]
           if missing:
-              raise SystemExit("GENERATED_ARTIFACTS_MISSING:" + ",".join(missing))
-          status = json.loads((latest / "status.json").read_text(encoding="utf-8"))
-          summary = json.loads((latest / "summary.json").read_text(encoding="utf-8"))
+              print("GENERATED_ARTIFACTS_MISSING:" + ",".join(missing))
+              raise SystemExit(1)
+          with (latest / "status.json").open(encoding="utf-8") as handle:
+              status = json.load(handle)
+          with (latest / "summary.json").open(encoding="utf-8") as handle:
+              summary = json.load(handle)
           print("LATEST_GENERATED_AT=" + str(status.get("generated_at")))
           print("LATEST_DATA_DATE=" + str(status.get("data_date")))
           print("LATEST_PIPELINE_STATUS=" + str(status.get("pipeline_status")))
+          print("LATEST_MODULES=" + json.dumps(status.get("modules", {}), sort_keys=True))
           print("TARGET_COVERAGE=" + json.dumps(status.get("target_coverage", {}), ensure_ascii=False, sort_keys=True))
           if status.get("generated_at") != summary.get("generated_at"):
-              raise SystemExit("GENERATED_AT_MISMATCH=status.json vs summary.json")
+              print("GENERATED_AT_MISMATCH=status.json vs summary.json")
+              raise SystemExit(1)
           PY
+          echo "GIT_HEAD=$(git rev-parse HEAD)"
+          echo "GIT_BRANCH=$(git branch --show-current || true)"
           git status --short
 
       - name: Commit generated data
         if: always()
         run: |
+          set -o pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest data/archive
+          git config core.askPass ""
+          export GIT_TERMINAL_PROMPT=0
+          git add data/latest data/archive data/cache
           if git diff --cached --quiet; then
             echo "No generated data changes to commit."
           else
-            git commit -m "chore: update western Sichuan weather data"
-            git push origin HEAD:main
+            echo "STAGED_GENERATED_DIFF:"
+            git diff --cached --stat
+            git commit -m "chore: update weather data"
+            echo "COMMIT_SHA=$(git rev-parse HEAD)"
+            if git push origin HEAD:main; then
+              echo "PUSH_OK"
+            else
+              echo "INITIAL_PUSH_FAILED; refreshing origin/main and retrying with rebase."
+              pushed=false
+              for attempt in 1 2 3; do
+                echo "PUSH_RETRY_ATTEMPT=$attempt"
+                git fetch origin main
+                if ! git rebase origin/main; then
+                  echo "REBASE_FAILED"
+                  git rebase --abort || true
+                  exit 1
+                fi
+                if git push origin HEAD:main; then
+                  echo "PUSH_OK_AFTER_REBASE"
+                  pushed=true
+                  break
+                fi
+              done
+              if [ "$pushed" != "true" ]; then
+                echo "PUSH_FAILED_AFTER_RETRIES"
+                exit 1
+              fi
+            fi
           fi
 
       - name: Surface unexpected pipeline failure

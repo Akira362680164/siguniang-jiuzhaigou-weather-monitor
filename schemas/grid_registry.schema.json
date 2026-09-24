@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/grid_registry.schema.json",
+  "title": "Siguniang-Jiuzhaigou returned model grid registry",
+  "type": "object",
+  "required": ["schema_version", "module", "generated_at", "data_date", "source", "deduplication_key"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "module": {"type": "string", "const": "grid_registry"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "data_date": {"type": "string", "format": "date"},
+    "source": {"type": "string", "const": "Open-Meteo"},
+    "deduplication_key": {"type": "string", "const": "returned_grid_coordinate"},
+    "hres": {"type": "object"},
+    "history_forward": {"type": "object"},
+    "siguniang_subregions": {"type": "object"},
+    "jiuzhaigou_subregions": {"type": "object"},
+    "subregions_by_region": {"type": "object"},
+    "interpretation_boundary": {"type": "string"}
+  },
+  "additionalProperties": true
+}

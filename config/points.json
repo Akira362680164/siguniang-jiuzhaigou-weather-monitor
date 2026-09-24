@@ -1,36 +1,158 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "namespace": "siguniang_jiuzhaigou",
   "timezone": "Asia/Shanghai",
+  "history_years": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
   "target_groups": {
     "siguniang_2026_10_24_25": {
       "name": "四姑娘山周边：双桥沟 / 毕棚沟 / 理小路",
-      "dates": ["2026-10-24", "2026-10-25"],
-      "point_ids": ["SQG_SHUANGQIAO", "BPG_CENTER", "LXL_HIGH_PASS"]
+      "dates": [
+        "2026-10-24",
+        "2026-10-25"
+      ],
+      "point_ids": [
+        "SQG_SHUANGQIAO",
+        "BPG_CENTER",
+        "LXL_HIGH_PASS"
+      ]
     },
     "jiuzhaigou_2026_10_31_11_01": {
       "name": "九寨沟秋景窗口",
-      "dates": ["2026-10-31", "2026-11-01"],
-      "point_ids": ["JZG_TREESHENG", "JZG_NORILANG", "JZG_PRIMEVAL", "JZG_LONGHAI"]
+      "dates": [
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "point_ids": [
+        "JZG_TREESHENG",
+        "JZG_NORILANG",
+        "JZG_PRIMEVAL",
+        "JZG_LONGHAI"
+      ]
     }
   },
   "forecast_policy": {
     "hres_days": 15,
     "gfs_days": 16,
-    "ecmwf_ensemble_days": 7,
+    "ecmwf_ensemble_days": 15,
     "gefs_near_days": 10,
     "gefs_long_days": 35,
-    "notes": "HRES/GFS负责近中期，ECMWF集合和GEFS负责不确定性与远期趋势；未进入模型窗口的目标日保持未覆盖，不用邻近日替代。"
+    "notes": "HRES 15 天 / GFS 16 天负责近中期，ECMWF 集合 15 天与 GEFS 10+35 天负责不确定性与远期趋势；未进入模型窗口的目标日保持未覆盖，不用邻近日替代。"
   },
   "historical_comparison": {
-    "years": [2023, 2024, 2025],
+    "years": [
+      2023,
+      2024,
+      2025
+    ],
     "window_days_each_side": 3,
     "notes": "以目标日期块为中心，向前后各取3个日历日；使用Open-Meteo Historical Weather API做已发生天气的再分析对照，不把历史格点当作景区实测站。"
   },
+  "regions": {
+    "siguniang": {
+      "name": "四姑娘山周边",
+      "core_point_id": "SQG_SHUANGQIAO",
+      "primary_visit_date": "2026-10-24",
+      "visit_dates": [
+        "2026-10-24",
+        "2026-10-25"
+      ]
+    },
+    "lixiaolu": {
+      "name": "理小路",
+      "core_point_id": "LXL_HIGH_PASS",
+      "primary_visit_date": "2026-10-24",
+      "visit_dates": [
+        "2026-10-24",
+        "2026-10-25"
+      ]
+    },
+    "jiuzhaigou": {
+      "name": "九寨沟",
+      "core_point_id": "JZG_TREESHENG",
+      "primary_visit_date": "2026-10-31",
+      "visit_dates": [
+        "2026-10-31",
+        "2026-11-01"
+      ]
+    }
+  },
+  "siguniang_subregions": {
+    "shuangqiao": {
+      "name": "双桥沟",
+      "point_ids": [
+        "SQG_SHUANGQIAO"
+      ],
+      "minimum_verified_unique_grids": 1,
+      "notes": "双桥沟游客中心；同一返回模式格点只计一次"
+    },
+    "bipenggou": {
+      "name": "毕棚沟",
+      "point_ids": [
+        "BPG_CENTER"
+      ],
+      "minimum_verified_unique_grids": 1,
+      "notes": "毕棚沟游客中心；同一返回模式格点只计一次"
+    }
+  },
+  "jiuzhaigou_subregions": {
+    "shuzheng": {
+      "name": "树正沟",
+      "point_ids": [
+        "JZG_TREESHENG"
+      ],
+      "minimum_verified_unique_grids": 1,
+      "notes": "树正寨/中段；同一返回模式格点只计一次"
+    },
+    "rize": {
+      "name": "日则沟",
+      "point_ids": [
+        "JZG_NORILANG",
+        "JZG_PRIMEVAL"
+      ],
+      "minimum_verified_unique_grids": 1,
+      "notes": "诺日朗中心与原始森林；同一返回模式格点只计一次"
+    },
+    "zezhawa": {
+      "name": "则查洼沟",
+      "point_ids": [
+        "JZG_LONGHAI"
+      ],
+      "minimum_verified_unique_grids": 1,
+      "notes": "长海；同一返回模式格点只计一次"
+    }
+  },
+  "sampling": {
+    "enabled_region_status": "VERIFIED",
+    "radius_km": 12,
+    "grid_qa_extra_allowance_km": 4.5,
+    "directions": [
+      "N",
+      "S",
+      "E",
+      "W",
+      "NE",
+      "NW",
+      "SE",
+      "SW"
+    ],
+    "model_grid_deduplication": true,
+    "notes": "Core plus eight 12 km same-source samples. Returned model grid cells, not requested points, define uniqueness."
+  },
+  "grid_qa": {
+    "hres_limit_km": 16.5,
+    "notes": "本点位格点代表性容差（ECMWF HRES 近中期主链）。Open-Meteo /v1/ecmwf 实际按 0.25° 网格返回，请求点与最近返回格点中心的距离上限即格点半对角线——其东西向边长随纬度按 cos(纬度) 收缩，48°N 约 16.7 km、33°N 约 18.1 km。代码默认值 14.0 km 是按高纬（阿勒泰 48°N，最差点 13.81 km）定的；川西 31–33°N 用同款 0.25° 网格天然更松，九寨沟原始森林 15.19 km、理小路高位垭口 14.02 km 会被默认值误判。16.5 km 沿用本项目 sampling 已有的容差口径（radius_km 12 + grid_qa_extra_allowance_km 4.5）。未声明 grid_qa 的站点仍走 14.0 km 默认，行为不变。"
+  },
+  "route_slots": {},
   "points": {
     "SQG_SHUANGQIAO": {
       "name": "四姑娘山·双桥沟游客中心",
       "region": "siguniang",
+      "subregion": "shuangqiao",
       "role": "core",
       "status": "VERIFIED",
       "latitude": 31.1035,
@@ -40,6 +162,7 @@
     "BPG_CENTER": {
       "name": "毕棚沟·游客中心",
       "region": "siguniang",
+      "subregion": "bipenggou",
       "role": "core",
       "status": "VERIFIED",
       "latitude": 31.3806,
@@ -51,13 +174,14 @@
       "region": "lixiaolu",
       "role": "route_high_point",
       "status": "VERIFIED",
-      "latitude": 31.4000,
-      "longitude": 102.8400,
+      "latitude": 31.4,
+      "longitude": 102.84,
       "coordinate_note": "理小路高位段路线天气代表点，不是官方气象站或单一景区入口；用于观察高海拔路段温度、降水、云量和结冰风险趋势。"
     },
     "JZG_TREESHENG": {
       "name": "九寨沟·树正寨/中段",
       "region": "jiuzhaigou",
+      "subregion": "shuzheng",
       "role": "route_mid",
       "status": "VERIFIED",
       "latitude": 33.198939,
@@ -67,24 +191,27 @@
     "JZG_NORILANG": {
       "name": "九寨沟·诺日朗中心",
       "region": "jiuzhaigou",
+      "subregion": "rize",
       "role": "route_mid_high",
       "status": "VERIFIED",
-      "latitude": 33.2800,
-      "longitude": 103.9060,
+      "latitude": 33.28,
+      "longitude": 103.906,
       "coordinate_note": "诺日朗中心代表点，用于九寨沟中上段天气趋势。"
     },
     "JZG_PRIMEVAL": {
       "name": "九寨沟·原始森林",
       "region": "jiuzhaigou",
+      "subregion": "rize",
       "role": "route_high",
       "status": "VERIFIED",
-      "latitude": 33.3470,
-      "longitude": 103.8650,
+      "latitude": 33.347,
+      "longitude": 103.865,
       "coordinate_note": "原始森林上段代表点，温度、云量和降雪信号可能明显区别于沟口。"
     },
     "JZG_LONGHAI": {
       "name": "九寨沟·长海",
       "region": "jiuzhaigou",
+      "subregion": "zezhawa",
       "role": "route_high",
       "status": "VERIFIED",
       "latitude": 33.036228,

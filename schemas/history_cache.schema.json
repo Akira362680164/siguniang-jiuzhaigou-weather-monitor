@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Akira362680164/siguniang-jiuzhaigou-weather-monitor/main/schemas/history_cache.schema.json",
+  "title": "Open-Meteo historical daily cache",
+  "type": "object",
+  "required": [
+    "cache_schema_version",
+    "schema_version",
+    "cache_kind",
+    "cache_key",
+    "namespace",
+    "year",
+    "point_id",
+    "identity",
+    "record_metadata",
+    "daily",
+    "cached_dates",
+    "date_range",
+    "retrievals"
+  ],
+  "properties": {
+    "cache_schema_version": {"type": "string", "const": "1.0.0"},
+    "schema_version": {"type": "string", "const": "1.4.0"},
+    "cache_kind": {"type": "string", "const": "historical_daily_weather"},
+    "cache_key": {"type": "string"},
+    "namespace": {"type": "string", "enum": ["siguniang_jiuzhaigou"]},
+    "year": {"type": "integer"},
+    "point_id": {"type": "string"},
+    "identity": {
+      "type": "object",
+      "required": [
+        "namespace",
+        "year",
+        "point_id",
+        "source",
+        "endpoint",
+        "model",
+        "model_parameter",
+        "requested_coordinate",
+        "returned_grid_coordinate",
+        "returned_elevation",
+        "grid_distance_km",
+        "grid_cell_key",
+        "cell_selection",
+        "elevation",
+        "timezone",
+        "utc_offset_seconds",
+        "solar_variable"
+      ],
+      "properties": {
+        "namespace": {"type": "string"},
+        "year": {"type": "integer"},
+        "point_id": {"type": "string"},
+        "source": {"type": "string", "const": "Open-Meteo"},
+        "endpoint": {"type": "string"},
+        "model": {"type": "string", "const": "ECMWF IFS 9 km historical weather / analysis"},
+        "model_parameter": {"type": "string", "const": "ecmwf_ifs"},
+        "requested_coordinate": {"type": "object"},
+        "returned_grid_coordinate": {"type": "object"},
+        "returned_elevation": {"type": ["number", "null"]},
+        "grid_distance_km": {"type": ["number", "null"]},
+        "grid_distance_limit_km": {"type": ["number", "null"]},
+        "grid_cell_key": {"type": ["string", "null"]},
+        "cell_selection": {"type": ["string", "null"]},
+        "elevation": {"type": ["string", "null"]},
+        "timezone": {"type": ["string", "null"]},
+        "utc_offset_seconds": {"type": ["integer", "null"]},
+        "solar_variable": {"type": ["string", "null"], "enum": ["sunshine_duration", "shortwave_radiation", null]}
+      },
+      "additionalProperties": true
+    },
+    "record_metadata": {"type": "object"},
+    "daily": {"type": "array", "items": {"type": "object"}},
+    "cached_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
+    "date_range": {
+      "type": "object",
+      "required": ["start_date", "end_date"],
+      "properties": {
+        "start_date": {"type": ["string", "null"], "format": "date"},
+        "end_date": {"type": ["string", "null"], "format": "date"}
+      },
+      "additionalProperties": true
+    },
+    "retrievals": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}
