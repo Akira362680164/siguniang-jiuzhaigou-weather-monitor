@@ -1,9 +1,9 @@
 {
-  "data_date": "2026-09-24",
-  "generated_at": "2026-09-24T04:54:00Z",
+  "data_date": "2026-09-23",
+  "generated_at": "2026-09-24T08:14:18Z",
   "interpretation_boundary": "温度、降水、云量均为对应模型返回格点的预报聚合；四姑娘山高位路段和九寨沟沟内不同海拔会产生局地差异。",
   "module": "target_summary",
-  "schema_version": "1.0.0",
+  "schema_version": "1.4.0",
   "status": "OK",
   "target_dates": [
     "2026-10-24",
@@ -25,7 +25,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 37,
+              "lead_days": 38,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -52,7 +52,8 @@
                 "name": "九寨沟·长海",
                 "region": "jiuzhaigou",
                 "role": "route_high",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "zezhawa"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -69,7 +70,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 37,
+              "lead_days": 38,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -96,7 +97,8 @@
                 "name": "九寨沟·诺日朗中心",
                 "region": "jiuzhaigou",
                 "role": "route_mid_high",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "rize"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -113,7 +115,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 37,
+              "lead_days": 38,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -140,7 +142,8 @@
                 "name": "九寨沟·原始森林",
                 "region": "jiuzhaigou",
                 "role": "route_high",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "rize"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -157,7 +160,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 37,
+              "lead_days": 38,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -184,7 +187,8 @@
                 "name": "九寨沟·树正寨/中段",
                 "region": "jiuzhaigou",
                 "role": "route_mid",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "shuzheng"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -206,7 +210,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 38,
+              "lead_days": 39,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -233,7 +237,8 @@
                 "name": "九寨沟·长海",
                 "region": "jiuzhaigou",
                 "role": "route_high",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "zezhawa"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -250,7 +255,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 38,
+              "lead_days": 39,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -277,7 +282,8 @@
                 "name": "九寨沟·诺日朗中心",
                 "region": "jiuzhaigou",
                 "role": "route_mid_high",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "rize"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -294,7 +300,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 38,
+              "lead_days": 39,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -321,7 +327,8 @@
                 "name": "九寨沟·原始森林",
                 "region": "jiuzhaigou",
                 "role": "route_high",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "rize"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -338,7 +345,7 @@
                 "precipitation_signal": {},
                 "temperature_signal": {}
               },
-              "lead_days": 38,
+              "lead_days": 39,
               "metrics": {
                 "consensus": {
                   "sources": [],
@@ -365,7 +372,8 @@
                 "name": "九寨沟·树正寨/中段",
                 "region": "jiuzhaigou",
                 "role": "route_mid",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "shuzheng"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -399,42 +407,219 @@
               "coverage_status": "GEFS_LONG_RANGE_AVAILABLE",
               "interpretation": {
                 "cloud_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 43.687,
-                  "mean": 73.887,
-                  "median": 81.75,
-                  "members_with_data": 31,
-                  "p10": 39.875,
-                  "p25": 54.625,
-                  "p75": 98.312,
+                  "available_members": 31,
+                  "interquartile_spread": 43.271,
+                  "mean": 73.867,
+                  "median": 83.333,
+                  "members_valid": 31,
+                  "p10": 39.375,
+                  "p25": 55.02,
+                  "p75": 98.291,
                   "p90": 100.0,
-                  "spread_p90_p10": 60.125
+                  "spread": 60.625
                 },
                 "precipitation_signal": {
-                  "cloud_cover_gt_70pct": 0.613,
-                  "cloud_cover_low_gt_50pct": null,
-                  "gust_gt_40kmh": 0.0,
-                  "precipitation_gt_0_5mm": 0.774,
-                  "precipitation_gt_2mm": 0.548,
-                  "precipitation_gt_5mm": 0.129,
-                  "snowfall_gt_0_5cm": 0.452,
-                  "temperature_min_lt_0c": 0.774,
-                  "temperature_min_lt_minus5c": 0.129
+                  "cloud_cover_gt_50pct": {
+                    "available_members": 31,
+                    "members": 24,
+                    "members_valid": 31,
+                    "probability": 0.774
+                  },
+                  "cloud_cover_gt_70pct": {
+                    "available_members": 31,
+                    "members": 18,
+                    "members_valid": 31,
+                    "probability": 0.581
+                  },
+                  "cloud_cover_gt_90pct": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "cloud_cover_high_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "daily_tmax_lt_0c": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "daily_tmin_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 5,
+                    "members_valid": 31,
+                    "probability": 0.161
+                  },
+                  "gust_gt_30kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_40kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_50kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_60kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "precipitation_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 25,
+                    "members_valid": 31,
+                    "probability": 0.806
+                  },
+                  "precipitation_gt_0_5mm": {
+                    "available_members": 31,
+                    "members": 24,
+                    "members_valid": 31,
+                    "probability": 0.774
+                  },
+                  "precipitation_gt_2mm": {
+                    "available_members": 31,
+                    "members": 18,
+                    "members_valid": 31,
+                    "probability": 0.581
+                  },
+                  "precipitation_gt_5mm": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "rain_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 23,
+                    "members_valid": 31,
+                    "probability": 0.742
+                  },
+                  "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "snowfall_gt_0cm": {
+                    "available_members": 31,
+                    "members": 17,
+                    "members_valid": 31,
+                    "probability": 0.548
+                  },
+                  "snowfall_gt_1cm": {
+                    "available_members": 31,
+                    "members": 10,
+                    "members_valid": 31,
+                    "probability": 0.323
+                  },
+                  "snowfall_gt_2cm": {
+                    "available_members": 31,
+                    "members": 5,
+                    "members_valid": 31,
+                    "probability": 0.161
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "temperature_lt_0c": {
+                    "available_members": 31,
+                    "members": 26,
+                    "members_valid": 31,
+                    "probability": 0.839
+                  },
+                  "temperature_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 5,
+                    "members_valid": 31,
+                    "probability": 0.161
+                  }
                 },
                 "temperature_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 3.937,
-                  "mean": 1.001,
-                  "median": 1.038,
-                  "members_with_data": 31,
-                  "p10": -2.15,
-                  "p25": -0.962,
-                  "p75": 2.975,
-                  "p90": 3.963,
-                  "spread_p90_p10": 6.113
+                  "available_members": 31,
+                  "interquartile_spread": 3.947,
+                  "mean": 0.976,
+                  "median": 1.087,
+                  "members_valid": 31,
+                  "p10": -2.154,
+                  "p25": -1.056,
+                  "p75": 2.891,
+                  "p90": 4.0,
+                  "spread": 6.154
                 }
               },
-              "lead_days": 30,
+              "lead_days": 31,
               "metrics": {
                 "consensus": {
                   "sources": [
@@ -442,137 +627,337 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 73.887,
-                    "night_min_c": -1.861,
-                    "precipitation_mm": 2.903,
-                    "snowfall_cm": 1.12,
-                    "temperature_max_c": 5.661,
-                    "temperature_mean_c": 1.001,
-                    "temperature_min_c": -1.981
+                    "cloud_cover_mean_pct": 73.867,
+                    "night_min_c": -2.229,
+                    "precipitation_mm": 2.652,
+                    "snowfall_cm": 1.009,
+                    "temperature_max_c": 5.665,
+                    "temperature_mean_c": 0.976,
+                    "temperature_min_c": -2.229
                   }
                 },
                 "ecmwf_ensemble": null,
                 "gefs_long_range": {
-                  "cloud_cover_low_mean_pct": {
-                    "expected_members": 31,
+                  "cloud_cover_high_mean_pct": {
+                    "available_members": 0,
                     "interquartile_spread": null,
                     "mean": null,
                     "median": null,
-                    "members_with_data": 0,
+                    "members_valid": 31,
                     "p10": null,
                     "p25": null,
                     "p75": null,
                     "p90": null,
-                    "spread_p90_p10": null
+                    "spread": null
+                  },
+                  "cloud_cover_low_mean_pct": {
+                    "available_members": 0,
+                    "interquartile_spread": null,
+                    "mean": null,
+                    "median": null,
+                    "members_valid": 31,
+                    "p10": null,
+                    "p25": null,
+                    "p75": null,
+                    "p90": null,
+                    "spread": null
                   },
                   "cloud_cover_mean_pct": {
-                    "expected_members": 31,
-                    "interquartile_spread": 43.687,
-                    "mean": 73.887,
-                    "median": 81.75,
-                    "members_with_data": 31,
-                    "p10": 39.875,
-                    "p25": 54.625,
-                    "p75": 98.312,
+                    "available_members": 31,
+                    "interquartile_spread": 43.271,
+                    "mean": 73.867,
+                    "median": 83.333,
+                    "members_valid": 31,
+                    "p10": 39.375,
+                    "p25": 55.02,
+                    "p75": 98.291,
                     "p90": 100.0,
-                    "spread_p90_p10": 60.125
+                    "spread": 60.625
                   },
                   "date": "2026-10-24",
-                  "members_valid": 31,
                   "night_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.2,
-                    "mean": -1.861,
-                    "median": -1.0,
-                    "members_with_data": 31,
-                    "p10": -5.3,
-                    "p25": -3.3,
-                    "p75": -0.1,
+                    "available_members": 31,
+                    "interquartile_spread": 3.35,
+                    "mean": -2.229,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.4,
+                    "p25": -3.8,
+                    "p75": -0.45,
                     "p90": 0.4,
-                    "spread_p90_p10": 5.7
+                    "spread": 5.8
                   },
                   "precipitation_mm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 2.2,
-                    "mean": 2.903,
-                    "median": 2.4,
-                    "members_with_data": 31,
-                    "p10": 0.2,
-                    "p25": 1.0,
-                    "p75": 3.2,
-                    "p90": 7.6,
-                    "spread_p90_p10": 7.4
+                    "available_members": 31,
+                    "interquartile_spread": 2.25,
+                    "mean": 2.652,
+                    "median": 2.1,
+                    "members_valid": 31,
+                    "p10": 0.0,
+                    "p25": 0.75,
+                    "p75": 3.0,
+                    "p90": 6.0,
+                    "spread": 6.0
                   },
                   "probabilities": {
-                    "cloud_cover_gt_70pct": 0.613,
-                    "cloud_cover_low_gt_50pct": null,
-                    "gust_gt_40kmh": 0.0,
-                    "precipitation_gt_0_5mm": 0.774,
-                    "precipitation_gt_2mm": 0.548,
-                    "precipitation_gt_5mm": 0.129,
-                    "snowfall_gt_0_5cm": 0.452,
-                    "temperature_min_lt_0c": 0.774,
-                    "temperature_min_lt_minus5c": 0.129
+                    "cloud_cover_gt_50pct": {
+                      "available_members": 31,
+                      "members": 24,
+                      "members_valid": 31,
+                      "probability": 0.774
+                    },
+                    "cloud_cover_gt_70pct": {
+                      "available_members": 31,
+                      "members": 18,
+                      "members_valid": 31,
+                      "probability": 0.581
+                    },
+                    "cloud_cover_gt_90pct": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "cloud_cover_high_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "daily_tmax_lt_0c": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "daily_tmin_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 5,
+                      "members_valid": 31,
+                      "probability": 0.161
+                    },
+                    "gust_gt_30kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_40kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_50kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_60kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "precipitation_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 25,
+                      "members_valid": 31,
+                      "probability": 0.806
+                    },
+                    "precipitation_gt_0_5mm": {
+                      "available_members": 31,
+                      "members": 24,
+                      "members_valid": 31,
+                      "probability": 0.774
+                    },
+                    "precipitation_gt_2mm": {
+                      "available_members": 31,
+                      "members": 18,
+                      "members_valid": 31,
+                      "probability": 0.581
+                    },
+                    "precipitation_gt_5mm": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "rain_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 23,
+                      "members_valid": 31,
+                      "probability": 0.742
+                    },
+                    "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "snowfall_gt_0cm": {
+                      "available_members": 31,
+                      "members": 17,
+                      "members_valid": 31,
+                      "probability": 0.548
+                    },
+                    "snowfall_gt_1cm": {
+                      "available_members": 31,
+                      "members": 10,
+                      "members_valid": 31,
+                      "probability": 0.323
+                    },
+                    "snowfall_gt_2cm": {
+                      "available_members": 31,
+                      "members": 5,
+                      "members_valid": 31,
+                      "probability": 0.161
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "temperature_lt_0c": {
+                      "available_members": 31,
+                      "members": 26,
+                      "members_valid": 31,
+                      "probability": 0.839
+                    },
+                    "temperature_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 5,
+                      "members_valid": 31,
+                      "probability": 0.161
+                    }
+                  },
+                  "relative_humidity_mean_pct": {
+                    "available_members": 31,
+                    "interquartile_spread": 11.355,
+                    "mean": 87.41,
+                    "median": 88.583,
+                    "members_valid": 31,
+                    "p10": 77.333,
+                    "p25": 83.729,
+                    "p75": 95.084,
+                    "p90": 96.75,
+                    "spread": 19.417
                   },
                   "snowfall_cm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 1.4,
-                    "mean": 1.12,
+                    "available_members": 31,
+                    "interquartile_spread": 1.47,
+                    "mean": 1.009,
                     "median": 0.42,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 1.4,
-                    "p90": 2.8,
-                    "spread_p90_p10": 2.8
+                    "p75": 1.47,
+                    "p90": 3.15,
+                    "spread": 3.15
                   },
                   "temperature_max_c": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 6.15,
-                    "mean": 5.661,
+                    "mean": 5.665,
                     "median": 6.3,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 1.5,
                     "p25": 2.25,
                     "p75": 8.4,
                     "p90": 10.1,
-                    "spread_p90_p10": 8.6
+                    "spread": 8.6
                   },
                   "temperature_mean_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.937,
-                    "mean": 1.001,
-                    "median": 1.038,
-                    "members_with_data": 31,
-                    "p10": -2.15,
-                    "p25": -0.962,
-                    "p75": 2.975,
-                    "p90": 3.963,
-                    "spread_p90_p10": 6.113
+                    "available_members": 31,
+                    "interquartile_spread": 3.947,
+                    "mean": 0.976,
+                    "median": 1.087,
+                    "members_valid": 31,
+                    "p10": -2.154,
+                    "p25": -1.056,
+                    "p75": 2.891,
+                    "p90": 4.0,
+                    "spread": 6.154
                   },
                   "temperature_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.15,
-                    "mean": -1.981,
-                    "median": -1.1,
-                    "members_with_data": 31,
-                    "p10": -5.3,
-                    "p25": -3.3,
-                    "p75": -0.15,
+                    "available_members": 31,
+                    "interquartile_spread": 3.35,
+                    "mean": -2.229,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.4,
+                    "p25": -3.8,
+                    "p75": -0.45,
                     "p90": 0.4,
-                    "spread_p90_p10": 5.7
+                    "spread": 5.8
                   },
                   "wind_gust_max_kmh": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 3.1,
-                    "mean": 12.348,
-                    "median": 11.2,
-                    "members_with_data": 31,
-                    "p10": 10.1,
+                    "mean": 12.374,
+                    "median": 11.9,
+                    "members_valid": 31,
+                    "p10": 9.4,
                     "p25": 10.6,
                     "p75": 13.7,
                     "p90": 14.8,
-                    "spread_p90_p10": 4.7
+                    "spread": 5.4
                   }
                 },
                 "gfs": null,
@@ -585,7 +970,8 @@
                 "name": "毕棚沟·游客中心",
                 "region": "siguniang",
                 "role": "core",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "bipenggou"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -599,42 +985,219 @@
               "coverage_status": "GEFS_LONG_RANGE_AVAILABLE",
               "interpretation": {
                 "cloud_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 43.687,
-                  "mean": 73.887,
-                  "median": 81.75,
-                  "members_with_data": 31,
-                  "p10": 39.875,
-                  "p25": 54.625,
-                  "p75": 98.312,
+                  "available_members": 31,
+                  "interquartile_spread": 43.271,
+                  "mean": 73.867,
+                  "median": 83.333,
+                  "members_valid": 31,
+                  "p10": 39.375,
+                  "p25": 55.02,
+                  "p75": 98.291,
                   "p90": 100.0,
-                  "spread_p90_p10": 60.125
+                  "spread": 60.625
                 },
                 "precipitation_signal": {
-                  "cloud_cover_gt_70pct": 0.613,
-                  "cloud_cover_low_gt_50pct": null,
-                  "gust_gt_40kmh": 0.0,
-                  "precipitation_gt_0_5mm": 0.774,
-                  "precipitation_gt_2mm": 0.548,
-                  "precipitation_gt_5mm": 0.129,
-                  "snowfall_gt_0_5cm": 0.452,
-                  "temperature_min_lt_0c": 0.774,
-                  "temperature_min_lt_minus5c": 0.129
+                  "cloud_cover_gt_50pct": {
+                    "available_members": 31,
+                    "members": 24,
+                    "members_valid": 31,
+                    "probability": 0.774
+                  },
+                  "cloud_cover_gt_70pct": {
+                    "available_members": 31,
+                    "members": 18,
+                    "members_valid": 31,
+                    "probability": 0.581
+                  },
+                  "cloud_cover_gt_90pct": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "cloud_cover_high_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "daily_tmax_lt_0c": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "daily_tmin_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 5,
+                    "members_valid": 31,
+                    "probability": 0.161
+                  },
+                  "gust_gt_30kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_40kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_50kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_60kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "precipitation_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 25,
+                    "members_valid": 31,
+                    "probability": 0.806
+                  },
+                  "precipitation_gt_0_5mm": {
+                    "available_members": 31,
+                    "members": 24,
+                    "members_valid": 31,
+                    "probability": 0.774
+                  },
+                  "precipitation_gt_2mm": {
+                    "available_members": 31,
+                    "members": 18,
+                    "members_valid": 31,
+                    "probability": 0.581
+                  },
+                  "precipitation_gt_5mm": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "rain_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 23,
+                    "members_valid": 31,
+                    "probability": 0.742
+                  },
+                  "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "snowfall_gt_0cm": {
+                    "available_members": 31,
+                    "members": 17,
+                    "members_valid": 31,
+                    "probability": 0.548
+                  },
+                  "snowfall_gt_1cm": {
+                    "available_members": 31,
+                    "members": 10,
+                    "members_valid": 31,
+                    "probability": 0.323
+                  },
+                  "snowfall_gt_2cm": {
+                    "available_members": 31,
+                    "members": 5,
+                    "members_valid": 31,
+                    "probability": 0.161
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "temperature_lt_0c": {
+                    "available_members": 31,
+                    "members": 26,
+                    "members_valid": 31,
+                    "probability": 0.839
+                  },
+                  "temperature_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 5,
+                    "members_valid": 31,
+                    "probability": 0.161
+                  }
                 },
                 "temperature_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 3.937,
-                  "mean": 1.001,
-                  "median": 1.038,
-                  "members_with_data": 31,
-                  "p10": -2.15,
-                  "p25": -0.962,
-                  "p75": 2.975,
-                  "p90": 3.963,
-                  "spread_p90_p10": 6.113
+                  "available_members": 31,
+                  "interquartile_spread": 3.947,
+                  "mean": 0.976,
+                  "median": 1.087,
+                  "members_valid": 31,
+                  "p10": -2.154,
+                  "p25": -1.056,
+                  "p75": 2.891,
+                  "p90": 4.0,
+                  "spread": 6.154
                 }
               },
-              "lead_days": 30,
+              "lead_days": 31,
               "metrics": {
                 "consensus": {
                   "sources": [
@@ -642,137 +1205,337 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 73.887,
-                    "night_min_c": -1.861,
-                    "precipitation_mm": 2.903,
-                    "snowfall_cm": 1.12,
-                    "temperature_max_c": 5.661,
-                    "temperature_mean_c": 1.001,
-                    "temperature_min_c": -1.981
+                    "cloud_cover_mean_pct": 73.867,
+                    "night_min_c": -2.229,
+                    "precipitation_mm": 2.652,
+                    "snowfall_cm": 1.009,
+                    "temperature_max_c": 5.665,
+                    "temperature_mean_c": 0.976,
+                    "temperature_min_c": -2.229
                   }
                 },
                 "ecmwf_ensemble": null,
                 "gefs_long_range": {
-                  "cloud_cover_low_mean_pct": {
-                    "expected_members": 31,
+                  "cloud_cover_high_mean_pct": {
+                    "available_members": 0,
                     "interquartile_spread": null,
                     "mean": null,
                     "median": null,
-                    "members_with_data": 0,
+                    "members_valid": 31,
                     "p10": null,
                     "p25": null,
                     "p75": null,
                     "p90": null,
-                    "spread_p90_p10": null
+                    "spread": null
+                  },
+                  "cloud_cover_low_mean_pct": {
+                    "available_members": 0,
+                    "interquartile_spread": null,
+                    "mean": null,
+                    "median": null,
+                    "members_valid": 31,
+                    "p10": null,
+                    "p25": null,
+                    "p75": null,
+                    "p90": null,
+                    "spread": null
                   },
                   "cloud_cover_mean_pct": {
-                    "expected_members": 31,
-                    "interquartile_spread": 43.687,
-                    "mean": 73.887,
-                    "median": 81.75,
-                    "members_with_data": 31,
-                    "p10": 39.875,
-                    "p25": 54.625,
-                    "p75": 98.312,
+                    "available_members": 31,
+                    "interquartile_spread": 43.271,
+                    "mean": 73.867,
+                    "median": 83.333,
+                    "members_valid": 31,
+                    "p10": 39.375,
+                    "p25": 55.02,
+                    "p75": 98.291,
                     "p90": 100.0,
-                    "spread_p90_p10": 60.125
+                    "spread": 60.625
                   },
                   "date": "2026-10-24",
-                  "members_valid": 31,
                   "night_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.2,
-                    "mean": -1.861,
-                    "median": -1.0,
-                    "members_with_data": 31,
-                    "p10": -5.3,
-                    "p25": -3.3,
-                    "p75": -0.1,
+                    "available_members": 31,
+                    "interquartile_spread": 3.35,
+                    "mean": -2.229,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.4,
+                    "p25": -3.8,
+                    "p75": -0.45,
                     "p90": 0.4,
-                    "spread_p90_p10": 5.7
+                    "spread": 5.8
                   },
                   "precipitation_mm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 2.2,
-                    "mean": 2.903,
-                    "median": 2.4,
-                    "members_with_data": 31,
-                    "p10": 0.2,
-                    "p25": 1.0,
-                    "p75": 3.2,
-                    "p90": 7.6,
-                    "spread_p90_p10": 7.4
+                    "available_members": 31,
+                    "interquartile_spread": 2.25,
+                    "mean": 2.652,
+                    "median": 2.1,
+                    "members_valid": 31,
+                    "p10": 0.0,
+                    "p25": 0.75,
+                    "p75": 3.0,
+                    "p90": 6.0,
+                    "spread": 6.0
                   },
                   "probabilities": {
-                    "cloud_cover_gt_70pct": 0.613,
-                    "cloud_cover_low_gt_50pct": null,
-                    "gust_gt_40kmh": 0.0,
-                    "precipitation_gt_0_5mm": 0.774,
-                    "precipitation_gt_2mm": 0.548,
-                    "precipitation_gt_5mm": 0.129,
-                    "snowfall_gt_0_5cm": 0.452,
-                    "temperature_min_lt_0c": 0.774,
-                    "temperature_min_lt_minus5c": 0.129
+                    "cloud_cover_gt_50pct": {
+                      "available_members": 31,
+                      "members": 24,
+                      "members_valid": 31,
+                      "probability": 0.774
+                    },
+                    "cloud_cover_gt_70pct": {
+                      "available_members": 31,
+                      "members": 18,
+                      "members_valid": 31,
+                      "probability": 0.581
+                    },
+                    "cloud_cover_gt_90pct": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "cloud_cover_high_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "daily_tmax_lt_0c": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "daily_tmin_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 5,
+                      "members_valid": 31,
+                      "probability": 0.161
+                    },
+                    "gust_gt_30kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_40kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_50kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_60kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "precipitation_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 25,
+                      "members_valid": 31,
+                      "probability": 0.806
+                    },
+                    "precipitation_gt_0_5mm": {
+                      "available_members": 31,
+                      "members": 24,
+                      "members_valid": 31,
+                      "probability": 0.774
+                    },
+                    "precipitation_gt_2mm": {
+                      "available_members": 31,
+                      "members": 18,
+                      "members_valid": 31,
+                      "probability": 0.581
+                    },
+                    "precipitation_gt_5mm": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "rain_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 23,
+                      "members_valid": 31,
+                      "probability": 0.742
+                    },
+                    "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "snowfall_gt_0cm": {
+                      "available_members": 31,
+                      "members": 17,
+                      "members_valid": 31,
+                      "probability": 0.548
+                    },
+                    "snowfall_gt_1cm": {
+                      "available_members": 31,
+                      "members": 10,
+                      "members_valid": 31,
+                      "probability": 0.323
+                    },
+                    "snowfall_gt_2cm": {
+                      "available_members": 31,
+                      "members": 5,
+                      "members_valid": 31,
+                      "probability": 0.161
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "temperature_lt_0c": {
+                      "available_members": 31,
+                      "members": 26,
+                      "members_valid": 31,
+                      "probability": 0.839
+                    },
+                    "temperature_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 5,
+                      "members_valid": 31,
+                      "probability": 0.161
+                    }
+                  },
+                  "relative_humidity_mean_pct": {
+                    "available_members": 31,
+                    "interquartile_spread": 11.355,
+                    "mean": 87.41,
+                    "median": 88.583,
+                    "members_valid": 31,
+                    "p10": 77.333,
+                    "p25": 83.729,
+                    "p75": 95.084,
+                    "p90": 96.75,
+                    "spread": 19.417
                   },
                   "snowfall_cm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 1.4,
-                    "mean": 1.12,
+                    "available_members": 31,
+                    "interquartile_spread": 1.47,
+                    "mean": 1.009,
                     "median": 0.42,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 1.4,
-                    "p90": 2.8,
-                    "spread_p90_p10": 2.8
+                    "p75": 1.47,
+                    "p90": 3.15,
+                    "spread": 3.15
                   },
                   "temperature_max_c": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 6.15,
-                    "mean": 5.661,
+                    "mean": 5.665,
                     "median": 6.3,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 1.5,
                     "p25": 2.25,
                     "p75": 8.4,
                     "p90": 10.1,
-                    "spread_p90_p10": 8.6
+                    "spread": 8.6
                   },
                   "temperature_mean_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.937,
-                    "mean": 1.001,
-                    "median": 1.038,
-                    "members_with_data": 31,
-                    "p10": -2.15,
-                    "p25": -0.962,
-                    "p75": 2.975,
-                    "p90": 3.963,
-                    "spread_p90_p10": 6.113
+                    "available_members": 31,
+                    "interquartile_spread": 3.947,
+                    "mean": 0.976,
+                    "median": 1.087,
+                    "members_valid": 31,
+                    "p10": -2.154,
+                    "p25": -1.056,
+                    "p75": 2.891,
+                    "p90": 4.0,
+                    "spread": 6.154
                   },
                   "temperature_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.15,
-                    "mean": -1.981,
-                    "median": -1.1,
-                    "members_with_data": 31,
-                    "p10": -5.3,
-                    "p25": -3.3,
-                    "p75": -0.15,
+                    "available_members": 31,
+                    "interquartile_spread": 3.35,
+                    "mean": -2.229,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.4,
+                    "p25": -3.8,
+                    "p75": -0.45,
                     "p90": 0.4,
-                    "spread_p90_p10": 5.7
+                    "spread": 5.8
                   },
                   "wind_gust_max_kmh": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 3.1,
-                    "mean": 12.348,
-                    "median": 11.2,
-                    "members_with_data": 31,
-                    "p10": 10.1,
+                    "mean": 12.374,
+                    "median": 11.9,
+                    "members_valid": 31,
+                    "p10": 9.4,
                     "p25": 10.6,
                     "p75": 13.7,
                     "p90": 14.8,
-                    "spread_p90_p10": 4.7
+                    "spread": 5.4
                   }
                 },
                 "gfs": null,
@@ -799,42 +1562,219 @@
               "coverage_status": "GEFS_LONG_RANGE_AVAILABLE",
               "interpretation": {
                 "cloud_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 21.187,
-                  "mean": 83.802,
-                  "median": 92.625,
-                  "members_with_data": 31,
-                  "p10": 53.75,
-                  "p25": 78.688,
-                  "p75": 99.875,
+                  "available_members": 31,
+                  "interquartile_spread": 24.583,
+                  "mean": 83.472,
+                  "median": 93.625,
+                  "members_valid": 31,
+                  "p10": 52.958,
+                  "p25": 75.396,
+                  "p75": 99.979,
                   "p90": 100.0,
-                  "spread_p90_p10": 46.25
+                  "spread": 47.042
                 },
                 "precipitation_signal": {
-                  "cloud_cover_gt_70pct": 0.839,
-                  "cloud_cover_low_gt_50pct": null,
-                  "gust_gt_40kmh": 0.0,
-                  "precipitation_gt_0_5mm": 0.806,
-                  "precipitation_gt_2mm": 0.516,
-                  "precipitation_gt_5mm": 0.226,
-                  "snowfall_gt_0_5cm": 0.452,
-                  "temperature_min_lt_0c": 0.516,
-                  "temperature_min_lt_minus5c": 0.032
+                  "cloud_cover_gt_50pct": {
+                    "available_members": 31,
+                    "members": 29,
+                    "members_valid": 31,
+                    "probability": 0.935
+                  },
+                  "cloud_cover_gt_70pct": {
+                    "available_members": 31,
+                    "members": 24,
+                    "members_valid": 31,
+                    "probability": 0.774
+                  },
+                  "cloud_cover_gt_90pct": {
+                    "available_members": 31,
+                    "members": 17,
+                    "members_valid": 31,
+                    "probability": 0.548
+                  },
+                  "cloud_cover_high_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "daily_tmax_lt_0c": {
+                    "available_members": 31,
+                    "members": 3,
+                    "members_valid": 31,
+                    "probability": 0.097
+                  },
+                  "daily_tmin_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "gust_gt_30kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_40kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_50kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_60kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "precipitation_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 25,
+                    "members_valid": 31,
+                    "probability": 0.806
+                  },
+                  "precipitation_gt_0_5mm": {
+                    "available_members": 31,
+                    "members": 25,
+                    "members_valid": 31,
+                    "probability": 0.806
+                  },
+                  "precipitation_gt_2mm": {
+                    "available_members": 31,
+                    "members": 19,
+                    "members_valid": 31,
+                    "probability": 0.613
+                  },
+                  "precipitation_gt_5mm": {
+                    "available_members": 31,
+                    "members": 8,
+                    "members_valid": 31,
+                    "probability": 0.258
+                  },
+                  "rain_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 25,
+                    "members_valid": 31,
+                    "probability": 0.806
+                  },
+                  "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 14,
+                    "members_valid": 31,
+                    "probability": 0.452
+                  },
+                  "snowfall_gt_0cm": {
+                    "available_members": 31,
+                    "members": 17,
+                    "members_valid": 31,
+                    "probability": 0.548
+                  },
+                  "snowfall_gt_1cm": {
+                    "available_members": 31,
+                    "members": 11,
+                    "members_valid": 31,
+                    "probability": 0.355
+                  },
+                  "snowfall_gt_2cm": {
+                    "available_members": 31,
+                    "members": 5,
+                    "members_valid": 31,
+                    "probability": 0.161
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 2,
+                    "members_valid": 31,
+                    "probability": 0.065
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "temperature_lt_0c": {
+                    "available_members": 31,
+                    "members": 16,
+                    "members_valid": 31,
+                    "probability": 0.516
+                  },
+                  "temperature_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  }
                 },
                 "temperature_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 3.645,
-                  "mean": 1.878,
-                  "median": 1.863,
-                  "members_with_data": 31,
-                  "p10": -0.988,
-                  "p25": 0.018,
-                  "p75": 3.663,
-                  "p90": 4.912,
-                  "spread_p90_p10": 5.9
+                  "available_members": 31,
+                  "interquartile_spread": 3.655,
+                  "mean": 1.859,
+                  "median": 1.771,
+                  "members_valid": 31,
+                  "p10": -1.096,
+                  "p25": 0.033,
+                  "p75": 3.688,
+                  "p90": 4.8,
+                  "spread": 5.896
                 }
               },
-              "lead_days": 30,
+              "lead_days": 31,
               "metrics": {
                 "consensus": {
                   "sources": [
@@ -842,137 +1782,337 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 83.802,
-                    "night_min_c": 0.113,
-                    "precipitation_mm": 3.252,
-                    "snowfall_cm": 1.034,
-                    "temperature_max_c": 4.542,
-                    "temperature_mean_c": 1.878,
-                    "temperature_min_c": 0.048
+                    "cloud_cover_mean_pct": 83.472,
+                    "night_min_c": -0.148,
+                    "precipitation_mm": 3.116,
+                    "snowfall_cm": 0.975,
+                    "temperature_max_c": 4.548,
+                    "temperature_mean_c": 1.859,
+                    "temperature_min_c": -0.148
                   }
                 },
                 "ecmwf_ensemble": null,
                 "gefs_long_range": {
-                  "cloud_cover_low_mean_pct": {
-                    "expected_members": 31,
+                  "cloud_cover_high_mean_pct": {
+                    "available_members": 0,
                     "interquartile_spread": null,
                     "mean": null,
                     "median": null,
-                    "members_with_data": 0,
+                    "members_valid": 31,
                     "p10": null,
                     "p25": null,
                     "p75": null,
                     "p90": null,
-                    "spread_p90_p10": null
+                    "spread": null
+                  },
+                  "cloud_cover_low_mean_pct": {
+                    "available_members": 0,
+                    "interquartile_spread": null,
+                    "mean": null,
+                    "median": null,
+                    "members_valid": 31,
+                    "p10": null,
+                    "p25": null,
+                    "p75": null,
+                    "p90": null,
+                    "spread": null
                   },
                   "cloud_cover_mean_pct": {
-                    "expected_members": 31,
-                    "interquartile_spread": 21.187,
-                    "mean": 83.802,
-                    "median": 92.625,
-                    "members_with_data": 31,
-                    "p10": 53.75,
-                    "p25": 78.688,
-                    "p75": 99.875,
+                    "available_members": 31,
+                    "interquartile_spread": 24.583,
+                    "mean": 83.472,
+                    "median": 93.625,
+                    "members_valid": 31,
+                    "p10": 52.958,
+                    "p25": 75.396,
+                    "p75": 99.979,
                     "p90": 100.0,
-                    "spread_p90_p10": 46.25
+                    "spread": 47.042
                   },
                   "date": "2026-10-24",
-                  "members_valid": 31,
                   "night_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 4.1,
-                    "mean": 0.113,
-                    "median": -0.1,
-                    "members_with_data": 31,
-                    "p10": -3.1,
-                    "p25": -1.8,
-                    "p75": 2.3,
+                    "available_members": 31,
+                    "interquartile_spread": 4.25,
+                    "mean": -0.148,
+                    "median": -0.2,
+                    "members_valid": 31,
+                    "p10": -3.5,
+                    "p25": -2.25,
+                    "p75": 2.0,
                     "p90": 3.1,
-                    "spread_p90_p10": 6.2
+                    "spread": 6.6
                   },
                   "precipitation_mm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.8,
-                    "mean": 3.252,
-                    "median": 2.2,
-                    "members_with_data": 31,
-                    "p10": 0.2,
-                    "p25": 0.7,
-                    "p75": 4.5,
-                    "p90": 7.2,
-                    "spread_p90_p10": 7.0
+                    "available_members": 31,
+                    "interquartile_spread": 3.75,
+                    "mean": 3.116,
+                    "median": 2.1,
+                    "members_valid": 31,
+                    "p10": 0.0,
+                    "p25": 0.9,
+                    "p75": 4.65,
+                    "p90": 6.0,
+                    "spread": 6.0
                   },
                   "probabilities": {
-                    "cloud_cover_gt_70pct": 0.839,
-                    "cloud_cover_low_gt_50pct": null,
-                    "gust_gt_40kmh": 0.0,
-                    "precipitation_gt_0_5mm": 0.806,
-                    "precipitation_gt_2mm": 0.516,
-                    "precipitation_gt_5mm": 0.226,
-                    "snowfall_gt_0_5cm": 0.452,
-                    "temperature_min_lt_0c": 0.516,
-                    "temperature_min_lt_minus5c": 0.032
+                    "cloud_cover_gt_50pct": {
+                      "available_members": 31,
+                      "members": 29,
+                      "members_valid": 31,
+                      "probability": 0.935
+                    },
+                    "cloud_cover_gt_70pct": {
+                      "available_members": 31,
+                      "members": 24,
+                      "members_valid": 31,
+                      "probability": 0.774
+                    },
+                    "cloud_cover_gt_90pct": {
+                      "available_members": 31,
+                      "members": 17,
+                      "members_valid": 31,
+                      "probability": 0.548
+                    },
+                    "cloud_cover_high_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "daily_tmax_lt_0c": {
+                      "available_members": 31,
+                      "members": 3,
+                      "members_valid": 31,
+                      "probability": 0.097
+                    },
+                    "daily_tmin_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "gust_gt_30kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_40kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_50kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_60kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "precipitation_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 25,
+                      "members_valid": 31,
+                      "probability": 0.806
+                    },
+                    "precipitation_gt_0_5mm": {
+                      "available_members": 31,
+                      "members": 25,
+                      "members_valid": 31,
+                      "probability": 0.806
+                    },
+                    "precipitation_gt_2mm": {
+                      "available_members": 31,
+                      "members": 19,
+                      "members_valid": 31,
+                      "probability": 0.613
+                    },
+                    "precipitation_gt_5mm": {
+                      "available_members": 31,
+                      "members": 8,
+                      "members_valid": 31,
+                      "probability": 0.258
+                    },
+                    "rain_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 25,
+                      "members_valid": 31,
+                      "probability": 0.806
+                    },
+                    "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 14,
+                      "members_valid": 31,
+                      "probability": 0.452
+                    },
+                    "snowfall_gt_0cm": {
+                      "available_members": 31,
+                      "members": 17,
+                      "members_valid": 31,
+                      "probability": 0.548
+                    },
+                    "snowfall_gt_1cm": {
+                      "available_members": 31,
+                      "members": 11,
+                      "members_valid": 31,
+                      "probability": 0.355
+                    },
+                    "snowfall_gt_2cm": {
+                      "available_members": 31,
+                      "members": 5,
+                      "members_valid": 31,
+                      "probability": 0.161
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 2,
+                      "members_valid": 31,
+                      "probability": 0.065
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "temperature_lt_0c": {
+                      "available_members": 31,
+                      "members": 16,
+                      "members_valid": 31,
+                      "probability": 0.516
+                    },
+                    "temperature_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    }
+                  },
+                  "relative_humidity_mean_pct": {
+                    "available_members": 31,
+                    "interquartile_spread": 7.73,
+                    "mean": 91.183,
+                    "median": 92.0,
+                    "members_valid": 31,
+                    "p10": 85.083,
+                    "p25": 88.666,
+                    "p75": 96.396,
+                    "p90": 98.625,
+                    "spread": 13.542
                   },
                   "snowfall_cm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 1.75,
-                    "mean": 1.034,
+                    "available_members": 31,
+                    "interquartile_spread": 1.47,
+                    "mean": 0.975,
                     "median": 0.42,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 1.75,
-                    "p90": 3.08,
-                    "spread_p90_p10": 3.08
+                    "p75": 1.47,
+                    "p90": 2.73,
+                    "spread": 2.73
                   },
                   "temperature_max_c": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 2.95,
-                    "mean": 4.542,
+                    "mean": 4.548,
                     "median": 4.2,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 0.8,
                     "p25": 3.4,
                     "p75": 6.35,
                     "p90": 8.2,
-                    "spread_p90_p10": 7.4
+                    "spread": 7.4
                   },
                   "temperature_mean_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.645,
-                    "mean": 1.878,
-                    "median": 1.863,
-                    "members_with_data": 31,
-                    "p10": -0.988,
-                    "p25": 0.018,
-                    "p75": 3.663,
-                    "p90": 4.912,
-                    "spread_p90_p10": 5.9
+                    "available_members": 31,
+                    "interquartile_spread": 3.655,
+                    "mean": 1.859,
+                    "median": 1.771,
+                    "members_valid": 31,
+                    "p10": -1.096,
+                    "p25": 0.033,
+                    "p75": 3.688,
+                    "p90": 4.8,
+                    "spread": 5.896
                   },
                   "temperature_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 4.1,
-                    "mean": 0.048,
-                    "median": -0.1,
-                    "members_with_data": 31,
-                    "p10": -3.4,
-                    "p25": -1.9,
-                    "p75": 2.2,
+                    "available_members": 31,
+                    "interquartile_spread": 4.25,
+                    "mean": -0.148,
+                    "median": -0.2,
+                    "members_valid": 31,
+                    "p10": -3.5,
+                    "p25": -2.25,
+                    "p75": 2.0,
                     "p90": 3.1,
-                    "spread_p90_p10": 6.5
+                    "spread": 6.6
                   },
                   "wind_gust_max_kmh": {
-                    "expected_members": 31,
-                    "interquartile_spread": 1.8,
-                    "mean": 11.177,
+                    "available_members": 31,
+                    "interquartile_spread": 1.65,
+                    "mean": 11.332,
                     "median": 11.2,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 9.7,
-                    "p25": 10.1,
+                    "p25": 10.25,
                     "p75": 11.9,
-                    "p90": 12.6,
-                    "spread_p90_p10": 2.9
+                    "p90": 13.0,
+                    "spread": 3.3
                   }
                 },
                 "gfs": null,
@@ -985,7 +2125,8 @@
                 "name": "四姑娘山·双桥沟游客中心",
                 "region": "siguniang",
                 "role": "core",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "shuangqiao"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -1004,42 +2145,219 @@
               "coverage_status": "GEFS_LONG_RANGE_AVAILABLE",
               "interpretation": {
                 "cloud_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 46.125,
-                  "mean": 71.633,
-                  "median": 76.125,
-                  "members_with_data": 31,
-                  "p10": 26.25,
-                  "p25": 52.0,
-                  "p75": 98.125,
-                  "p90": 99.25,
-                  "spread_p90_p10": 73.0
+                  "available_members": 31,
+                  "interquartile_spread": 49.292,
+                  "mean": 71.771,
+                  "median": 77.083,
+                  "members_valid": 31,
+                  "p10": 26.917,
+                  "p25": 49.27,
+                  "p75": 98.562,
+                  "p90": 99.458,
+                  "spread": 72.541
                 },
                 "precipitation_signal": {
-                  "cloud_cover_gt_70pct": 0.613,
-                  "cloud_cover_low_gt_50pct": null,
-                  "gust_gt_40kmh": 0.0,
-                  "precipitation_gt_0_5mm": 0.871,
-                  "precipitation_gt_2mm": 0.484,
-                  "precipitation_gt_5mm": 0.129,
-                  "snowfall_gt_0_5cm": 0.387,
-                  "temperature_min_lt_0c": 0.581,
-                  "temperature_min_lt_minus5c": 0.129
+                  "cloud_cover_gt_50pct": {
+                    "available_members": 31,
+                    "members": 23,
+                    "members_valid": 31,
+                    "probability": 0.742
+                  },
+                  "cloud_cover_gt_70pct": {
+                    "available_members": 31,
+                    "members": 19,
+                    "members_valid": 31,
+                    "probability": 0.613
+                  },
+                  "cloud_cover_gt_90pct": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "cloud_cover_high_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "daily_tmax_lt_0c": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "daily_tmin_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "gust_gt_30kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_40kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_50kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_60kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "precipitation_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 28,
+                    "members_valid": 31,
+                    "probability": 0.903
+                  },
+                  "precipitation_gt_0_5mm": {
+                    "available_members": 31,
+                    "members": 27,
+                    "members_valid": 31,
+                    "probability": 0.871
+                  },
+                  "precipitation_gt_2mm": {
+                    "available_members": 31,
+                    "members": 17,
+                    "members_valid": 31,
+                    "probability": 0.548
+                  },
+                  "precipitation_gt_5mm": {
+                    "available_members": 31,
+                    "members": 8,
+                    "members_valid": 31,
+                    "probability": 0.258
+                  },
+                  "rain_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 28,
+                    "members_valid": 31,
+                    "probability": 0.903
+                  },
+                  "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 11,
+                    "members_valid": 31,
+                    "probability": 0.355
+                  },
+                  "snowfall_gt_0cm": {
+                    "available_members": 31,
+                    "members": 18,
+                    "members_valid": 31,
+                    "probability": 0.581
+                  },
+                  "snowfall_gt_1cm": {
+                    "available_members": 31,
+                    "members": 9,
+                    "members_valid": 31,
+                    "probability": 0.29
+                  },
+                  "snowfall_gt_2cm": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 3,
+                    "members_valid": 31,
+                    "probability": 0.097
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "temperature_lt_0c": {
+                    "available_members": 31,
+                    "members": 20,
+                    "members_valid": 31,
+                    "probability": 0.645
+                  },
+                  "temperature_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  }
                 },
                 "temperature_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 3.65,
-                  "mean": 1.181,
-                  "median": 1.525,
-                  "members_with_data": 31,
-                  "p10": -1.175,
-                  "p25": -0.581,
-                  "p75": 3.069,
-                  "p90": 4.0,
-                  "spread_p90_p10": 5.175
+                  "available_members": 31,
+                  "interquartile_spread": 3.573,
+                  "mean": 1.205,
+                  "median": 1.613,
+                  "members_valid": 31,
+                  "p10": -1.25,
+                  "p25": -0.529,
+                  "p75": 3.044,
+                  "p90": 4.021,
+                  "spread": 5.271
                 }
               },
-              "lead_days": 31,
+              "lead_days": 32,
               "metrics": {
                 "consensus": {
                   "sources": [
@@ -1047,137 +2365,337 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 71.633,
-                    "night_min_c": -1.581,
-                    "precipitation_mm": 2.568,
-                    "snowfall_cm": 0.691,
-                    "temperature_max_c": 6.113,
-                    "temperature_mean_c": 1.181,
-                    "temperature_min_c": -1.626
+                    "cloud_cover_mean_pct": 71.771,
+                    "night_min_c": -1.855,
+                    "precipitation_mm": 2.932,
+                    "snowfall_cm": 0.935,
+                    "temperature_max_c": 6.116,
+                    "temperature_mean_c": 1.205,
+                    "temperature_min_c": -1.855
                   }
                 },
                 "ecmwf_ensemble": null,
                 "gefs_long_range": {
-                  "cloud_cover_low_mean_pct": {
-                    "expected_members": 31,
+                  "cloud_cover_high_mean_pct": {
+                    "available_members": 0,
                     "interquartile_spread": null,
                     "mean": null,
                     "median": null,
-                    "members_with_data": 0,
+                    "members_valid": 31,
                     "p10": null,
                     "p25": null,
                     "p75": null,
                     "p90": null,
-                    "spread_p90_p10": null
+                    "spread": null
+                  },
+                  "cloud_cover_low_mean_pct": {
+                    "available_members": 0,
+                    "interquartile_spread": null,
+                    "mean": null,
+                    "median": null,
+                    "members_valid": 31,
+                    "p10": null,
+                    "p25": null,
+                    "p75": null,
+                    "p90": null,
+                    "spread": null
                   },
                   "cloud_cover_mean_pct": {
-                    "expected_members": 31,
-                    "interquartile_spread": 46.125,
-                    "mean": 71.633,
-                    "median": 76.125,
-                    "members_with_data": 31,
-                    "p10": 26.25,
-                    "p25": 52.0,
-                    "p75": 98.125,
-                    "p90": 99.25,
-                    "spread_p90_p10": 73.0
+                    "available_members": 31,
+                    "interquartile_spread": 49.292,
+                    "mean": 71.771,
+                    "median": 77.083,
+                    "members_valid": 31,
+                    "p10": 26.917,
+                    "p25": 49.27,
+                    "p75": 98.562,
+                    "p90": 99.458,
+                    "spread": 72.541
                   },
                   "date": "2026-10-25",
-                  "members_valid": 31,
                   "night_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 4.65,
-                    "mean": -1.581,
-                    "median": -1.7,
-                    "members_with_data": 31,
-                    "p10": -5.2,
-                    "p25": -3.95,
-                    "p75": 0.7,
-                    "p90": 1.7,
-                    "spread_p90_p10": 6.9
+                    "available_members": 31,
+                    "interquartile_spread": 4.35,
+                    "mean": -1.855,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.1,
+                    "p25": -4.1,
+                    "p75": 0.25,
+                    "p90": 1.5,
+                    "spread": 6.6
                   },
                   "precipitation_mm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 2.6,
-                    "mean": 2.568,
-                    "median": 2.0,
-                    "members_with_data": 31,
-                    "p10": 0.4,
-                    "p25": 1.0,
-                    "p75": 3.6,
-                    "p90": 5.8,
-                    "spread_p90_p10": 5.4
+                    "available_members": 31,
+                    "interquartile_spread": 3.6,
+                    "mean": 2.932,
+                    "median": 2.1,
+                    "members_valid": 31,
+                    "p10": 0.3,
+                    "p25": 0.9,
+                    "p75": 4.5,
+                    "p90": 6.6,
+                    "spread": 6.3
                   },
                   "probabilities": {
-                    "cloud_cover_gt_70pct": 0.613,
-                    "cloud_cover_low_gt_50pct": null,
-                    "gust_gt_40kmh": 0.0,
-                    "precipitation_gt_0_5mm": 0.871,
-                    "precipitation_gt_2mm": 0.484,
-                    "precipitation_gt_5mm": 0.129,
-                    "snowfall_gt_0_5cm": 0.387,
-                    "temperature_min_lt_0c": 0.581,
-                    "temperature_min_lt_minus5c": 0.129
+                    "cloud_cover_gt_50pct": {
+                      "available_members": 31,
+                      "members": 23,
+                      "members_valid": 31,
+                      "probability": 0.742
+                    },
+                    "cloud_cover_gt_70pct": {
+                      "available_members": 31,
+                      "members": 19,
+                      "members_valid": 31,
+                      "probability": 0.613
+                    },
+                    "cloud_cover_gt_90pct": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "cloud_cover_high_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "daily_tmax_lt_0c": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "daily_tmin_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "gust_gt_30kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_40kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_50kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_60kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "precipitation_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 28,
+                      "members_valid": 31,
+                      "probability": 0.903
+                    },
+                    "precipitation_gt_0_5mm": {
+                      "available_members": 31,
+                      "members": 27,
+                      "members_valid": 31,
+                      "probability": 0.871
+                    },
+                    "precipitation_gt_2mm": {
+                      "available_members": 31,
+                      "members": 17,
+                      "members_valid": 31,
+                      "probability": 0.548
+                    },
+                    "precipitation_gt_5mm": {
+                      "available_members": 31,
+                      "members": 8,
+                      "members_valid": 31,
+                      "probability": 0.258
+                    },
+                    "rain_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 28,
+                      "members_valid": 31,
+                      "probability": 0.903
+                    },
+                    "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 11,
+                      "members_valid": 31,
+                      "probability": 0.355
+                    },
+                    "snowfall_gt_0cm": {
+                      "available_members": 31,
+                      "members": 18,
+                      "members_valid": 31,
+                      "probability": 0.581
+                    },
+                    "snowfall_gt_1cm": {
+                      "available_members": 31,
+                      "members": 9,
+                      "members_valid": 31,
+                      "probability": 0.29
+                    },
+                    "snowfall_gt_2cm": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 3,
+                      "members_valid": 31,
+                      "probability": 0.097
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "temperature_lt_0c": {
+                      "available_members": 31,
+                      "members": 20,
+                      "members_valid": 31,
+                      "probability": 0.645
+                    },
+                    "temperature_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    }
+                  },
+                  "relative_humidity_mean_pct": {
+                    "available_members": 31,
+                    "interquartile_spread": 10.312,
+                    "mean": 86.415,
+                    "median": 91.292,
+                    "members_valid": 31,
+                    "p10": 73.625,
+                    "p25": 83.729,
+                    "p75": 94.041,
+                    "p90": 95.583,
+                    "spread": 21.958
                   },
                   "snowfall_cm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 0.98,
-                    "mean": 0.691,
-                    "median": 0.28,
-                    "members_with_data": 31,
+                    "available_members": 31,
+                    "interquartile_spread": 1.26,
+                    "mean": 0.935,
+                    "median": 0.42,
+                    "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 0.98,
-                    "p90": 1.68,
-                    "spread_p90_p10": 1.68
+                    "p75": 1.26,
+                    "p90": 2.73,
+                    "spread": 2.73
                   },
                   "temperature_max_c": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 5.3,
-                    "mean": 6.113,
+                    "mean": 6.116,
                     "median": 5.8,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 2.3,
                     "p25": 3.75,
                     "p75": 9.05,
                     "p90": 10.6,
-                    "spread_p90_p10": 8.3
+                    "spread": 8.3
                   },
                   "temperature_mean_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.65,
-                    "mean": 1.181,
-                    "median": 1.525,
-                    "members_with_data": 31,
-                    "p10": -1.175,
-                    "p25": -0.581,
-                    "p75": 3.069,
-                    "p90": 4.0,
-                    "spread_p90_p10": 5.175
+                    "available_members": 31,
+                    "interquartile_spread": 3.573,
+                    "mean": 1.205,
+                    "median": 1.613,
+                    "members_valid": 31,
+                    "p10": -1.25,
+                    "p25": -0.529,
+                    "p75": 3.044,
+                    "p90": 4.021,
+                    "spread": 5.271
                   },
                   "temperature_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 4.6,
-                    "mean": -1.626,
-                    "median": -1.7,
-                    "members_with_data": 31,
-                    "p10": -5.2,
-                    "p25": -3.95,
-                    "p75": 0.65,
-                    "p90": 1.6,
-                    "spread_p90_p10": 6.8
+                    "available_members": 31,
+                    "interquartile_spread": 4.35,
+                    "mean": -1.855,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.1,
+                    "p25": -4.1,
+                    "p75": 0.25,
+                    "p90": 1.5,
+                    "spread": 6.6
                   },
                   "wind_gust_max_kmh": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 3.25,
-                    "mean": 12.045,
+                    "mean": 12.168,
                     "median": 11.9,
-                    "members_with_data": 31,
-                    "p10": 9.0,
+                    "members_valid": 31,
+                    "p10": 9.4,
                     "p25": 10.6,
                     "p75": 13.85,
                     "p90": 15.1,
-                    "spread_p90_p10": 6.1
+                    "spread": 5.7
                   }
                 },
                 "gfs": null,
@@ -1190,7 +2708,8 @@
                 "name": "毕棚沟·游客中心",
                 "region": "siguniang",
                 "role": "core",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "bipenggou"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,
@@ -1204,42 +2723,219 @@
               "coverage_status": "GEFS_LONG_RANGE_AVAILABLE",
               "interpretation": {
                 "cloud_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 46.125,
-                  "mean": 71.633,
-                  "median": 76.125,
-                  "members_with_data": 31,
-                  "p10": 26.25,
-                  "p25": 52.0,
-                  "p75": 98.125,
-                  "p90": 99.25,
-                  "spread_p90_p10": 73.0
+                  "available_members": 31,
+                  "interquartile_spread": 49.292,
+                  "mean": 71.771,
+                  "median": 77.083,
+                  "members_valid": 31,
+                  "p10": 26.917,
+                  "p25": 49.27,
+                  "p75": 98.562,
+                  "p90": 99.458,
+                  "spread": 72.541
                 },
                 "precipitation_signal": {
-                  "cloud_cover_gt_70pct": 0.613,
-                  "cloud_cover_low_gt_50pct": null,
-                  "gust_gt_40kmh": 0.0,
-                  "precipitation_gt_0_5mm": 0.871,
-                  "precipitation_gt_2mm": 0.484,
-                  "precipitation_gt_5mm": 0.129,
-                  "snowfall_gt_0_5cm": 0.387,
-                  "temperature_min_lt_0c": 0.581,
-                  "temperature_min_lt_minus5c": 0.129
+                  "cloud_cover_gt_50pct": {
+                    "available_members": 31,
+                    "members": 23,
+                    "members_valid": 31,
+                    "probability": 0.742
+                  },
+                  "cloud_cover_gt_70pct": {
+                    "available_members": 31,
+                    "members": 19,
+                    "members_valid": 31,
+                    "probability": 0.613
+                  },
+                  "cloud_cover_gt_90pct": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "cloud_cover_high_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "daily_tmax_lt_0c": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "daily_tmin_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "gust_gt_30kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_40kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_50kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_60kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "precipitation_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 28,
+                    "members_valid": 31,
+                    "probability": 0.903
+                  },
+                  "precipitation_gt_0_5mm": {
+                    "available_members": 31,
+                    "members": 27,
+                    "members_valid": 31,
+                    "probability": 0.871
+                  },
+                  "precipitation_gt_2mm": {
+                    "available_members": 31,
+                    "members": 17,
+                    "members_valid": 31,
+                    "probability": 0.548
+                  },
+                  "precipitation_gt_5mm": {
+                    "available_members": 31,
+                    "members": 8,
+                    "members_valid": 31,
+                    "probability": 0.258
+                  },
+                  "rain_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 28,
+                    "members_valid": 31,
+                    "probability": 0.903
+                  },
+                  "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 11,
+                    "members_valid": 31,
+                    "probability": 0.355
+                  },
+                  "snowfall_gt_0cm": {
+                    "available_members": 31,
+                    "members": 18,
+                    "members_valid": 31,
+                    "probability": 0.581
+                  },
+                  "snowfall_gt_1cm": {
+                    "available_members": 31,
+                    "members": 9,
+                    "members_valid": 31,
+                    "probability": 0.29
+                  },
+                  "snowfall_gt_2cm": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 3,
+                    "members_valid": 31,
+                    "probability": 0.097
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "temperature_lt_0c": {
+                    "available_members": 31,
+                    "members": 20,
+                    "members_valid": 31,
+                    "probability": 0.645
+                  },
+                  "temperature_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  }
                 },
                 "temperature_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 3.65,
-                  "mean": 1.181,
-                  "median": 1.525,
-                  "members_with_data": 31,
-                  "p10": -1.175,
-                  "p25": -0.581,
-                  "p75": 3.069,
-                  "p90": 4.0,
-                  "spread_p90_p10": 5.175
+                  "available_members": 31,
+                  "interquartile_spread": 3.573,
+                  "mean": 1.205,
+                  "median": 1.613,
+                  "members_valid": 31,
+                  "p10": -1.25,
+                  "p25": -0.529,
+                  "p75": 3.044,
+                  "p90": 4.021,
+                  "spread": 5.271
                 }
               },
-              "lead_days": 31,
+              "lead_days": 32,
               "metrics": {
                 "consensus": {
                   "sources": [
@@ -1247,137 +2943,337 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 71.633,
-                    "night_min_c": -1.581,
-                    "precipitation_mm": 2.568,
-                    "snowfall_cm": 0.691,
-                    "temperature_max_c": 6.113,
-                    "temperature_mean_c": 1.181,
-                    "temperature_min_c": -1.626
+                    "cloud_cover_mean_pct": 71.771,
+                    "night_min_c": -1.855,
+                    "precipitation_mm": 2.932,
+                    "snowfall_cm": 0.935,
+                    "temperature_max_c": 6.116,
+                    "temperature_mean_c": 1.205,
+                    "temperature_min_c": -1.855
                   }
                 },
                 "ecmwf_ensemble": null,
                 "gefs_long_range": {
-                  "cloud_cover_low_mean_pct": {
-                    "expected_members": 31,
+                  "cloud_cover_high_mean_pct": {
+                    "available_members": 0,
                     "interquartile_spread": null,
                     "mean": null,
                     "median": null,
-                    "members_with_data": 0,
+                    "members_valid": 31,
                     "p10": null,
                     "p25": null,
                     "p75": null,
                     "p90": null,
-                    "spread_p90_p10": null
+                    "spread": null
+                  },
+                  "cloud_cover_low_mean_pct": {
+                    "available_members": 0,
+                    "interquartile_spread": null,
+                    "mean": null,
+                    "median": null,
+                    "members_valid": 31,
+                    "p10": null,
+                    "p25": null,
+                    "p75": null,
+                    "p90": null,
+                    "spread": null
                   },
                   "cloud_cover_mean_pct": {
-                    "expected_members": 31,
-                    "interquartile_spread": 46.125,
-                    "mean": 71.633,
-                    "median": 76.125,
-                    "members_with_data": 31,
-                    "p10": 26.25,
-                    "p25": 52.0,
-                    "p75": 98.125,
-                    "p90": 99.25,
-                    "spread_p90_p10": 73.0
+                    "available_members": 31,
+                    "interquartile_spread": 49.292,
+                    "mean": 71.771,
+                    "median": 77.083,
+                    "members_valid": 31,
+                    "p10": 26.917,
+                    "p25": 49.27,
+                    "p75": 98.562,
+                    "p90": 99.458,
+                    "spread": 72.541
                   },
                   "date": "2026-10-25",
-                  "members_valid": 31,
                   "night_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 4.65,
-                    "mean": -1.581,
-                    "median": -1.7,
-                    "members_with_data": 31,
-                    "p10": -5.2,
-                    "p25": -3.95,
-                    "p75": 0.7,
-                    "p90": 1.7,
-                    "spread_p90_p10": 6.9
+                    "available_members": 31,
+                    "interquartile_spread": 4.35,
+                    "mean": -1.855,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.1,
+                    "p25": -4.1,
+                    "p75": 0.25,
+                    "p90": 1.5,
+                    "spread": 6.6
                   },
                   "precipitation_mm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 2.6,
-                    "mean": 2.568,
-                    "median": 2.0,
-                    "members_with_data": 31,
-                    "p10": 0.4,
-                    "p25": 1.0,
-                    "p75": 3.6,
-                    "p90": 5.8,
-                    "spread_p90_p10": 5.4
+                    "available_members": 31,
+                    "interquartile_spread": 3.6,
+                    "mean": 2.932,
+                    "median": 2.1,
+                    "members_valid": 31,
+                    "p10": 0.3,
+                    "p25": 0.9,
+                    "p75": 4.5,
+                    "p90": 6.6,
+                    "spread": 6.3
                   },
                   "probabilities": {
-                    "cloud_cover_gt_70pct": 0.613,
-                    "cloud_cover_low_gt_50pct": null,
-                    "gust_gt_40kmh": 0.0,
-                    "precipitation_gt_0_5mm": 0.871,
-                    "precipitation_gt_2mm": 0.484,
-                    "precipitation_gt_5mm": 0.129,
-                    "snowfall_gt_0_5cm": 0.387,
-                    "temperature_min_lt_0c": 0.581,
-                    "temperature_min_lt_minus5c": 0.129
+                    "cloud_cover_gt_50pct": {
+                      "available_members": 31,
+                      "members": 23,
+                      "members_valid": 31,
+                      "probability": 0.742
+                    },
+                    "cloud_cover_gt_70pct": {
+                      "available_members": 31,
+                      "members": 19,
+                      "members_valid": 31,
+                      "probability": 0.613
+                    },
+                    "cloud_cover_gt_90pct": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "cloud_cover_high_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "daily_tmax_lt_0c": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "daily_tmin_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "gust_gt_30kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_40kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_50kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_60kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "precipitation_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 28,
+                      "members_valid": 31,
+                      "probability": 0.903
+                    },
+                    "precipitation_gt_0_5mm": {
+                      "available_members": 31,
+                      "members": 27,
+                      "members_valid": 31,
+                      "probability": 0.871
+                    },
+                    "precipitation_gt_2mm": {
+                      "available_members": 31,
+                      "members": 17,
+                      "members_valid": 31,
+                      "probability": 0.548
+                    },
+                    "precipitation_gt_5mm": {
+                      "available_members": 31,
+                      "members": 8,
+                      "members_valid": 31,
+                      "probability": 0.258
+                    },
+                    "rain_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 28,
+                      "members_valid": 31,
+                      "probability": 0.903
+                    },
+                    "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 11,
+                      "members_valid": 31,
+                      "probability": 0.355
+                    },
+                    "snowfall_gt_0cm": {
+                      "available_members": 31,
+                      "members": 18,
+                      "members_valid": 31,
+                      "probability": 0.581
+                    },
+                    "snowfall_gt_1cm": {
+                      "available_members": 31,
+                      "members": 9,
+                      "members_valid": 31,
+                      "probability": 0.29
+                    },
+                    "snowfall_gt_2cm": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 3,
+                      "members_valid": 31,
+                      "probability": 0.097
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "temperature_lt_0c": {
+                      "available_members": 31,
+                      "members": 20,
+                      "members_valid": 31,
+                      "probability": 0.645
+                    },
+                    "temperature_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    }
+                  },
+                  "relative_humidity_mean_pct": {
+                    "available_members": 31,
+                    "interquartile_spread": 10.312,
+                    "mean": 86.415,
+                    "median": 91.292,
+                    "members_valid": 31,
+                    "p10": 73.625,
+                    "p25": 83.729,
+                    "p75": 94.041,
+                    "p90": 95.583,
+                    "spread": 21.958
                   },
                   "snowfall_cm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 0.98,
-                    "mean": 0.691,
-                    "median": 0.28,
-                    "members_with_data": 31,
+                    "available_members": 31,
+                    "interquartile_spread": 1.26,
+                    "mean": 0.935,
+                    "median": 0.42,
+                    "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 0.98,
-                    "p90": 1.68,
-                    "spread_p90_p10": 1.68
+                    "p75": 1.26,
+                    "p90": 2.73,
+                    "spread": 2.73
                   },
                   "temperature_max_c": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 5.3,
-                    "mean": 6.113,
+                    "mean": 6.116,
                     "median": 5.8,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 2.3,
                     "p25": 3.75,
                     "p75": 9.05,
                     "p90": 10.6,
-                    "spread_p90_p10": 8.3
+                    "spread": 8.3
                   },
                   "temperature_mean_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.65,
-                    "mean": 1.181,
-                    "median": 1.525,
-                    "members_with_data": 31,
-                    "p10": -1.175,
-                    "p25": -0.581,
-                    "p75": 3.069,
-                    "p90": 4.0,
-                    "spread_p90_p10": 5.175
+                    "available_members": 31,
+                    "interquartile_spread": 3.573,
+                    "mean": 1.205,
+                    "median": 1.613,
+                    "members_valid": 31,
+                    "p10": -1.25,
+                    "p25": -0.529,
+                    "p75": 3.044,
+                    "p90": 4.021,
+                    "spread": 5.271
                   },
                   "temperature_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 4.6,
-                    "mean": -1.626,
-                    "median": -1.7,
-                    "members_with_data": 31,
-                    "p10": -5.2,
-                    "p25": -3.95,
-                    "p75": 0.65,
-                    "p90": 1.6,
-                    "spread_p90_p10": 6.8
+                    "available_members": 31,
+                    "interquartile_spread": 4.35,
+                    "mean": -1.855,
+                    "median": -2.0,
+                    "members_valid": 31,
+                    "p10": -5.1,
+                    "p25": -4.1,
+                    "p75": 0.25,
+                    "p90": 1.5,
+                    "spread": 6.6
                   },
                   "wind_gust_max_kmh": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 3.25,
-                    "mean": 12.045,
+                    "mean": 12.168,
                     "median": 11.9,
-                    "members_with_data": 31,
-                    "p10": 9.0,
+                    "members_valid": 31,
+                    "p10": 9.4,
                     "p25": 10.6,
                     "p75": 13.85,
                     "p90": 15.1,
-                    "spread_p90_p10": 6.1
+                    "spread": 5.7
                   }
                 },
                 "gfs": null,
@@ -1404,42 +3300,219 @@
               "coverage_status": "GEFS_LONG_RANGE_AVAILABLE",
               "interpretation": {
                 "cloud_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 37.437,
-                  "mean": 79.629,
-                  "median": 95.625,
-                  "members_with_data": 31,
-                  "p10": 45.0,
-                  "p25": 62.438,
+                  "available_members": 31,
+                  "interquartile_spread": 37.666,
+                  "mean": 79.75,
+                  "median": 95.875,
+                  "members_valid": 31,
+                  "p10": 40.375,
+                  "p25": 62.209,
                   "p75": 99.875,
                   "p90": 100.0,
-                  "spread_p90_p10": 55.0
+                  "spread": 59.625
                 },
                 "precipitation_signal": {
-                  "cloud_cover_gt_70pct": 0.677,
-                  "cloud_cover_low_gt_50pct": null,
-                  "gust_gt_40kmh": 0.0,
-                  "precipitation_gt_0_5mm": 0.839,
-                  "precipitation_gt_2mm": 0.419,
-                  "precipitation_gt_5mm": 0.097,
-                  "snowfall_gt_0_5cm": 0.355,
-                  "temperature_min_lt_0c": 0.452,
-                  "temperature_min_lt_minus5c": 0.0
+                  "cloud_cover_gt_50pct": {
+                    "available_members": 31,
+                    "members": 25,
+                    "members_valid": 31,
+                    "probability": 0.806
+                  },
+                  "cloud_cover_gt_70pct": {
+                    "available_members": 31,
+                    "members": 21,
+                    "members_valid": 31,
+                    "probability": 0.677
+                  },
+                  "cloud_cover_gt_90pct": {
+                    "available_members": 31,
+                    "members": 19,
+                    "members_valid": 31,
+                    "probability": 0.613
+                  },
+                  "cloud_cover_high_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_high_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_low_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_30pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_50pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "cloud_cover_mid_gt_70pct": {
+                    "available_members": 0,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": null
+                  },
+                  "daily_tmax_lt_0c": {
+                    "available_members": 31,
+                    "members": 2,
+                    "members_valid": 31,
+                    "probability": 0.065
+                  },
+                  "daily_tmin_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "gust_gt_30kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_40kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_50kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "gust_gt_60kmh": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "precipitation_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 27,
+                    "members_valid": 31,
+                    "probability": 0.871
+                  },
+                  "precipitation_gt_0_5mm": {
+                    "available_members": 31,
+                    "members": 26,
+                    "members_valid": 31,
+                    "probability": 0.839
+                  },
+                  "precipitation_gt_2mm": {
+                    "available_members": 31,
+                    "members": 15,
+                    "members_valid": 31,
+                    "probability": 0.484
+                  },
+                  "precipitation_gt_5mm": {
+                    "available_members": 31,
+                    "members": 3,
+                    "members_valid": 31,
+                    "probability": 0.097
+                  },
+                  "rain_gt_0_1mm": {
+                    "available_members": 31,
+                    "members": 26,
+                    "members_valid": 31,
+                    "probability": 0.839
+                  },
+                  "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 10,
+                    "members_valid": 31,
+                    "probability": 0.323
+                  },
+                  "snowfall_gt_0cm": {
+                    "available_members": 31,
+                    "members": 17,
+                    "members_valid": 31,
+                    "probability": 0.548
+                  },
+                  "snowfall_gt_1cm": {
+                    "available_members": 31,
+                    "members": 8,
+                    "members_valid": 31,
+                    "probability": 0.258
+                  },
+                  "snowfall_gt_2cm": {
+                    "available_members": 31,
+                    "members": 4,
+                    "members_valid": 31,
+                    "probability": 0.129
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
+                  },
+                  "temperature_lt_0c": {
+                    "available_members": 31,
+                    "members": 14,
+                    "members_valid": 31,
+                    "probability": 0.452
+                  },
+                  "temperature_lt_minus5c": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  }
                 },
                 "temperature_signal": {
-                  "expected_members": 31,
-                  "interquartile_spread": 2.544,
-                  "mean": 1.873,
-                  "median": 2.013,
-                  "members_with_data": 31,
-                  "p10": -1.062,
-                  "p25": 1.043,
-                  "p75": 3.587,
-                  "p90": 4.375,
-                  "spread_p90_p10": 5.437
+                  "available_members": 31,
+                  "interquartile_spread": 2.36,
+                  "mean": 1.889,
+                  "median": 1.887,
+                  "members_valid": 31,
+                  "p10": -0.946,
+                  "p25": 1.158,
+                  "p75": 3.518,
+                  "p90": 4.367,
+                  "spread": 5.313
                 }
               },
-              "lead_days": 31,
+              "lead_days": 32,
               "metrics": {
                 "consensus": {
                   "sources": [
@@ -1447,137 +3520,337 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 79.629,
-                    "night_min_c": 0.148,
-                    "precipitation_mm": 2.342,
-                    "snowfall_cm": 0.614,
-                    "temperature_max_c": 4.655,
-                    "temperature_mean_c": 1.873,
-                    "temperature_min_c": 0.094
+                    "cloud_cover_mean_pct": 79.75,
+                    "night_min_c": -0.058,
+                    "precipitation_mm": 2.41,
+                    "snowfall_cm": 0.677,
+                    "temperature_max_c": 4.671,
+                    "temperature_mean_c": 1.889,
+                    "temperature_min_c": -0.058
                   }
                 },
                 "ecmwf_ensemble": null,
                 "gefs_long_range": {
-                  "cloud_cover_low_mean_pct": {
-                    "expected_members": 31,
+                  "cloud_cover_high_mean_pct": {
+                    "available_members": 0,
                     "interquartile_spread": null,
                     "mean": null,
                     "median": null,
-                    "members_with_data": 0,
+                    "members_valid": 31,
                     "p10": null,
                     "p25": null,
                     "p75": null,
                     "p90": null,
-                    "spread_p90_p10": null
+                    "spread": null
+                  },
+                  "cloud_cover_low_mean_pct": {
+                    "available_members": 0,
+                    "interquartile_spread": null,
+                    "mean": null,
+                    "median": null,
+                    "members_valid": 31,
+                    "p10": null,
+                    "p25": null,
+                    "p75": null,
+                    "p90": null,
+                    "spread": null
                   },
                   "cloud_cover_mean_pct": {
-                    "expected_members": 31,
-                    "interquartile_spread": 37.437,
-                    "mean": 79.629,
-                    "median": 95.625,
-                    "members_with_data": 31,
-                    "p10": 45.0,
-                    "p25": 62.438,
+                    "available_members": 31,
+                    "interquartile_spread": 37.666,
+                    "mean": 79.75,
+                    "median": 95.875,
+                    "members_valid": 31,
+                    "p10": 40.375,
+                    "p25": 62.209,
                     "p75": 99.875,
                     "p90": 100.0,
-                    "spread_p90_p10": 55.0
+                    "spread": 59.625
                   },
                   "date": "2026-10-25",
-                  "members_valid": 31,
                   "night_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.45,
-                    "mean": 0.148,
-                    "median": 0.2,
-                    "members_with_data": 31,
+                    "available_members": 31,
+                    "interquartile_spread": 3.5,
+                    "mean": -0.058,
+                    "median": 0.1,
+                    "members_valid": 31,
                     "p10": -2.6,
-                    "p25": -1.3,
-                    "p75": 2.15,
-                    "p90": 2.9,
-                    "spread_p90_p10": 5.5
+                    "p25": -1.5,
+                    "p75": 2.0,
+                    "p90": 2.7,
+                    "spread": 5.3
                   },
                   "precipitation_mm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 2.1,
-                    "mean": 2.342,
-                    "median": 1.6,
-                    "members_with_data": 31,
-                    "p10": 0.4,
-                    "p25": 0.8,
-                    "p75": 2.9,
-                    "p90": 4.4,
-                    "spread_p90_p10": 4.0
+                    "available_members": 31,
+                    "interquartile_spread": 3.15,
+                    "mean": 2.41,
+                    "median": 1.8,
+                    "members_valid": 31,
+                    "p10": 0.0,
+                    "p25": 0.75,
+                    "p75": 3.9,
+                    "p90": 4.8,
+                    "spread": 4.8
                   },
                   "probabilities": {
-                    "cloud_cover_gt_70pct": 0.677,
-                    "cloud_cover_low_gt_50pct": null,
-                    "gust_gt_40kmh": 0.0,
-                    "precipitation_gt_0_5mm": 0.839,
-                    "precipitation_gt_2mm": 0.419,
-                    "precipitation_gt_5mm": 0.097,
-                    "snowfall_gt_0_5cm": 0.355,
-                    "temperature_min_lt_0c": 0.452,
-                    "temperature_min_lt_minus5c": 0.0
+                    "cloud_cover_gt_50pct": {
+                      "available_members": 31,
+                      "members": 25,
+                      "members_valid": 31,
+                      "probability": 0.806
+                    },
+                    "cloud_cover_gt_70pct": {
+                      "available_members": 31,
+                      "members": 21,
+                      "members_valid": 31,
+                      "probability": 0.677
+                    },
+                    "cloud_cover_gt_90pct": {
+                      "available_members": 31,
+                      "members": 19,
+                      "members_valid": 31,
+                      "probability": 0.613
+                    },
+                    "cloud_cover_high_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_high_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_low_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_30pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_50pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "cloud_cover_mid_gt_70pct": {
+                      "available_members": 0,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": null
+                    },
+                    "daily_tmax_lt_0c": {
+                      "available_members": 31,
+                      "members": 2,
+                      "members_valid": 31,
+                      "probability": 0.065
+                    },
+                    "daily_tmin_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "gust_gt_30kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_40kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_50kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "gust_gt_60kmh": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "precipitation_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 27,
+                      "members_valid": 31,
+                      "probability": 0.871
+                    },
+                    "precipitation_gt_0_5mm": {
+                      "available_members": 31,
+                      "members": 26,
+                      "members_valid": 31,
+                      "probability": 0.839
+                    },
+                    "precipitation_gt_2mm": {
+                      "available_members": 31,
+                      "members": 15,
+                      "members_valid": 31,
+                      "probability": 0.484
+                    },
+                    "precipitation_gt_5mm": {
+                      "available_members": 31,
+                      "members": 3,
+                      "members_valid": 31,
+                      "probability": 0.097
+                    },
+                    "rain_gt_0_1mm": {
+                      "available_members": 31,
+                      "members": 26,
+                      "members_valid": 31,
+                      "probability": 0.839
+                    },
+                    "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 10,
+                      "members_valid": 31,
+                      "probability": 0.323
+                    },
+                    "snowfall_gt_0cm": {
+                      "available_members": 31,
+                      "members": 17,
+                      "members_valid": 31,
+                      "probability": 0.548
+                    },
+                    "snowfall_gt_1cm": {
+                      "available_members": 31,
+                      "members": 8,
+                      "members_valid": 31,
+                      "probability": 0.258
+                    },
+                    "snowfall_gt_2cm": {
+                      "available_members": 31,
+                      "members": 4,
+                      "members_valid": 31,
+                      "probability": 0.129
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
+                    },
+                    "temperature_lt_0c": {
+                      "available_members": 31,
+                      "members": 14,
+                      "members_valid": 31,
+                      "probability": 0.452
+                    },
+                    "temperature_lt_minus5c": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    }
+                  },
+                  "relative_humidity_mean_pct": {
+                    "available_members": 31,
+                    "interquartile_spread": 7.667,
+                    "mean": 90.66,
+                    "median": 93.292,
+                    "members_valid": 31,
+                    "p10": 82.792,
+                    "p25": 89.312,
+                    "p75": 96.979,
+                    "p90": 97.792,
+                    "spread": 15.0
                   },
                   "snowfall_cm": {
-                    "expected_members": 31,
-                    "interquartile_spread": 0.7,
-                    "mean": 0.614,
-                    "median": 0.28,
-                    "members_with_data": 31,
+                    "available_members": 31,
+                    "interquartile_spread": 1.05,
+                    "mean": 0.677,
+                    "median": 0.42,
+                    "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 0.7,
-                    "p90": 1.4,
-                    "spread_p90_p10": 1.4
+                    "p75": 1.05,
+                    "p90": 2.31,
+                    "spread": 2.31
                   },
                   "temperature_max_c": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 3.55,
-                    "mean": 4.655,
+                    "mean": 4.671,
                     "median": 4.7,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 1.3,
                     "p25": 2.95,
                     "p75": 6.5,
                     "p90": 6.9,
-                    "spread_p90_p10": 5.6
+                    "spread": 5.6
                   },
                   "temperature_mean_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 2.544,
-                    "mean": 1.873,
-                    "median": 2.013,
-                    "members_with_data": 31,
-                    "p10": -1.062,
-                    "p25": 1.043,
-                    "p75": 3.587,
-                    "p90": 4.375,
-                    "spread_p90_p10": 5.437
+                    "available_members": 31,
+                    "interquartile_spread": 2.36,
+                    "mean": 1.889,
+                    "median": 1.887,
+                    "members_valid": 31,
+                    "p10": -0.946,
+                    "p25": 1.158,
+                    "p75": 3.518,
+                    "p90": 4.367,
+                    "spread": 5.313
                   },
                   "temperature_min_c": {
-                    "expected_members": 31,
-                    "interquartile_spread": 3.45,
-                    "mean": 0.094,
-                    "median": 0.2,
-                    "members_with_data": 31,
+                    "available_members": 31,
+                    "interquartile_spread": 3.5,
+                    "mean": -0.058,
+                    "median": 0.1,
+                    "members_valid": 31,
                     "p10": -2.6,
-                    "p25": -1.3,
-                    "p75": 2.15,
-                    "p90": 2.9,
-                    "spread_p90_p10": 5.5
+                    "p25": -1.5,
+                    "p75": 2.0,
+                    "p90": 2.7,
+                    "spread": 5.3
                   },
                   "wind_gust_max_kmh": {
-                    "expected_members": 31,
+                    "available_members": 31,
                     "interquartile_spread": 2.3,
-                    "mean": 11.21,
+                    "mean": 11.223,
                     "median": 11.2,
-                    "members_with_data": 31,
+                    "members_valid": 31,
                     "p10": 8.6,
                     "p25": 9.9,
                     "p75": 12.2,
                     "p90": 13.3,
-                    "spread_p90_p10": 4.7
+                    "spread": 4.7
                   }
                 },
                 "gfs": null,
@@ -1590,7 +3863,8 @@
                 "name": "四姑娘山·双桥沟游客中心",
                 "region": "siguniang",
                 "role": "core",
-                "status": "VERIFIED"
+                "status": "VERIFIED",
+                "subregion": "shuangqiao"
               },
               "sources_available": {
                 "ecmwf_ensemble": false,

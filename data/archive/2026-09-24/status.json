@@ -1,20 +1,581 @@
 {
-  "data_date": "2026-09-24",
-  "generated_at": "2026-09-24T04:54:00Z",
-  "module": "status",
+  "archive_kind": "compact_daily_snapshot",
+  "data_date": "2026-09-23",
+  "failure_policy": "Any request, QA, model, timezone, missing-data, or grid-representativeness failure is recorded as INVALID; no external weather fallback is used.",
+  "generated_at": "2026-09-24T08:14:18Z",
+  "history_years": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "hourly_values_omitted": true,
+  "manual_phenology_baseline": null,
+  "module_details": {
+    "ensemble": {
+      "error": null,
+      "failed_points": 0,
+      "model_key": "ecmwf_ensemble",
+      "optional_unavailable_variables": [],
+      "partial_points": null,
+      "required_unavailable_variables": [],
+      "status": "OK",
+      "successful_points": 3,
+      "variable_status": {
+        "cloud_cover": "OK",
+        "cloud_cover_high": "OK",
+        "cloud_cover_low": "OK",
+        "cloud_cover_mid": "OK",
+        "dew_point_2m": "OK",
+        "precipitation": "OK",
+        "rain": "OK",
+        "relative_humidity_2m": "OK",
+        "snowfall": "OK",
+        "sunshine_duration": "OK",
+        "temperature_2m": "OK",
+        "wind_direction_10m": "OK",
+        "wind_gusts_10m": "OK",
+        "wind_speed_10m": "OK"
+      }
+    },
+    "gefs": {
+      "cloud_layer_status": {
+        "cloud_cover": "OK",
+        "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+        "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+        "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+      },
+      "error": null,
+      "failed_points": 0,
+      "model_key": "gefs_ensemble",
+      "optional_missing_variables": [
+        "cloud_cover_high",
+        "cloud_cover_low",
+        "cloud_cover_mid",
+        "shortwave_radiation"
+      ],
+      "optional_unavailable_variables": [],
+      "partial_points": 7,
+      "point_status_summary": {
+        "BPG_CENTER": {
+          "cloud_layer_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+          },
+          "optional_missing_variables": [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation"
+          ],
+          "required_missing_variables": [],
+          "stale": false,
+          "status": "PARTIAL",
+          "usable": true,
+          "variable_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+            "dew_point_2m": "OK",
+            "precipitation": "PARTIAL",
+            "rain": "PARTIAL",
+            "relative_humidity_2m": "OK",
+            "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+            "snowfall": "PARTIAL",
+            "sunshine_duration": "OK",
+            "temperature_2m": "OK",
+            "wind_direction_10m": "OK",
+            "wind_gusts_10m": "OK",
+            "wind_speed_10m": "OK"
+          }
+        },
+        "JZG_LONGHAI": {
+          "cloud_layer_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+          },
+          "optional_missing_variables": [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation"
+          ],
+          "required_missing_variables": [],
+          "stale": false,
+          "status": "PARTIAL",
+          "usable": true,
+          "variable_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+            "dew_point_2m": "OK",
+            "precipitation": "PARTIAL",
+            "rain": "PARTIAL",
+            "relative_humidity_2m": "OK",
+            "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+            "snowfall": "PARTIAL",
+            "sunshine_duration": "OK",
+            "temperature_2m": "OK",
+            "wind_direction_10m": "OK",
+            "wind_gusts_10m": "OK",
+            "wind_speed_10m": "OK"
+          }
+        },
+        "JZG_NORILANG": {
+          "cloud_layer_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+          },
+          "optional_missing_variables": [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation"
+          ],
+          "required_missing_variables": [],
+          "stale": false,
+          "status": "PARTIAL",
+          "usable": true,
+          "variable_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+            "dew_point_2m": "OK",
+            "precipitation": "PARTIAL",
+            "rain": "PARTIAL",
+            "relative_humidity_2m": "OK",
+            "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+            "snowfall": "PARTIAL",
+            "sunshine_duration": "OK",
+            "temperature_2m": "OK",
+            "wind_direction_10m": "OK",
+            "wind_gusts_10m": "OK",
+            "wind_speed_10m": "OK"
+          }
+        },
+        "JZG_PRIMEVAL": {
+          "cloud_layer_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+          },
+          "optional_missing_variables": [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation"
+          ],
+          "required_missing_variables": [],
+          "stale": false,
+          "status": "PARTIAL",
+          "usable": true,
+          "variable_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+            "dew_point_2m": "OK",
+            "precipitation": "PARTIAL",
+            "rain": "PARTIAL",
+            "relative_humidity_2m": "OK",
+            "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+            "snowfall": "PARTIAL",
+            "sunshine_duration": "OK",
+            "temperature_2m": "OK",
+            "wind_direction_10m": "OK",
+            "wind_gusts_10m": "OK",
+            "wind_speed_10m": "OK"
+          }
+        },
+        "JZG_TREESHENG": {
+          "cloud_layer_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+          },
+          "optional_missing_variables": [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation"
+          ],
+          "required_missing_variables": [],
+          "stale": false,
+          "status": "PARTIAL",
+          "usable": true,
+          "variable_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+            "dew_point_2m": "OK",
+            "precipitation": "PARTIAL",
+            "rain": "PARTIAL",
+            "relative_humidity_2m": "OK",
+            "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+            "snowfall": "PARTIAL",
+            "sunshine_duration": "OK",
+            "temperature_2m": "OK",
+            "wind_direction_10m": "OK",
+            "wind_gusts_10m": "OK",
+            "wind_speed_10m": "OK"
+          }
+        },
+        "LXL_HIGH_PASS": {
+          "cloud_layer_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+          },
+          "optional_missing_variables": [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation"
+          ],
+          "required_missing_variables": [],
+          "stale": false,
+          "status": "PARTIAL",
+          "usable": true,
+          "variable_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+            "dew_point_2m": "OK",
+            "precipitation": "PARTIAL",
+            "rain": "PARTIAL",
+            "relative_humidity_2m": "OK",
+            "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+            "snowfall": "PARTIAL",
+            "sunshine_duration": "OK",
+            "temperature_2m": "OK",
+            "wind_direction_10m": "OK",
+            "wind_gusts_10m": "OK",
+            "wind_speed_10m": "OK"
+          }
+        },
+        "SQG_SHUANGQIAO": {
+          "cloud_layer_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE"
+          },
+          "optional_missing_variables": [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation"
+          ],
+          "required_missing_variables": [],
+          "stale": false,
+          "status": "PARTIAL",
+          "usable": true,
+          "variable_status": {
+            "cloud_cover": "OK",
+            "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+            "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+            "dew_point_2m": "OK",
+            "precipitation": "PARTIAL",
+            "rain": "PARTIAL",
+            "relative_humidity_2m": "OK",
+            "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+            "snowfall": "PARTIAL",
+            "sunshine_duration": "OK",
+            "temperature_2m": "OK",
+            "wind_direction_10m": "OK",
+            "wind_gusts_10m": "OK",
+            "wind_speed_10m": "OK"
+          }
+        }
+      },
+      "required_missing_variables": [],
+      "required_unavailable_variables": [],
+      "status": "PARTIAL",
+      "successful_points": 0,
+      "usable_points": 7,
+      "variable_status": {
+        "cloud_cover": "OK",
+        "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+        "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+        "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+        "dew_point_2m": "OK",
+        "precipitation": "PARTIAL",
+        "rain": "PARTIAL",
+        "relative_humidity_2m": "OK",
+        "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+        "snowfall": "PARTIAL",
+        "sunshine_duration": "OK",
+        "temperature_2m": "OK",
+        "wind_direction_10m": "OK",
+        "wind_gusts_10m": "OK",
+        "wind_speed_10m": "OK"
+      },
+      "warnings": [
+        "BPG_CENTER:long_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "BPG_CENTER:long_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "BPG_CENTER:long_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "BPG_CENTER:long_range:shortwave_radiation:OPTIONAL_UNAVAILABLE",
+        "BPG_CENTER:long_range:shortwave_radiation:OPTIONAL_VARIABLE_QA_FAIL",
+        "BPG_CENTER:near_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "BPG_CENTER:near_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "BPG_CENTER:near_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_LONGHAI:long_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_LONGHAI:long_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_LONGHAI:long_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_LONGHAI:long_range:shortwave_radiation:OPTIONAL_UNAVAILABLE",
+        "JZG_LONGHAI:long_range:shortwave_radiation:OPTIONAL_VARIABLE_QA_FAIL",
+        "JZG_LONGHAI:near_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_LONGHAI:near_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_LONGHAI:near_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_NORILANG:long_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_NORILANG:long_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_NORILANG:long_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_NORILANG:long_range:shortwave_radiation:OPTIONAL_UNAVAILABLE",
+        "JZG_NORILANG:long_range:shortwave_radiation:OPTIONAL_VARIABLE_QA_FAIL",
+        "JZG_NORILANG:near_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_NORILANG:near_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_NORILANG:near_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_PRIMEVAL:long_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_PRIMEVAL:long_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_PRIMEVAL:long_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_PRIMEVAL:long_range:shortwave_radiation:OPTIONAL_UNAVAILABLE",
+        "JZG_PRIMEVAL:long_range:shortwave_radiation:OPTIONAL_VARIABLE_QA_FAIL",
+        "JZG_PRIMEVAL:near_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_PRIMEVAL:near_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_PRIMEVAL:near_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_TREESHENG:long_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_TREESHENG:long_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_TREESHENG:long_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "JZG_TREESHENG:long_range:shortwave_radiation:OPTIONAL_UNAVAILABLE",
+        "JZG_TREESHENG:long_range:shortwave_radiation:OPTIONAL_VARIABLE_QA_FAIL",
+        "JZG_TREESHENG:near_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "JZG_TREESHENG:near_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "JZG_TREESHENG:near_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "LXL_HIGH_PASS:long_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "LXL_HIGH_PASS:long_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "LXL_HIGH_PASS:long_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "LXL_HIGH_PASS:long_range:shortwave_radiation:OPTIONAL_UNAVAILABLE",
+        "LXL_HIGH_PASS:long_range:shortwave_radiation:OPTIONAL_VARIABLE_QA_FAIL",
+        "LXL_HIGH_PASS:near_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "LXL_HIGH_PASS:near_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "LXL_HIGH_PASS:near_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "SQG_SHUANGQIAO:long_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "SQG_SHUANGQIAO:long_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "SQG_SHUANGQIAO:long_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE",
+        "SQG_SHUANGQIAO:long_range:shortwave_radiation:OPTIONAL_UNAVAILABLE",
+        "SQG_SHUANGQIAO:long_range:shortwave_radiation:OPTIONAL_VARIABLE_QA_FAIL",
+        "SQG_SHUANGQIAO:near_range:cloud_cover_high:OPTIONAL_UNAVAILABLE",
+        "SQG_SHUANGQIAO:near_range:cloud_cover_low:OPTIONAL_UNAVAILABLE",
+        "SQG_SHUANGQIAO:near_range:cloud_cover_mid:OPTIONAL_UNAVAILABLE"
+      ]
+    },
+    "gfs": {
+      "error": null,
+      "failed_points": 0,
+      "model_key": "gfs_deterministic",
+      "optional_unavailable_variables": [],
+      "partial_points": null,
+      "required_unavailable_variables": [],
+      "status": "OK",
+      "successful_points": 7,
+      "variable_status": {
+        "cloud_cover": "OK",
+        "cloud_cover_high": "OK",
+        "cloud_cover_low": "OK",
+        "cloud_cover_mid": "OK",
+        "dew_point_2m": "OK",
+        "precipitation": "OK",
+        "rain": "OK",
+        "relative_humidity_2m": "OK",
+        "snowfall": "OK",
+        "sunshine_duration": "OK",
+        "temperature_2m": "OK",
+        "wind_direction_10m": "OK",
+        "wind_gusts_10m": "OK",
+        "wind_speed_10m": "OK"
+      }
+    },
+    "historical_comparison": {
+      "error": null,
+      "failed_points": null,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": null
+    },
+    "history": {
+      "error": null,
+      "failed_points": 0,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": 28
+    },
+    "history_forward": {
+      "error": null,
+      "failed_points": 0,
+      "partial_points": 0,
+      "status": "OK",
+      "successful_points": 21
+    },
+    "hres": {
+      "error": null,
+      "failed_points": 0,
+      "model_key": "ecmwf_deterministic_hres",
+      "optional_unavailable_variables": [],
+      "partial_points": null,
+      "required_unavailable_variables": [],
+      "status": "OK",
+      "successful_points": 7,
+      "variable_status": {
+        "cloud_cover": "OK",
+        "cloud_cover_high": "OK",
+        "cloud_cover_low": "OK",
+        "cloud_cover_mid": "OK",
+        "dew_point_2m": "OK",
+        "precipitation": "OK",
+        "rain": "OK",
+        "relative_humidity_2m": "OK",
+        "snowfall": "OK",
+        "sunshine_duration": "OK",
+        "temperature_2m": "OK",
+        "wind_direction_10m": "OK",
+        "wind_gusts_10m": "OK",
+        "wind_speed_10m": "OK"
+      }
+    },
+    "long_range": {
+      "error": null,
+      "failed_points": 0,
+      "partial_points": 0,
+      "status": "OK",
+      "successful_points": 3
+    },
+    "phenology_weather_summary": {
+      "error": null,
+      "failed_points": 0,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": null
+    },
+    "single_runs": {
+      "error": null,
+      "failed_points": null,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": null
+    },
+    "spatial_sampling": {
+      "error": null,
+      "failed_points": null,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": null
+    },
+    "summary": {
+      "error": null,
+      "failed_points": null,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": null
+    },
+    "target_summary": {
+      "error": null,
+      "failed_points": null,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": null
+    },
+    "weather_events": {
+      "error": null,
+      "failed_points": 0,
+      "partial_points": null,
+      "status": "OK",
+      "successful_points": 7
+    }
+  },
   "modules": {
     "ensemble": "OK",
     "gefs": "PARTIAL",
     "gfs": "OK",
     "historical_comparison": "OK",
+    "history": "OK",
+    "history_forward": "OK",
     "hres": "OK",
-    "summary": "OK",
-    "target_summary": "OK"
+    "long_range": "OK",
+    "phenology_weather_summary": "OK",
+    "single_runs": "OK",
+    "spatial_sampling": "OK",
+    "target_summary": "OK",
+    "weather_events": "OK"
   },
-  "next_refresh_note": "GitHub Actions按北京时间02:17、08:17、14:17、20:17更新；模型窗口随日期推进，未覆盖目标日会自动进入远期/近期期待范围。",
   "pipeline_status": "PARTIAL",
-  "schema_version": "1.0.0",
-  "source": "Open-Meteo",
+  "points": {
+    "BPG_CENTER": {
+      "name": "毕棚沟·游客中心",
+      "reason": null,
+      "region": "siguniang",
+      "status": "VERIFIED",
+      "usable_for_main_chain": true
+    },
+    "JZG_LONGHAI": {
+      "name": "九寨沟·长海",
+      "reason": null,
+      "region": "jiuzhaigou",
+      "status": "VERIFIED",
+      "usable_for_main_chain": true
+    },
+    "JZG_NORILANG": {
+      "name": "九寨沟·诺日朗中心",
+      "reason": null,
+      "region": "jiuzhaigou",
+      "status": "VERIFIED",
+      "usable_for_main_chain": true
+    },
+    "JZG_PRIMEVAL": {
+      "name": "九寨沟·原始森林",
+      "reason": null,
+      "region": "jiuzhaigou",
+      "status": "VERIFIED",
+      "usable_for_main_chain": true
+    },
+    "JZG_TREESHENG": {
+      "name": "九寨沟·树正寨/中段",
+      "reason": null,
+      "region": "jiuzhaigou",
+      "status": "VERIFIED",
+      "usable_for_main_chain": true
+    },
+    "LXL_HIGH_PASS": {
+      "name": "理小路·高位垭口代表点",
+      "reason": null,
+      "region": "lixiaolu",
+      "status": "VERIFIED",
+      "usable_for_main_chain": true
+    },
+    "SQG_SHUANGQIAO": {
+      "name": "四姑娘山·双桥沟游客中心",
+      "reason": null,
+      "region": "siguniang",
+      "status": "VERIFIED",
+      "usable_for_main_chain": true
+    }
+  },
+  "route_slots": {},
+  "schema_version": "1.4.0",
   "target_coverage": {
     "jiuzhaigou_2026_10_31_11_01": {
       "2026-10-31": {
@@ -50,5 +611,84 @@
     "2026-10-25",
     "2026-10-31",
     "2026-11-01"
-  ]
+  ],
+  "variable_model_policy": {
+    "cross_model_averaging": false,
+    "independent": true,
+    "models": [
+      "ECMWF deterministic / HRES",
+      "ECMWF ensemble",
+      "GFS deterministic",
+      "GEFS ensemble"
+    ],
+    "note": "An OPTIONAL_UNAVAILABLE variable is missing at the source; it is never substituted from another model.",
+    "unavailable_values_are_null": true
+  },
+  "variable_status": {
+    "ecmwf_deterministic_hres": {
+      "cloud_cover": "OK",
+      "cloud_cover_high": "OK",
+      "cloud_cover_low": "OK",
+      "cloud_cover_mid": "OK",
+      "dew_point_2m": "OK",
+      "precipitation": "OK",
+      "rain": "OK",
+      "relative_humidity_2m": "OK",
+      "snowfall": "OK",
+      "sunshine_duration": "OK",
+      "temperature_2m": "OK",
+      "wind_direction_10m": "OK",
+      "wind_gusts_10m": "OK",
+      "wind_speed_10m": "OK"
+    },
+    "ecmwf_ensemble": {
+      "cloud_cover": "OK",
+      "cloud_cover_high": "OK",
+      "cloud_cover_low": "OK",
+      "cloud_cover_mid": "OK",
+      "dew_point_2m": "OK",
+      "precipitation": "OK",
+      "rain": "OK",
+      "relative_humidity_2m": "OK",
+      "snowfall": "OK",
+      "sunshine_duration": "OK",
+      "temperature_2m": "OK",
+      "wind_direction_10m": "OK",
+      "wind_gusts_10m": "OK",
+      "wind_speed_10m": "OK"
+    },
+    "gefs_ensemble": {
+      "cloud_cover": "OK",
+      "cloud_cover_high": "OPTIONAL_UNAVAILABLE",
+      "cloud_cover_low": "OPTIONAL_UNAVAILABLE",
+      "cloud_cover_mid": "OPTIONAL_UNAVAILABLE",
+      "dew_point_2m": "OK",
+      "precipitation": "PARTIAL",
+      "rain": "PARTIAL",
+      "relative_humidity_2m": "OK",
+      "shortwave_radiation": "OPTIONAL_UNAVAILABLE",
+      "snowfall": "PARTIAL",
+      "sunshine_duration": "OK",
+      "temperature_2m": "OK",
+      "wind_direction_10m": "OK",
+      "wind_gusts_10m": "OK",
+      "wind_speed_10m": "OK"
+    },
+    "gfs_deterministic": {
+      "cloud_cover": "OK",
+      "cloud_cover_high": "OK",
+      "cloud_cover_low": "OK",
+      "cloud_cover_mid": "OK",
+      "dew_point_2m": "OK",
+      "precipitation": "OK",
+      "rain": "OK",
+      "relative_humidity_2m": "OK",
+      "snowfall": "OK",
+      "sunshine_duration": "OK",
+      "temperature_2m": "OK",
+      "wind_direction_10m": "OK",
+      "wind_gusts_10m": "OK",
+      "wind_speed_10m": "OK"
+    }
+  }
 }
