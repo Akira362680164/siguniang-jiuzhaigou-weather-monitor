@@ -1,5 +1,6 @@
 {
   "anchor_date": "2026-09-25",
+  "archive_kind": "compact_daily_snapshot",
   "cutoff_date": "2026-11-01",
   "data_date": "2026-09-24",
   "endpoint": "https://archive-api.open-meteo.com/v1/archive",
@@ -26,6 +27,7 @@
     2024,
     2025
   ],
+  "hourly_values_omitted": true,
   "interpretation_boundary": "Historical weather after the current calendar date; weather reference only.",
   "jiuzhaigou_aggregation": {
     "composite_status": "OK",
@@ -2591,21 +2593,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2023-11-01",
-            "cached_start_date": "2023-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2023/BPG_CENTER.json",
-            "refresh_requested": false,
-            "requested_end_date": "2023-11-01",
-            "requested_start_date": "2023-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.3806,
@@ -2699,45 +2686,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2023-10-02",
-              "requested_start_date": "2023-09-25",
-              "start_date": "2023-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2023-11-01",
-              "requested_start_date": "2023-10-11",
-              "start_date": "2023-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2023-10-10",
-              "requested_start_date": "2023-10-03",
-              "start_date": "2023-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2024": {
           "d0_7": {
@@ -5227,21 +5176,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2024-11-01",
-            "cached_start_date": "2024-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2024/BPG_CENTER.json",
-            "refresh_requested": false,
-            "requested_end_date": "2024-11-01",
-            "requested_start_date": "2024-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.3806,
@@ -5335,45 +5269,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2024-10-02",
-              "requested_start_date": "2024-09-25",
-              "start_date": "2024-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2024-11-01",
-              "requested_start_date": "2024-10-11",
-              "start_date": "2024-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2024-10-10",
-              "requested_start_date": "2024-10-03",
-              "start_date": "2024-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2025": {
           "d0_7": {
@@ -7811,21 +7707,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2025-11-01",
-            "cached_start_date": "2025-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2025/BPG_CENTER.json",
-            "refresh_requested": false,
-            "requested_end_date": "2025-11-01",
-            "requested_start_date": "2025-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.3806,
@@ -7919,45 +7800,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2025-10-02",
-              "requested_start_date": "2025-09-25",
-              "start_date": "2025-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2025-11-01",
-              "requested_start_date": "2025-10-11",
-              "start_date": "2025-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2025-10-10",
-              "requested_start_date": "2025-10-03",
-              "start_date": "2025-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         }
       }
     },
@@ -10509,21 +10352,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2023-11-01",
-            "cached_start_date": "2023-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2023/JZG_LONGHAI.json",
-            "refresh_requested": false,
-            "requested_end_date": "2023-11-01",
-            "requested_start_date": "2023-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.036228,
@@ -10617,45 +10445,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2023-10-02",
-              "requested_start_date": "2023-09-25",
-              "start_date": "2023-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2023-11-01",
-              "requested_start_date": "2023-10-11",
-              "start_date": "2023-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2023-10-10",
-              "requested_start_date": "2023-10-03",
-              "start_date": "2023-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2024": {
           "d0_7": {
@@ -13123,21 +12913,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2024-11-01",
-            "cached_start_date": "2024-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2024/JZG_LONGHAI.json",
-            "refresh_requested": false,
-            "requested_end_date": "2024-11-01",
-            "requested_start_date": "2024-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.036228,
@@ -13231,45 +13006,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2024-10-02",
-              "requested_start_date": "2024-09-25",
-              "start_date": "2024-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2024-11-01",
-              "requested_start_date": "2024-10-11",
-              "start_date": "2024-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2024-10-10",
-              "requested_start_date": "2024-10-03",
-              "start_date": "2024-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2025": {
           "d0_7": {
@@ -15735,21 +15472,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2025-11-01",
-            "cached_start_date": "2025-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2025/JZG_LONGHAI.json",
-            "refresh_requested": false,
-            "requested_end_date": "2025-11-01",
-            "requested_start_date": "2025-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.036228,
@@ -15843,45 +15565,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2025-10-02",
-              "requested_start_date": "2025-09-25",
-              "start_date": "2025-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2025-11-01",
-              "requested_start_date": "2025-10-11",
-              "start_date": "2025-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2025-10-10",
-              "requested_start_date": "2025-10-03",
-              "start_date": "2025-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         }
       }
     },
@@ -18429,21 +18113,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2023-11-01",
-            "cached_start_date": "2023-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2023/JZG_NORILANG.json",
-            "refresh_requested": false,
-            "requested_end_date": "2023-11-01",
-            "requested_start_date": "2023-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.28,
@@ -18537,45 +18206,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2023-10-02",
-              "requested_start_date": "2023-09-25",
-              "start_date": "2023-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2023-11-01",
-              "requested_start_date": "2023-10-11",
-              "start_date": "2023-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2023-10-10",
-              "requested_start_date": "2023-10-03",
-              "start_date": "2023-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2024": {
           "d0_7": {
@@ -21051,21 +20682,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2024-11-01",
-            "cached_start_date": "2024-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2024/JZG_NORILANG.json",
-            "refresh_requested": false,
-            "requested_end_date": "2024-11-01",
-            "requested_start_date": "2024-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.28,
@@ -21159,45 +20775,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2024-10-02",
-              "requested_start_date": "2024-09-25",
-              "start_date": "2024-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2024-11-01",
-              "requested_start_date": "2024-10-11",
-              "start_date": "2024-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2024-10-10",
-              "requested_start_date": "2024-10-03",
-              "start_date": "2024-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2025": {
           "d0_7": {
@@ -23675,21 +23253,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2025-11-01",
-            "cached_start_date": "2025-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2025/JZG_NORILANG.json",
-            "refresh_requested": false,
-            "requested_end_date": "2025-11-01",
-            "requested_start_date": "2025-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.28,
@@ -23783,45 +23346,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2025-10-02",
-              "requested_start_date": "2025-09-25",
-              "start_date": "2025-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2025-11-01",
-              "requested_start_date": "2025-10-11",
-              "start_date": "2025-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2025-10-10",
-              "requested_start_date": "2025-10-03",
-              "start_date": "2025-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         }
       }
     },
@@ -26369,21 +25894,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2023-11-01",
-            "cached_start_date": "2023-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2023/JZG_PRIMEVAL.json",
-            "refresh_requested": false,
-            "requested_end_date": "2023-11-01",
-            "requested_start_date": "2023-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.347,
@@ -26477,45 +25987,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2023-10-02",
-              "requested_start_date": "2023-09-25",
-              "start_date": "2023-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2023-11-01",
-              "requested_start_date": "2023-10-11",
-              "start_date": "2023-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2023-10-10",
-              "requested_start_date": "2023-10-03",
-              "start_date": "2023-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2024": {
           "d0_7": {
@@ -29001,21 +28473,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2024-11-01",
-            "cached_start_date": "2024-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2024/JZG_PRIMEVAL.json",
-            "refresh_requested": false,
-            "requested_end_date": "2024-11-01",
-            "requested_start_date": "2024-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.347,
@@ -29109,45 +28566,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2024-10-02",
-              "requested_start_date": "2024-09-25",
-              "start_date": "2024-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2024-11-01",
-              "requested_start_date": "2024-10-11",
-              "start_date": "2024-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2024-10-10",
-              "requested_start_date": "2024-10-03",
-              "start_date": "2024-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2025": {
           "d0_7": {
@@ -31615,21 +31034,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2025-11-01",
-            "cached_start_date": "2025-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2025/JZG_PRIMEVAL.json",
-            "refresh_requested": false,
-            "requested_end_date": "2025-11-01",
-            "requested_start_date": "2025-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.347,
@@ -31723,45 +31127,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2025-10-02",
-              "requested_start_date": "2025-09-25",
-              "start_date": "2025-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2025-11-01",
-              "requested_start_date": "2025-10-11",
-              "start_date": "2025-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2025-10-10",
-              "requested_start_date": "2025-10-03",
-              "start_date": "2025-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         }
       }
     },
@@ -34308,21 +33674,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2023-11-01",
-            "cached_start_date": "2023-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2023/JZG_TREESHENG.json",
-            "refresh_requested": false,
-            "requested_end_date": "2023-11-01",
-            "requested_start_date": "2023-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.198939,
@@ -34416,45 +33767,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2023-10-02",
-              "requested_start_date": "2023-09-25",
-              "start_date": "2023-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2023-11-01",
-              "requested_start_date": "2023-10-11",
-              "start_date": "2023-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2023-10-10",
-              "requested_start_date": "2023-10-03",
-              "start_date": "2023-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2024": {
           "d0_7": {
@@ -36920,21 +36233,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2024-11-01",
-            "cached_start_date": "2024-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2024/JZG_TREESHENG.json",
-            "refresh_requested": false,
-            "requested_end_date": "2024-11-01",
-            "requested_start_date": "2024-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.198939,
@@ -37028,45 +36326,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2024-10-02",
-              "requested_start_date": "2024-09-25",
-              "start_date": "2024-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2024-11-01",
-              "requested_start_date": "2024-10-11",
-              "start_date": "2024-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2024-10-10",
-              "requested_start_date": "2024-10-03",
-              "start_date": "2024-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2025": {
           "d0_7": {
@@ -39529,21 +38789,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2025-11-01",
-            "cached_start_date": "2025-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2025/JZG_TREESHENG.json",
-            "refresh_requested": false,
-            "requested_end_date": "2025-11-01",
-            "requested_start_date": "2025-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 33.198939,
@@ -39637,45 +38882,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2025-10-02",
-              "requested_start_date": "2025-09-25",
-              "start_date": "2025-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2025-11-01",
-              "requested_start_date": "2025-10-11",
-              "start_date": "2025-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2025-10-10",
-              "requested_start_date": "2025-10-03",
-              "start_date": "2025-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         }
       }
     },
@@ -42228,21 +41435,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2023-11-01",
-            "cached_start_date": "2023-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2023/LXL_HIGH_PASS.json",
-            "refresh_requested": false,
-            "requested_end_date": "2023-11-01",
-            "requested_start_date": "2023-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.4,
@@ -42336,45 +41528,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2023-10-02",
-              "requested_start_date": "2023-09-25",
-              "start_date": "2023-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2023-11-01",
-              "requested_start_date": "2023-10-11",
-              "start_date": "2023-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2023-10-10",
-              "requested_start_date": "2023-10-03",
-              "start_date": "2023-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2024": {
           "d0_7": {
@@ -44854,21 +44008,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2024-11-01",
-            "cached_start_date": "2024-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2024/LXL_HIGH_PASS.json",
-            "refresh_requested": false,
-            "requested_end_date": "2024-11-01",
-            "requested_start_date": "2024-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.4,
@@ -44962,45 +44101,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2024-10-02",
-              "requested_start_date": "2024-09-25",
-              "start_date": "2024-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2024-11-01",
-              "requested_start_date": "2024-10-11",
-              "start_date": "2024-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2024-10-10",
-              "requested_start_date": "2024-10-03",
-              "start_date": "2024-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2025": {
           "d0_7": {
@@ -47444,21 +46545,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2025-11-01",
-            "cached_start_date": "2025-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2025/LXL_HIGH_PASS.json",
-            "refresh_requested": false,
-            "requested_end_date": "2025-11-01",
-            "requested_start_date": "2025-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.4,
@@ -47552,45 +46638,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2025-10-02",
-              "requested_start_date": "2025-09-25",
-              "start_date": "2025-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2025-11-01",
-              "requested_start_date": "2025-10-11",
-              "start_date": "2025-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2025-10-10",
-              "requested_start_date": "2025-10-03",
-              "start_date": "2025-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         }
       }
     },
@@ -50136,21 +49184,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2023-11-01",
-            "cached_start_date": "2023-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2023/SQG_SHUANGQIAO.json",
-            "refresh_requested": false,
-            "requested_end_date": "2023-11-01",
-            "requested_start_date": "2023-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.1035,
@@ -50244,45 +49277,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2023-10-02",
-              "requested_start_date": "2023-09-25",
-              "start_date": "2023-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2023-11-01",
-              "requested_start_date": "2023-10-11",
-              "start_date": "2023-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2023-11-01",
-              "end_date": "2023-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2023-10-10",
-              "requested_start_date": "2023-10-03",
-              "start_date": "2023-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2024": {
           "d0_7": {
@@ -52760,21 +51755,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2024-11-01",
-            "cached_start_date": "2024-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2024/SQG_SHUANGQIAO.json",
-            "refresh_requested": false,
-            "requested_end_date": "2024-11-01",
-            "requested_start_date": "2024-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.1035,
@@ -52868,45 +51848,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2024-10-02",
-              "requested_start_date": "2024-09-25",
-              "start_date": "2024-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2024-11-01",
-              "requested_start_date": "2024-10-11",
-              "start_date": "2024-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2024-11-01",
-              "end_date": "2024-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2024-10-10",
-              "requested_start_date": "2024-10-03",
-              "start_date": "2024-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         },
         "2025": {
           "d0_7": {
@@ -55373,21 +54315,6 @@
             }
           ],
           "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-          "history_cache": {
-            "api_requests": 0,
-            "cached_complete_dates": 38,
-            "cached_end_date": "2025-11-01",
-            "cached_start_date": "2025-08-25",
-            "fetched_ranges": [],
-            "identity_mismatches": [],
-            "missing_date_count_before_fetch": 0,
-            "missing_dates": [],
-            "path": "data/cache/history/siguniang_jiuzhaigou/2025/SQG_SHUANGQIAO.json",
-            "refresh_requested": false,
-            "requested_end_date": "2025-11-01",
-            "requested_start_date": "2025-09-25",
-            "status": "HIT"
-          },
           "model": "ECMWF IFS 9 km historical weather / analysis",
           "point": {
             "latitude": 31.1035,
@@ -55481,45 +54408,7 @@
           },
           "solar_variable": "sunshine_duration",
           "source": "Open-Meteo",
-          "status": "PASS",
-          "window_definitions": {
-            "d0_7": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-02",
-              "offset_end_days": 7,
-              "offset_start_days": 0,
-              "reason": null,
-              "requested_end_date": "2025-10-02",
-              "requested_start_date": "2025-09-25",
-              "start_date": "2025-09-25",
-              "status": "OK",
-              "window": "d0_7"
-            },
-            "d16_to_11_01": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-11-01",
-              "offset_end_days": null,
-              "offset_start_days": 16,
-              "reason": null,
-              "requested_end_date": "2025-11-01",
-              "requested_start_date": "2025-10-11",
-              "start_date": "2025-10-11",
-              "status": "OK",
-              "window": "d16_to_11_01"
-            },
-            "d8_15": {
-              "cutoff_date": "2025-11-01",
-              "end_date": "2025-10-10",
-              "offset_end_days": 15,
-              "offset_start_days": 8,
-              "reason": null,
-              "requested_end_date": "2025-10-10",
-              "requested_start_date": "2025-10-03",
-              "start_date": "2025-10-03",
-              "status": "OK",
-              "window": "d8_15"
-            }
-          }
+          "status": "PASS"
         }
       }
     }

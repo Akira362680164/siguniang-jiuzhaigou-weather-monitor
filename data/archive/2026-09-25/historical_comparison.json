@@ -1,0 +1,4218 @@
+{
+  "archive_kind": "compact_daily_snapshot",
+  "data_date": "2026-09-24",
+  "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+  "failures": {},
+  "generated_at": "2026-09-24T17:13:36Z",
+  "hourly_values_omitted": true,
+  "interpretation_boundary": "历史值来自Open-Meteo再分析格点，用于季节和近日期对照，不是景区内气象站实测；不同海拔和沟段存在局地差异。",
+  "module": "historical_comparison",
+  "query_windows": {
+    "2023": {
+      "end": "2023-11-04",
+      "start": "2023-10-21"
+    },
+    "2024": {
+      "end": "2024-11-04",
+      "start": "2024-10-21"
+    },
+    "2025": {
+      "end": "2025-11-04",
+      "start": "2025-10-21"
+    }
+  },
+  "requests": {
+    "2023": {
+      "requested_point_ids": [
+        "SQG_SHUANGQIAO",
+        "BPG_CENTER",
+        "LXL_HIGH_PASS",
+        "JZG_TREESHENG",
+        "JZG_NORILANG",
+        "JZG_PRIMEVAL",
+        "JZG_LONGHAI"
+      ],
+      "returned_points": [
+        {
+          "elevation": 4332.0,
+          "latitude": 31.107204,
+          "longitude": 102.933495,
+          "point_id": "SQG_SHUANGQIAO",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3457.0,
+          "latitude": 31.3884,
+          "longitude": 102.99523,
+          "point_id": "BPG_CENTER",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3613.0,
+          "latitude": 31.3884,
+          "longitude": 102.88783,
+          "point_id": "LXL_HIGH_PASS",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3149.0,
+          "latitude": 33.216167,
+          "longitude": 103.854675,
+          "point_id": "JZG_TREESHENG",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3086.0,
+          "latitude": 33.286465,
+          "longitude": 103.87176,
+          "point_id": "JZG_NORILANG",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3167.0,
+          "latitude": 33.356766,
+          "longitude": 103.88889,
+          "point_id": "JZG_PRIMEVAL",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 4003.0,
+          "latitude": 33.005272,
+          "longitude": 103.914116,
+          "point_id": "JZG_LONGHAI",
+          "timezone": "Asia/Shanghai"
+        }
+      ],
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover"
+    },
+    "2024": {
+      "requested_point_ids": [
+        "SQG_SHUANGQIAO",
+        "BPG_CENTER",
+        "LXL_HIGH_PASS",
+        "JZG_TREESHENG",
+        "JZG_NORILANG",
+        "JZG_PRIMEVAL",
+        "JZG_LONGHAI"
+      ],
+      "returned_points": [
+        {
+          "elevation": 4332.0,
+          "latitude": 31.107204,
+          "longitude": 102.933495,
+          "point_id": "SQG_SHUANGQIAO",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3457.0,
+          "latitude": 31.3884,
+          "longitude": 102.99523,
+          "point_id": "BPG_CENTER",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3613.0,
+          "latitude": 31.3884,
+          "longitude": 102.88783,
+          "point_id": "LXL_HIGH_PASS",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3149.0,
+          "latitude": 33.216167,
+          "longitude": 103.854675,
+          "point_id": "JZG_TREESHENG",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3086.0,
+          "latitude": 33.286465,
+          "longitude": 103.87176,
+          "point_id": "JZG_NORILANG",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3167.0,
+          "latitude": 33.356766,
+          "longitude": 103.88889,
+          "point_id": "JZG_PRIMEVAL",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 4003.0,
+          "latitude": 33.005272,
+          "longitude": 103.914116,
+          "point_id": "JZG_LONGHAI",
+          "timezone": "Asia/Shanghai"
+        }
+      ],
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover"
+    },
+    "2025": {
+      "requested_point_ids": [
+        "SQG_SHUANGQIAO",
+        "BPG_CENTER",
+        "LXL_HIGH_PASS",
+        "JZG_TREESHENG",
+        "JZG_NORILANG",
+        "JZG_PRIMEVAL",
+        "JZG_LONGHAI"
+      ],
+      "returned_points": [
+        {
+          "elevation": 4332.0,
+          "latitude": 31.107204,
+          "longitude": 102.933495,
+          "point_id": "SQG_SHUANGQIAO",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3457.0,
+          "latitude": 31.3884,
+          "longitude": 102.99523,
+          "point_id": "BPG_CENTER",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3613.0,
+          "latitude": 31.3884,
+          "longitude": 102.88783,
+          "point_id": "LXL_HIGH_PASS",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3149.0,
+          "latitude": 33.216167,
+          "longitude": 103.854675,
+          "point_id": "JZG_TREESHENG",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3086.0,
+          "latitude": 33.286465,
+          "longitude": 103.87176,
+          "point_id": "JZG_NORILANG",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 3167.0,
+          "latitude": 33.356766,
+          "longitude": 103.88889,
+          "point_id": "JZG_PRIMEVAL",
+          "timezone": "Asia/Shanghai"
+        },
+        {
+          "elevation": 4003.0,
+          "latitude": 33.005272,
+          "longitude": 103.914116,
+          "point_id": "JZG_LONGHAI",
+          "timezone": "Asia/Shanghai"
+        }
+      ],
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover"
+    }
+  },
+  "schema_version": "1.4.0",
+  "source": "Open-Meteo Historical Weather API",
+  "status": "OK",
+  "target_groups": {
+    "jiuzhaigou_2026_10_31_11_01": {
+      "by_year": {
+        "2023": {
+          "end": "2023-11-04",
+          "points": {
+            "JZG_LONGHAI": {
+              "point": {
+                "coordinate_note": "长海代表点；用于观察则查洼沟高海拔窗口。",
+                "latitude": 33.036228,
+                "longitude": 103.932113,
+                "name": "九寨沟·长海",
+                "region": "jiuzhaigou",
+                "role": "route_high",
+                "status": "VERIFIED",
+                "subregion": "zezhawa"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.9324550628662109,
+                "grid_coordinate": {
+                  "latitude": 33.005272,
+                  "longitude": 103.914116
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 4003.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2023-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 19.708,
+                  "date": "2023-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 9.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 69.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 2.4,
+                  "temperature_mean_c": -2.4,
+                  "temperature_min_c": -7.6
+                },
+                "2023-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 3.417,
+                  "date": "2023-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 12.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 0.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 4.3,
+                  "temperature_mean_c": -2.5,
+                  "temperature_min_c": -7.4
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 39.234,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 14.0,
+                    "precipitation_total_mm": 3.9,
+                    "rain_total_mm": 0.1,
+                    "share_of_precipitation_hours": 0.483,
+                    "share_of_precipitation_mm": 0.248,
+                    "snowfall_total_cm": 2.73
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 12.0,
+                    "precipitation_total_mm": 10.5,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.414,
+                    "share_of_precipitation_mm": 0.669,
+                    "snowfall_total_cm": 7.21
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 1,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 3.0,
+                    "precipitation_total_mm": 1.3,
+                    "rain_total_mm": 0.4,
+                    "share_of_precipitation_hours": 0.103,
+                    "share_of_precipitation_mm": 0.083,
+                    "snowfall_total_cm": 0.63
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 0,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 0.0,
+                    "precipitation_total_mm": 0.0,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.0,
+                    "share_of_precipitation_mm": 0.0,
+                    "snowfall_total_cm": 0.0
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.375,
+                "precipitation_day_fraction_gt_2mm": 0.375,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 3,
+                "precipitation_days_gt_2mm": 3,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 29.0,
+                "precipitation_mean_mm": 1.962,
+                "precipitation_median_mm": 0.05,
+                "precipitation_total_mm": 15.7,
+                "rain_total_mm": 0.7,
+                "snowfall_total_cm": 10.57,
+                "temperature_max_c": 4.3,
+                "temperature_mean_c": -2.725,
+                "temperature_min_c": -9.6
+              }
+            },
+            "JZG_NORILANG": {
+              "point": {
+                "coordinate_note": "诺日朗中心代表点，用于九寨沟中上段天气趋势。",
+                "latitude": 33.28,
+                "longitude": 103.906,
+                "name": "九寨沟·诺日朗中心",
+                "region": "jiuzhaigou",
+                "role": "route_mid_high",
+                "status": "VERIFIED",
+                "subregion": "rize"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.12636184692382812,
+                "grid_coordinate": {
+                  "latitude": 33.286465,
+                  "longitude": 103.87176
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3086.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2023-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 9.917,
+                  "date": "2023-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 0.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 39.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 11.5,
+                  "temperature_mean_c": 6.5,
+                  "temperature_min_c": 1.9
+                },
+                "2023-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 4.458,
+                  "date": "2023-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 17.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 0.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 14.2,
+                  "temperature_mean_c": 7.4,
+                  "temperature_min_c": 0.8
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 40.922,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 15.0,
+                    "precipitation_total_mm": 9.2,
+                    "rain_total_mm": 2.8,
+                    "share_of_precipitation_hours": 0.556,
+                    "share_of_precipitation_mm": 0.405,
+                    "snowfall_total_cm": 4.48
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 9.0,
+                    "precipitation_total_mm": 11.6,
+                    "rain_total_mm": 1.8,
+                    "share_of_precipitation_hours": 0.333,
+                    "share_of_precipitation_mm": 0.511,
+                    "snowfall_total_cm": 6.86
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 3.0,
+                    "precipitation_total_mm": 1.9,
+                    "rain_total_mm": 1.1,
+                    "share_of_precipitation_hours": 0.111,
+                    "share_of_precipitation_mm": 0.084,
+                    "snowfall_total_cm": 0.56
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 0,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 0.0,
+                    "precipitation_total_mm": 0.0,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.0,
+                    "share_of_precipitation_mm": 0.0,
+                    "snowfall_total_cm": 0.0
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.375,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 3,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 27.0,
+                "precipitation_mean_mm": 2.837,
+                "precipitation_median_mm": 0.95,
+                "precipitation_total_mm": 22.7,
+                "rain_total_mm": 5.7,
+                "snowfall_total_cm": 11.9,
+                "temperature_max_c": 14.2,
+                "temperature_mean_c": 4.55,
+                "temperature_min_c": -4.9
+              }
+            },
+            "JZG_PRIMEVAL": {
+              "point": {
+                "coordinate_note": "原始森林上段代表点，温度、云量和降雪信号可能明显区别于沟口。",
+                "latitude": 33.347,
+                "longitude": 103.865,
+                "name": "九寨沟·原始森林",
+                "region": "jiuzhaigou",
+                "role": "route_high",
+                "status": "VERIFIED",
+                "subregion": "rize"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.979304313659668,
+                "grid_coordinate": {
+                  "latitude": 33.356766,
+                  "longitude": 103.88889
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3167.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2023-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 11.625,
+                  "date": "2023-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 0.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 1.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 45.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 10.6,
+                  "temperature_mean_c": 5.9,
+                  "temperature_min_c": 1.2
+                },
+                "2023-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 5.917,
+                  "date": "2023-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 22.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.5,
+                      "rain_mm": 0.5,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 1.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 3.0,
+                  "precipitation_mm": 0.5,
+                  "rain_mm": 0.5,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 13.4,
+                  "temperature_mean_c": 6.4,
+                  "temperature_min_c": -0.8
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 38.797,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 6,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 19.0,
+                    "precipitation_total_mm": 11.2,
+                    "rain_total_mm": 3.3,
+                    "share_of_precipitation_hours": 0.543,
+                    "share_of_precipitation_mm": 0.465,
+                    "snowfall_total_cm": 5.53
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 11.0,
+                    "precipitation_total_mm": 11.8,
+                    "rain_total_mm": 1.0,
+                    "share_of_precipitation_hours": 0.314,
+                    "share_of_precipitation_mm": 0.49,
+                    "snowfall_total_cm": 7.56
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 5.0,
+                    "precipitation_total_mm": 1.1,
+                    "rain_total_mm": 0.7,
+                    "share_of_precipitation_hours": 0.143,
+                    "share_of_precipitation_mm": 0.046,
+                    "snowfall_total_cm": 0.28
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 0,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 0.0,
+                    "precipitation_total_mm": 0.0,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.0,
+                    "share_of_precipitation_mm": 0.0,
+                    "snowfall_total_cm": 0.0
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.375,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 3,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 35.0,
+                "precipitation_mean_mm": 3.013,
+                "precipitation_median_mm": 0.95,
+                "precipitation_total_mm": 24.1,
+                "rain_total_mm": 5.0,
+                "snowfall_total_cm": 13.37,
+                "temperature_max_c": 13.4,
+                "temperature_mean_c": 3.888,
+                "temperature_min_c": -5.0
+              }
+            },
+            "JZG_TREESHENG": {
+              "point": {
+                "coordinate_note": "树正寨区域代表点；住宿与沟内开放规则仍需按官方当日信息复核。",
+                "latitude": 33.198939,
+                "longitude": 103.897435,
+                "name": "九寨沟·树正寨/中段",
+                "region": "jiuzhaigou",
+                "role": "route_mid",
+                "status": "VERIFIED",
+                "subregion": "shuzheng"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.20384788513183594,
+                "grid_coordinate": {
+                  "latitude": 33.216167,
+                  "longitude": 103.854675
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3149.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2023-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 14.0,
+                  "date": "2023-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 0.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 0.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 54.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 11.3,
+                  "temperature_mean_c": 6.7,
+                  "temperature_min_c": 2.4
+                },
+                "2023-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 4.292,
+                  "date": "2023-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 17.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 0.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 0.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 1.0,
+                  "precipitation_mm": 0.1,
+                  "rain_mm": 0.1,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 13.9,
+                  "temperature_mean_c": 7.8,
+                  "temperature_min_c": 2.5
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 37.615,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 6,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 14.0,
+                    "precipitation_total_mm": 3.4,
+                    "rain_total_mm": 2.7,
+                    "share_of_precipitation_hours": 0.5,
+                    "share_of_precipitation_mm": 0.202,
+                    "snowfall_total_cm": 0.49
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 10.0,
+                    "precipitation_total_mm": 12.6,
+                    "rain_total_mm": 2.9,
+                    "share_of_precipitation_hours": 0.357,
+                    "share_of_precipitation_mm": 0.75,
+                    "snowfall_total_cm": 6.79
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 4.0,
+                    "precipitation_total_mm": 0.8,
+                    "rain_total_mm": 0.8,
+                    "share_of_precipitation_hours": 0.143,
+                    "share_of_precipitation_mm": 0.048,
+                    "snowfall_total_cm": 0.0
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 0,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 0.0,
+                    "precipitation_total_mm": 0.0,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.0,
+                    "share_of_precipitation_mm": 0.0,
+                    "snowfall_total_cm": 0.0
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.375,
+                "precipitation_day_fraction_gt_2mm": 0.25,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 3,
+                "precipitation_days_gt_2mm": 2,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 28.0,
+                "precipitation_mean_mm": 2.1,
+                "precipitation_median_mm": 0.35,
+                "precipitation_total_mm": 16.8,
+                "rain_total_mm": 6.4,
+                "snowfall_total_cm": 7.28,
+                "temperature_max_c": 13.9,
+                "temperature_mean_c": 4.862,
+                "temperature_min_c": -2.8
+              }
+            }
+          },
+          "start": "2023-10-28",
+          "status": "OK",
+          "target_dates": [
+            "2023-10-31",
+            "2023-11-01"
+          ]
+        },
+        "2024": {
+          "end": "2024-11-04",
+          "points": {
+            "JZG_LONGHAI": {
+              "point": {
+                "coordinate_note": "长海代表点；用于观察则查洼沟高海拔窗口。",
+                "latitude": 33.036228,
+                "longitude": 103.932113,
+                "name": "九寨沟·长海",
+                "region": "jiuzhaigou",
+                "role": "route_high",
+                "status": "VERIFIED",
+                "subregion": "zezhawa"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.10788440704345703,
+                "grid_coordinate": {
+                  "latitude": 33.005272,
+                  "longitude": 103.914116
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 4003.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2024-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 95.667,
+                  "date": "2024-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 82.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 6.5,
+                      "rain_mm": 0.7,
+                      "snowfall_cm": 4.06
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 3.8,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 2.66
+                    }
+                  },
+                  "precipitation_hours": 11.0,
+                  "precipitation_mm": 10.5,
+                  "rain_mm": 0.9,
+                  "snowfall_cm": 6.72,
+                  "temperature_max_c": 1.9,
+                  "temperature_mean_c": -1.2,
+                  "temperature_min_c": -3.0
+                },
+                "2024-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 73.917,
+                  "date": "2024-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 88.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.4,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.28
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 7.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 4.8,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 3.36
+                    }
+                  },
+                  "precipitation_hours": 10.0,
+                  "precipitation_mm": 5.2,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 3.64,
+                  "temperature_max_c": -0.4,
+                  "temperature_mean_c": -4.3,
+                  "temperature_min_c": -8.9
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 63.058,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 6.0,
+                    "precipitation_total_mm": 1.1,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.118,
+                    "share_of_precipitation_mm": 0.026,
+                    "snowfall_total_cm": 0.84
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 21.0,
+                    "precipitation_total_mm": 15.1,
+                    "rain_total_mm": 1.4,
+                    "share_of_precipitation_hours": 0.412,
+                    "share_of_precipitation_mm": 0.352,
+                    "snowfall_total_cm": 9.59
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 6.0,
+                    "precipitation_total_mm": 0.6,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.118,
+                    "share_of_precipitation_mm": 0.014,
+                    "snowfall_total_cm": 0.28
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 18.0,
+                    "precipitation_total_mm": 26.1,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.353,
+                    "share_of_precipitation_mm": 0.608,
+                    "snowfall_total_cm": 18.27
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.875,
+                "precipitation_day_fraction_gt_2mm": 0.75,
+                "precipitation_day_fraction_gt_5mm": 0.5,
+                "precipitation_days_gt_0_5mm": 7,
+                "precipitation_days_gt_2mm": 6,
+                "precipitation_days_gt_5mm": 4,
+                "precipitation_hours_total": 51.0,
+                "precipitation_mean_mm": 5.362,
+                "precipitation_median_mm": 5.1,
+                "precipitation_total_mm": 42.9,
+                "rain_total_mm": 1.6,
+                "snowfall_total_cm": 28.98,
+                "temperature_max_c": 6.1,
+                "temperature_mean_c": -2.35,
+                "temperature_min_c": -11.8
+              }
+            },
+            "JZG_NORILANG": {
+              "point": {
+                "coordinate_note": "诺日朗中心代表点，用于九寨沟中上段天气趋势。",
+                "latitude": 33.28,
+                "longitude": 103.906,
+                "name": "九寨沟·诺日朗中心",
+                "region": "jiuzhaigou",
+                "role": "route_mid_high",
+                "status": "VERIFIED",
+                "subregion": "rize"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.12969970703125,
+                "grid_coordinate": {
+                  "latitude": 33.286465,
+                  "longitude": 103.87176
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3086.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2024-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 95.667,
+                  "date": "2024-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 94.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 3.3,
+                      "rain_mm": 2.1,
+                      "snowfall_cm": 0.84
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 88.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 2.0,
+                      "rain_mm": 1.6,
+                      "snowfall_cm": 0.28
+                    }
+                  },
+                  "precipitation_hours": 8.0,
+                  "precipitation_mm": 5.3,
+                  "rain_mm": 3.7,
+                  "snowfall_cm": 1.12,
+                  "temperature_max_c": 11.4,
+                  "temperature_mean_c": 4.6,
+                  "temperature_min_c": 1.5
+                },
+                "2024-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 68.375,
+                  "date": "2024-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 72.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 2.0,
+                      "rain_mm": 1.0,
+                      "snowfall_cm": 0.7
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 4.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 95.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 5.9,
+                      "rain_mm": 1.7,
+                      "snowfall_cm": 2.94
+                    }
+                  },
+                  "precipitation_hours": 12.0,
+                  "precipitation_mm": 8.1,
+                  "rain_mm": 2.9,
+                  "snowfall_cm": 3.64,
+                  "temperature_max_c": 8.7,
+                  "temperature_mean_c": 4.3,
+                  "temperature_min_c": 1.0
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 66.594,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 5.0,
+                    "precipitation_total_mm": 2.1,
+                    "rain_total_mm": 1.1,
+                    "share_of_precipitation_hours": 0.119,
+                    "share_of_precipitation_mm": 0.087,
+                    "snowfall_total_cm": 0.7
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 14.0,
+                    "precipitation_total_mm": 7.3,
+                    "rain_total_mm": 4.2,
+                    "share_of_precipitation_hours": 0.333,
+                    "share_of_precipitation_mm": 0.303,
+                    "snowfall_total_cm": 2.17
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 7.0,
+                    "precipitation_total_mm": 2.2,
+                    "rain_total_mm": 0.4,
+                    "share_of_precipitation_hours": 0.167,
+                    "share_of_precipitation_mm": 0.091,
+                    "snowfall_total_cm": 1.26
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 16.0,
+                    "precipitation_total_mm": 12.5,
+                    "rain_total_mm": 3.3,
+                    "share_of_precipitation_hours": 0.381,
+                    "share_of_precipitation_mm": 0.519,
+                    "snowfall_total_cm": 6.44
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.75,
+                "precipitation_day_fraction_gt_2mm": 0.5,
+                "precipitation_day_fraction_gt_5mm": 0.25,
+                "precipitation_days_gt_0_5mm": 6,
+                "precipitation_days_gt_2mm": 4,
+                "precipitation_days_gt_5mm": 2,
+                "precipitation_hours_total": 42.0,
+                "precipitation_mean_mm": 3.012,
+                "precipitation_median_mm": 2.45,
+                "precipitation_total_mm": 24.1,
+                "rain_total_mm": 9.0,
+                "snowfall_total_cm": 10.57,
+                "temperature_max_c": 12.3,
+                "temperature_mean_c": 4.025,
+                "temperature_min_c": -1.9
+              }
+            },
+            "JZG_PRIMEVAL": {
+              "point": {
+                "coordinate_note": "原始森林上段代表点，温度、云量和降雪信号可能明显区别于沟口。",
+                "latitude": 33.347,
+                "longitude": 103.865,
+                "name": "九寨沟·原始森林",
+                "region": "jiuzhaigou",
+                "role": "route_high",
+                "status": "VERIFIED",
+                "subregion": "rize"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.10454654693603516,
+                "grid_coordinate": {
+                  "latitude": 33.356766,
+                  "longitude": 103.88889
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3167.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2024-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 90.667,
+                  "date": "2024-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 82.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 4.8,
+                      "rain_mm": 2.6,
+                      "snowfall_cm": 1.54
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 80.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 3.7,
+                      "rain_mm": 1.5,
+                      "snowfall_cm": 1.54
+                    }
+                  },
+                  "precipitation_hours": 12.0,
+                  "precipitation_mm": 8.6,
+                  "rain_mm": 4.2,
+                  "snowfall_cm": 3.08,
+                  "temperature_max_c": 9.2,
+                  "temperature_mean_c": 3.8,
+                  "temperature_min_c": 1.2
+                },
+                "2024-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 59.333,
+                  "date": "2024-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 61.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.9,
+                      "rain_mm": 0.4,
+                      "snowfall_cm": 0.35
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 4.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 71.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.3,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.21
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 5.7,
+                      "rain_mm": 0.5,
+                      "snowfall_cm": 3.64
+                    }
+                  },
+                  "precipitation_hours": 10.0,
+                  "precipitation_mm": 6.9,
+                  "rain_mm": 0.9,
+                  "snowfall_cm": 4.2,
+                  "temperature_max_c": 7.5,
+                  "temperature_mean_c": 3.3,
+                  "temperature_min_c": 0.1
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 62.948,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 5.0,
+                    "precipitation_total_mm": 1.2,
+                    "rain_total_mm": 0.7,
+                    "share_of_precipitation_hours": 0.091,
+                    "share_of_precipitation_mm": 0.029,
+                    "snowfall_total_cm": 0.35
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 20.0,
+                    "precipitation_total_mm": 13.6,
+                    "rain_total_mm": 5.3,
+                    "share_of_precipitation_hours": 0.364,
+                    "share_of_precipitation_mm": 0.329,
+                    "snowfall_total_cm": 5.81
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 9.0,
+                    "precipitation_total_mm": 4.8,
+                    "rain_total_mm": 0.7,
+                    "share_of_precipitation_hours": 0.164,
+                    "share_of_precipitation_mm": 0.116,
+                    "snowfall_total_cm": 2.87
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 21.0,
+                    "precipitation_total_mm": 21.8,
+                    "rain_total_mm": 2.2,
+                    "share_of_precipitation_hours": 0.382,
+                    "share_of_precipitation_mm": 0.527,
+                    "snowfall_total_cm": 13.72
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.75,
+                "precipitation_day_fraction_gt_2mm": 0.75,
+                "precipitation_day_fraction_gt_5mm": 0.625,
+                "precipitation_days_gt_0_5mm": 6,
+                "precipitation_days_gt_2mm": 6,
+                "precipitation_days_gt_5mm": 5,
+                "precipitation_hours_total": 55.0,
+                "precipitation_mean_mm": 5.175,
+                "precipitation_median_mm": 6.0,
+                "precipitation_total_mm": 41.4,
+                "rain_total_mm": 8.9,
+                "snowfall_total_cm": 22.75,
+                "temperature_max_c": 10.6,
+                "temperature_mean_c": 3.087,
+                "temperature_min_c": -3.1
+              }
+            },
+            "JZG_TREESHENG": {
+              "point": {
+                "coordinate_note": "树正寨区域代表点；住宿与沟内开放规则仍需按官方当日信息复核。",
+                "latitude": 33.198939,
+                "longitude": 103.897435,
+                "name": "九寨沟·树正寨/中段",
+                "region": "jiuzhaigou",
+                "role": "route_mid",
+                "status": "VERIFIED",
+                "subregion": "shuzheng"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.1062154769897461,
+                "grid_coordinate": {
+                  "latitude": 33.216167,
+                  "longitude": 103.854675
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3149.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2024-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 93.542,
+                  "date": "2024-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 85.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 3.1,
+                      "rain_mm": 2.5,
+                      "snowfall_cm": 0.42
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 89.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 2.5,
+                      "rain_mm": 1.4,
+                      "snowfall_cm": 0.77
+                    }
+                  },
+                  "precipitation_hours": 9.0,
+                  "precipitation_mm": 5.6,
+                  "rain_mm": 3.9,
+                  "snowfall_cm": 1.19,
+                  "temperature_max_c": 12.1,
+                  "temperature_mean_c": 4.8,
+                  "temperature_min_c": 1.7
+                },
+                "2024-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 66.542,
+                  "date": "2024-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 68.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 4.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 92.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 6.0,
+                      "rain_mm": 2.0,
+                      "snowfall_cm": 2.8
+                    }
+                  },
+                  "precipitation_hours": 8.0,
+                  "precipitation_mm": 6.2,
+                  "rain_mm": 2.2,
+                  "snowfall_cm": 2.8,
+                  "temperature_max_c": 8.8,
+                  "temperature_mean_c": 4.4,
+                  "temperature_min_c": 1.1
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 65.719,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 1,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 2.0,
+                    "precipitation_total_mm": 0.2,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.053,
+                    "share_of_precipitation_mm": 0.008,
+                    "snowfall_total_cm": 0.0
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 15.0,
+                    "precipitation_total_mm": 10.4,
+                    "rain_total_mm": 5.7,
+                    "share_of_precipitation_hours": 0.395,
+                    "share_of_precipitation_mm": 0.419,
+                    "snowfall_total_cm": 3.29
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 3.0,
+                    "precipitation_total_mm": 0.7,
+                    "rain_total_mm": 0.1,
+                    "share_of_precipitation_hours": 0.079,
+                    "share_of_precipitation_mm": 0.028,
+                    "snowfall_total_cm": 0.42
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 18.0,
+                    "precipitation_total_mm": 13.5,
+                    "rain_total_mm": 3.7,
+                    "share_of_precipitation_hours": 0.474,
+                    "share_of_precipitation_mm": 0.544,
+                    "snowfall_total_cm": 6.86
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.75,
+                "precipitation_day_fraction_gt_2mm": 0.625,
+                "precipitation_day_fraction_gt_5mm": 0.25,
+                "precipitation_days_gt_0_5mm": 6,
+                "precipitation_days_gt_2mm": 5,
+                "precipitation_days_gt_5mm": 2,
+                "precipitation_hours_total": 38.0,
+                "precipitation_mean_mm": 3.1,
+                "precipitation_median_mm": 3.15,
+                "precipitation_total_mm": 24.8,
+                "rain_total_mm": 9.7,
+                "snowfall_total_cm": 10.57,
+                "temperature_max_c": 12.6,
+                "temperature_mean_c": 4.125,
+                "temperature_min_c": -3.2
+              }
+            }
+          },
+          "start": "2024-10-28",
+          "status": "OK",
+          "target_dates": [
+            "2024-10-31",
+            "2024-11-01"
+          ]
+        },
+        "2025": {
+          "end": "2025-11-04",
+          "points": {
+            "JZG_LONGHAI": {
+              "point": {
+                "coordinate_note": "长海代表点；用于观察则查洼沟高海拔窗口。",
+                "latitude": 33.036228,
+                "longitude": 103.932113,
+                "name": "九寨沟·长海",
+                "region": "jiuzhaigou",
+                "role": "route_high",
+                "status": "VERIFIED",
+                "subregion": "zezhawa"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.16832351684570312,
+                "grid_coordinate": {
+                  "latitude": 33.005272,
+                  "longitude": 103.914116
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 4003.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2025-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 99.625,
+                  "date": "2025-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 2.3,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 1.61
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.07
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 2.3,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 1.61
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 98.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 15.0,
+                  "precipitation_mm": 4.9,
+                  "rain_mm": 0.2,
+                  "snowfall_cm": 3.29,
+                  "temperature_max_c": -3.1,
+                  "temperature_mean_c": -4.6,
+                  "temperature_min_c": -7.0
+                },
+                "2025-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 99.458,
+                  "date": "2025-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 97.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": -0.9,
+                  "temperature_mean_c": -5.0,
+                  "temperature_min_c": -8.2
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 75.979,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 16.0,
+                    "precipitation_total_mm": 4.8,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.39,
+                    "share_of_precipitation_mm": 0.348,
+                    "snowfall_total_cm": 3.36
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 5.0,
+                    "precipitation_total_mm": 0.9,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.122,
+                    "share_of_precipitation_mm": 0.065,
+                    "snowfall_total_cm": 0.63
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 12.0,
+                    "precipitation_total_mm": 6.1,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.293,
+                    "share_of_precipitation_mm": 0.442,
+                    "snowfall_total_cm": 4.27
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 8.0,
+                    "precipitation_total_mm": 2.0,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.195,
+                    "share_of_precipitation_mm": 0.145,
+                    "snowfall_total_cm": 1.26
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.25,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 2,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 41.0,
+                "precipitation_mean_mm": 1.725,
+                "precipitation_median_mm": 0.6,
+                "precipitation_total_mm": 13.8,
+                "rain_total_mm": 0.2,
+                "snowfall_total_cm": 9.52,
+                "temperature_max_c": 4.2,
+                "temperature_mean_c": -3.587,
+                "temperature_min_c": -8.2
+              }
+            },
+            "JZG_NORILANG": {
+              "point": {
+                "coordinate_note": "诺日朗中心代表点，用于九寨沟中上段天气趋势。",
+                "latitude": 33.28,
+                "longitude": 103.906,
+                "name": "九寨沟·诺日朗中心",
+                "region": "jiuzhaigou",
+                "role": "route_mid_high",
+                "status": "VERIFIED",
+                "subregion": "rize"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 1.2810230255126953,
+                "grid_coordinate": {
+                  "latitude": 33.286465,
+                  "longitude": 103.87176
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3086.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2025-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 99.875,
+                  "date": "2025-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.5,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 0.28
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 0.6,
+                      "rain_mm": 0.4,
+                      "snowfall_cm": 0.14
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 99.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 9.0,
+                  "precipitation_mm": 1.2,
+                  "rain_mm": 0.6,
+                  "snowfall_cm": 0.42,
+                  "temperature_max_c": 4.2,
+                  "temperature_mean_c": 1.5,
+                  "temperature_min_c": -0.5
+                },
+                "2025-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 93.458,
+                  "date": "2025-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 74.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 99.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 8.8,
+                  "temperature_mean_c": 2.1,
+                  "temperature_min_c": -2.0
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 74.964,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 15.0,
+                    "precipitation_total_mm": 4.5,
+                    "rain_total_mm": 3.2,
+                    "share_of_precipitation_hours": 0.441,
+                    "share_of_precipitation_mm": 0.549,
+                    "snowfall_total_cm": 0.91
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 4.0,
+                    "precipitation_total_mm": 0.5,
+                    "rain_total_mm": 0.5,
+                    "share_of_precipitation_hours": 0.118,
+                    "share_of_precipitation_mm": 0.061,
+                    "snowfall_total_cm": 0.0
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 11.0,
+                    "precipitation_total_mm": 2.1,
+                    "rain_total_mm": 0.8,
+                    "share_of_precipitation_hours": 0.324,
+                    "share_of_precipitation_mm": 0.256,
+                    "snowfall_total_cm": 0.91
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 4.0,
+                    "precipitation_total_mm": 1.1,
+                    "rain_total_mm": 0.7,
+                    "share_of_precipitation_hours": 0.118,
+                    "share_of_precipitation_mm": 0.134,
+                    "snowfall_total_cm": 0.28
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.125,
+                "precipitation_day_fraction_gt_5mm": 0.0,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 1,
+                "precipitation_days_gt_5mm": 0,
+                "precipitation_hours_total": 34.0,
+                "precipitation_mean_mm": 1.025,
+                "precipitation_median_mm": 0.75,
+                "precipitation_total_mm": 8.2,
+                "rain_total_mm": 5.2,
+                "snowfall_total_cm": 2.1,
+                "temperature_max_c": 14.0,
+                "temperature_mean_c": 2.562,
+                "temperature_min_c": -4.7
+              }
+            },
+            "JZG_PRIMEVAL": {
+              "point": {
+                "coordinate_note": "原始森林上段代表点，温度、云量和降雪信号可能明显区别于沟口。",
+                "latitude": 33.347,
+                "longitude": 103.865,
+                "name": "九寨沟·原始森林",
+                "region": "jiuzhaigou",
+                "role": "route_high",
+                "status": "VERIFIED",
+                "subregion": "rize"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.15842914581298828,
+                "grid_coordinate": {
+                  "latitude": 33.356766,
+                  "longitude": 103.88889
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3167.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2025-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 99.833,
+                  "date": "2025-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.9,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.63
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 1.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.7
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 99.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.07
+                    }
+                  },
+                  "precipitation_hours": 10.0,
+                  "precipitation_mm": 2.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 1.4,
+                  "temperature_max_c": 2.7,
+                  "temperature_mean_c": 0.4,
+                  "temperature_min_c": -1.1
+                },
+                "2025-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 85.708,
+                  "date": "2025-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 99.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 43.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 7.2,
+                  "temperature_mean_c": 1.2,
+                  "temperature_min_c": -2.6
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 74.302,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 6,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 18.0,
+                    "precipitation_total_mm": 5.0,
+                    "rain_total_mm": 2.5,
+                    "share_of_precipitation_hours": 0.439,
+                    "share_of_precipitation_mm": 0.5,
+                    "snowfall_total_cm": 1.75
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 7.0,
+                    "precipitation_total_mm": 1.5,
+                    "rain_total_mm": 0.7,
+                    "share_of_precipitation_hours": 0.171,
+                    "share_of_precipitation_mm": 0.15,
+                    "snowfall_total_cm": 0.56
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 12.0,
+                    "precipitation_total_mm": 2.5,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.293,
+                    "share_of_precipitation_mm": 0.25,
+                    "snowfall_total_cm": 1.75
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 4.0,
+                    "precipitation_total_mm": 1.0,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.098,
+                    "share_of_precipitation_mm": 0.1,
+                    "snowfall_total_cm": 0.56
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.625,
+                "precipitation_day_fraction_gt_2mm": 0.25,
+                "precipitation_day_fraction_gt_5mm": 0.0,
+                "precipitation_days_gt_0_5mm": 5,
+                "precipitation_days_gt_2mm": 2,
+                "precipitation_days_gt_5mm": 0,
+                "precipitation_hours_total": 41.0,
+                "precipitation_mean_mm": 1.25,
+                "precipitation_median_mm": 1.15,
+                "precipitation_total_mm": 10.0,
+                "rain_total_mm": 3.4,
+                "snowfall_total_cm": 4.62,
+                "temperature_max_c": 12.5,
+                "temperature_mean_c": 1.663,
+                "temperature_min_c": -5.7
+              }
+            },
+            "JZG_TREESHENG": {
+              "point": {
+                "coordinate_note": "树正寨区域代表点；住宿与沟内开放规则仍需按官方当日信息复核。",
+                "latitude": 33.198939,
+                "longitude": 103.897435,
+                "name": "九寨沟·树正寨/中段",
+                "region": "jiuzhaigou",
+                "role": "route_mid",
+                "status": "VERIFIED",
+                "subregion": "shuzheng"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.17964839935302734,
+                "grid_coordinate": {
+                  "latitude": 33.216167,
+                  "longitude": 103.854675
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3149.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2025-10-31": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 99.708,
+                  "date": "2025-10-31",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.4,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.28
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.5,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 0.28
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 99.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 8.0,
+                  "precipitation_mm": 1.0,
+                  "rain_mm": 0.2,
+                  "snowfall_cm": 0.56,
+                  "temperature_max_c": 4.6,
+                  "temperature_mean_c": 1.7,
+                  "temperature_min_c": -0.9
+                },
+                "2025-11-01": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 94.917,
+                  "date": "2025-11-01",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 82.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 97.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 9.0,
+                  "temperature_mean_c": 2.2,
+                  "temperature_min_c": -2.1
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 77.38,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 15.0,
+                    "precipitation_total_mm": 4.3,
+                    "rain_total_mm": 3.2,
+                    "share_of_precipitation_hours": 0.484,
+                    "share_of_precipitation_mm": 0.558,
+                    "snowfall_total_cm": 0.77
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 1,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 2.0,
+                    "precipitation_total_mm": 0.2,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.065,
+                    "share_of_precipitation_mm": 0.026,
+                    "snowfall_total_cm": 0.0
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 10.0,
+                    "precipitation_total_mm": 2.1,
+                    "rain_total_mm": 0.6,
+                    "share_of_precipitation_hours": 0.323,
+                    "share_of_precipitation_mm": 0.273,
+                    "snowfall_total_cm": 1.05
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 4.0,
+                    "precipitation_total_mm": 1.1,
+                    "rain_total_mm": 0.5,
+                    "share_of_precipitation_hours": 0.129,
+                    "share_of_precipitation_mm": 0.143,
+                    "snowfall_total_cm": 0.42
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.25,
+                "precipitation_day_fraction_gt_5mm": 0.0,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 2,
+                "precipitation_days_gt_5mm": 0,
+                "precipitation_hours_total": 31.0,
+                "precipitation_mean_mm": 0.963,
+                "precipitation_median_mm": 0.65,
+                "precipitation_total_mm": 7.7,
+                "rain_total_mm": 4.5,
+                "snowfall_total_cm": 2.24,
+                "temperature_max_c": 13.8,
+                "temperature_mean_c": 2.7,
+                "temperature_min_c": -5.2
+              }
+            }
+          },
+          "start": "2025-10-28",
+          "status": "OK",
+          "target_dates": [
+            "2025-10-31",
+            "2025-11-01"
+          ]
+        }
+      },
+      "name": "九寨沟秋景窗口",
+      "point_ids": [
+        "JZG_TREESHENG",
+        "JZG_NORILANG",
+        "JZG_PRIMEVAL",
+        "JZG_LONGHAI"
+      ],
+      "window_days_each_side": 3
+    },
+    "siguniang_2026_10_24_25": {
+      "by_year": {
+        "2023": {
+          "end": "2023-10-28",
+          "points": {
+            "BPG_CENTER": {
+              "point": {
+                "coordinate_note": "游客中心/入口代表点；沟内景交终点和高海拔景点不能由此点完全代表。",
+                "latitude": 31.3806,
+                "longitude": 102.9944,
+                "name": "毕棚沟·游客中心",
+                "region": "siguniang",
+                "role": "core",
+                "status": "VERIFIED",
+                "subregion": "bipenggou"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.19359588623046875,
+                "grid_coordinate": {
+                  "latitude": 31.3884,
+                  "longitude": 102.99523
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3457.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2023-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 97.583,
+                  "date": "2023-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 97.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 1.0,
+                      "rain_mm": 1.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 93.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 3.0,
+                  "precipitation_mm": 1.2,
+                  "rain_mm": 1.2,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 10.5,
+                  "temperature_mean_c": 5.5,
+                  "temperature_min_c": 2.1
+                },
+                "2023-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 93.542,
+                  "date": "2023-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 78.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 1.2,
+                      "rain_mm": 1.2,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 96.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.3,
+                      "rain_mm": 0.3,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 99.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 6.0,
+                  "precipitation_mm": 1.6,
+                  "rain_mm": 1.6,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 6.9,
+                  "temperature_mean_c": 4.7,
+                  "temperature_min_c": 3.3
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 83.323,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 8,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 25.0,
+                    "precipitation_total_mm": 13.0,
+                    "rain_total_mm": 7.6,
+                    "share_of_precipitation_hours": 0.417,
+                    "share_of_precipitation_mm": 0.546,
+                    "snowfall_total_cm": 3.78
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 14.0,
+                    "precipitation_total_mm": 5.1,
+                    "rain_total_mm": 1.2,
+                    "share_of_precipitation_hours": 0.233,
+                    "share_of_precipitation_mm": 0.214,
+                    "snowfall_total_cm": 2.73
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 1,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 6.0,
+                    "precipitation_total_mm": 1.6,
+                    "rain_total_mm": 0.4,
+                    "share_of_precipitation_hours": 0.1,
+                    "share_of_precipitation_mm": 0.067,
+                    "snowfall_total_cm": 0.84
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 6,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 15.0,
+                    "precipitation_total_mm": 4.1,
+                    "rain_total_mm": 2.6,
+                    "share_of_precipitation_hours": 0.25,
+                    "share_of_precipitation_mm": 0.172,
+                    "snowfall_total_cm": 1.05
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 1.0,
+                "precipitation_day_fraction_gt_2mm": 0.5,
+                "precipitation_day_fraction_gt_5mm": 0.25,
+                "precipitation_days_gt_0_5mm": 8,
+                "precipitation_days_gt_2mm": 4,
+                "precipitation_days_gt_5mm": 2,
+                "precipitation_hours_total": 60.0,
+                "precipitation_mean_mm": 2.975,
+                "precipitation_median_mm": 1.9,
+                "precipitation_total_mm": 23.8,
+                "rain_total_mm": 11.8,
+                "snowfall_total_cm": 8.4,
+                "temperature_max_c": 10.6,
+                "temperature_mean_c": 3.538,
+                "temperature_min_c": -2.4
+              }
+            },
+            "LXL_HIGH_PASS": {
+              "point": {
+                "coordinate_note": "理小路高位段路线天气代表点，不是官方气象站或单一景区入口；用于观察高海拔路段温度、降水、云量和结冰风险趋势。",
+                "latitude": 31.4,
+                "longitude": 102.84,
+                "name": "理小路·高位垭口代表点",
+                "region": "lixiaolu",
+                "role": "route_high_point",
+                "status": "VERIFIED"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.11456012725830078,
+                "grid_coordinate": {
+                  "latitude": 31.3884,
+                  "longitude": 102.88783
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3613.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2023-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 96.875,
+                  "date": "2023-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 96.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.6,
+                      "rain_mm": 0.6,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.6,
+                      "rain_mm": 0.6,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 92.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 99.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.3,
+                      "rain_mm": 0.3,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 9.0,
+                  "precipitation_mm": 1.5,
+                  "rain_mm": 1.5,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 10.3,
+                  "temperature_mean_c": 5.8,
+                  "temperature_min_c": 3.4
+                },
+                "2023-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 96.083,
+                  "date": "2023-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 89.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 3.6,
+                      "rain_mm": 2.3,
+                      "snowfall_cm": 0.91
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 94.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 9.4,
+                      "rain_mm": 4.6,
+                      "snowfall_cm": 3.36
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.7,
+                      "rain_mm": 0.7,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 18.0,
+                  "precipitation_mm": 13.9,
+                  "rain_mm": 7.8,
+                  "snowfall_cm": 4.27,
+                  "temperature_max_c": 7.1,
+                  "temperature_mean_c": 4.2,
+                  "temperature_min_c": 2.8
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 76.302,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 7,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 33.0,
+                    "precipitation_total_mm": 14.5,
+                    "rain_total_mm": 8.0,
+                    "share_of_precipitation_hours": 0.306,
+                    "share_of_precipitation_mm": 0.173,
+                    "snowfall_total_cm": 4.55
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 8,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 37.0,
+                    "precipitation_total_mm": 39.3,
+                    "rain_total_mm": 11.8,
+                    "share_of_precipitation_hours": 0.343,
+                    "share_of_precipitation_mm": 0.468,
+                    "snowfall_total_cm": 19.25
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 10.0,
+                    "precipitation_total_mm": 7.5,
+                    "rain_total_mm": 1.5,
+                    "share_of_precipitation_hours": 0.093,
+                    "share_of_precipitation_mm": 0.089,
+                    "snowfall_total_cm": 4.2
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 8,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 28.0,
+                    "precipitation_total_mm": 22.6,
+                    "rain_total_mm": 5.9,
+                    "share_of_precipitation_hours": 0.259,
+                    "share_of_precipitation_mm": 0.269,
+                    "snowfall_total_cm": 11.69
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 1.0,
+                "precipitation_day_fraction_gt_2mm": 0.875,
+                "precipitation_day_fraction_gt_5mm": 0.75,
+                "precipitation_days_gt_0_5mm": 8,
+                "precipitation_days_gt_2mm": 7,
+                "precipitation_days_gt_5mm": 6,
+                "precipitation_hours_total": 108.0,
+                "precipitation_mean_mm": 10.488,
+                "precipitation_median_mm": 10.0,
+                "precipitation_total_mm": 83.9,
+                "rain_total_mm": 27.2,
+                "snowfall_total_cm": 39.69,
+                "temperature_max_c": 10.3,
+                "temperature_mean_c": 3.112,
+                "temperature_min_c": -2.3
+              }
+            },
+            "SQG_SHUANGQIAO": {
+              "point": {
+                "coordinate_note": "沿用本项目路线资料中的双桥沟游客中心代表点；景区内部各沟段会有海拔和天气差异。",
+                "latitude": 31.1035,
+                "longitude": 102.9239,
+                "name": "四姑娘山·双桥沟游客中心",
+                "region": "siguniang",
+                "role": "core",
+                "status": "VERIFIED",
+                "subregion": "shuangqiao"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2023-10-21&end_date=2023-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.20253658294677734,
+                "grid_coordinate": {
+                  "latitude": 31.107204,
+                  "longitude": 102.933495
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 4332.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2023-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 88.542,
+                  "date": "2023-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 90.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 97.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 83.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 83.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 0.0,
+                  "precipitation_mm": 0.0,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 4.9,
+                  "temperature_mean_c": 0.2,
+                  "temperature_min_c": -3.8
+                },
+                "2023-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 95.042,
+                  "date": "2023-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 80.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 2.7,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 1.89
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 0.6,
+                      "rain_mm": 0.3,
+                      "snowfall_cm": 0.21
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 99.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 11.0,
+                  "precipitation_mm": 3.3,
+                  "rain_mm": 0.3,
+                  "snowfall_cm": 2.1,
+                  "temperature_max_c": 3.7,
+                  "temperature_mean_c": -1.3,
+                  "temperature_min_c": -4.9
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 69.198,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 22.0,
+                    "precipitation_total_mm": 10.5,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.373,
+                    "share_of_precipitation_mm": 0.517,
+                    "snowfall_total_cm": 7.35
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 14.0,
+                    "precipitation_total_mm": 3.5,
+                    "rain_total_mm": 0.4,
+                    "share_of_precipitation_hours": 0.237,
+                    "share_of_precipitation_mm": 0.172,
+                    "snowfall_total_cm": 2.17
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 8.0,
+                    "precipitation_total_mm": 1.2,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.136,
+                    "share_of_precipitation_mm": 0.059,
+                    "snowfall_total_cm": 0.84
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 15.0,
+                    "precipitation_total_mm": 5.1,
+                    "rain_total_mm": 0.1,
+                    "share_of_precipitation_hours": 0.254,
+                    "share_of_precipitation_mm": 0.251,
+                    "snowfall_total_cm": 3.5
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.375,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 3,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 59.0,
+                "precipitation_mean_mm": 2.538,
+                "precipitation_median_mm": 0.5,
+                "precipitation_total_mm": 20.3,
+                "rain_total_mm": 0.5,
+                "snowfall_total_cm": 13.86,
+                "temperature_max_c": 4.9,
+                "temperature_mean_c": -2.35,
+                "temperature_min_c": -9.8
+              }
+            }
+          },
+          "start": "2023-10-21",
+          "status": "OK",
+          "target_dates": [
+            "2023-10-24",
+            "2023-10-25"
+          ]
+        },
+        "2024": {
+          "end": "2024-10-28",
+          "points": {
+            "BPG_CENTER": {
+              "point": {
+                "coordinate_note": "游客中心/入口代表点；沟内景交终点和高海拔景点不能由此点完全代表。",
+                "latitude": 31.3806,
+                "longitude": 102.9944,
+                "name": "毕棚沟·游客中心",
+                "region": "siguniang",
+                "role": "core",
+                "status": "VERIFIED",
+                "subregion": "bipenggou"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 1.0416507720947266,
+                "grid_coordinate": {
+                  "latitude": 31.3884,
+                  "longitude": 102.99523
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3457.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2024-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 94.042,
+                  "date": "2024-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 89.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 3.2,
+                      "rain_mm": 3.2,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 87.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 4.5,
+                      "rain_mm": 3.6,
+                      "snowfall_cm": 0.63
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 99.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 9.0,
+                  "precipitation_mm": 7.7,
+                  "rain_mm": 6.8,
+                  "snowfall_cm": 0.63,
+                  "temperature_max_c": 9.3,
+                  "temperature_mean_c": 5.7,
+                  "temperature_min_c": 3.5
+                },
+                "2024-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 77.167,
+                  "date": "2024-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 44.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 2.3,
+                      "rain_mm": 2.3,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.5,
+                      "rain_mm": 0.5,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 68.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 97.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 7.0,
+                  "precipitation_mm": 2.8,
+                  "rain_mm": 2.8,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 10.9,
+                  "temperature_mean_c": 5.5,
+                  "temperature_min_c": 2.0
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 60.13,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 13.0,
+                    "precipitation_total_mm": 7.2,
+                    "rain_total_mm": 6.3,
+                    "share_of_precipitation_hours": 0.351,
+                    "share_of_precipitation_mm": 0.296,
+                    "snowfall_total_cm": 0.63
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 9.0,
+                    "precipitation_total_mm": 5.1,
+                    "rain_total_mm": 4.2,
+                    "share_of_precipitation_hours": 0.243,
+                    "share_of_precipitation_mm": 0.21,
+                    "snowfall_total_cm": 0.63
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 7.0,
+                    "precipitation_total_mm": 6.0,
+                    "rain_total_mm": 1.4,
+                    "share_of_precipitation_hours": 0.189,
+                    "share_of_precipitation_mm": 0.247,
+                    "snowfall_total_cm": 3.22
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 8.0,
+                    "precipitation_total_mm": 6.0,
+                    "rain_total_mm": 5.2,
+                    "share_of_precipitation_hours": 0.216,
+                    "share_of_precipitation_mm": 0.247,
+                    "snowfall_total_cm": 0.56
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.375,
+                "precipitation_day_fraction_gt_5mm": 0.25,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 3,
+                "precipitation_days_gt_5mm": 2,
+                "precipitation_hours_total": 37.0,
+                "precipitation_mean_mm": 3.038,
+                "precipitation_median_mm": 0.5,
+                "precipitation_total_mm": 24.3,
+                "rain_total_mm": 17.1,
+                "snowfall_total_cm": 5.04,
+                "temperature_max_c": 13.8,
+                "temperature_mean_c": 4.812,
+                "temperature_min_c": -1.2
+              }
+            },
+            "LXL_HIGH_PASS": {
+              "point": {
+                "coordinate_note": "理小路高位段路线天气代表点，不是官方气象站或单一景区入口；用于观察高海拔路段温度、降水、云量和结冰风险趋势。",
+                "latitude": 31.4,
+                "longitude": 102.84,
+                "name": "理小路·高位垭口代表点",
+                "region": "lixiaolu",
+                "role": "route_high_point",
+                "status": "VERIFIED"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.10776519775390625,
+                "grid_coordinate": {
+                  "latitude": 31.3884,
+                  "longitude": 102.88783
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3613.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2024-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 97.25,
+                  "date": "2024-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 95.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 0.8,
+                      "rain_mm": 0.8,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 94.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 3.3,
+                      "rain_mm": 3.2,
+                      "snowfall_cm": 0.07
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 99.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.6,
+                      "rain_mm": 0.4,
+                      "snowfall_cm": 0.14
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 99.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 14.0,
+                  "precipitation_mm": 4.7,
+                  "rain_mm": 4.4,
+                  "snowfall_cm": 0.21,
+                  "temperature_max_c": 9.2,
+                  "temperature_mean_c": 5.5,
+                  "temperature_min_c": 2.8
+                },
+                "2024-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 41.042,
+                  "date": "2024-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 47.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 1.4,
+                      "rain_mm": 1.4,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 98.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 1.7,
+                      "rain_mm": 1.7,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 4.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 13.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 10.0,
+                  "precipitation_mm": 3.1,
+                  "rain_mm": 3.1,
+                  "snowfall_cm": 0.0,
+                  "temperature_max_c": 10.9,
+                  "temperature_mean_c": 5.2,
+                  "temperature_min_c": 1.0
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 51.599,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 7,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 24.0,
+                    "precipitation_total_mm": 5.7,
+                    "rain_total_mm": 4.9,
+                    "share_of_precipitation_hours": 0.369,
+                    "share_of_precipitation_mm": 0.168,
+                    "snowfall_total_cm": 0.56
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 21.0,
+                    "precipitation_total_mm": 10.6,
+                    "rain_total_mm": 6.2,
+                    "share_of_precipitation_hours": 0.323,
+                    "share_of_precipitation_mm": 0.312,
+                    "snowfall_total_cm": 3.08
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 10.0,
+                    "precipitation_total_mm": 9.1,
+                    "rain_total_mm": 2.1,
+                    "share_of_precipitation_hours": 0.154,
+                    "share_of_precipitation_mm": 0.268,
+                    "snowfall_total_cm": 4.9
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 10.0,
+                    "precipitation_total_mm": 8.6,
+                    "rain_total_mm": 6.6,
+                    "share_of_precipitation_hours": 0.154,
+                    "share_of_precipitation_mm": 0.253,
+                    "snowfall_total_cm": 1.4
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.625,
+                "precipitation_day_fraction_gt_2mm": 0.625,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 5,
+                "precipitation_days_gt_2mm": 5,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 65.0,
+                "precipitation_mean_mm": 4.25,
+                "precipitation_median_mm": 2.4,
+                "precipitation_total_mm": 34.0,
+                "rain_total_mm": 19.8,
+                "snowfall_total_cm": 9.94,
+                "temperature_max_c": 12.5,
+                "temperature_mean_c": 4.55,
+                "temperature_min_c": -1.4
+              }
+            },
+            "SQG_SHUANGQIAO": {
+              "point": {
+                "coordinate_note": "沿用本项目路线资料中的双桥沟游客中心代表点；景区内部各沟段会有海拔和天气差异。",
+                "latitude": 31.1035,
+                "longitude": 102.9239,
+                "name": "四姑娘山·双桥沟游客中心",
+                "region": "siguniang",
+                "role": "core",
+                "status": "VERIFIED",
+                "subregion": "shuangqiao"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2024-10-21&end_date=2024-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 2.5244951248168945,
+                "grid_coordinate": {
+                  "latitude": 31.107204,
+                  "longitude": 102.933495
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 4332.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2024-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 79.583,
+                  "date": "2024-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 97.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.8,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.42
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 34.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 87.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.14
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 99.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 6.0,
+                  "precipitation_mm": 1.0,
+                  "rain_mm": 0.2,
+                  "snowfall_cm": 0.56,
+                  "temperature_max_c": 3.3,
+                  "temperature_mean_c": 0.5,
+                  "temperature_min_c": -1.9
+                },
+                "2024-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 44.5,
+                  "date": "2024-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 42.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 1.1,
+                      "rain_mm": 0.3,
+                      "snowfall_cm": 0.56
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 1.2,
+                      "rain_mm": 0.3,
+                      "snowfall_cm": 0.63
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 13.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 22.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    }
+                  },
+                  "precipitation_hours": 10.0,
+                  "precipitation_mm": 2.3,
+                  "rain_mm": 0.6,
+                  "snowfall_cm": 1.19,
+                  "temperature_max_c": 5.3,
+                  "temperature_mean_c": 0.7,
+                  "temperature_min_c": -3.2
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 50.713,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 20.0,
+                    "precipitation_total_mm": 4.0,
+                    "rain_total_mm": 0.5,
+                    "share_of_precipitation_hours": 0.5,
+                    "share_of_precipitation_mm": 0.263,
+                    "snowfall_total_cm": 2.52
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 6.0,
+                    "precipitation_total_mm": 1.3,
+                    "rain_total_mm": 0.3,
+                    "share_of_precipitation_hours": 0.15,
+                    "share_of_precipitation_mm": 0.086,
+                    "snowfall_total_cm": 0.7
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 8.0,
+                    "precipitation_total_mm": 3.8,
+                    "rain_total_mm": 0.1,
+                    "share_of_precipitation_hours": 0.2,
+                    "share_of_precipitation_mm": 0.25,
+                    "snowfall_total_cm": 2.59
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 1,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 6.0,
+                    "precipitation_total_mm": 6.1,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.15,
+                    "share_of_precipitation_mm": 0.401,
+                    "snowfall_total_cm": 4.13
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.25,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 2,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 40.0,
+                "precipitation_mean_mm": 1.9,
+                "precipitation_median_mm": 0.75,
+                "precipitation_total_mm": 15.2,
+                "rain_total_mm": 1.1,
+                "snowfall_total_cm": 9.94,
+                "temperature_max_c": 5.3,
+                "temperature_mean_c": -0.875,
+                "temperature_min_c": -7.2
+              }
+            }
+          },
+          "start": "2024-10-21",
+          "status": "OK",
+          "target_dates": [
+            "2024-10-24",
+            "2024-10-25"
+          ]
+        },
+        "2025": {
+          "end": "2025-10-28",
+          "points": {
+            "BPG_CENTER": {
+              "point": {
+                "coordinate_note": "游客中心/入口代表点；沟内景交终点和高海拔景点不能由此点完全代表。",
+                "latitude": 31.3806,
+                "longitude": 102.9944,
+                "name": "毕棚沟·游客中心",
+                "region": "siguniang",
+                "role": "core",
+                "status": "VERIFIED",
+                "subregion": "bipenggou"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.1628398895263672,
+                "grid_coordinate": {
+                  "latitude": 31.3884,
+                  "longitude": 102.99523
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3457.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2025-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 93.042,
+                  "date": "2025-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 73.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 1.9,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 1.33
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.3,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.21
+                    }
+                  },
+                  "precipitation_hours": 10.0,
+                  "precipitation_mm": 2.4,
+                  "rain_mm": 0.2,
+                  "snowfall_cm": 1.54,
+                  "temperature_max_c": 5.7,
+                  "temperature_mean_c": 0.9,
+                  "temperature_min_c": -1.7
+                },
+                "2025-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 86.125,
+                  "date": "2025-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 64.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 4.3,
+                      "rain_mm": 1.1,
+                      "snowfall_cm": 2.24
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.667,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.4,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.28
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 80.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.14
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 2.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 1.4
+                    }
+                  },
+                  "precipitation_hours": 12.0,
+                  "precipitation_mm": 6.9,
+                  "rain_mm": 1.1,
+                  "snowfall_cm": 4.06,
+                  "temperature_max_c": 9.1,
+                  "temperature_mean_c": 2.1,
+                  "temperature_min_c": -2.2
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 71.656,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 3,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 10.0,
+                    "precipitation_total_mm": 5.2,
+                    "rain_total_mm": 1.2,
+                    "share_of_precipitation_hours": 0.189,
+                    "share_of_precipitation_mm": 0.198,
+                    "snowfall_total_cm": 2.8
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 16.0,
+                    "precipitation_total_mm": 6.0,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.302,
+                    "share_of_precipitation_mm": 0.229,
+                    "snowfall_total_cm": 4.2
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 9.0,
+                    "precipitation_total_mm": 2.4,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.17,
+                    "share_of_precipitation_mm": 0.092,
+                    "snowfall_total_cm": 1.54
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 18.0,
+                    "precipitation_total_mm": 12.6,
+                    "rain_total_mm": 0.1,
+                    "share_of_precipitation_hours": 0.34,
+                    "share_of_precipitation_mm": 0.481,
+                    "snowfall_total_cm": 8.75
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.625,
+                "precipitation_day_fraction_gt_2mm": 0.5,
+                "precipitation_day_fraction_gt_5mm": 0.25,
+                "precipitation_days_gt_0_5mm": 5,
+                "precipitation_days_gt_2mm": 4,
+                "precipitation_days_gt_5mm": 2,
+                "precipitation_hours_total": 53.0,
+                "precipitation_mean_mm": 3.275,
+                "precipitation_median_mm": 1.55,
+                "precipitation_total_mm": 26.2,
+                "rain_total_mm": 1.5,
+                "snowfall_total_cm": 17.29,
+                "temperature_max_c": 14.7,
+                "temperature_mean_c": 2.237,
+                "temperature_min_c": -9.9
+              }
+            },
+            "LXL_HIGH_PASS": {
+              "point": {
+                "coordinate_note": "理小路高位段路线天气代表点，不是官方气象站或单一景区入口；用于观察高海拔路段温度、降水、云量和结冰风险趋势。",
+                "latitude": 31.4,
+                "longitude": 102.84,
+                "name": "理小路·高位垭口代表点",
+                "region": "lixiaolu",
+                "role": "route_high_point",
+                "status": "VERIFIED"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.1690387725830078,
+                "grid_coordinate": {
+                  "latitude": 31.3884,
+                  "longitude": 102.88783
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 3613.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2025-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 94.792,
+                  "date": "2025-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 79.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.4,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.14
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 4.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 2.8
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 5,
+                      "precipitation_mm": 1.0,
+                      "rain_mm": 1.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 1.0,
+                      "rain_mm": 0.6,
+                      "snowfall_cm": 0.28
+                    }
+                  },
+                  "precipitation_hours": 19.0,
+                  "precipitation_mm": 6.4,
+                  "rain_mm": 1.8,
+                  "snowfall_cm": 3.22,
+                  "temperature_max_c": 6.8,
+                  "temperature_mean_c": 1.2,
+                  "temperature_min_c": -1.0
+                },
+                "2025-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 83.833,
+                  "date": "2025-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 68.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 4.5,
+                      "rain_mm": 0.5,
+                      "snowfall_cm": 2.8
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.6,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.42
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 67.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.8,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.42
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 6,
+                      "precipitation_mm": 2.5,
+                      "rain_mm": 0.1,
+                      "snowfall_cm": 1.68
+                    }
+                  },
+                  "precipitation_hours": 16.0,
+                  "precipitation_mm": 8.4,
+                  "rain_mm": 0.8,
+                  "snowfall_cm": 5.32,
+                  "temperature_max_c": 8.5,
+                  "temperature_mean_c": 1.5,
+                  "temperature_min_c": -1.4
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 69.698,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 16.0,
+                    "precipitation_total_mm": 7.9,
+                    "rain_total_mm": 2.1,
+                    "share_of_precipitation_hours": 0.188,
+                    "share_of_precipitation_mm": 0.147,
+                    "snowfall_total_cm": 4.06
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 6,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 20.0,
+                    "precipitation_total_mm": 13.3,
+                    "rain_total_mm": 0.5,
+                    "share_of_precipitation_hours": 0.235,
+                    "share_of_precipitation_mm": 0.248,
+                    "snowfall_total_cm": 8.96
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 20.0,
+                    "precipitation_total_mm": 10.3,
+                    "rain_total_mm": 1.7,
+                    "share_of_precipitation_hours": 0.235,
+                    "share_of_precipitation_mm": 0.192,
+                    "snowfall_total_cm": 6.02
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 7,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 29.0,
+                    "precipitation_total_mm": 22.2,
+                    "rain_total_mm": 1.2,
+                    "share_of_precipitation_hours": 0.341,
+                    "share_of_precipitation_mm": 0.413,
+                    "snowfall_total_cm": 14.7
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.75,
+                "precipitation_day_fraction_gt_2mm": 0.625,
+                "precipitation_day_fraction_gt_5mm": 0.5,
+                "precipitation_days_gt_0_5mm": 6,
+                "precipitation_days_gt_2mm": 5,
+                "precipitation_days_gt_5mm": 4,
+                "precipitation_hours_total": 85.0,
+                "precipitation_mean_mm": 6.713,
+                "precipitation_median_mm": 4.65,
+                "precipitation_total_mm": 53.7,
+                "rain_total_mm": 5.5,
+                "snowfall_total_cm": 33.74,
+                "temperature_max_c": 14.8,
+                "temperature_mean_c": 1.95,
+                "temperature_min_c": -14.2
+              }
+            },
+            "SQG_SHUANGQIAO": {
+              "point": {
+                "coordinate_note": "沿用本项目路线资料中的双桥沟游客中心代表点；景区内部各沟段会有海拔和天气差异。",
+                "latitude": 31.1035,
+                "longitude": 102.9239,
+                "name": "四姑娘山·双桥沟游客中心",
+                "region": "siguniang",
+                "role": "core",
+                "status": "VERIFIED",
+                "subregion": "shuangqiao"
+              },
+              "response": {
+                "endpoint_url": "https://archive-api.open-meteo.com/v1/archive?latitude=31.1035%2C31.3806%2C31.4%2C33.198939%2C33.28%2C33.347%2C33.036228&longitude=102.9239%2C102.9944%2C102.84%2C103.897435%2C103.906%2C103.865%2C103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&start_date=2025-10-21&end_date=2025-11-04&daily=temperature_2m_mean%2Ctemperature_2m_min%2Ctemperature_2m_max%2Cprecipitation_sum%2Crain_sum%2Csnowfall_sum%2Cprecipitation_hours&hourly=precipitation%2Crain%2Csnowfall%2Ccloud_cover",
+                "generationtime_ms": 0.19180774688720703,
+                "grid_coordinate": {
+                  "latitude": 31.107204,
+                  "longitude": 102.933495
+                },
+                "model_run_initialization": null,
+                "returned_elevation": 4332.0,
+                "returned_model": null,
+                "returned_model_id": null,
+                "timezone": "Asia/Shanghai",
+                "utc_offset_seconds": 28800
+              },
+              "target_dates": {
+                "2025-10-24": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 90.667,
+                  "date": "2025-10-24",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 64.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 1,
+                      "precipitation_mm": 0.1,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.07
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.9,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.63
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 97.833,
+                      "hours_available": 6,
+                      "precipitation_hours": 0,
+                      "precipitation_mm": 0.0,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.0
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 100.0,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.3,
+                      "rain_mm": 0.2,
+                      "snowfall_cm": 0.07
+                    }
+                  },
+                  "precipitation_hours": 6.0,
+                  "precipitation_mm": 1.3,
+                  "rain_mm": 0.2,
+                  "snowfall_cm": 0.77,
+                  "temperature_max_c": 2.9,
+                  "temperature_mean_c": -2.2,
+                  "temperature_min_c": -4.5
+                },
+                "2025-10-25": {
+                  "cloud_cover_hours_available": 24,
+                  "cloud_cover_mean_pct": 75.542,
+                  "date": "2025-10-25",
+                  "dayparts": {
+                    "afternoon_12_18": {
+                      "cloud_cover_mean_pct": 84.333,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.8,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.56
+                    },
+                    "evening_18_24": {
+                      "cloud_cover_mean_pct": 99.5,
+                      "hours_available": 6,
+                      "precipitation_hours": 4,
+                      "precipitation_mm": 0.4,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.28
+                    },
+                    "morning_06_12": {
+                      "cloud_cover_mean_pct": 34.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 2,
+                      "precipitation_mm": 0.2,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.14
+                    },
+                    "night_00_06": {
+                      "cloud_cover_mean_pct": 84.167,
+                      "hours_available": 6,
+                      "precipitation_hours": 3,
+                      "precipitation_mm": 0.4,
+                      "rain_mm": 0.0,
+                      "snowfall_cm": 0.28
+                    }
+                  },
+                  "precipitation_hours": 13.0,
+                  "precipitation_mm": 1.8,
+                  "rain_mm": 0.0,
+                  "snowfall_cm": 1.26,
+                  "temperature_max_c": 1.5,
+                  "temperature_mean_c": -2.4,
+                  "temperature_min_c": -5.8
+                }
+              },
+              "window_summary": {
+                "cloud_cover_mean_pct": 61.151,
+                "daypart_summary": {
+                  "afternoon_12_18": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 5,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 11.0,
+                    "precipitation_total_mm": 2.1,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.224,
+                    "share_of_precipitation_mm": 0.145,
+                    "snowfall_total_cm": 1.47
+                  },
+                  "evening_18_24": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 14.0,
+                    "precipitation_total_mm": 4.4,
+                    "rain_total_mm": 0.2,
+                    "share_of_precipitation_hours": 0.286,
+                    "share_of_precipitation_mm": 0.303,
+                    "snowfall_total_cm": 2.94
+                  },
+                  "morning_06_12": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 2,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 6.0,
+                    "precipitation_total_mm": 1.3,
+                    "rain_total_mm": 0.0,
+                    "share_of_precipitation_hours": 0.122,
+                    "share_of_precipitation_mm": 0.09,
+                    "snowfall_total_cm": 0.91
+                  },
+                  "night_00_06": {
+                    "days_with_data": 8,
+                    "days_with_precipitation": 4,
+                    "hours_available": 48.0,
+                    "precipitation_hours": 18.0,
+                    "precipitation_total_mm": 6.7,
+                    "rain_total_mm": 0.4,
+                    "share_of_precipitation_hours": 0.367,
+                    "share_of_precipitation_mm": 0.462,
+                    "snowfall_total_cm": 4.41
+                  }
+                },
+                "days": 8,
+                "days_with_precipitation_data": 8,
+                "precipitation_day_fraction_gt_0_5mm": 0.5,
+                "precipitation_day_fraction_gt_2mm": 0.125,
+                "precipitation_day_fraction_gt_5mm": 0.125,
+                "precipitation_days_gt_0_5mm": 4,
+                "precipitation_days_gt_2mm": 1,
+                "precipitation_days_gt_5mm": 1,
+                "precipitation_hours_total": 49.0,
+                "precipitation_mean_mm": 1.812,
+                "precipitation_median_mm": 0.75,
+                "precipitation_total_mm": 14.5,
+                "rain_total_mm": 0.6,
+                "snowfall_total_cm": 9.73,
+                "temperature_max_c": 9.5,
+                "temperature_mean_c": -1.987,
+                "temperature_min_c": -10.2
+              }
+            }
+          },
+          "start": "2025-10-21",
+          "status": "OK",
+          "target_dates": [
+            "2025-10-24",
+            "2025-10-25"
+          ]
+        }
+      },
+      "name": "四姑娘山周边：双桥沟 / 毕棚沟 / 理小路",
+      "point_ids": [
+        "SQG_SHUANGQIAO",
+        "BPG_CENTER",
+        "LXL_HIGH_PASS"
+      ],
+      "window_days_each_side": 3
+    }
+  },
+  "window_days_each_side": 3,
+  "years": [
+    2023,
+    2024,
+    2025
+  ]
+}
