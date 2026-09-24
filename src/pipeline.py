@@ -129,6 +129,19 @@ CLOUD_LAYER_VARIABLES = (
     "cloud_cover_mid",
     "cloud_cover_high",
 )
+# A published viewing signal is read from GEFS when GEFS supplies it and from
+# the independent ECMWF ensemble otherwise.  These pairs let a summary name the
+# source of every signal next to the signal itself, so a single-ensemble value
+# can never read as an EC + GEFS merge.
+VIEWING_SIGNAL_SOURCE_VARIABLES = (
+    ("total_cloud", "cloud_cover_gt_70pct", "cloud_cover"),
+    ("precip", "precipitation_gt_0_5mm", "precipitation"),
+    ("snow", "snowfall_gt_0_5cm", "snowfall"),
+    ("wind", "gust_gt_50kmh", "wind_gusts_10m"),
+    ("low_cloud", "cloud_cover_low_gt_50pct", "cloud_cover_low"),
+    ("mid_cloud", "cloud_cover_mid_gt_50pct", "cloud_cover_mid"),
+    ("high_cloud", "cloud_cover_high_gt_50pct", "cloud_cover_high"),
+)
 # Sustained / mean wind speed is a different quantity from the gust.  Keep the
 # two names separate so a summary can never describe a gust as sustained wind.
 SUSTAINED_WIND_VARIABLES = ("wind_speed_10m",)
@@ -6704,6 +6717,8 @@ def run_gefs(
     missing_variables: set[str] = set()
     required_missing_variables: set[str] = set()
     optional_missing_variables: set[str] = set()
+    required_unavailable_variables: set[str] = set()
+    optional_unavailable_variables: set[str] = set()
     qa_warnings: list[str] = []
     point_status_summary: dict[str, dict] = {}
     solar_capabilities: dict[str, bool] = {}
@@ -6739,6 +6754,8 @@ def run_gefs(
             missing_variables.update(segment.get("missing_variables") or [])
             required_missing_variables.update(segment.get("required_missing_variables") or [])
             optional_missing_variables.update(segment.get("optional_missing_variables") or [])
+            required_unavailable_variables.update(segment.get("required_unavailable_variables") or [])
+            optional_unavailable_variables.update(segment.get("optional_unavailable_variables") or [])
             qa_warnings.extend(
                 f"{point_id}:{segment_key}:{variable}:OPTIONAL_UNAVAILABLE"
                 for variable in (segment.get("optional_missing_variables") or [])
@@ -6903,6 +6920,11 @@ def run_gefs(
         usable_points=usable_points,
         required_missing_variables=sorted(required_missing_variables),
         optional_missing_variables=sorted(optional_missing_variables),
+        # Same capability probe as the per-segment variable_status, published at
+        # module level so optional_unavailable_variables never disagrees with
+        # the OPTIONAL_UNAVAILABLE entries the module already reports.
+        required_unavailable_variables=sorted(required_unavailable_variables),
+        optional_unavailable_variables=sorted(optional_unavailable_variables),
         point_status_summary=point_status_summary,
         qa={
             "near_range_successful_points": near_success,
@@ -9506,6 +9528,9 @@ def _viewing_signal(
             "visibility_related_signal": "UNCERTAIN",
             "model_agreement": "UNAVAILABLE",
             "layer_sources": {variable: "UNAVAILABLE" for variable in CLOUD_LAYER_VARIABLES},
+            "signal_sources": {
+                signal: "UNAVAILABLE" for signal, _, _ in VIEWING_SIGNAL_SOURCE_VARIABLES
+            },
             "notes": ["NO_VIEWING_SOURCE_AVAILABLE"],
         }
     # GEFS is preferred for the GFS cross-check, but a quantity GEFS cannot
@@ -9535,6 +9560,19 @@ def _viewing_signal(
             if isinstance(item, dict) and item.get("median") is not None:
                 return label
         return "UNAVAILABLE"
+
+    def signal_source(probability_name: str, variable: str) -> str:
+        """Name the ensemble that actually supplied a published signal.
+
+        ``probability`` and ``median`` both read GEFS first and fall back to the
+        independent ECMWF ensemble, so a signal can come from either one.  The
+        value is never an average of the two.
+        """
+        for label, stats in (("gefs", gefs_stats), ("ecmwf_ensemble", ec_stats)):
+            item = (stats.get("probabilities") or {}).get(probability_name)
+            if isinstance(item, dict) and item.get("probability") is not None:
+                return label
+        return source_for(variable)
 
     cloud = probability("cloud_cover_gt_70pct")
     low = probability("cloud_cover_low_gt_50pct")
@@ -9568,7 +9606,10 @@ def _viewing_signal(
 
     # Obstruction risk only.  No numeric visibility is published because the
     # Open-Meteo hourly fields used here are not a visibility measurement.
-    obstruction_inputs = [value for value in (low, mid, precip) if value is not None]
+    # Only low cloud, precipitation and snow fog can physically hide the
+    # terrain.  Mid cloud does not obstruct a mountain view; it flattens direct
+    # sunlight, which mid_cloud_signal reports separately.
+    obstruction_inputs = [value for value in (low, precip) if value is not None]
     if not obstruction_inputs and median_low is None and median_humidity is None:
         visibility_signal = "UNCERTAIN"
     else:
@@ -9604,6 +9645,10 @@ def _viewing_signal(
         "layer_sources": {
             variable: source_for(variable)
             for variable in CLOUD_LAYER_VARIABLES
+        },
+        "signal_sources": {
+            signal: signal_source(probability_name, variable)
+            for signal, probability_name, variable in VIEWING_SIGNAL_SOURCE_VARIABLES
         },
         "notes": notes,
     }
@@ -9922,6 +9967,19 @@ def _target_window_location(
     hres_record = (hres.get("points") or {}).get(point_id)
     gfs_record = (gfs.get("points") or {}).get(point_id)
     ec_record = (ensemble.get("points") or {}).get(point_id)
+    # The ECMWF ensemble is fetched for each region's core point only.  A summary
+    # node outside that set borrows its own region's core grid rather than
+    # reporting the ensemble as unavailable, and names the borrowed point so the
+    # reference grid is never mistaken for a point-level ensemble.
+    ensemble_reference_point_id = None
+    if ec_record is None and point:
+        region = (config.get("regions") or {}).get(point.get("region")) or {}
+        candidate = region.get("core_point_id")
+        if candidate and candidate != point_id:
+            candidate_record = (ensemble.get("points") or {}).get(candidate)
+            if candidate_record is not None:
+                ec_record = candidate_record
+                ensemble_reference_point_id = candidate
     gefs_record = (gefs.get("points") or {}).get(point_id)
     hres_daily = _deterministic_daily_summary(hres_record, target_date, cutoff_date)
     gfs_daily = _deterministic_daily_summary(gfs_record, target_date, cutoff_date)
@@ -10014,6 +10072,7 @@ def _target_window_location(
         "location_id": point_id,
         "location_name": name,
         "usable_for_main_chain": bool(point and point.get("status") == "VERIFIED"),
+        "ensemble_reference_point_id": ensemble_reference_point_id,
         "forecast_granularity": _target_forecast_granularity(forecast_date, target_date),
         "daily": {
             "ec_det": _compact_deterministic_view(hres_daily),
@@ -10165,7 +10224,7 @@ def build_target_window_brief(
             ),
             "highest_snow_risk_windows": dates_for(
                 lambda item: any(
-                    (view.get("viewing_conditions") or {}).get("precip_signal") == "HIGH"
+                    (view.get("viewing_conditions") or {}).get("snow_signal") == "HIGH"
                     for view in (item.get("morning"), item.get("afternoon"))
                     if view
                 )

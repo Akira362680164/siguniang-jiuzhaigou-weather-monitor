@@ -3043,6 +3043,167 @@ class PipelineUnitTests(unittest.TestCase):
 
         self.assertEqual(pipeline.long_range_variable_horizon_offenders({}, daily_by_lead), [])
 
+    def test_viewing_conditions_treat_mid_cloud_as_flat_light_not_obstruction(self):
+        def window(probabilities, medians):
+            statistics = {"probabilities": probabilities}
+            statistics.update(medians)
+            return {"status": "OK", "statistics": statistics}
+
+        # Mid cloud flattens direct sunlight; it does not hide a mountain face.
+        mid_only = window(
+            {"cloud_cover_mid_gt_50pct": {"probability": 0.95, "available_members": 51}},
+            {
+                "cloud_cover": {"median": 60.0, "available_members": 51},
+                "cloud_cover_low": {"median": 5.0, "available_members": 51},
+                "cloud_cover_mid": {"median": 95.0, "available_members": 51},
+                "cloud_cover_high": {"median": 10.0, "available_members": 51},
+            },
+        )
+        mid_signal = pipeline._viewing_signal(mid_only, mid_only, {}, None)
+        self.assertEqual(mid_signal["mid_cloud_signal"], "HIGH")
+        self.assertIn("MID_CLOUD_CAN_FLATTEN_DIRECT_SUNLIGHT", mid_signal["notes"])
+        self.assertEqual(mid_signal["visibility_related_signal"], "LOW")
+
+        # Low cloud is the layer that actually blocks the terrain.
+        low_only = window(
+            {"cloud_cover_low_gt_50pct": {"probability": 0.95, "available_members": 51}},
+            {
+                "cloud_cover": {"median": 60.0, "available_members": 51},
+                "cloud_cover_low": {"median": 95.0, "available_members": 51},
+                "cloud_cover_mid": {"median": 5.0, "available_members": 51},
+                "cloud_cover_high": {"median": 10.0, "available_members": 51},
+            },
+        )
+        low_signal = pipeline._viewing_signal(low_only, low_only, {}, None)
+        self.assertEqual(low_signal["low_cloud_signal"], "HIGH")
+        self.assertEqual(low_signal["visibility_related_signal"], "HIGH")
+
+    def test_viewing_conditions_name_the_ensemble_behind_each_signal(self):
+        gefs_without_layers = {
+            "status": "OK",
+            "statistics": {
+                "cloud_cover": {"median": 55.0, "available_members": 31},
+                "cloud_cover_low": {"median": None, "available_members": 0},
+                "cloud_cover_mid": {"median": None, "available_members": 0},
+                "cloud_cover_high": {"median": None, "available_members": 0},
+                "relative_humidity_2m": {"median": None, "available_members": 0},
+                "probabilities": {
+                    "cloud_cover_gt_70pct": {"probability": 0.3, "available_members": 31},
+                    "precipitation_gt_0_5mm": {"probability": 0.4, "available_members": 31},
+                    "snowfall_gt_0_5cm": {"probability": 0.1, "available_members": 31},
+                    "gust_gt_50kmh": {"probability": 0.2, "available_members": 31},
+                },
+            },
+        }
+        ec_with_layers = {
+            "status": "OK",
+            "statistics": {
+                "cloud_cover_low": {"median": 70.0, "available_members": 51},
+                "cloud_cover_mid": {"median": 45.0, "available_members": 51},
+                "cloud_cover_high": {"median": 20.0, "available_members": 51},
+                "probabilities": {
+                    "cloud_cover_low_gt_50pct": {"probability": 0.9, "available_members": 51},
+                    "cloud_cover_mid_gt_50pct": {"probability": 0.4, "available_members": 51},
+                    "cloud_cover_high_gt_50pct": {"probability": 0.1, "available_members": 51},
+                },
+            },
+        }
+        signal = pipeline._viewing_signal(gefs_without_layers, ec_with_layers, {}, "HIGH")
+        # These are single-source values, never an EC + GEFS merge.
+        self.assertEqual(
+            signal["signal_sources"],
+            {
+                "total_cloud": "gefs",
+                "precip": "gefs",
+                "snow": "gefs",
+                "wind": "gefs",
+                "low_cloud": "ecmwf_ensemble",
+                "mid_cloud": "ecmwf_ensemble",
+                "high_cloud": "ecmwf_ensemble",
+            },
+        )
+        none_signal = pipeline._viewing_signal({}, {}, {}, None)
+        self.assertEqual(
+            sorted(none_signal["signal_sources"]),
+            ["high_cloud", "low_cloud", "mid_cloud", "precip", "snow", "total_cloud", "wind"],
+        )
+        self.assertEqual(set(none_signal["signal_sources"].values()), {"UNAVAILABLE"})
+
+    def test_summary_nodes_borrow_the_region_core_ensemble_and_name_it(self):
+        config = json.loads((ROOT / "config" / "points.json").read_text(encoding="utf-8"))
+        core = config["regions"]["jiuzhaigou"]["core_point_id"]
+        ensemble = {"points": {core: self.make_ecmwf_ensemble_record()}}
+        borrowed = pipeline._target_window_location(
+            config,
+            "JZG_NORILANG",
+            date(2026, 10, 1),
+            date(2026, 9, 23),
+            {},
+            {},
+            ensemble,
+            {},
+            date.fromisoformat("2026-11-01"),
+        )
+        self.assertEqual(borrowed["ensemble_reference_point_id"], core)
+        # The borrowed grid must actually be in use, not merely annotated.
+        self.assertTrue(borrowed["morning"]["ec_ens"]["available"])
+        native = pipeline._target_window_location(
+            config,
+            core,
+            date(2026, 10, 1),
+            date(2026, 9, 23),
+            {},
+            {},
+            ensemble,
+            {},
+            date.fromisoformat("2026-11-01"),
+        )
+        self.assertIsNone(native["ensemble_reference_point_id"])
+
+    def test_gefs_module_publishes_optional_unavailable_variables(self):
+        optional = [
+            "cloud_cover_high",
+            "cloud_cover_low",
+            "cloud_cover_mid",
+            "shortwave_radiation",
+        ]
+        config = {
+            "namespace": "siguniang_jiuzhaigou",
+            "route_slots": {},
+            "points": {
+                "JZG_NORILANG": {
+                    "name": "probe",
+                    "region": "jiuzhaigou",
+                    "status": "VERIFIED",
+                    "latitude": 33.0,
+                    "longitude": 103.9,
+                }
+            },
+        }
+        segment = {
+            "status": "OK",
+            "segment": "near_range",
+            "members_valid": 31,
+            "required_missing_variables": [],
+            "optional_missing_variables": optional,
+            "required_unavailable_variables": [],
+            "optional_unavailable_variables": optional,
+            "variable_status": {variable: "OPTIONAL_UNAVAILABLE" for variable in optional},
+        }
+        with patch.object(pipeline, "_fetch_gefs_segment", return_value={}), patch.object(
+            pipeline, "_build_gefs_segment", return_value=segment
+        ):
+            result = pipeline.run_gefs(config, None, "2026-09-24T00:00:00Z", "2026-09-23")
+        self.assertEqual(result["optional_unavailable_variables"], optional)
+        self.assertEqual(result["required_unavailable_variables"], [])
+        # The published list must agree with the OPTIONAL_UNAVAILABLE entries the
+        # module already reports in variable_status.
+        self.assertEqual(
+            set(result["optional_unavailable_variables"]),
+            {name for name, status in result["variable_status"].items() if status == "OPTIONAL_UNAVAILABLE"},
+        )
+        self.assertEqual(result["optional_unavailable_variables"], result["optional_missing_variables"])
+
 
 if __name__ == "__main__":
     unittest.main()

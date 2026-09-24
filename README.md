@@ -88,7 +88,11 @@
 - `deterministicCompact`：`cloud` / `low_cloud` / `mid_cloud` / `high_cloud`、`precip_mm` / `rain_mm` / `snow_cm`、`temp_min_c` / `temp_mean_c` / `temp_max_c`、`dew_point_c`、`relative_humidity_pct`、`wind_speed_kmh`、`wind_direction_deg`、`gust_kmh`、`sunshine_or_shortwave`。
 - `ensembleCompact`：`cloud_median` / `low_cloud_median` / `mid_cloud_median` / `high_cloud_median`、`p_cloud_gt_50` / `p_cloud_gt_70`、`p_low_cloud_gt_50` / `p_mid_cloud_gt_50` / `p_high_cloud_gt_50`、`p_precip`、`p_snow`、`wind_speed_median`、`gust_median` / `gust_p90`、`temp_p10` / `temp_median` / `temp_p90`、`dew_point_median`、`relative_humidity_median`，以及 `layer_availability` 明确标示哪一层真的有数据。
 
-`viewing_conditions` 分层判断摄影条件：`total_cloud_signal`、`low_cloud_signal`（山体遮挡/能见度）、`mid_cloud_signal`（直射光被压平）、`high_cloud_signal`（天空纹理与霞光潜力）、`precip_signal`、`snow_signal`、`wind_signal`、`visibility_related_signal`、`model_agreement`。**高云不等于坏天气**，只有在低云/中云或降水同时存在时才降低判断等级。不使用 Open-Meteo 字段冒充能见度实测量。
+`viewing_conditions` 分层判断摄影条件：`total_cloud_signal`、`low_cloud_signal`（山体遮挡/能见度）、`mid_cloud_signal`（直射光被压平）、`high_cloud_signal`（天空纹理与霞光潜力）、`precip_signal`、`snow_signal`、`wind_signal`、`visibility_related_signal`、`model_agreement`。**高云不等于坏天气**，只有在低云或降水同时存在时才降低判断等级。
+
+**遮挡类别的定义边界（`visibility_related_signal`）**：只有低云、降水/雪雾和高湿环境能物理遮住山体，因此 `obstruction_inputs` 只取 `low` 与 `precip`。**中云不进遮挡判据**——中云压平直射光、影响平光质感，这件事由 `mid_cloud_signal` 单独表达。此前把中云并入遮挡会把「中云多」误报成「能见度风险高」。不使用 Open-Meteo 字段冒充能见度实测量。
+
+**信号来源透明化（`signal_sources`）**：`layer_sources` 只说明三层云各自取自哪套集合，无法区分总云/降水/雪/风。`signal_sources` 为全部 7 个信号逐一标注**实际供数的那套集合**，取值为 `gefs` / `ecmwf_ensemble` / `UNAVAILABLE`：`total_cloud`、`precip`、`snow`、`wind` 优先取 GEFS；GEFS 不提供分层云时低/中/高云自动回落到 ECMWF 集合。**这是「优先取一套、缺失才回落」，不是两套集合的融合或平均**，`signal_sources` 就是为了让读 summary 的人不会误读成 EC+GEFS 融合值。
 
 `fog_inputs`（沟谷晨雾辅助位）只发布原始指标：`previous_12h_precip_mm`、`previous_24h_precip_mm`、`night_relative_humidity`、`night_dew_point`、`night_temp`、`night_temp_dewpoint_spread`、`pre_dawn_wind_speed`、`pre_dawn_gust`、`night_total_cloud` / `night_low_cloud` / `night_mid_cloud` / `night_high_cloud`，以及 `moisture_signal`、`radiative_cooling_signal`、`wind_signal`、`system_low_cloud_risk`。`probability_published` 恒为 `false`——不输出「晨雾概率 73%」这类伪精确数字。
 
@@ -224,10 +228,13 @@ GitHub 每日运行会从最近 3–5 次长期摘要中比较同一 `horizon_cl
 - `near_range` 使用 `ncep_gefs025`：全球约 0.25°、约 25 km、31 个序列，当前接口约 10 天；用于近中期成员分布和确定性 GFS 交叉验证。
 - `long_range` 使用 `ncep_gefs05`：全球约 0.5°、约 50 km、31 个序列，当前接口约 35 天；用于 11 天以后到 `2026-11-01` 的趋势、概率和过程窗口。粗网格结果不能当作沟内小时级精准预报。
 - GEFS 状态按必需/可选变量分层：`temperature_2m`、`precipitation`、`snowfall`、`cloud_cover` 和 `wind_gusts_10m` 是当前可用核心；低/中/高云层、相对湿度、平均风和日照变量按可选能力记录。当前真实接口在川西返回的 `cloud_cover_low/mid/high` 为空数组/空成员序列，`shortwave_radiation`/`sunshine_duration` 也可能不可用；这些缺失只进入 `optional_missing_variables` 和 warning，不会把核心完整的点误判为 `PARTIAL`。如果核心字段、成员数或时间轴失败，点才会进入 `PARTIAL`/`FAILED`。任何缺失都不会用其他平台补值。
+- 模块级 `optional_unavailable_variables` / `required_unavailable_variables` 与逐段 `variable_status` 使用**同一套能力探测**（`unavailable_variables_for`，只把状态不在 `{OK, PARTIAL}` 的变量计为不可用），因此模块级列表永远不会和 `variable_status` 里的 `OPTIONAL_UNAVAILABLE` 条目互相打架。变量若完全不在 `variable_status` 里就不会被列出——这是能力探测的边界，不是遗漏。
 - 每个窗口保留 temperature/cloud/low-cloud/precipitation/snowfall/gust 的百分位与概率，分母是 `members_valid`。成员缺失不会被当作零。
 - `CLOUD_EVENT`、`PRECIP_EVENT`、`SNOW_EVENT` 和 `COLD_EVENT` 只表示天气过程候选；输出 `event_start/event_peak/event_end` 的 p25/median/p75、最早/最晚、`phase_spread_hours`、`phase_confidence`、`multimodal` 和 `event_day_distribution`。这些字段不表示物候阶段、黄叶或掉叶。
 - `MORNING`、`AFTERNOON`、`NIGHT` 均按 `Asia/Shanghai` 聚合；11/1 的 NIGHT 会因硬截止只包含 11/1 当天 18:00 后的数据，不读取 11/2。
 - `summary.json.target_window_brief` 是给下游日报快速读取的 2026-10-24 至 2026-11-01 简表。它只列 VERIFIED 点，按 `days[date][point_id]` 提供 HRES/GFS deterministic、ECMWF Ensemble、GEFS、天气过程相位、deterministic support、EC/GEFS consensus、`viewing_conditions` 和固定 `itinerary_focus`；这里只保留百分位/概率和窗口结论，不复制成员数组、完整 event distribution、请求元数据或 debug 结构。完整细节仍在 `gefs.json`、`ensemble.json`、`hres.json` 和 `gfs.json`。ECMWF Ensemble 的 D8–15 数据可以进入对应日期窗口；旅行简表仍硬截止于 11/1，因此 11/2 不进入该简表。
+- ECMWF 集合只按**每个区域的核心点**抓取。非核心的简表节点（如 `JZG_NORILANG` 诺日朗、`JZG_PRIMEVAL` 原始森林）不报 `unavailable`，而是借用本区域核心格点并在 `ensemble_reference_point_id` 里写明借的是谁（例：`"JZG_TREESHENG"`）；核心点自身该字段为 `null`。含义是「本点的集合判断采用区域核心格点」——ECMWF 集合 25 km 网格下这几个点本就落在同一格点，重复请求没有信息增益。字段非 `null` 不代表该格点一定有数据，是否真有覆盖仍看 `ec_ens.available`。
+- `window_overview.highest_snow_risk_windows` 只由 `snow_signal == "HIGH"` 决定，**不读 `precip_signal`**；降水风险另由 `precip_window` 与逐点 `precip_signal` 表达。`window_overview.highest_low_cloud_risk_windows` / `highest_mid_cloud_flat_light_windows` / `low_visibility_related_risk_windows` 则分别对应低云遮挡、中云平光和遮挡类别（低云+降水）三个互不含混的字段。
 
 跨集合状态严格区分：`HIGH`/`MEDIUM`/`LOW` 只表示 ECMWF Ensemble 与 GEFS 都有有效覆盖时的跨模型比较；`ONE_ENSEMBLE_ONLY` 表示只有一套集合有覆盖，`UNAVAILABLE` 表示两套集合都不可用。ECMWF Ensemble 超出预报时效不会被当作 `LOW` 分歧。`window_overview.largest_model_disagreement_dates` 只收录真实 `LOW`，`single_ensemble_only_dates` 单独列出只有一套集合覆盖的日期。
 
@@ -330,7 +337,7 @@ python3.12 src/pipeline.py --refresh-history
 4. 用 `weather_driver_vs_2023`/`weather_driver_vs_2024`/`weather_driver_vs_2025`、`forecast_0_7d`、`forecast_8_15d`、`forecast_16_35d`、Ensemble 分布、Single Runs 和 GFS 交叉验证整理天气证据；长期层只作 16–35 天背景概率层，读 `required_forecast_days` 与 `edge_shortfall_lead_days` 区分必需区间和边缘块；需要查看完整历史同期后续路径时读取 `history_forward.json`，先检查其 `status`（`NOT_APPLICABLE`/`SKIPPED` 表示滚动窗口已越过 11-01 截止，不是数据缺失）、各 region 的 `subregion_aggregation_status` 和 `same_grid_qa`；读 `single_runs.json` 时以 `cycle_class=LONG` 的 run 为准。
 5. 对需要结论的同地点，另行搜索并人工查看 2026/2025 实拍；把实拍判断与天气证据分开写，不能把 JSON 的天气方向改写成自动物候日差。
 6. 读取 `weather_events.json`、`grid_registry.json`、`long_range.json`、`hres.json`、`history_comparison.json`、`historical_comparison.json`、`ensemble.json`、`single_runs.json` 追溯具体点、格点、成员和 run；遇到 `INVALID`、`FAILED`、`PARTIAL` 或 `UNDETERMINED` 时保留不确定性。weather events 只能用来描述天气事件和机械天气压力，不能直接改写为实际物候日期。
-7. 判断摄影/通行条件时读取 `summary.json.target_window_brief`：每个窗口的 `ec_det`、`gfs_det`、`ec_ens`、`gefs` 四套独立视图、`model_consistency`、`viewing_conditions`（含逐层来源 `layer_sources`）和 `fog_inputs`。低云看山体遮挡、中云看直射光、高云看天空纹理；高云不等于坏天气。差异大或某变量 `null` 时按「未确认」处理，不做跨模型平均。
+7. 判断摄影/通行条件时读取 `summary.json.target_window_brief`：每个窗口的 `ec_det`、`gfs_det`、`ec_ens`、`gefs` 四套独立视图、`model_consistency`、`viewing_conditions`（含逐层来源 `layer_sources` 与逐信号来源 `signal_sources`）和 `fog_inputs`。低云看山体遮挡、降水看遮挡、中云看直射光、高云看天空纹理；高云不等于坏天气。`signal_sources` 说明每个信号究竟取自 GEFS 还是 ECMWF 集合，看到它就不要把单个信号读成两套集合的融合值。差异大或某变量 `null` 时按「未确认」处理，不做跨模型平均。
 
 当前 v1.4.0 Schema 已覆盖长期背景层、派生 weather-event 层、独立 GEFS 层、统一天气变量可用性（`variable_status`）、目标期简表和三年同期历史对照。后续如果需要增加图像人工复核结果，建议以独立字段或独立文件追加，并保持天气层与视觉判断层分离。
 

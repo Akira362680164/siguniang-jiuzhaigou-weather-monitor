@@ -50,13 +50,13 @@
             "clearest_days_ec": {"type": "array", "items": {"type": "string", "format": "date"}},
             "clearest_days_gfs": {"type": "array", "items": {"type": "string", "format": "date"}},
             "ensemble_best_supported_clear_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
-            "highest_low_cloud_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
-            "highest_mid_cloud_flat_light_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "highest_low_cloud_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}, "description": "Dates where low_cloud_signal is HIGH."},
+            "highest_mid_cloud_flat_light_windows": {"type": "array", "items": {"type": "string", "format": "date"}, "description": "Dates where mid_cloud_signal is HIGH. Flat direct light only; never an obstruction signal."},
             "best_high_cloud_texture_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
-            "low_visibility_related_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "low_visibility_related_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}, "description": "Dates where visibility_related_signal is HIGH, i.e. obstruction risk from low cloud or precipitation. Mid cloud is excluded."},
             "fog_favourable_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
             "highest_wind_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
-            "highest_snow_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}},
+            "highest_snow_risk_windows": {"type": "array", "items": {"type": "string", "format": "date"}, "description": "Dates where snow_signal is HIGH. Derived from snow_signal only; precip_signal is reported separately."},
             "largest_model_disagreement_dates": {"type": "array", "items": {"type": "string", "format": "date"}},
             "single_ensemble_only_dates": {"type": "array", "items": {"type": "string", "format": "date"}}
           },
@@ -221,10 +221,15 @@
           "description": "Which independent source supplied each cloud layer: gefs, ecmwf_ensemble or UNAVAILABLE.",
           "additionalProperties": {"type": "string"}
         },
+        "signal_sources": {
+          "type": "object",
+          "description": "Which independent source supplied each published signal (total_cloud, precip, snow, wind, low_cloud, mid_cloud, high_cloud): gefs, ecmwf_ensemble or UNAVAILABLE. One source is chosen and the other is only a fallback; the two ensembles are never averaged.",
+          "additionalProperties": {"type": "string"}
+        },
         "notes": {"type": "array", "items": {"type": "string"}}
       },
       "additionalProperties": true,
-      "description": "Layered cloud is judged separately. High cloud is texture potential, not automatically bad weather."
+      "description": "Layered cloud is judged separately. High cloud is texture potential, not automatically bad weather. visibility_related_signal is obstruction risk only (low cloud plus precipitation); mid cloud reports flat direct light and never counts as obstruction."
     },
     "fogInputs": {
       "type": "object",
@@ -289,7 +294,11 @@
         "afternoon": {"$ref": "#/$defs/targetWindowSlot"},
         "night": {"$ref": "#/$defs/targetWindowSlot"},
         "fog_inputs": {"$ref": "#/$defs/fogInputs"},
-        "event_phase": {"type": "object"}
+        "event_phase": {"type": "object"},
+        "ensemble_reference_point_id": {
+          "type": ["string", "null"],
+          "description": "Set only on a non-core location whose ensemble judgement borrows its region's core grid, e.g. \"JZG_TREESHENG\" for JZG_NORILANG/JZG_PRIMEVAL. null on the region core point itself. A non-null value names the reference grid; it does not guarantee that grid has coverage for the date."
+        }
       },
       "additionalProperties": true
     },
