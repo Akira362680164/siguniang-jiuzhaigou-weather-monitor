@@ -1,6 +1,6 @@
 {
   "data_date": "2026-09-25",
-  "generated_at": "2026-09-25T21:36:38Z",
+  "generated_at": "2026-09-26T05:00:45Z",
   "interpretation_boundary": "温度、降水、云量均为对应模型返回格点的预报聚合；四姑娘山高位路段和九寨沟沟内不同海拔会产生局地差异。",
   "module": "target_summary",
   "schema_version": "1.4.0",
@@ -408,15 +408,15 @@
               "interpretation": {
                 "cloud_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 45.959,
-                  "mean": 70.641,
-                  "median": 84.292,
+                  "interquartile_spread": 47.02,
+                  "mean": 69.497,
+                  "median": 80.542,
                   "members_valid": 31,
-                  "p10": 22.792,
-                  "p25": 50.396,
-                  "p75": 96.355,
-                  "p90": 99.375,
-                  "spread": 76.583
+                  "p10": 19.708,
+                  "p25": 49.792,
+                  "p75": 96.812,
+                  "p90": 99.25,
+                  "spread": 79.542
                 },
                 "precipitation_signal": {
                   "cloud_cover_gt_50pct": {
@@ -427,9 +427,9 @@
                   },
                   "cloud_cover_gt_70pct": {
                     "available_members": 31,
-                    "members": 18,
+                    "members": 17,
                     "members_valid": 31,
-                    "probability": 0.581
+                    "probability": 0.548
                   },
                   "cloud_cover_gt_90pct": {
                     "available_members": 31,
@@ -493,15 +493,15 @@
                   },
                   "daily_tmax_lt_0c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   },
                   "daily_tmin_lt_minus5c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   },
                   "gust_gt_30kmh": {
                     "available_members": 31,
@@ -529,45 +529,45 @@
                   },
                   "precipitation_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 30,
+                    "members": 29,
                     "members_valid": 31,
-                    "probability": 0.968
+                    "probability": 0.935
                   },
                   "precipitation_gt_0_5mm": {
                     "available_members": 31,
-                    "members": 30,
+                    "members": 29,
                     "members_valid": 31,
-                    "probability": 0.968
+                    "probability": 0.935
                   },
                   "precipitation_gt_2mm": {
                     "available_members": 31,
-                    "members": 21,
+                    "members": 17,
                     "members_valid": 31,
-                    "probability": 0.677
+                    "probability": 0.548
                   },
                   "precipitation_gt_5mm": {
                     "available_members": 31,
-                    "members": 9,
+                    "members": 4,
                     "members_valid": 31,
-                    "probability": 0.29
+                    "probability": 0.129
                   },
                   "rain_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 26,
+                    "members": 27,
                     "members_valid": 31,
-                    "probability": 0.839
+                    "probability": 0.871
                   },
                   "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "snowfall_gt_0cm": {
                     "available_members": 31,
                     "members": 16,
                     "members_valid": 31,
                     "probability": 0.516
-                  },
-                  "snowfall_gt_0cm": {
-                    "available_members": 31,
-                    "members": 21,
-                    "members_valid": 31,
-                    "probability": 0.677
                   },
                   "snowfall_gt_1cm": {
                     "available_members": 31,
@@ -577,21 +577,21 @@
                   },
                   "snowfall_gt_2cm": {
                     "available_members": 31,
-                    "members": 9,
-                    "members_valid": 31,
-                    "probability": 0.29
-                  },
-                  "snowfall_gt_3cm": {
-                    "available_members": 31,
-                    "members": 5,
-                    "members_valid": 31,
-                    "probability": 0.161
-                  },
-                  "snowfall_gt_5cm": {
-                    "available_members": 31,
                     "members": 3,
                     "members_valid": 31,
                     "probability": 0.097
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
                   },
                   "temperature_lt_0c": {
                     "available_members": 31,
@@ -601,22 +601,22 @@
                   },
                   "temperature_lt_minus5c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   }
                 },
                 "temperature_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 2.6,
-                  "mean": 1.029,
-                  "median": 0.529,
+                  "interquartile_spread": 2.021,
+                  "mean": 1.641,
+                  "median": 1.621,
                   "members_valid": 31,
-                  "p10": -1.058,
-                  "p25": -0.36,
-                  "p75": 2.24,
-                  "p90": 4.125,
-                  "spread": 5.183
+                  "p10": -0.621,
+                  "p25": 1.004,
+                  "p75": 3.025,
+                  "p90": 4.15,
+                  "spread": 4.771
                 }
               },
               "lead_days": 29,
@@ -627,13 +627,13 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 70.641,
-                    "night_min_c": -2.123,
-                    "precipitation_mm": 4.142,
-                    "snowfall_cm": 1.673,
-                    "temperature_max_c": 5.79,
-                    "temperature_mean_c": 1.029,
-                    "temperature_min_c": -2.123
+                    "cloud_cover_mean_pct": 69.497,
+                    "night_min_c": -1.558,
+                    "precipitation_mm": 2.806,
+                    "snowfall_cm": 0.698,
+                    "temperature_max_c": 7.139,
+                    "temperature_mean_c": 1.641,
+                    "temperature_min_c": -1.558
                   }
                 },
                 "ecmwf_ensemble": null,
@@ -664,40 +664,40 @@
                   },
                   "cloud_cover_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 45.959,
-                    "mean": 70.641,
-                    "median": 84.292,
+                    "interquartile_spread": 47.02,
+                    "mean": 69.497,
+                    "median": 80.542,
                     "members_valid": 31,
-                    "p10": 22.792,
-                    "p25": 50.396,
-                    "p75": 96.355,
-                    "p90": 99.375,
-                    "spread": 76.583
+                    "p10": 19.708,
+                    "p25": 49.792,
+                    "p75": 96.812,
+                    "p90": 99.25,
+                    "spread": 79.542
                   },
                   "date": "2026-10-24",
                   "night_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 1.8,
-                    "mean": -2.123,
-                    "median": -2.2,
+                    "interquartile_spread": 2.1,
+                    "mean": -1.558,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -4.4,
-                    "p25": -3.0,
-                    "p75": -1.2,
-                    "p90": 0.5,
-                    "spread": 4.9
+                    "p10": -4.3,
+                    "p25": -2.55,
+                    "p75": -0.45,
+                    "p90": 0.7,
+                    "spread": 5.0
                   },
                   "precipitation_mm": {
                     "available_members": 31,
-                    "interquartile_spread": 3.45,
-                    "mean": 4.142,
-                    "median": 3.0,
+                    "interquartile_spread": 3.15,
+                    "mean": 2.806,
+                    "median": 2.4,
                     "members_valid": 31,
                     "p10": 0.6,
-                    "p25": 1.65,
-                    "p75": 5.1,
-                    "p90": 7.8,
-                    "spread": 7.2
+                    "p25": 0.9,
+                    "p75": 4.05,
+                    "p90": 5.4,
+                    "spread": 4.8
                   },
                   "probabilities": {
                     "cloud_cover_gt_50pct": {
@@ -708,9 +708,9 @@
                     },
                     "cloud_cover_gt_70pct": {
                       "available_members": 31,
-                      "members": 18,
+                      "members": 17,
                       "members_valid": 31,
-                      "probability": 0.581
+                      "probability": 0.548
                     },
                     "cloud_cover_gt_90pct": {
                       "available_members": 31,
@@ -774,15 +774,15 @@
                     },
                     "daily_tmax_lt_0c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     },
                     "daily_tmin_lt_minus5c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     },
                     "gust_gt_30kmh": {
                       "available_members": 31,
@@ -810,45 +810,45 @@
                     },
                     "precipitation_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 30,
+                      "members": 29,
                       "members_valid": 31,
-                      "probability": 0.968
+                      "probability": 0.935
                     },
                     "precipitation_gt_0_5mm": {
                       "available_members": 31,
-                      "members": 30,
+                      "members": 29,
                       "members_valid": 31,
-                      "probability": 0.968
+                      "probability": 0.935
                     },
                     "precipitation_gt_2mm": {
                       "available_members": 31,
-                      "members": 21,
+                      "members": 17,
                       "members_valid": 31,
-                      "probability": 0.677
+                      "probability": 0.548
                     },
                     "precipitation_gt_5mm": {
                       "available_members": 31,
-                      "members": 9,
+                      "members": 4,
                       "members_valid": 31,
-                      "probability": 0.29
+                      "probability": 0.129
                     },
                     "rain_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 26,
+                      "members": 27,
                       "members_valid": 31,
-                      "probability": 0.839
+                      "probability": 0.871
                     },
                     "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "snowfall_gt_0cm": {
                       "available_members": 31,
                       "members": 16,
                       "members_valid": 31,
                       "probability": 0.516
-                    },
-                    "snowfall_gt_0cm": {
-                      "available_members": 31,
-                      "members": 21,
-                      "members_valid": 31,
-                      "probability": 0.677
                     },
                     "snowfall_gt_1cm": {
                       "available_members": 31,
@@ -858,21 +858,21 @@
                     },
                     "snowfall_gt_2cm": {
                       "available_members": 31,
-                      "members": 9,
-                      "members_valid": 31,
-                      "probability": 0.29
-                    },
-                    "snowfall_gt_3cm": {
-                      "available_members": 31,
-                      "members": 5,
-                      "members_valid": 31,
-                      "probability": 0.161
-                    },
-                    "snowfall_gt_5cm": {
-                      "available_members": 31,
                       "members": 3,
                       "members_valid": 31,
                       "probability": 0.097
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
                     },
                     "temperature_lt_0c": {
                       "available_members": 31,
@@ -882,82 +882,82 @@
                     },
                     "temperature_lt_minus5c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     }
                   },
                   "relative_humidity_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 9.645,
-                    "mean": 85.929,
-                    "median": 87.708,
+                    "interquartile_spread": 13.541,
+                    "mean": 80.031,
+                    "median": 86.75,
                     "members_valid": 31,
-                    "p10": 77.833,
-                    "p25": 82.75,
-                    "p75": 92.395,
-                    "p90": 97.375,
-                    "spread": 19.542
+                    "p10": 60.375,
+                    "p25": 75.98,
+                    "p75": 89.521,
+                    "p90": 94.458,
+                    "spread": 34.083
                   },
                   "snowfall_cm": {
                     "available_members": 31,
-                    "interquartile_spread": 2.31,
-                    "mean": 1.673,
-                    "median": 0.84,
+                    "interquartile_spread": 1.26,
+                    "mean": 0.698,
+                    "median": 0.21,
                     "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 2.31,
-                    "p90": 4.2,
-                    "spread": 4.2
+                    "p75": 1.26,
+                    "p90": 1.68,
+                    "spread": 1.68
                   },
                   "temperature_max_c": {
                     "available_members": 31,
-                    "interquartile_spread": 6.0,
-                    "mean": 5.79,
-                    "median": 5.0,
+                    "interquartile_spread": 5.45,
+                    "mean": 7.139,
+                    "median": 6.2,
                     "members_valid": 31,
-                    "p10": 1.3,
-                    "p25": 2.9,
-                    "p75": 8.9,
-                    "p90": 11.4,
-                    "spread": 10.1
+                    "p10": 2.7,
+                    "p25": 5.1,
+                    "p75": 10.55,
+                    "p90": 12.1,
+                    "spread": 9.4
                   },
                   "temperature_mean_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.6,
-                    "mean": 1.029,
-                    "median": 0.529,
+                    "interquartile_spread": 2.021,
+                    "mean": 1.641,
+                    "median": 1.621,
                     "members_valid": 31,
-                    "p10": -1.058,
-                    "p25": -0.36,
-                    "p75": 2.24,
-                    "p90": 4.125,
-                    "spread": 5.183
+                    "p10": -0.621,
+                    "p25": 1.004,
+                    "p75": 3.025,
+                    "p90": 4.15,
+                    "spread": 4.771
                   },
                   "temperature_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 1.8,
-                    "mean": -2.123,
-                    "median": -2.2,
+                    "interquartile_spread": 2.1,
+                    "mean": -1.558,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -4.4,
-                    "p25": -3.0,
-                    "p75": -1.2,
-                    "p90": 0.5,
-                    "spread": 4.9
+                    "p10": -4.3,
+                    "p25": -2.55,
+                    "p75": -0.45,
+                    "p90": 0.7,
+                    "spread": 5.0
                   },
                   "wind_gust_max_kmh": {
                     "available_members": 31,
-                    "interquartile_spread": 3.4,
-                    "mean": 12.919,
-                    "median": 13.0,
+                    "interquartile_spread": 4.15,
+                    "mean": 12.565,
+                    "median": 12.6,
                     "members_valid": 31,
-                    "p10": 9.7,
-                    "p25": 10.8,
+                    "p10": 9.0,
+                    "p25": 10.05,
                     "p75": 14.2,
-                    "p90": 15.1,
-                    "spread": 5.4
+                    "p90": 16.9,
+                    "spread": 7.9
                   }
                 },
                 "gfs": null,
@@ -986,15 +986,15 @@
               "interpretation": {
                 "cloud_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 45.959,
-                  "mean": 70.641,
-                  "median": 84.292,
+                  "interquartile_spread": 47.02,
+                  "mean": 69.497,
+                  "median": 80.542,
                   "members_valid": 31,
-                  "p10": 22.792,
-                  "p25": 50.396,
-                  "p75": 96.355,
-                  "p90": 99.375,
-                  "spread": 76.583
+                  "p10": 19.708,
+                  "p25": 49.792,
+                  "p75": 96.812,
+                  "p90": 99.25,
+                  "spread": 79.542
                 },
                 "precipitation_signal": {
                   "cloud_cover_gt_50pct": {
@@ -1005,9 +1005,9 @@
                   },
                   "cloud_cover_gt_70pct": {
                     "available_members": 31,
-                    "members": 18,
+                    "members": 17,
                     "members_valid": 31,
-                    "probability": 0.581
+                    "probability": 0.548
                   },
                   "cloud_cover_gt_90pct": {
                     "available_members": 31,
@@ -1071,15 +1071,15 @@
                   },
                   "daily_tmax_lt_0c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   },
                   "daily_tmin_lt_minus5c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   },
                   "gust_gt_30kmh": {
                     "available_members": 31,
@@ -1107,45 +1107,45 @@
                   },
                   "precipitation_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 30,
+                    "members": 29,
                     "members_valid": 31,
-                    "probability": 0.968
+                    "probability": 0.935
                   },
                   "precipitation_gt_0_5mm": {
                     "available_members": 31,
-                    "members": 30,
+                    "members": 29,
                     "members_valid": 31,
-                    "probability": 0.968
+                    "probability": 0.935
                   },
                   "precipitation_gt_2mm": {
                     "available_members": 31,
-                    "members": 21,
+                    "members": 17,
                     "members_valid": 31,
-                    "probability": 0.677
+                    "probability": 0.548
                   },
                   "precipitation_gt_5mm": {
                     "available_members": 31,
-                    "members": 9,
+                    "members": 4,
                     "members_valid": 31,
-                    "probability": 0.29
+                    "probability": 0.129
                   },
                   "rain_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 26,
+                    "members": 27,
                     "members_valid": 31,
-                    "probability": 0.839
+                    "probability": 0.871
                   },
                   "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "snowfall_gt_0cm": {
                     "available_members": 31,
                     "members": 16,
                     "members_valid": 31,
                     "probability": 0.516
-                  },
-                  "snowfall_gt_0cm": {
-                    "available_members": 31,
-                    "members": 21,
-                    "members_valid": 31,
-                    "probability": 0.677
                   },
                   "snowfall_gt_1cm": {
                     "available_members": 31,
@@ -1155,21 +1155,21 @@
                   },
                   "snowfall_gt_2cm": {
                     "available_members": 31,
-                    "members": 9,
-                    "members_valid": 31,
-                    "probability": 0.29
-                  },
-                  "snowfall_gt_3cm": {
-                    "available_members": 31,
-                    "members": 5,
-                    "members_valid": 31,
-                    "probability": 0.161
-                  },
-                  "snowfall_gt_5cm": {
-                    "available_members": 31,
                     "members": 3,
                     "members_valid": 31,
                     "probability": 0.097
+                  },
+                  "snowfall_gt_3cm": {
+                    "available_members": 31,
+                    "members": 1,
+                    "members_valid": 31,
+                    "probability": 0.032
+                  },
+                  "snowfall_gt_5cm": {
+                    "available_members": 31,
+                    "members": 0,
+                    "members_valid": 31,
+                    "probability": 0.0
                   },
                   "temperature_lt_0c": {
                     "available_members": 31,
@@ -1179,22 +1179,22 @@
                   },
                   "temperature_lt_minus5c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   }
                 },
                 "temperature_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 2.6,
-                  "mean": 1.029,
-                  "median": 0.529,
+                  "interquartile_spread": 2.021,
+                  "mean": 1.641,
+                  "median": 1.621,
                   "members_valid": 31,
-                  "p10": -1.058,
-                  "p25": -0.36,
-                  "p75": 2.24,
-                  "p90": 4.125,
-                  "spread": 5.183
+                  "p10": -0.621,
+                  "p25": 1.004,
+                  "p75": 3.025,
+                  "p90": 4.15,
+                  "spread": 4.771
                 }
               },
               "lead_days": 29,
@@ -1205,13 +1205,13 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 70.641,
-                    "night_min_c": -2.123,
-                    "precipitation_mm": 4.142,
-                    "snowfall_cm": 1.673,
-                    "temperature_max_c": 5.79,
-                    "temperature_mean_c": 1.029,
-                    "temperature_min_c": -2.123
+                    "cloud_cover_mean_pct": 69.497,
+                    "night_min_c": -1.558,
+                    "precipitation_mm": 2.806,
+                    "snowfall_cm": 0.698,
+                    "temperature_max_c": 7.139,
+                    "temperature_mean_c": 1.641,
+                    "temperature_min_c": -1.558
                   }
                 },
                 "ecmwf_ensemble": null,
@@ -1242,40 +1242,40 @@
                   },
                   "cloud_cover_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 45.959,
-                    "mean": 70.641,
-                    "median": 84.292,
+                    "interquartile_spread": 47.02,
+                    "mean": 69.497,
+                    "median": 80.542,
                     "members_valid": 31,
-                    "p10": 22.792,
-                    "p25": 50.396,
-                    "p75": 96.355,
-                    "p90": 99.375,
-                    "spread": 76.583
+                    "p10": 19.708,
+                    "p25": 49.792,
+                    "p75": 96.812,
+                    "p90": 99.25,
+                    "spread": 79.542
                   },
                   "date": "2026-10-24",
                   "night_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 1.8,
-                    "mean": -2.123,
-                    "median": -2.2,
+                    "interquartile_spread": 2.1,
+                    "mean": -1.558,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -4.4,
-                    "p25": -3.0,
-                    "p75": -1.2,
-                    "p90": 0.5,
-                    "spread": 4.9
+                    "p10": -4.3,
+                    "p25": -2.55,
+                    "p75": -0.45,
+                    "p90": 0.7,
+                    "spread": 5.0
                   },
                   "precipitation_mm": {
                     "available_members": 31,
-                    "interquartile_spread": 3.45,
-                    "mean": 4.142,
-                    "median": 3.0,
+                    "interquartile_spread": 3.15,
+                    "mean": 2.806,
+                    "median": 2.4,
                     "members_valid": 31,
                     "p10": 0.6,
-                    "p25": 1.65,
-                    "p75": 5.1,
-                    "p90": 7.8,
-                    "spread": 7.2
+                    "p25": 0.9,
+                    "p75": 4.05,
+                    "p90": 5.4,
+                    "spread": 4.8
                   },
                   "probabilities": {
                     "cloud_cover_gt_50pct": {
@@ -1286,9 +1286,9 @@
                     },
                     "cloud_cover_gt_70pct": {
                       "available_members": 31,
-                      "members": 18,
+                      "members": 17,
                       "members_valid": 31,
-                      "probability": 0.581
+                      "probability": 0.548
                     },
                     "cloud_cover_gt_90pct": {
                       "available_members": 31,
@@ -1352,15 +1352,15 @@
                     },
                     "daily_tmax_lt_0c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     },
                     "daily_tmin_lt_minus5c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     },
                     "gust_gt_30kmh": {
                       "available_members": 31,
@@ -1388,45 +1388,45 @@
                     },
                     "precipitation_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 30,
+                      "members": 29,
                       "members_valid": 31,
-                      "probability": 0.968
+                      "probability": 0.935
                     },
                     "precipitation_gt_0_5mm": {
                       "available_members": 31,
-                      "members": 30,
+                      "members": 29,
                       "members_valid": 31,
-                      "probability": 0.968
+                      "probability": 0.935
                     },
                     "precipitation_gt_2mm": {
                       "available_members": 31,
-                      "members": 21,
+                      "members": 17,
                       "members_valid": 31,
-                      "probability": 0.677
+                      "probability": 0.548
                     },
                     "precipitation_gt_5mm": {
                       "available_members": 31,
-                      "members": 9,
+                      "members": 4,
                       "members_valid": 31,
-                      "probability": 0.29
+                      "probability": 0.129
                     },
                     "rain_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 26,
+                      "members": 27,
                       "members_valid": 31,
-                      "probability": 0.839
+                      "probability": 0.871
                     },
                     "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "snowfall_gt_0cm": {
                       "available_members": 31,
                       "members": 16,
                       "members_valid": 31,
                       "probability": 0.516
-                    },
-                    "snowfall_gt_0cm": {
-                      "available_members": 31,
-                      "members": 21,
-                      "members_valid": 31,
-                      "probability": 0.677
                     },
                     "snowfall_gt_1cm": {
                       "available_members": 31,
@@ -1436,21 +1436,21 @@
                     },
                     "snowfall_gt_2cm": {
                       "available_members": 31,
-                      "members": 9,
-                      "members_valid": 31,
-                      "probability": 0.29
-                    },
-                    "snowfall_gt_3cm": {
-                      "available_members": 31,
-                      "members": 5,
-                      "members_valid": 31,
-                      "probability": 0.161
-                    },
-                    "snowfall_gt_5cm": {
-                      "available_members": 31,
                       "members": 3,
                       "members_valid": 31,
                       "probability": 0.097
+                    },
+                    "snowfall_gt_3cm": {
+                      "available_members": 31,
+                      "members": 1,
+                      "members_valid": 31,
+                      "probability": 0.032
+                    },
+                    "snowfall_gt_5cm": {
+                      "available_members": 31,
+                      "members": 0,
+                      "members_valid": 31,
+                      "probability": 0.0
                     },
                     "temperature_lt_0c": {
                       "available_members": 31,
@@ -1460,82 +1460,82 @@
                     },
                     "temperature_lt_minus5c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     }
                   },
                   "relative_humidity_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 9.645,
-                    "mean": 85.929,
-                    "median": 87.708,
+                    "interquartile_spread": 13.541,
+                    "mean": 80.031,
+                    "median": 86.75,
                     "members_valid": 31,
-                    "p10": 77.833,
-                    "p25": 82.75,
-                    "p75": 92.395,
-                    "p90": 97.375,
-                    "spread": 19.542
+                    "p10": 60.375,
+                    "p25": 75.98,
+                    "p75": 89.521,
+                    "p90": 94.458,
+                    "spread": 34.083
                   },
                   "snowfall_cm": {
                     "available_members": 31,
-                    "interquartile_spread": 2.31,
-                    "mean": 1.673,
-                    "median": 0.84,
+                    "interquartile_spread": 1.26,
+                    "mean": 0.698,
+                    "median": 0.21,
                     "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 2.31,
-                    "p90": 4.2,
-                    "spread": 4.2
+                    "p75": 1.26,
+                    "p90": 1.68,
+                    "spread": 1.68
                   },
                   "temperature_max_c": {
                     "available_members": 31,
-                    "interquartile_spread": 6.0,
-                    "mean": 5.79,
-                    "median": 5.0,
+                    "interquartile_spread": 5.45,
+                    "mean": 7.139,
+                    "median": 6.2,
                     "members_valid": 31,
-                    "p10": 1.3,
-                    "p25": 2.9,
-                    "p75": 8.9,
-                    "p90": 11.4,
-                    "spread": 10.1
+                    "p10": 2.7,
+                    "p25": 5.1,
+                    "p75": 10.55,
+                    "p90": 12.1,
+                    "spread": 9.4
                   },
                   "temperature_mean_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.6,
-                    "mean": 1.029,
-                    "median": 0.529,
+                    "interquartile_spread": 2.021,
+                    "mean": 1.641,
+                    "median": 1.621,
                     "members_valid": 31,
-                    "p10": -1.058,
-                    "p25": -0.36,
-                    "p75": 2.24,
-                    "p90": 4.125,
-                    "spread": 5.183
+                    "p10": -0.621,
+                    "p25": 1.004,
+                    "p75": 3.025,
+                    "p90": 4.15,
+                    "spread": 4.771
                   },
                   "temperature_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 1.8,
-                    "mean": -2.123,
-                    "median": -2.2,
+                    "interquartile_spread": 2.1,
+                    "mean": -1.558,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -4.4,
-                    "p25": -3.0,
-                    "p75": -1.2,
-                    "p90": 0.5,
-                    "spread": 4.9
+                    "p10": -4.3,
+                    "p25": -2.55,
+                    "p75": -0.45,
+                    "p90": 0.7,
+                    "spread": 5.0
                   },
                   "wind_gust_max_kmh": {
                     "available_members": 31,
-                    "interquartile_spread": 3.4,
-                    "mean": 12.919,
-                    "median": 13.0,
+                    "interquartile_spread": 4.15,
+                    "mean": 12.565,
+                    "median": 12.6,
                     "members_valid": 31,
-                    "p10": 9.7,
-                    "p25": 10.8,
+                    "p10": 9.0,
+                    "p25": 10.05,
                     "p75": 14.2,
-                    "p90": 15.1,
-                    "spread": 5.4
+                    "p90": 16.9,
+                    "spread": 7.9
                   }
                 },
                 "gfs": null,
@@ -1563,34 +1563,34 @@
               "interpretation": {
                 "cloud_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 24.187,
-                  "mean": 81.254,
-                  "median": 91.292,
+                  "interquartile_spread": 27.875,
+                  "mean": 78.735,
+                  "median": 95.417,
                   "members_valid": 31,
-                  "p10": 36.5,
-                  "p25": 75.625,
-                  "p75": 99.812,
+                  "p10": 28.583,
+                  "p25": 71.104,
+                  "p75": 98.979,
                   "p90": 100.0,
-                  "spread": 63.5
+                  "spread": 71.417
                 },
                 "precipitation_signal": {
                   "cloud_cover_gt_50pct": {
                     "available_members": 31,
-                    "members": 27,
+                    "members": 26,
                     "members_valid": 31,
-                    "probability": 0.871
+                    "probability": 0.839
                   },
                   "cloud_cover_gt_70pct": {
                     "available_members": 31,
-                    "members": 24,
+                    "members": 23,
                     "members_valid": 31,
-                    "probability": 0.774
+                    "probability": 0.742
                   },
                   "cloud_cover_gt_90pct": {
                     "available_members": 31,
-                    "members": 17,
+                    "members": 18,
                     "members_valid": 31,
-                    "probability": 0.548
+                    "probability": 0.581
                   },
                   "cloud_cover_high_gt_30pct": {
                     "available_members": 0,
@@ -1684,27 +1684,27 @@
                   },
                   "precipitation_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 30,
+                    "members": 28,
                     "members_valid": 31,
-                    "probability": 0.968
+                    "probability": 0.903
                   },
                   "precipitation_gt_0_5mm": {
                     "available_members": 31,
-                    "members": 29,
+                    "members": 28,
                     "members_valid": 31,
-                    "probability": 0.935
+                    "probability": 0.903
                   },
                   "precipitation_gt_2mm": {
                     "available_members": 31,
-                    "members": 19,
+                    "members": 18,
                     "members_valid": 31,
-                    "probability": 0.613
+                    "probability": 0.581
                   },
                   "precipitation_gt_5mm": {
                     "available_members": 31,
-                    "members": 8,
+                    "members": 7,
                     "members_valid": 31,
-                    "probability": 0.258
+                    "probability": 0.226
                   },
                   "rain_gt_0_1mm": {
                     "available_members": 31,
@@ -1714,15 +1714,15 @@
                   },
                   "snowfall_gt_0_5cm": {
                     "available_members": 31,
-                    "members": 16,
+                    "members": 14,
                     "members_valid": 31,
-                    "probability": 0.516
+                    "probability": 0.452
                   },
                   "snowfall_gt_0cm": {
                     "available_members": 31,
-                    "members": 22,
+                    "members": 18,
                     "members_valid": 31,
-                    "probability": 0.71
+                    "probability": 0.581
                   },
                   "snowfall_gt_1cm": {
                     "available_members": 31,
@@ -1732,27 +1732,27 @@
                   },
                   "snowfall_gt_2cm": {
                     "available_members": 31,
-                    "members": 7,
+                    "members": 4,
                     "members_valid": 31,
-                    "probability": 0.226
+                    "probability": 0.129
                   },
                   "snowfall_gt_3cm": {
                     "available_members": 31,
-                    "members": 4,
+                    "members": 2,
                     "members_valid": 31,
-                    "probability": 0.129
+                    "probability": 0.065
                   },
                   "snowfall_gt_5cm": {
                     "available_members": 31,
-                    "members": 4,
+                    "members": 0,
                     "members_valid": 31,
-                    "probability": 0.129
+                    "probability": 0.0
                   },
                   "temperature_lt_0c": {
                     "available_members": 31,
-                    "members": 18,
+                    "members": 14,
                     "members_valid": 31,
-                    "probability": 0.581
+                    "probability": 0.452
                   },
                   "temperature_lt_minus5c": {
                     "available_members": 31,
@@ -1763,15 +1763,15 @@
                 },
                 "temperature_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 2.4,
-                  "mean": 1.655,
-                  "median": 1.275,
+                  "interquartile_spread": 2.584,
+                  "mean": 2.165,
+                  "median": 1.954,
                   "members_valid": 31,
-                  "p10": -0.362,
-                  "p25": 0.488,
-                  "p75": 2.888,
-                  "p90": 4.838,
-                  "spread": 5.2
+                  "p10": 0.754,
+                  "p25": 1.283,
+                  "p75": 3.867,
+                  "p90": 4.471,
+                  "spread": 3.717
                 }
               },
               "lead_days": 29,
@@ -1782,13 +1782,13 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 81.254,
-                    "night_min_c": -0.2,
-                    "precipitation_mm": 4.316,
-                    "snowfall_cm": 1.639,
-                    "temperature_max_c": 4.135,
-                    "temperature_mean_c": 1.655,
-                    "temperature_min_c": -0.2
+                    "cloud_cover_mean_pct": 78.735,
+                    "night_min_c": 0.1,
+                    "precipitation_mm": 3.513,
+                    "snowfall_cm": 0.86,
+                    "temperature_max_c": 5.123,
+                    "temperature_mean_c": 2.165,
+                    "temperature_min_c": 0.1
                   }
                 },
                 "ecmwf_ensemble": null,
@@ -1819,59 +1819,59 @@
                   },
                   "cloud_cover_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 24.187,
-                    "mean": 81.254,
-                    "median": 91.292,
+                    "interquartile_spread": 27.875,
+                    "mean": 78.735,
+                    "median": 95.417,
                     "members_valid": 31,
-                    "p10": 36.5,
-                    "p25": 75.625,
-                    "p75": 99.812,
+                    "p10": 28.583,
+                    "p25": 71.104,
+                    "p75": 98.979,
                     "p90": 100.0,
-                    "spread": 63.5
+                    "spread": 71.417
                   },
                   "date": "2026-10-24",
                   "night_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 1.85,
-                    "mean": -0.2,
-                    "median": -0.5,
+                    "interquartile_spread": 1.95,
+                    "mean": 0.1,
+                    "median": 0.1,
                     "members_valid": 31,
-                    "p10": -2.0,
-                    "p25": -1.3,
-                    "p75": 0.55,
-                    "p90": 2.5,
-                    "spread": 4.5
+                    "p10": -2.7,
+                    "p25": -0.8,
+                    "p75": 1.15,
+                    "p90": 2.8,
+                    "spread": 5.5
                   },
                   "precipitation_mm": {
                     "available_members": 31,
-                    "interquartile_spread": 3.0,
-                    "mean": 4.316,
-                    "median": 2.7,
+                    "interquartile_spread": 3.75,
+                    "mean": 3.513,
+                    "median": 2.4,
                     "members_valid": 31,
                     "p10": 0.6,
-                    "p25": 1.65,
-                    "p75": 4.65,
-                    "p90": 8.4,
-                    "spread": 7.8
+                    "p25": 1.05,
+                    "p75": 4.8,
+                    "p90": 6.0,
+                    "spread": 5.4
                   },
                   "probabilities": {
                     "cloud_cover_gt_50pct": {
                       "available_members": 31,
-                      "members": 27,
+                      "members": 26,
                       "members_valid": 31,
-                      "probability": 0.871
+                      "probability": 0.839
                     },
                     "cloud_cover_gt_70pct": {
                       "available_members": 31,
-                      "members": 24,
+                      "members": 23,
                       "members_valid": 31,
-                      "probability": 0.774
+                      "probability": 0.742
                     },
                     "cloud_cover_gt_90pct": {
                       "available_members": 31,
-                      "members": 17,
+                      "members": 18,
                       "members_valid": 31,
-                      "probability": 0.548
+                      "probability": 0.581
                     },
                     "cloud_cover_high_gt_30pct": {
                       "available_members": 0,
@@ -1965,27 +1965,27 @@
                     },
                     "precipitation_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 30,
+                      "members": 28,
                       "members_valid": 31,
-                      "probability": 0.968
+                      "probability": 0.903
                     },
                     "precipitation_gt_0_5mm": {
                       "available_members": 31,
-                      "members": 29,
+                      "members": 28,
                       "members_valid": 31,
-                      "probability": 0.935
+                      "probability": 0.903
                     },
                     "precipitation_gt_2mm": {
                       "available_members": 31,
-                      "members": 19,
+                      "members": 18,
                       "members_valid": 31,
-                      "probability": 0.613
+                      "probability": 0.581
                     },
                     "precipitation_gt_5mm": {
                       "available_members": 31,
-                      "members": 8,
+                      "members": 7,
                       "members_valid": 31,
-                      "probability": 0.258
+                      "probability": 0.226
                     },
                     "rain_gt_0_1mm": {
                       "available_members": 31,
@@ -1995,15 +1995,15 @@
                     },
                     "snowfall_gt_0_5cm": {
                       "available_members": 31,
-                      "members": 16,
+                      "members": 14,
                       "members_valid": 31,
-                      "probability": 0.516
+                      "probability": 0.452
                     },
                     "snowfall_gt_0cm": {
                       "available_members": 31,
-                      "members": 22,
+                      "members": 18,
                       "members_valid": 31,
-                      "probability": 0.71
+                      "probability": 0.581
                     },
                     "snowfall_gt_1cm": {
                       "available_members": 31,
@@ -2013,27 +2013,27 @@
                     },
                     "snowfall_gt_2cm": {
                       "available_members": 31,
-                      "members": 7,
+                      "members": 4,
                       "members_valid": 31,
-                      "probability": 0.226
+                      "probability": 0.129
                     },
                     "snowfall_gt_3cm": {
                       "available_members": 31,
-                      "members": 4,
+                      "members": 2,
                       "members_valid": 31,
-                      "probability": 0.129
+                      "probability": 0.065
                     },
                     "snowfall_gt_5cm": {
                       "available_members": 31,
-                      "members": 4,
+                      "members": 0,
                       "members_valid": 31,
-                      "probability": 0.129
+                      "probability": 0.0
                     },
                     "temperature_lt_0c": {
                       "available_members": 31,
-                      "members": 18,
+                      "members": 14,
                       "members_valid": 31,
-                      "probability": 0.581
+                      "probability": 0.452
                     },
                     "temperature_lt_minus5c": {
                       "available_members": 31,
@@ -2044,75 +2044,75 @@
                   },
                   "relative_humidity_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 8.667,
-                    "mean": 91.485,
-                    "median": 94.0,
+                    "interquartile_spread": 11.167,
+                    "mean": 88.089,
+                    "median": 92.417,
                     "members_valid": 31,
-                    "p10": 82.958,
-                    "p25": 88.979,
-                    "p75": 97.646,
-                    "p90": 98.708,
-                    "spread": 15.75
+                    "p10": 71.083,
+                    "p25": 85.812,
+                    "p75": 96.979,
+                    "p90": 97.958,
+                    "spread": 26.875
                   },
                   "snowfall_cm": {
                     "available_members": 31,
-                    "interquartile_spread": 1.785,
-                    "mean": 1.639,
-                    "median": 0.63,
+                    "interquartile_spread": 1.26,
+                    "mean": 0.86,
+                    "median": 0.42,
                     "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 1.785,
-                    "p90": 5.04,
-                    "spread": 5.04
+                    "p75": 1.26,
+                    "p90": 2.1,
+                    "spread": 2.1
                   },
                   "temperature_max_c": {
                     "available_members": 31,
-                    "interquartile_spread": 3.05,
-                    "mean": 4.135,
-                    "median": 3.8,
+                    "interquartile_spread": 3.95,
+                    "mean": 5.123,
+                    "median": 4.7,
                     "members_valid": 31,
-                    "p10": 0.8,
-                    "p25": 1.95,
-                    "p75": 5.0,
-                    "p90": 8.7,
-                    "spread": 7.9
+                    "p10": 2.0,
+                    "p25": 3.3,
+                    "p75": 7.25,
+                    "p90": 9.7,
+                    "spread": 7.7
                   },
                   "temperature_mean_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.4,
-                    "mean": 1.655,
-                    "median": 1.275,
+                    "interquartile_spread": 2.584,
+                    "mean": 2.165,
+                    "median": 1.954,
                     "members_valid": 31,
-                    "p10": -0.362,
-                    "p25": 0.488,
-                    "p75": 2.888,
-                    "p90": 4.838,
-                    "spread": 5.2
+                    "p10": 0.754,
+                    "p25": 1.283,
+                    "p75": 3.867,
+                    "p90": 4.471,
+                    "spread": 3.717
                   },
                   "temperature_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 1.85,
-                    "mean": -0.2,
-                    "median": -0.5,
+                    "interquartile_spread": 1.95,
+                    "mean": 0.1,
+                    "median": 0.1,
                     "members_valid": 31,
-                    "p10": -2.0,
-                    "p25": -1.3,
-                    "p75": 0.55,
-                    "p90": 2.5,
-                    "spread": 4.5
+                    "p10": -2.7,
+                    "p25": -0.8,
+                    "p75": 1.15,
+                    "p90": 2.8,
+                    "spread": 5.5
                   },
                   "wind_gust_max_kmh": {
                     "available_members": 31,
-                    "interquartile_spread": 2.5,
-                    "mean": 11.161,
-                    "median": 11.5,
+                    "interquartile_spread": 2.85,
+                    "mean": 11.006,
+                    "median": 10.8,
                     "members_valid": 31,
-                    "p10": 8.6,
-                    "p25": 9.9,
-                    "p75": 12.4,
-                    "p90": 14.0,
-                    "spread": 5.4
+                    "p10": 8.3,
+                    "p25": 9.35,
+                    "p75": 12.2,
+                    "p90": 13.3,
+                    "spread": 5.0
                   }
                 },
                 "gfs": null,
@@ -2146,15 +2146,15 @@
               "interpretation": {
                 "cloud_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 31.855,
-                  "mean": 75.971,
-                  "median": 81.333,
+                  "interquartile_spread": 36.562,
+                  "mean": 72.822,
+                  "median": 75.958,
                   "members_valid": 31,
-                  "p10": 46.083,
-                  "p25": 64.312,
-                  "p75": 96.167,
-                  "p90": 98.417,
-                  "spread": 52.334
+                  "p10": 38.583,
+                  "p25": 58.979,
+                  "p75": 95.541,
+                  "p90": 99.083,
+                  "spread": 60.5
                 },
                 "precipitation_signal": {
                   "cloud_cover_gt_50pct": {
@@ -2165,9 +2165,9 @@
                   },
                   "cloud_cover_gt_70pct": {
                     "available_members": 31,
-                    "members": 20,
+                    "members": 17,
                     "members_valid": 31,
-                    "probability": 0.645
+                    "probability": 0.548
                   },
                   "cloud_cover_gt_90pct": {
                     "available_members": 31,
@@ -2237,9 +2237,9 @@
                   },
                   "daily_tmin_lt_minus5c": {
                     "available_members": 31,
-                    "members": 4,
+                    "members": 3,
                     "members_valid": 31,
-                    "probability": 0.129
+                    "probability": 0.097
                   },
                   "gust_gt_30kmh": {
                     "available_members": 31,
@@ -2273,27 +2273,27 @@
                   },
                   "precipitation_gt_0_5mm": {
                     "available_members": 31,
-                    "members": 27,
+                    "members": 28,
                     "members_valid": 31,
-                    "probability": 0.871
+                    "probability": 0.903
                   },
                   "precipitation_gt_2mm": {
                     "available_members": 31,
-                    "members": 15,
+                    "members": 18,
                     "members_valid": 31,
-                    "probability": 0.484
+                    "probability": 0.581
                   },
                   "precipitation_gt_5mm": {
                     "available_members": 31,
-                    "members": 6,
+                    "members": 8,
                     "members_valid": 31,
-                    "probability": 0.194
+                    "probability": 0.258
                   },
                   "rain_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 24,
+                    "members": 28,
                     "members_valid": 31,
-                    "probability": 0.774
+                    "probability": 0.903
                   },
                   "snowfall_gt_0_5cm": {
                     "available_members": 31,
@@ -2303,9 +2303,9 @@
                   },
                   "snowfall_gt_0cm": {
                     "available_members": 31,
-                    "members": 17,
+                    "members": 15,
                     "members_valid": 31,
-                    "probability": 0.548
+                    "probability": 0.484
                   },
                   "snowfall_gt_1cm": {
                     "available_members": 31,
@@ -2321,40 +2321,40 @@
                   },
                   "snowfall_gt_3cm": {
                     "available_members": 31,
-                    "members": 6,
+                    "members": 3,
                     "members_valid": 31,
-                    "probability": 0.194
+                    "probability": 0.097
                   },
                   "snowfall_gt_5cm": {
                     "available_members": 31,
-                    "members": 1,
+                    "members": 2,
                     "members_valid": 31,
-                    "probability": 0.032
+                    "probability": 0.065
                   },
                   "temperature_lt_0c": {
                     "available_members": 31,
-                    "members": 25,
+                    "members": 26,
                     "members_valid": 31,
-                    "probability": 0.806
+                    "probability": 0.839
                   },
                   "temperature_lt_minus5c": {
                     "available_members": 31,
-                    "members": 4,
+                    "members": 3,
                     "members_valid": 31,
-                    "probability": 0.129
+                    "probability": 0.097
                   }
                 },
                 "temperature_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 3.05,
-                  "mean": 0.796,
-                  "median": 0.571,
+                  "interquartile_spread": 2.215,
+                  "mean": 1.153,
+                  "median": 1.067,
                   "members_valid": 31,
-                  "p10": -2.117,
-                  "p25": -0.633,
-                  "p75": 2.417,
-                  "p90": 4.763,
-                  "spread": 6.88
+                  "p10": -1.004,
+                  "p25": -0.113,
+                  "p75": 2.102,
+                  "p90": 3.513,
+                  "spread": 4.517
                 }
               },
               "lead_days": 30,
@@ -2365,13 +2365,13 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 75.971,
-                    "night_min_c": -2.239,
-                    "precipitation_mm": 3.416,
+                    "cloud_cover_mean_pct": 72.822,
+                    "night_min_c": -1.981,
+                    "precipitation_mm": 3.455,
                     "snowfall_cm": 1.064,
-                    "temperature_max_c": 5.897,
-                    "temperature_mean_c": 0.796,
-                    "temperature_min_c": -2.239
+                    "temperature_max_c": 6.552,
+                    "temperature_mean_c": 1.153,
+                    "temperature_min_c": -1.981
                   }
                 },
                 "ecmwf_ensemble": null,
@@ -2402,40 +2402,40 @@
                   },
                   "cloud_cover_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 31.855,
-                    "mean": 75.971,
-                    "median": 81.333,
+                    "interquartile_spread": 36.562,
+                    "mean": 72.822,
+                    "median": 75.958,
                     "members_valid": 31,
-                    "p10": 46.083,
-                    "p25": 64.312,
-                    "p75": 96.167,
-                    "p90": 98.417,
-                    "spread": 52.334
+                    "p10": 38.583,
+                    "p25": 58.979,
+                    "p75": 95.541,
+                    "p90": 99.083,
+                    "spread": 60.5
                   },
                   "date": "2026-10-25",
                   "night_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.55,
-                    "mean": -2.239,
-                    "median": -2.4,
+                    "interquartile_spread": 2.15,
+                    "mean": -1.981,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -6.0,
-                    "p25": -3.15,
-                    "p75": -0.6,
-                    "p90": 0.7,
-                    "spread": 6.7
+                    "p10": -4.7,
+                    "p25": -2.95,
+                    "p75": -0.8,
+                    "p90": 0.1,
+                    "spread": 4.8
                   },
                   "precipitation_mm": {
                     "available_members": 31,
-                    "interquartile_spread": 2.1,
-                    "mean": 3.416,
-                    "median": 1.8,
+                    "interquartile_spread": 3.9,
+                    "mean": 3.455,
+                    "median": 2.4,
                     "members_valid": 31,
-                    "p10": 0.3,
+                    "p10": 0.6,
                     "p25": 1.2,
-                    "p75": 3.3,
-                    "p90": 9.6,
-                    "spread": 9.3
+                    "p75": 5.1,
+                    "p90": 6.0,
+                    "spread": 5.4
                   },
                   "probabilities": {
                     "cloud_cover_gt_50pct": {
@@ -2446,9 +2446,9 @@
                     },
                     "cloud_cover_gt_70pct": {
                       "available_members": 31,
-                      "members": 20,
+                      "members": 17,
                       "members_valid": 31,
-                      "probability": 0.645
+                      "probability": 0.548
                     },
                     "cloud_cover_gt_90pct": {
                       "available_members": 31,
@@ -2518,9 +2518,9 @@
                     },
                     "daily_tmin_lt_minus5c": {
                       "available_members": 31,
-                      "members": 4,
+                      "members": 3,
                       "members_valid": 31,
-                      "probability": 0.129
+                      "probability": 0.097
                     },
                     "gust_gt_30kmh": {
                       "available_members": 31,
@@ -2554,27 +2554,27 @@
                     },
                     "precipitation_gt_0_5mm": {
                       "available_members": 31,
-                      "members": 27,
+                      "members": 28,
                       "members_valid": 31,
-                      "probability": 0.871
+                      "probability": 0.903
                     },
                     "precipitation_gt_2mm": {
                       "available_members": 31,
-                      "members": 15,
+                      "members": 18,
                       "members_valid": 31,
-                      "probability": 0.484
+                      "probability": 0.581
                     },
                     "precipitation_gt_5mm": {
                       "available_members": 31,
-                      "members": 6,
+                      "members": 8,
                       "members_valid": 31,
-                      "probability": 0.194
+                      "probability": 0.258
                     },
                     "rain_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 24,
+                      "members": 28,
                       "members_valid": 31,
-                      "probability": 0.774
+                      "probability": 0.903
                     },
                     "snowfall_gt_0_5cm": {
                       "available_members": 31,
@@ -2584,9 +2584,9 @@
                     },
                     "snowfall_gt_0cm": {
                       "available_members": 31,
-                      "members": 17,
+                      "members": 15,
                       "members_valid": 31,
-                      "probability": 0.548
+                      "probability": 0.484
                     },
                     "snowfall_gt_1cm": {
                       "available_members": 31,
@@ -2602,100 +2602,100 @@
                     },
                     "snowfall_gt_3cm": {
                       "available_members": 31,
-                      "members": 6,
+                      "members": 3,
                       "members_valid": 31,
-                      "probability": 0.194
+                      "probability": 0.097
                     },
                     "snowfall_gt_5cm": {
                       "available_members": 31,
-                      "members": 1,
+                      "members": 2,
                       "members_valid": 31,
-                      "probability": 0.032
+                      "probability": 0.065
                     },
                     "temperature_lt_0c": {
                       "available_members": 31,
-                      "members": 25,
+                      "members": 26,
                       "members_valid": 31,
-                      "probability": 0.806
+                      "probability": 0.839
                     },
                     "temperature_lt_minus5c": {
                       "available_members": 31,
-                      "members": 4,
+                      "members": 3,
                       "members_valid": 31,
-                      "probability": 0.129
+                      "probability": 0.097
                     }
                   },
                   "relative_humidity_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 14.75,
-                    "mean": 85.892,
-                    "median": 87.125,
+                    "interquartile_spread": 13.855,
+                    "mean": 81.089,
+                    "median": 82.25,
                     "members_valid": 31,
-                    "p10": 75.208,
-                    "p25": 79.5,
-                    "p75": 94.25,
-                    "p90": 97.667,
-                    "spread": 22.459
+                    "p10": 62.333,
+                    "p25": 77.625,
+                    "p75": 91.48,
+                    "p90": 93.458,
+                    "spread": 31.125
                   },
                   "snowfall_cm": {
                     "available_members": 31,
-                    "interquartile_spread": 1.26,
+                    "interquartile_spread": 1.47,
                     "mean": 1.064,
-                    "median": 0.21,
+                    "median": 0.0,
                     "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 1.26,
-                    "p90": 3.78,
-                    "spread": 3.78
+                    "p75": 1.47,
+                    "p90": 2.94,
+                    "spread": 2.94
                   },
                   "temperature_max_c": {
                     "available_members": 31,
-                    "interquartile_spread": 5.65,
-                    "mean": 5.897,
+                    "interquartile_spread": 5.3,
+                    "mean": 6.552,
                     "median": 5.2,
                     "members_valid": 31,
-                    "p10": 1.4,
-                    "p25": 3.0,
-                    "p75": 8.65,
-                    "p90": 11.0,
-                    "spread": 9.6
+                    "p10": 3.1,
+                    "p25": 4.0,
+                    "p75": 9.3,
+                    "p90": 11.7,
+                    "spread": 8.6
                   },
                   "temperature_mean_c": {
                     "available_members": 31,
-                    "interquartile_spread": 3.05,
-                    "mean": 0.796,
-                    "median": 0.571,
+                    "interquartile_spread": 2.215,
+                    "mean": 1.153,
+                    "median": 1.067,
                     "members_valid": 31,
-                    "p10": -2.117,
-                    "p25": -0.633,
-                    "p75": 2.417,
-                    "p90": 4.763,
-                    "spread": 6.88
+                    "p10": -1.004,
+                    "p25": -0.113,
+                    "p75": 2.102,
+                    "p90": 3.513,
+                    "spread": 4.517
                   },
                   "temperature_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.55,
-                    "mean": -2.239,
-                    "median": -2.4,
+                    "interquartile_spread": 2.15,
+                    "mean": -1.981,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -6.0,
-                    "p25": -3.15,
-                    "p75": -0.6,
-                    "p90": 0.7,
-                    "spread": 6.7
+                    "p10": -4.7,
+                    "p25": -2.95,
+                    "p75": -0.8,
+                    "p90": 0.1,
+                    "spread": 4.8
                   },
                   "wind_gust_max_kmh": {
                     "available_members": 31,
-                    "interquartile_spread": 3.3,
-                    "mean": 12.11,
-                    "median": 12.6,
+                    "interquartile_spread": 2.55,
+                    "mean": 12.065,
+                    "median": 11.9,
                     "members_valid": 31,
-                    "p10": 9.0,
-                    "p25": 10.4,
-                    "p75": 13.7,
-                    "p90": 14.4,
-                    "spread": 5.4
+                    "p10": 10.1,
+                    "p25": 10.6,
+                    "p75": 13.15,
+                    "p90": 14.8,
+                    "spread": 4.7
                   }
                 },
                 "gfs": null,
@@ -2724,15 +2724,15 @@
               "interpretation": {
                 "cloud_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 31.855,
-                  "mean": 75.971,
-                  "median": 81.333,
+                  "interquartile_spread": 36.562,
+                  "mean": 72.822,
+                  "median": 75.958,
                   "members_valid": 31,
-                  "p10": 46.083,
-                  "p25": 64.312,
-                  "p75": 96.167,
-                  "p90": 98.417,
-                  "spread": 52.334
+                  "p10": 38.583,
+                  "p25": 58.979,
+                  "p75": 95.541,
+                  "p90": 99.083,
+                  "spread": 60.5
                 },
                 "precipitation_signal": {
                   "cloud_cover_gt_50pct": {
@@ -2743,9 +2743,9 @@
                   },
                   "cloud_cover_gt_70pct": {
                     "available_members": 31,
-                    "members": 20,
+                    "members": 17,
                     "members_valid": 31,
-                    "probability": 0.645
+                    "probability": 0.548
                   },
                   "cloud_cover_gt_90pct": {
                     "available_members": 31,
@@ -2815,9 +2815,9 @@
                   },
                   "daily_tmin_lt_minus5c": {
                     "available_members": 31,
-                    "members": 4,
+                    "members": 3,
                     "members_valid": 31,
-                    "probability": 0.129
+                    "probability": 0.097
                   },
                   "gust_gt_30kmh": {
                     "available_members": 31,
@@ -2851,27 +2851,27 @@
                   },
                   "precipitation_gt_0_5mm": {
                     "available_members": 31,
-                    "members": 27,
+                    "members": 28,
                     "members_valid": 31,
-                    "probability": 0.871
+                    "probability": 0.903
                   },
                   "precipitation_gt_2mm": {
                     "available_members": 31,
-                    "members": 15,
+                    "members": 18,
                     "members_valid": 31,
-                    "probability": 0.484
+                    "probability": 0.581
                   },
                   "precipitation_gt_5mm": {
                     "available_members": 31,
-                    "members": 6,
+                    "members": 8,
                     "members_valid": 31,
-                    "probability": 0.194
+                    "probability": 0.258
                   },
                   "rain_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 24,
+                    "members": 28,
                     "members_valid": 31,
-                    "probability": 0.774
+                    "probability": 0.903
                   },
                   "snowfall_gt_0_5cm": {
                     "available_members": 31,
@@ -2881,9 +2881,9 @@
                   },
                   "snowfall_gt_0cm": {
                     "available_members": 31,
-                    "members": 17,
+                    "members": 15,
                     "members_valid": 31,
-                    "probability": 0.548
+                    "probability": 0.484
                   },
                   "snowfall_gt_1cm": {
                     "available_members": 31,
@@ -2899,40 +2899,40 @@
                   },
                   "snowfall_gt_3cm": {
                     "available_members": 31,
-                    "members": 6,
+                    "members": 3,
                     "members_valid": 31,
-                    "probability": 0.194
+                    "probability": 0.097
                   },
                   "snowfall_gt_5cm": {
                     "available_members": 31,
-                    "members": 1,
+                    "members": 2,
                     "members_valid": 31,
-                    "probability": 0.032
+                    "probability": 0.065
                   },
                   "temperature_lt_0c": {
                     "available_members": 31,
-                    "members": 25,
+                    "members": 26,
                     "members_valid": 31,
-                    "probability": 0.806
+                    "probability": 0.839
                   },
                   "temperature_lt_minus5c": {
                     "available_members": 31,
-                    "members": 4,
+                    "members": 3,
                     "members_valid": 31,
-                    "probability": 0.129
+                    "probability": 0.097
                   }
                 },
                 "temperature_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 3.05,
-                  "mean": 0.796,
-                  "median": 0.571,
+                  "interquartile_spread": 2.215,
+                  "mean": 1.153,
+                  "median": 1.067,
                   "members_valid": 31,
-                  "p10": -2.117,
-                  "p25": -0.633,
-                  "p75": 2.417,
-                  "p90": 4.763,
-                  "spread": 6.88
+                  "p10": -1.004,
+                  "p25": -0.113,
+                  "p75": 2.102,
+                  "p90": 3.513,
+                  "spread": 4.517
                 }
               },
               "lead_days": 30,
@@ -2943,13 +2943,13 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 75.971,
-                    "night_min_c": -2.239,
-                    "precipitation_mm": 3.416,
+                    "cloud_cover_mean_pct": 72.822,
+                    "night_min_c": -1.981,
+                    "precipitation_mm": 3.455,
                     "snowfall_cm": 1.064,
-                    "temperature_max_c": 5.897,
-                    "temperature_mean_c": 0.796,
-                    "temperature_min_c": -2.239
+                    "temperature_max_c": 6.552,
+                    "temperature_mean_c": 1.153,
+                    "temperature_min_c": -1.981
                   }
                 },
                 "ecmwf_ensemble": null,
@@ -2980,40 +2980,40 @@
                   },
                   "cloud_cover_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 31.855,
-                    "mean": 75.971,
-                    "median": 81.333,
+                    "interquartile_spread": 36.562,
+                    "mean": 72.822,
+                    "median": 75.958,
                     "members_valid": 31,
-                    "p10": 46.083,
-                    "p25": 64.312,
-                    "p75": 96.167,
-                    "p90": 98.417,
-                    "spread": 52.334
+                    "p10": 38.583,
+                    "p25": 58.979,
+                    "p75": 95.541,
+                    "p90": 99.083,
+                    "spread": 60.5
                   },
                   "date": "2026-10-25",
                   "night_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.55,
-                    "mean": -2.239,
-                    "median": -2.4,
+                    "interquartile_spread": 2.15,
+                    "mean": -1.981,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -6.0,
-                    "p25": -3.15,
-                    "p75": -0.6,
-                    "p90": 0.7,
-                    "spread": 6.7
+                    "p10": -4.7,
+                    "p25": -2.95,
+                    "p75": -0.8,
+                    "p90": 0.1,
+                    "spread": 4.8
                   },
                   "precipitation_mm": {
                     "available_members": 31,
-                    "interquartile_spread": 2.1,
-                    "mean": 3.416,
-                    "median": 1.8,
+                    "interquartile_spread": 3.9,
+                    "mean": 3.455,
+                    "median": 2.4,
                     "members_valid": 31,
-                    "p10": 0.3,
+                    "p10": 0.6,
                     "p25": 1.2,
-                    "p75": 3.3,
-                    "p90": 9.6,
-                    "spread": 9.3
+                    "p75": 5.1,
+                    "p90": 6.0,
+                    "spread": 5.4
                   },
                   "probabilities": {
                     "cloud_cover_gt_50pct": {
@@ -3024,9 +3024,9 @@
                     },
                     "cloud_cover_gt_70pct": {
                       "available_members": 31,
-                      "members": 20,
+                      "members": 17,
                       "members_valid": 31,
-                      "probability": 0.645
+                      "probability": 0.548
                     },
                     "cloud_cover_gt_90pct": {
                       "available_members": 31,
@@ -3096,9 +3096,9 @@
                     },
                     "daily_tmin_lt_minus5c": {
                       "available_members": 31,
-                      "members": 4,
+                      "members": 3,
                       "members_valid": 31,
-                      "probability": 0.129
+                      "probability": 0.097
                     },
                     "gust_gt_30kmh": {
                       "available_members": 31,
@@ -3132,27 +3132,27 @@
                     },
                     "precipitation_gt_0_5mm": {
                       "available_members": 31,
-                      "members": 27,
+                      "members": 28,
                       "members_valid": 31,
-                      "probability": 0.871
+                      "probability": 0.903
                     },
                     "precipitation_gt_2mm": {
                       "available_members": 31,
-                      "members": 15,
+                      "members": 18,
                       "members_valid": 31,
-                      "probability": 0.484
+                      "probability": 0.581
                     },
                     "precipitation_gt_5mm": {
                       "available_members": 31,
-                      "members": 6,
+                      "members": 8,
                       "members_valid": 31,
-                      "probability": 0.194
+                      "probability": 0.258
                     },
                     "rain_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 24,
+                      "members": 28,
                       "members_valid": 31,
-                      "probability": 0.774
+                      "probability": 0.903
                     },
                     "snowfall_gt_0_5cm": {
                       "available_members": 31,
@@ -3162,9 +3162,9 @@
                     },
                     "snowfall_gt_0cm": {
                       "available_members": 31,
-                      "members": 17,
+                      "members": 15,
                       "members_valid": 31,
-                      "probability": 0.548
+                      "probability": 0.484
                     },
                     "snowfall_gt_1cm": {
                       "available_members": 31,
@@ -3180,100 +3180,100 @@
                     },
                     "snowfall_gt_3cm": {
                       "available_members": 31,
-                      "members": 6,
+                      "members": 3,
                       "members_valid": 31,
-                      "probability": 0.194
+                      "probability": 0.097
                     },
                     "snowfall_gt_5cm": {
                       "available_members": 31,
-                      "members": 1,
+                      "members": 2,
                       "members_valid": 31,
-                      "probability": 0.032
+                      "probability": 0.065
                     },
                     "temperature_lt_0c": {
                       "available_members": 31,
-                      "members": 25,
+                      "members": 26,
                       "members_valid": 31,
-                      "probability": 0.806
+                      "probability": 0.839
                     },
                     "temperature_lt_minus5c": {
                       "available_members": 31,
-                      "members": 4,
+                      "members": 3,
                       "members_valid": 31,
-                      "probability": 0.129
+                      "probability": 0.097
                     }
                   },
                   "relative_humidity_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 14.75,
-                    "mean": 85.892,
-                    "median": 87.125,
+                    "interquartile_spread": 13.855,
+                    "mean": 81.089,
+                    "median": 82.25,
                     "members_valid": 31,
-                    "p10": 75.208,
-                    "p25": 79.5,
-                    "p75": 94.25,
-                    "p90": 97.667,
-                    "spread": 22.459
+                    "p10": 62.333,
+                    "p25": 77.625,
+                    "p75": 91.48,
+                    "p90": 93.458,
+                    "spread": 31.125
                   },
                   "snowfall_cm": {
                     "available_members": 31,
-                    "interquartile_spread": 1.26,
+                    "interquartile_spread": 1.47,
                     "mean": 1.064,
-                    "median": 0.21,
+                    "median": 0.0,
                     "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 1.26,
-                    "p90": 3.78,
-                    "spread": 3.78
+                    "p75": 1.47,
+                    "p90": 2.94,
+                    "spread": 2.94
                   },
                   "temperature_max_c": {
                     "available_members": 31,
-                    "interquartile_spread": 5.65,
-                    "mean": 5.897,
+                    "interquartile_spread": 5.3,
+                    "mean": 6.552,
                     "median": 5.2,
                     "members_valid": 31,
-                    "p10": 1.4,
-                    "p25": 3.0,
-                    "p75": 8.65,
-                    "p90": 11.0,
-                    "spread": 9.6
+                    "p10": 3.1,
+                    "p25": 4.0,
+                    "p75": 9.3,
+                    "p90": 11.7,
+                    "spread": 8.6
                   },
                   "temperature_mean_c": {
                     "available_members": 31,
-                    "interquartile_spread": 3.05,
-                    "mean": 0.796,
-                    "median": 0.571,
+                    "interquartile_spread": 2.215,
+                    "mean": 1.153,
+                    "median": 1.067,
                     "members_valid": 31,
-                    "p10": -2.117,
-                    "p25": -0.633,
-                    "p75": 2.417,
-                    "p90": 4.763,
-                    "spread": 6.88
+                    "p10": -1.004,
+                    "p25": -0.113,
+                    "p75": 2.102,
+                    "p90": 3.513,
+                    "spread": 4.517
                   },
                   "temperature_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.55,
-                    "mean": -2.239,
-                    "median": -2.4,
+                    "interquartile_spread": 2.15,
+                    "mean": -1.981,
+                    "median": -1.7,
                     "members_valid": 31,
-                    "p10": -6.0,
-                    "p25": -3.15,
-                    "p75": -0.6,
-                    "p90": 0.7,
-                    "spread": 6.7
+                    "p10": -4.7,
+                    "p25": -2.95,
+                    "p75": -0.8,
+                    "p90": 0.1,
+                    "spread": 4.8
                   },
                   "wind_gust_max_kmh": {
                     "available_members": 31,
-                    "interquartile_spread": 3.3,
-                    "mean": 12.11,
-                    "median": 12.6,
+                    "interquartile_spread": 2.55,
+                    "mean": 12.065,
+                    "median": 11.9,
                     "members_valid": 31,
-                    "p10": 9.0,
-                    "p25": 10.4,
-                    "p75": 13.7,
-                    "p90": 14.4,
-                    "spread": 5.4
+                    "p10": 10.1,
+                    "p25": 10.6,
+                    "p75": 13.15,
+                    "p90": 14.8,
+                    "spread": 4.7
                   }
                 },
                 "gfs": null,
@@ -3301,15 +3301,15 @@
               "interpretation": {
                 "cloud_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 23.083,
-                  "mean": 83.913,
-                  "median": 97.042,
+                  "interquartile_spread": 30.75,
+                  "mean": 81.106,
+                  "median": 89.292,
                   "members_valid": 31,
-                  "p10": 48.208,
-                  "p25": 76.355,
-                  "p75": 99.438,
+                  "p10": 45.25,
+                  "p25": 68.062,
+                  "p75": 98.812,
                   "p90": 100.0,
-                  "spread": 51.792
+                  "spread": 54.75
                 },
                 "precipitation_signal": {
                   "cloud_cover_gt_50pct": {
@@ -3320,15 +3320,15 @@
                   },
                   "cloud_cover_gt_70pct": {
                     "available_members": 31,
-                    "members": 24,
+                    "members": 23,
                     "members_valid": 31,
-                    "probability": 0.774
+                    "probability": 0.742
                   },
                   "cloud_cover_gt_90pct": {
                     "available_members": 31,
-                    "members": 18,
+                    "members": 15,
                     "members_valid": 31,
-                    "probability": 0.581
+                    "probability": 0.484
                   },
                   "cloud_cover_high_gt_30pct": {
                     "available_members": 0,
@@ -3386,15 +3386,15 @@
                   },
                   "daily_tmax_lt_0c": {
                     "available_members": 31,
-                    "members": 1,
+                    "members": 0,
                     "members_valid": 31,
-                    "probability": 0.032
+                    "probability": 0.0
                   },
                   "daily_tmin_lt_minus5c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   },
                   "gust_gt_30kmh": {
                     "available_members": 31,
@@ -3422,51 +3422,51 @@
                   },
                   "precipitation_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 30,
+                    "members": 28,
                     "members_valid": 31,
-                    "probability": 0.968
+                    "probability": 0.903
                   },
                   "precipitation_gt_0_5mm": {
                     "available_members": 31,
-                    "members": 30,
+                    "members": 27,
                     "members_valid": 31,
-                    "probability": 0.968
+                    "probability": 0.871
                   },
                   "precipitation_gt_2mm": {
                     "available_members": 31,
-                    "members": 16,
+                    "members": 19,
                     "members_valid": 31,
-                    "probability": 0.516
+                    "probability": 0.613
                   },
                   "precipitation_gt_5mm": {
                     "available_members": 31,
-                    "members": 7,
+                    "members": 8,
                     "members_valid": 31,
-                    "probability": 0.226
+                    "probability": 0.258
                   },
                   "rain_gt_0_1mm": {
                     "available_members": 31,
-                    "members": 29,
+                    "members": 27,
                     "members_valid": 31,
-                    "probability": 0.935
+                    "probability": 0.871
                   },
                   "snowfall_gt_0_5cm": {
+                    "available_members": 31,
+                    "members": 13,
+                    "members_valid": 31,
+                    "probability": 0.419
+                  },
+                  "snowfall_gt_0cm": {
                     "available_members": 31,
                     "members": 14,
                     "members_valid": 31,
                     "probability": 0.452
                   },
-                  "snowfall_gt_0cm": {
-                    "available_members": 31,
-                    "members": 18,
-                    "members_valid": 31,
-                    "probability": 0.581
-                  },
                   "snowfall_gt_1cm": {
                     "available_members": 31,
-                    "members": 13,
+                    "members": 10,
                     "members_valid": 31,
-                    "probability": 0.419
+                    "probability": 0.323
                   },
                   "snowfall_gt_2cm": {
                     "available_members": 31,
@@ -3476,9 +3476,9 @@
                   },
                   "snowfall_gt_3cm": {
                     "available_members": 31,
-                    "members": 3,
+                    "members": 2,
                     "members_valid": 31,
-                    "probability": 0.097
+                    "probability": 0.065
                   },
                   "snowfall_gt_5cm": {
                     "available_members": 31,
@@ -3488,28 +3488,28 @@
                   },
                   "temperature_lt_0c": {
                     "available_members": 31,
-                    "members": 17,
+                    "members": 15,
                     "members_valid": 31,
-                    "probability": 0.548
+                    "probability": 0.484
                   },
                   "temperature_lt_minus5c": {
                     "available_members": 31,
-                    "members": 2,
+                    "members": 1,
                     "members_valid": 31,
-                    "probability": 0.065
+                    "probability": 0.032
                   }
                 },
                 "temperature_signal": {
                   "available_members": 31,
-                  "interquartile_spread": 3.015,
-                  "mean": 1.482,
-                  "median": 1.142,
+                  "interquartile_spread": 2.198,
+                  "mean": 1.8,
+                  "median": 1.371,
                   "members_valid": 31,
-                  "p10": -0.733,
-                  "p25": -0.25,
-                  "p75": 2.765,
-                  "p90": 5.108,
-                  "spread": 5.841
+                  "p10": -0.163,
+                  "p25": 0.704,
+                  "p75": 2.902,
+                  "p90": 4.183,
+                  "spread": 4.346
                 }
               },
               "lead_days": 30,
@@ -3520,13 +3520,13 @@
                   ],
                   "values": {
                     "cloud_cover_low_mean_pct": null,
-                    "cloud_cover_mean_pct": 83.913,
-                    "night_min_c": -0.381,
-                    "precipitation_mm": 3.687,
-                    "snowfall_cm": 1.104,
-                    "temperature_max_c": 4.081,
-                    "temperature_mean_c": 1.482,
-                    "temperature_min_c": -0.381
+                    "cloud_cover_mean_pct": 81.106,
+                    "night_min_c": -0.126,
+                    "precipitation_mm": 3.697,
+                    "snowfall_cm": 0.962,
+                    "temperature_max_c": 4.648,
+                    "temperature_mean_c": 1.8,
+                    "temperature_min_c": -0.126
                   }
                 },
                 "ecmwf_ensemble": null,
@@ -3557,40 +3557,40 @@
                   },
                   "cloud_cover_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 23.083,
-                    "mean": 83.913,
-                    "median": 97.042,
+                    "interquartile_spread": 30.75,
+                    "mean": 81.106,
+                    "median": 89.292,
                     "members_valid": 31,
-                    "p10": 48.208,
-                    "p25": 76.355,
-                    "p75": 99.438,
+                    "p10": 45.25,
+                    "p25": 68.062,
+                    "p75": 98.812,
                     "p90": 100.0,
-                    "spread": 51.792
+                    "spread": 54.75
                   },
                   "date": "2026-10-25",
                   "night_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.7,
-                    "mean": -0.381,
-                    "median": -0.5,
+                    "interquartile_spread": 2.45,
+                    "mean": -0.126,
+                    "median": 0.3,
                     "members_valid": 31,
-                    "p10": -3.7,
-                    "p25": -1.55,
-                    "p75": 1.15,
-                    "p90": 3.1,
-                    "spread": 6.8
+                    "p10": -2.4,
+                    "p25": -1.05,
+                    "p75": 1.4,
+                    "p90": 2.5,
+                    "spread": 4.9
                   },
                   "precipitation_mm": {
                     "available_members": 31,
-                    "interquartile_spread": 2.4,
-                    "mean": 3.687,
-                    "median": 2.4,
+                    "interquartile_spread": 3.3,
+                    "mean": 3.697,
+                    "median": 2.7,
                     "members_valid": 31,
-                    "p10": 0.9,
-                    "p25": 1.5,
-                    "p75": 3.9,
-                    "p90": 8.1,
-                    "spread": 7.2
+                    "p10": 0.3,
+                    "p25": 1.35,
+                    "p75": 4.65,
+                    "p90": 7.8,
+                    "spread": 7.5
                   },
                   "probabilities": {
                     "cloud_cover_gt_50pct": {
@@ -3601,15 +3601,15 @@
                     },
                     "cloud_cover_gt_70pct": {
                       "available_members": 31,
-                      "members": 24,
+                      "members": 23,
                       "members_valid": 31,
-                      "probability": 0.774
+                      "probability": 0.742
                     },
                     "cloud_cover_gt_90pct": {
                       "available_members": 31,
-                      "members": 18,
+                      "members": 15,
                       "members_valid": 31,
-                      "probability": 0.581
+                      "probability": 0.484
                     },
                     "cloud_cover_high_gt_30pct": {
                       "available_members": 0,
@@ -3667,15 +3667,15 @@
                     },
                     "daily_tmax_lt_0c": {
                       "available_members": 31,
-                      "members": 1,
+                      "members": 0,
                       "members_valid": 31,
-                      "probability": 0.032
+                      "probability": 0.0
                     },
                     "daily_tmin_lt_minus5c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     },
                     "gust_gt_30kmh": {
                       "available_members": 31,
@@ -3703,51 +3703,51 @@
                     },
                     "precipitation_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 30,
+                      "members": 28,
                       "members_valid": 31,
-                      "probability": 0.968
+                      "probability": 0.903
                     },
                     "precipitation_gt_0_5mm": {
                       "available_members": 31,
-                      "members": 30,
+                      "members": 27,
                       "members_valid": 31,
-                      "probability": 0.968
+                      "probability": 0.871
                     },
                     "precipitation_gt_2mm": {
                       "available_members": 31,
-                      "members": 16,
+                      "members": 19,
                       "members_valid": 31,
-                      "probability": 0.516
+                      "probability": 0.613
                     },
                     "precipitation_gt_5mm": {
                       "available_members": 31,
-                      "members": 7,
+                      "members": 8,
                       "members_valid": 31,
-                      "probability": 0.226
+                      "probability": 0.258
                     },
                     "rain_gt_0_1mm": {
                       "available_members": 31,
-                      "members": 29,
+                      "members": 27,
                       "members_valid": 31,
-                      "probability": 0.935
+                      "probability": 0.871
                     },
                     "snowfall_gt_0_5cm": {
+                      "available_members": 31,
+                      "members": 13,
+                      "members_valid": 31,
+                      "probability": 0.419
+                    },
+                    "snowfall_gt_0cm": {
                       "available_members": 31,
                       "members": 14,
                       "members_valid": 31,
                       "probability": 0.452
                     },
-                    "snowfall_gt_0cm": {
-                      "available_members": 31,
-                      "members": 18,
-                      "members_valid": 31,
-                      "probability": 0.581
-                    },
                     "snowfall_gt_1cm": {
                       "available_members": 31,
-                      "members": 13,
+                      "members": 10,
                       "members_valid": 31,
-                      "probability": 0.419
+                      "probability": 0.323
                     },
                     "snowfall_gt_2cm": {
                       "available_members": 31,
@@ -3757,9 +3757,9 @@
                     },
                     "snowfall_gt_3cm": {
                       "available_members": 31,
-                      "members": 3,
+                      "members": 2,
                       "members_valid": 31,
-                      "probability": 0.097
+                      "probability": 0.065
                     },
                     "snowfall_gt_5cm": {
                       "available_members": 31,
@@ -3769,88 +3769,88 @@
                     },
                     "temperature_lt_0c": {
                       "available_members": 31,
-                      "members": 17,
+                      "members": 15,
                       "members_valid": 31,
-                      "probability": 0.548
+                      "probability": 0.484
                     },
                     "temperature_lt_minus5c": {
                       "available_members": 31,
-                      "members": 2,
+                      "members": 1,
                       "members_valid": 31,
-                      "probability": 0.065
+                      "probability": 0.032
                     }
                   },
                   "relative_humidity_mean_pct": {
                     "available_members": 31,
-                    "interquartile_spread": 9.563,
-                    "mean": 91.238,
-                    "median": 95.417,
+                    "interquartile_spread": 10.645,
+                    "mean": 88.986,
+                    "median": 93.417,
                     "members_valid": 31,
-                    "p10": 79.833,
-                    "p25": 87.812,
-                    "p75": 97.375,
-                    "p90": 98.625,
-                    "spread": 18.792
+                    "p10": 77.708,
+                    "p25": 84.938,
+                    "p75": 95.583,
+                    "p90": 97.833,
+                    "spread": 20.125
                   },
                   "snowfall_cm": {
                     "available_members": 31,
-                    "interquartile_spread": 1.47,
-                    "mean": 1.104,
-                    "median": 0.42,
+                    "interquartile_spread": 1.365,
+                    "mean": 0.962,
+                    "median": 0.0,
                     "members_valid": 31,
                     "p10": 0.0,
                     "p25": 0.0,
-                    "p75": 1.47,
+                    "p75": 1.365,
                     "p90": 2.73,
                     "spread": 2.73
                   },
                   "temperature_max_c": {
                     "available_members": 31,
-                    "interquartile_spread": 4.1,
-                    "mean": 4.081,
-                    "median": 3.2,
+                    "interquartile_spread": 3.8,
+                    "mean": 4.648,
+                    "median": 4.0,
                     "members_valid": 31,
-                    "p10": 1.0,
-                    "p25": 1.9,
-                    "p75": 6.0,
-                    "p90": 9.0,
-                    "spread": 8.0
+                    "p10": 0.8,
+                    "p25": 2.65,
+                    "p75": 6.45,
+                    "p90": 8.3,
+                    "spread": 7.5
                   },
                   "temperature_mean_c": {
                     "available_members": 31,
-                    "interquartile_spread": 3.015,
-                    "mean": 1.482,
-                    "median": 1.142,
+                    "interquartile_spread": 2.198,
+                    "mean": 1.8,
+                    "median": 1.371,
                     "members_valid": 31,
-                    "p10": -0.733,
-                    "p25": -0.25,
-                    "p75": 2.765,
-                    "p90": 5.108,
-                    "spread": 5.841
+                    "p10": -0.163,
+                    "p25": 0.704,
+                    "p75": 2.902,
+                    "p90": 4.183,
+                    "spread": 4.346
                   },
                   "temperature_min_c": {
                     "available_members": 31,
-                    "interquartile_spread": 2.7,
-                    "mean": -0.381,
-                    "median": -0.5,
+                    "interquartile_spread": 2.45,
+                    "mean": -0.126,
+                    "median": 0.3,
                     "members_valid": 31,
-                    "p10": -3.7,
-                    "p25": -1.55,
-                    "p75": 1.15,
-                    "p90": 3.1,
-                    "spread": 6.8
+                    "p10": -2.4,
+                    "p25": -1.05,
+                    "p75": 1.4,
+                    "p90": 2.5,
+                    "spread": 4.9
                   },
                   "wind_gust_max_kmh": {
                     "available_members": 31,
-                    "interquartile_spread": 2.3,
-                    "mean": 10.697,
-                    "median": 10.8,
+                    "interquartile_spread": 1.8,
+                    "mean": 10.887,
+                    "median": 11.2,
                     "members_valid": 31,
-                    "p10": 8.6,
-                    "p25": 9.55,
-                    "p75": 11.85,
+                    "p10": 7.6,
+                    "p25": 9.9,
+                    "p75": 11.7,
                     "p90": 12.6,
-                    "spread": 4.0
+                    "spread": 5.0
                   }
                 },
                 "gfs": null,
