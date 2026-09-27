@@ -2,10 +2,10 @@
   "cache_kind": "derived_weather_events",
   "cache_schema_version": "1.0.0",
   "cache_update": {
-    "cache_fills": 1,
+    "cache_fills": 0,
     "cache_hits": 0,
     "cache_invalid": 0,
-    "dates_added": 69,
+    "dates_added": 1,
     "dates_recomputed": 0,
     "dates_removed": 0,
     "files_written": 1,
@@ -80,7 +80,8 @@
     "2025-10-29",
     "2025-10-30",
     "2025-10-31",
-    "2025-11-01"
+    "2025-11-01",
+    "2025-11-02"
   ],
   "daily": [
     {
@@ -2103,10 +2104,41 @@
       "temperature_min_c": -2.1,
       "wind_gust_max_kmh": 24.1,
       "wind_speed_mean_kmh": 2.108
+    },
+    {
+      "complete": true,
+      "date": "2025-11-02",
+      "dtr_c": 10.4,
+      "freeze": true,
+      "freeze_and_snow": true,
+      "gust_ge_50": false,
+      "gust_ge_65": false,
+      "hard_freeze_le_minus5": false,
+      "mechanical_leaf_stress": {
+        "level": "MEDIUM",
+        "reasons": [
+          "freeze_plus_snow"
+        ],
+        "rule_version": "mechanical_leaf_stress_v1"
+      },
+      "night_min_c": -2.7,
+      "precipitation_mm": 1.4,
+      "rain_and_gust_ge_50": false,
+      "rain_day": true,
+      "snow_and_gust_ge_50": false,
+      "snow_day": true,
+      "snowfall_cm": 0.49,
+      "source_fingerprint": "330df9cbf0c51bbd5d1ef4f4756694f0cfbfafb38d279bf5b4ce7d30b9c7ca03",
+      "source_state": "finalized_history",
+      "temperature_max_c": 7.7,
+      "temperature_mean_c": 1.988,
+      "temperature_min_c": -2.7,
+      "wind_gust_max_kmh": 33.8,
+      "wind_speed_mean_kmh": 3.221
     }
   ],
   "date_range": {
-    "end_date": "2025-11-01",
+    "end_date": "2025-11-02",
     "start_date": "2025-08-25"
   },
   "identity": {
@@ -2135,7 +2167,7 @@
     "utc_offset_seconds": 28800,
     "year": 2025
   },
-  "last_update": "2026-09-25T12:00:00Z",
+  "last_update": "2026-09-27T16:59:51Z",
   "namespace": "siguniang_jiuzhaigou",
   "point_id": "JZG_TREESHENG",
   "rule_versions": {
@@ -2213,7 +2245,8 @@
     "2025-10-29": "c17c7644a4494d2fe27bb6bf1ea5d4fbe5f1689546fccd058e20cef5dc63479c",
     "2025-10-30": "96d1b4f4b7be256cf806a368ceef6f99a75fa90997743e6f54b9147a8cee8efa",
     "2025-10-31": "f46f9669e6303610feee7d382d648b5ffd668cfb515acb0a7140977c656eee9c",
-    "2025-11-01": "24101a285f64ae4fe837a36dc79ed4d9da03a0b6a8d9f813a2c550da1d87ed1a"
+    "2025-11-01": "24101a285f64ae4fe837a36dc79ed4d9da03a0b6a8d9f813a2c550da1d87ed1a",
+    "2025-11-02": "330df9cbf0c51bbd5d1ef4f4756694f0cfbfafb38d279bf5b4ce7d30b9c7ca03"
   },
   "source_history_cache_key": "siguniang_jiuzhaigou:2025:JZG_TREESHENG:33.216167,103.854675",
   "source_history_cache_path": "data/cache/history/siguniang_jiuzhaigou/2025/JZG_TREESHENG.json",
