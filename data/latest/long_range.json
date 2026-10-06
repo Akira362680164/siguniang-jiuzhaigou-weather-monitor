@@ -18,28 +18,28 @@
     ]
   },
   "coverage": "global; western Sichuan is within the global product domain",
-  "data_date": "2026-10-04",
+  "data_date": "2026-10-05",
   "endpoint": "https://ensemble-api.open-meteo.com/v1/ensemble",
   "ensemble_members": 31,
   "excluded_points": {},
   "expected_ensemble_members": 31,
   "failed_points": 0,
-  "forecast_horizon_days": 35,
+  "forecast_horizon_days": 34,
   "forecast_horizon_status": "PASS",
   "forecast_last_timestamp": "2026-11-08T10:00",
-  "forecast_lead_days": 34,
-  "generated_at": "2026-10-05T14:43:49Z",
+  "forecast_lead_days": 33,
+  "generated_at": "2026-10-06T00:05:10Z",
   "history_cache": {
-    "api_requests": 0,
+    "api_requests": 3,
     "cache_failed": 0,
-    "cache_fills": 0,
-    "cache_hits": 3,
+    "cache_fills": 3,
+    "cache_hits": 0,
     "cache_invalid": 0,
     "cache_misses": 0,
     "cache_refreshes": 0,
     "directory": "data/cache/history",
     "enabled": true,
-    "missing_dates_requested": 0,
+    "missing_dates_requested": 3,
     "refresh_requested": false
   },
   "interpretation_boundary": "16-35 day background signal only; not a date-level precise forecast and not a direct phenology lead/lag calculation.",
@@ -53,9 +53,9 @@
   "partial_points": 0,
   "qa": {
     "actual_ensemble_members": 31,
-    "actual_horizon_days_including_today": 35,
+    "actual_horizon_days_including_today": 34,
     "expected_ensemble_members": 31,
-    "forecast_lead_days": 34,
+    "forecast_lead_days": 33,
     "grid_scale_class": "coarse_ensemble",
     "horizon_status": "PASS",
     "last_available_timestamp": "2026-11-08T10:00",
@@ -70,16 +70,16 @@
   "regions": {
     "jiuzhaigou": {
       "forecast_last_timestamp": "2026-11-08T10:00",
-      "forecast_origin_date": "2026-10-05",
+      "forecast_origin_date": "2026-10-06",
       "historical_reference": {
         "kind": "historical_reference",
-        "period_end": "2025-11-09",
-        "period_start": "2025-10-21",
+        "period_end": "2025-11-10",
+        "period_start": "2025-10-22",
         "status": "PASS"
       },
       "overall_16_35d": {
         "cold_air": {
-          "signal": "WEAK"
+          "signal": "MODERATE"
         },
         "confidence": "VERY_LOW",
         "moisture": {
@@ -87,61 +87,59 @@
         },
         "notable_windows": [
           {
-            "end_date": "2026-10-23",
+            "end_date": "2026-10-24",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-21"
+            "start_date": "2026-10-22"
           },
           {
-            "end_date": "2026-10-26",
+            "end_date": "2026-10-27",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-24"
+            "start_date": "2026-10-25"
           },
           {
-            "end_date": "2026-10-29",
+            "end_date": "2026-10-30",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-27"
+            "start_date": "2026-10-28"
           },
           {
-            "end_date": "2026-11-01",
+            "end_date": "2026-11-02",
             "signals": [
               "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-30"
+            "start_date": "2026-10-31"
           },
           {
-            "end_date": "2026-11-04",
-            "signals": [
-              "COLD_WINDOW",
-              "SNOW_BACKGROUND",
-              "PRECIPITATION_BACKGROUND"
-            ],
-            "start_date": "2026-11-02"
-          },
-          {
-            "end_date": "2026-11-07",
+            "end_date": "2026-11-05",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-11-05"
+            "start_date": "2026-11-03"
+          },
+          {
+            "end_date": "2026-11-08",
+            "signals": [
+              "COLD_WINDOW"
+            ],
+            "start_date": "2026-11-06"
           }
         ],
         "snow": {
           "signal": "STRONG"
         },
         "temperature": {
-          "direction": "UNDETERMINED"
+          "direction": "COLDER_THAN_REFERENCE"
         },
         "uncertainty": "HIGH",
         "wind": {
@@ -174,11 +172,12 @@
           "long_range_horizon_check": {
             "actual_lead_day_range": [
               0,
-              34
+              33
             ],
-            "actual_lead_days": 35,
+            "actual_lead_days": 34,
             "contiguous": true,
             "edge_shortfall_lead_days": [
+              34,
               35
             ],
             "expected_lead_day_range": [
@@ -187,6 +186,7 @@
             ],
             "method": "requires contiguous lead days 0..33; lead days 34..35 belong to the trailing 3-day block and are published only by the freshest long run",
             "missing_lead_days": [
+              34,
               35
             ],
             "missing_required_lead_days": [],
@@ -196,7 +196,7 @@
               33
             ],
             "status": "PASS",
-            "usable_background_through_lead_day": 34
+            "usable_background_through_lead_day": 33
           },
           "long_range_member_check": {
             "actual_member_counts_by_variable": {
@@ -350,73 +350,73 @@
             "status": "PASS",
             "variable_availability": {
               "precipitation": {
-                "all_members_complete_through_index": 824,
+                "all_members_complete_through_index": 800,
                 "edge_truncated": true,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 824,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 800,
                 "last_timestamp": "2026-11-08T08:00"
               },
               "snowfall": {
-                "all_members_complete_through_index": 824,
+                "all_members_complete_through_index": 800,
                 "edge_truncated": true,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 824,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 800,
                 "last_timestamp": "2026-11-08T08:00"
               },
               "temperature_2m": {
-                "all_members_complete_through_index": 826,
+                "all_members_complete_through_index": 802,
                 "edge_truncated": false,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 826,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 802,
                 "last_timestamp": "2026-11-08T10:00"
               },
               "wind_gusts_10m": {
-                "all_members_complete_through_index": 826,
+                "all_members_complete_through_index": 802,
                 "edge_truncated": false,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 826,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 802,
                 "last_timestamp": "2026-11-08T10:00"
               }
             }
           },
           "member_edge_audit": {
             "precipitation": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T08:00",
               "horizon_status": "TRUNCATED_EDGE_MISSING",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 2
             },
             "snowfall": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T08:00",
               "horizon_status": "TRUNCATED_EDGE_MISSING",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 2
             },
             "temperature_2m": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T10:00",
               "horizon_status": "COMPLETE",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 0
             },
             "wind_gusts_10m": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T10:00",
               "horizon_status": "COMPLETE",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 0
             }
@@ -429,11 +429,11 @@
           "original_timestep_count": 840,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 827,
+          "retained_timestep_count": 803,
           "returned_elevation": 3292.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 13,
+          "trailing_missing_rows": 37,
           "trailing_missing_variables": [
             "temperature_2m"
           ],
@@ -447,8 +447,8 @@
             "cache_path": "data/cache/history/siguniang_jiuzhaigou/2025/JZG_TREESHENG.json",
             "identity_mismatches": [],
             "missing_dates": [],
-            "requested_end_date": "2025-11-09",
-            "requested_start_date": "2025-10-21",
+            "requested_end_date": "2025-11-10",
+            "requested_start_date": "2025-10-22",
             "status": "PASS"
           },
           "coordinate_check": "PASS",
@@ -507,7 +507,7 @@
               },
               "below_2c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.968,
+                "member_support": 0.871,
                 "threshold_c": 2.0
               },
               "below_5c": {
@@ -519,28 +519,28 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.387,
+            "member_support": 0.452,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-21/2026-10-23"
+            "window": "2026-10-22/2026-10-24"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.055,
-              "median_change_c": -0.232,
+              "mean_change_c": -0.304,
+              "median_change_c": -0.413,
               "member_count": 31,
-              "spread_c": 3.297,
+              "spread_c": 3.564,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-23",
+          "end_date": "2026-10-24",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 3.493,
+            "mean_temperature_c": 2.35,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D16_D18",
@@ -558,11 +558,11 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.484,
+            "member_support": 0.613,
             "signal": "MODERATE",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-21",
+          "start_date": "2026-10-22",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -571,26 +571,26 @@
             "threshold": "window maximum gust >= 50 km/h"
           },
           "temperature_background": {
-            "direction": "NEAR_REFERENCE",
+            "direction": "WARMER_THAN_REFERENCE",
             "reference_status": "PASS",
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.844,
-            "mean": 3.649,
-            "median": 3.467,
-            "p10": 1.964,
-            "p25": 2.67,
-            "p75": 4.514,
-            "p90": 5.261,
-            "spread": 3.297
+            "interquartile_spread": 1.73,
+            "mean": 3.513,
+            "median": 3.474,
+            "p10": 1.606,
+            "p25": 2.84,
+            "p75": 4.57,
+            "p90": 5.17,
+            "spread": 3.564
           },
           "uncertainty_drivers": [
             "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.452,
+            "member_support": 0.548,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -601,7 +601,7 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.516,
+                "member_support": 0.581,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -618,34 +618,34 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.258,
+            "member_support": 0.226,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-24/2026-10-26"
+            "window": "2026-10-25/2026-10-27"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.164,
-              "median_change_c": 0.044,
+              "mean_change_c": -0.003,
+              "median_change_c": 0.192,
               "member_count": 31,
-              "spread_c": 2.907,
+              "spread_c": 3.581,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-26",
+          "end_date": "2026-10-27",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 1.551,
+            "mean_temperature_c": 2.285,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D19_D21",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 1.0,
+            "member_support": 0.903,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
@@ -657,11 +657,11 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.548,
+            "member_support": 0.484,
             "signal": "MODERATE",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-24",
+          "start_date": "2026-10-25",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -672,24 +672,24 @@
           "temperature_background": {
             "direction": "WARMER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "MODERATE"
+            "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.706,
-            "mean": 3.485,
-            "median": 3.511,
-            "p10": 2.183,
-            "p25": 2.773,
-            "p75": 4.479,
-            "p90": 5.09,
-            "spread": 2.907
+            "interquartile_spread": 1.723,
+            "mean": 3.51,
+            "median": 3.666,
+            "p10": 1.808,
+            "p25": 2.898,
+            "p75": 4.621,
+            "p90": 5.389,
+            "spread": 3.581
           },
           "uncertainty_drivers": [
             "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.516,
+            "member_support": 0.484,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -700,7 +700,7 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.548,
+                "member_support": 0.613,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -720,25 +720,25 @@
             "member_support": 0.258,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-27/2026-10-29"
+            "window": "2026-10-28/2026-10-30"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": 0.136,
-              "median_change_c": 0.582,
+              "mean_change_c": -0.196,
+              "median_change_c": 0.153,
               "member_count": 31,
-              "spread_c": 3.936,
+              "spread_c": 3.976,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-29",
+          "end_date": "2026-10-30",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 2.869,
+            "mean_temperature_c": 2.862,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D22_D24",
@@ -756,11 +756,11 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.613,
+            "member_support": 0.677,
             "signal": "MODERATE",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-27",
+          "start_date": "2026-10-28",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -769,26 +769,26 @@
             "threshold": "window maximum gust >= 50 km/h"
           },
           "temperature_background": {
-            "direction": "WARMER_THAN_REFERENCE",
+            "direction": "NEAR_REFERENCE",
             "reference_status": "PASS",
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.716,
-            "mean": 3.621,
-            "median": 4.093,
-            "p10": 1.232,
-            "p25": 2.856,
-            "p75": 4.572,
-            "p90": 5.168,
-            "spread": 3.936
+            "interquartile_spread": 2.017,
+            "mean": 3.314,
+            "median": 3.819,
+            "p10": 0.964,
+            "p25": 2.281,
+            "p75": 4.298,
+            "p90": 4.94,
+            "spread": 3.976
           },
           "uncertainty_drivers": [
             "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.581,
+            "member_support": 0.677,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -799,7 +799,7 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.806,
+                "member_support": 0.903,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -816,41 +816,41 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.581,
-            "persistence_runs": 1,
-            "signal": "WEAK",
-            "window": "2026-10-30/2026-11-01"
+            "member_support": 0.613,
+            "persistence_runs": 2,
+            "signal": "MODERATE",
+            "window": "2026-10-31/2026-11-02"
           },
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.725,
-              "median_change_c": -1.878,
+              "mean_change_c": -2.27,
+              "median_change_c": -2.327,
               "member_count": 31,
-              "spread_c": 4.508,
+              "spread_c": 5.081,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-01",
+          "end_date": "2026-11-02",
           "forecast_uncertainty": "MODERATE",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 2.345,
+            "mean_temperature_c": 1.973,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D25_D27",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 0.935,
+            "member_support": 1.0,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
           "requested_horizon_class": "D25_D27",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
+            "status": "STRENGTHENING",
             "trend": "STRENGTHENING"
           },
           "snow_background": {
@@ -859,7 +859,7 @@
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-30",
+          "start_date": "2026-10-31",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -868,19 +868,19 @@
             "threshold": "window maximum gust >= 50 km/h"
           },
           "temperature_background": {
-            "direction": "NEAR_REFERENCE",
+            "direction": "COLDER_THAN_REFERENCE",
             "reference_status": "PASS",
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.533,
-            "mean": 1.896,
-            "median": 2.215,
-            "p10": -0.35,
-            "p25": 0.671,
-            "p75": 3.204,
-            "p90": 4.158,
-            "spread": 4.508
+            "interquartile_spread": 3.58,
+            "mean": 1.044,
+            "median": 1.492,
+            "p10": -1.826,
+            "p25": -0.714,
+            "p75": 2.866,
+            "p90": 3.255,
+            "spread": 5.081
           },
           "uncertainty_drivers": [
             "temperature_spread"
@@ -915,50 +915,50 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.581,
-            "persistence_runs": 1,
-            "signal": "WEAK",
-            "window": "2026-11-02/2026-11-04"
+            "member_support": 0.419,
+            "persistence_runs": 0,
+            "signal": "NONE",
+            "window": "2026-11-03/2026-11-05"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.767,
-              "median_change_c": -1.761,
+              "mean_change_c": -1.081,
+              "median_change_c": -1.75,
               "member_count": 31,
-              "spread_c": 6.157,
+              "spread_c": 5.974,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-04",
+          "end_date": "2026-11-05",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 3.036,
+            "mean_temperature_c": 3.765,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D28_D30",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 0.935,
+            "member_support": 0.903,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
           "requested_horizon_class": "D28_D30",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "DISAPPEARED",
+            "trend": "WEAKENING"
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.806,
+            "member_support": 0.71,
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-11-02",
+          "start_date": "2026-11-03",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -969,25 +969,26 @@
           "temperature_background": {
             "direction": "COLDER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "MODERATE"
+            "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 3.685,
-            "mean": 0.129,
-            "median": 0.454,
-            "p10": -2.79,
-            "p25": -1.812,
-            "p75": 1.873,
-            "p90": 3.367,
-            "spread": 6.157
+            "interquartile_spread": 3.277,
+            "mean": -0.037,
+            "median": -0.258,
+            "p10": -3.039,
+            "p25": -1.613,
+            "p75": 1.664,
+            "p90": 2.935,
+            "spread": 5.974
           },
           "uncertainty_drivers": [
             "temperature_spread",
+            "member_event_disagreement",
             "longer_lead_time"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.806,
+            "member_support": 0.71,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -1015,50 +1016,50 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.387,
-            "persistence_runs": 0,
-            "signal": "NONE",
-            "window": "2026-11-05/2026-11-07"
+            "member_support": 0.548,
+            "persistence_runs": 1,
+            "signal": "WEAK",
+            "window": "2026-11-06/2026-11-08"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.606,
-              "median_change_c": -0.58,
+              "mean_change_c": -1.33,
+              "median_change_c": -0.611,
               "member_count": 31,
-              "spread_c": 6.436,
+              "spread_c": 6.684,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-07",
+          "end_date": "2026-11-08",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 3.357,
+            "mean_temperature_c": 3.017,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D31_D33",
           "precipitation_background": {
-            "available_members": 31,
-            "member_support": 0.968,
-            "signal": "STRONG",
+            "available_members": 0,
+            "member_support": null,
+            "signal": "UNDETERMINED",
             "threshold": "window precipitation total >= 1 mm"
           },
           "requested_horizon_class": "D31_D33",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "INSUFFICIENT_HISTORY",
-            "trend": "UNDETERMINED"
+            "status": "NEW",
+            "trend": "STRENGTHENING"
           },
           "snow_background": {
-            "available_members": 31,
-            "member_support": 0.71,
-            "signal": "STRONG",
+            "available_members": 0,
+            "member_support": null,
+            "signal": "UNDETERMINED",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-11-05",
+          "start_date": "2026-11-06",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -1072,30 +1073,30 @@
             "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 3.571,
-            "mean": -0.477,
-            "median": -0.126,
-            "p10": -3.811,
-            "p25": -2.164,
-            "p75": 1.407,
-            "p90": 2.625,
-            "spread": 6.436
+            "interquartile_spread": 3.506,
+            "mean": -1.367,
+            "median": -0.869,
+            "p10": -4.986,
+            "p25": -3.176,
+            "p75": 0.33,
+            "p90": 1.698,
+            "spread": 6.684
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "member_event_disagreement",
+            "event_variable_horizon",
             "longer_lead_time"
           ],
           "wet_snow_assessment": {
-            "available_members": 31,
-            "member_support": 0.71,
+            "available_members": 0,
+            "member_support": null,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
-            "status": "COARSE_POTENTIAL"
+            "status": "UNAVAILABLE"
           }
         },
         {
           "confidence": "VERY_LOW",
-          "end_date": "2026-11-09",
+          "end_date": "2026-11-10",
           "horizon_class": "D34_D35",
           "reason": "WINDOW_DATA_MISSING",
           "requested_horizon_class": "D34_D35",
@@ -1104,18 +1105,18 @@
             "status": "INSUFFICIENT_HISTORY",
             "trend": "UNDETERMINED"
           },
-          "start_date": "2026-11-08",
+          "start_date": "2026-11-09",
           "status": "UNAVAILABLE"
         }
       ]
     },
     "lixiaolu": {
       "forecast_last_timestamp": "2026-11-08T10:00",
-      "forecast_origin_date": "2026-10-05",
+      "forecast_origin_date": "2026-10-06",
       "historical_reference": {
         "kind": "historical_reference",
-        "period_end": "2025-11-09",
-        "period_start": "2025-10-21",
+        "period_end": "2025-11-10",
+        "period_start": "2025-10-22",
         "status": "PASS"
       },
       "overall_16_35d": {
@@ -1128,54 +1129,53 @@
         },
         "notable_windows": [
           {
-            "end_date": "2026-10-23",
+            "end_date": "2026-10-24",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-21"
+            "start_date": "2026-10-22"
           },
           {
-            "end_date": "2026-10-26",
+            "end_date": "2026-10-27",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-24"
+            "start_date": "2026-10-25"
           },
           {
-            "end_date": "2026-10-29",
+            "end_date": "2026-10-30",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-27"
+            "start_date": "2026-10-28"
           },
           {
-            "end_date": "2026-11-01",
+            "end_date": "2026-11-02",
             "signals": [
               "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-30"
+            "start_date": "2026-10-31"
           },
           {
-            "end_date": "2026-11-04",
+            "end_date": "2026-11-05",
             "signals": [
               "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-11-02"
+            "start_date": "2026-11-03"
           },
           {
-            "end_date": "2026-11-07",
+            "end_date": "2026-11-08",
             "signals": [
-              "SNOW_BACKGROUND",
-              "PRECIPITATION_BACKGROUND"
+              "COLD_WINDOW"
             ],
-            "start_date": "2026-11-05"
+            "start_date": "2026-11-06"
           }
         ],
         "snow": {
@@ -1215,11 +1215,12 @@
           "long_range_horizon_check": {
             "actual_lead_day_range": [
               0,
-              34
+              33
             ],
-            "actual_lead_days": 35,
+            "actual_lead_days": 34,
             "contiguous": true,
             "edge_shortfall_lead_days": [
+              34,
               35
             ],
             "expected_lead_day_range": [
@@ -1228,6 +1229,7 @@
             ],
             "method": "requires contiguous lead days 0..33; lead days 34..35 belong to the trailing 3-day block and are published only by the freshest long run",
             "missing_lead_days": [
+              34,
               35
             ],
             "missing_required_lead_days": [],
@@ -1237,7 +1239,7 @@
               33
             ],
             "status": "PASS",
-            "usable_background_through_lead_day": 34
+            "usable_background_through_lead_day": 33
           },
           "long_range_member_check": {
             "actual_member_counts_by_variable": {
@@ -1391,73 +1393,73 @@
             "status": "PASS",
             "variable_availability": {
               "precipitation": {
-                "all_members_complete_through_index": 824,
+                "all_members_complete_through_index": 800,
                 "edge_truncated": true,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 824,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 800,
                 "last_timestamp": "2026-11-08T08:00"
               },
               "snowfall": {
-                "all_members_complete_through_index": 824,
+                "all_members_complete_through_index": 800,
                 "edge_truncated": true,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 824,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 800,
                 "last_timestamp": "2026-11-08T08:00"
               },
               "temperature_2m": {
-                "all_members_complete_through_index": 826,
+                "all_members_complete_through_index": 802,
                 "edge_truncated": false,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 826,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 802,
                 "last_timestamp": "2026-11-08T10:00"
               },
               "wind_gusts_10m": {
-                "all_members_complete_through_index": 826,
+                "all_members_complete_through_index": 802,
                 "edge_truncated": false,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 826,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 802,
                 "last_timestamp": "2026-11-08T10:00"
               }
             }
           },
           "member_edge_audit": {
             "precipitation": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T08:00",
               "horizon_status": "TRUNCATED_EDGE_MISSING",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 2
             },
             "snowfall": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T08:00",
               "horizon_status": "TRUNCATED_EDGE_MISSING",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 2
             },
             "temperature_2m": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T10:00",
               "horizon_status": "COMPLETE",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 0
             },
             "wind_gusts_10m": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T10:00",
               "horizon_status": "COMPLETE",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 0
             }
@@ -1470,11 +1472,11 @@
           "original_timestep_count": 840,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 827,
+          "retained_timestep_count": 803,
           "returned_elevation": 3784.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 13,
+          "trailing_missing_rows": 37,
           "trailing_missing_variables": [
             "temperature_2m"
           ],
@@ -1488,8 +1490,8 @@
             "cache_path": "data/cache/history/siguniang_jiuzhaigou/2025/LXL_HIGH_PASS.json",
             "identity_mismatches": [],
             "missing_dates": [],
-            "requested_end_date": "2025-11-09",
-            "requested_start_date": "2025-10-21",
+            "requested_end_date": "2025-11-10",
+            "requested_start_date": "2025-10-22",
             "status": "PASS"
           },
           "coordinate_check": "PASS",
@@ -1543,7 +1545,7 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 1.0,
+                "member_support": 0.935,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -1560,28 +1562,28 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.323,
+            "member_support": 0.419,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-21/2026-10-23"
+            "window": "2026-10-22/2026-10-24"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": 0.001,
-              "median_change_c": -0.36,
+              "mean_change_c": -0.287,
+              "median_change_c": -0.571,
               "member_count": 31,
-              "spread_c": 3.405,
+              "spread_c": 3.263,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-23",
+          "end_date": "2026-10-24",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 4.193,
+            "mean_temperature_c": 3.061,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D16_D18",
@@ -1603,7 +1605,7 @@
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-21",
+          "start_date": "2026-10-22",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -1614,17 +1616,17 @@
           "temperature_background": {
             "direction": "COLDER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "MODERATE"
+            "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.185,
-            "mean": 2.102,
-            "median": 1.99,
-            "p10": 0.13,
-            "p25": 1.674,
-            "p75": 2.859,
-            "p90": 3.535,
-            "spread": 3.405
+            "interquartile_spread": 1.714,
+            "mean": 1.98,
+            "median": 1.903,
+            "p10": 0.372,
+            "p25": 0.968,
+            "p75": 2.682,
+            "p90": 3.635,
+            "spread": 3.263
           },
           "uncertainty_drivers": [
             "member_event_disagreement"
@@ -1659,34 +1661,34 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.355,
+            "member_support": 0.258,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-24/2026-10-26"
+            "window": "2026-10-25/2026-10-27"
           },
-          "confidence": "LOW",
+          "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.199,
-              "median_change_c": -0.286,
+              "mean_change_c": -0.099,
+              "median_change_c": -0.195,
               "member_count": 31,
-              "spread_c": 3.052,
+              "spread_c": 3.541,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-26",
-          "forecast_uncertainty": "LOW",
+          "end_date": "2026-10-27",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 1.106,
+            "mean_temperature_c": 0.874,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D19_D21",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 1.0,
+            "member_support": 0.903,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
@@ -1698,11 +1700,11 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.806,
+            "member_support": 0.71,
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-24",
+          "start_date": "2026-10-25",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -1716,21 +1718,21 @@
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.125,
-            "mean": 1.903,
-            "median": 1.704,
-            "p10": 0.215,
-            "p25": 0.883,
-            "p75": 3.008,
-            "p90": 3.267,
-            "spread": 3.052
+            "interquartile_spread": 2.225,
+            "mean": 1.881,
+            "median": 1.708,
+            "p10": 0.1,
+            "p25": 0.905,
+            "p75": 3.13,
+            "p90": 3.641,
+            "spread": 3.541
           },
           "uncertainty_drivers": [
-            "long_range_horizon"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.806,
+            "member_support": 0.71,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -1741,7 +1743,7 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.935,
+                "member_support": 0.968,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -1758,28 +1760,28 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.194,
+            "member_support": 0.323,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-27/2026-10-29"
+            "window": "2026-10-28/2026-10-30"
           },
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.042,
-              "median_change_c": 0.557,
+              "mean_change_c": -0.151,
+              "median_change_c": 0.251,
               "member_count": 31,
-              "spread_c": 3.784,
+              "spread_c": 4.144,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-29",
-          "forecast_uncertainty": "LOW",
+          "end_date": "2026-10-30",
+          "forecast_uncertainty": "MODERATE",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 0.1,
+            "mean_temperature_c": 0.289,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D22_D24",
@@ -1797,11 +1799,11 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.839,
+            "member_support": 0.871,
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-27",
+          "start_date": "2026-10-28",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -1812,24 +1814,24 @@
           "temperature_background": {
             "direction": "WARMER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "MODERATE"
+            "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.018,
-            "mean": 1.861,
-            "median": 2.261,
-            "p10": -0.374,
-            "p25": 0.98,
-            "p75": 2.998,
-            "p90": 3.41,
-            "spread": 3.784
+            "interquartile_spread": 1.932,
+            "mean": 1.73,
+            "median": 1.959,
+            "p10": -0.515,
+            "p25": 0.924,
+            "p75": 2.856,
+            "p90": 3.629,
+            "spread": 4.144
           },
           "uncertainty_drivers": [
-            "long_range_horizon"
+            "temperature_spread"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.839,
+            "member_support": 0.871,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -1857,28 +1859,28 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.548,
-            "persistence_runs": 1,
+            "member_support": 0.613,
+            "persistence_runs": 2,
             "signal": "WEAK",
-            "window": "2026-10-30/2026-11-01"
+            "window": "2026-10-31/2026-11-02"
           },
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.941,
-              "median_change_c": -1.084,
+              "mean_change_c": -1.444,
+              "median_change_c": -1.577,
               "member_count": 31,
-              "spread_c": 4.283,
+              "spread_c": 4.49,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-01",
+          "end_date": "2026-11-02",
           "forecast_uncertainty": "MODERATE",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 0.176,
+            "mean_temperature_c": -0.247,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D25_D27",
@@ -1891,8 +1893,8 @@
           "requested_horizon_class": "D25_D27",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "PERSISTENT",
+            "trend": "STABLE"
           },
           "snow_background": {
             "available_members": 31,
@@ -1900,7 +1902,7 @@
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-30",
+          "start_date": "2026-10-31",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -1914,14 +1916,14 @@
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.587,
-            "mean": 0.92,
-            "median": 1.177,
-            "p10": -1.427,
-            "p25": -0.326,
-            "p75": 2.261,
-            "p90": 2.856,
-            "spread": 4.283
+            "interquartile_spread": 2.355,
+            "mean": 0.286,
+            "median": 0.382,
+            "p10": -2.315,
+            "p25": -0.885,
+            "p75": 1.47,
+            "p90": 2.175,
+            "spread": 4.49
           },
           "uncertainty_drivers": [
             "temperature_spread"
@@ -1957,49 +1959,49 @@
           },
           "cold_window_signal": {
             "member_support": 0.581,
-            "persistence_runs": 1,
+            "persistence_runs": 2,
             "signal": "WEAK",
-            "window": "2026-11-02/2026-11-04"
+            "window": "2026-11-03/2026-11-05"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.671,
-              "median_change_c": -1.887,
+              "mean_change_c": -1.235,
+              "median_change_c": -1.35,
               "member_count": 31,
-              "spread_c": 4.805,
+              "spread_c": 4.192,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-04",
+          "end_date": "2026-11-05",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": -0.124,
+            "mean_temperature_c": 0.011,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D28_D30",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 0.935,
+            "member_support": 0.871,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
           "requested_horizon_class": "D28_D30",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "PERSISTENT",
+            "trend": "STABLE"
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.903,
+            "member_support": 0.839,
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-11-02",
+          "start_date": "2026-11-03",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -2013,14 +2015,14 @@
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.88,
-            "mean": -0.751,
-            "median": -0.71,
-            "p10": -3.183,
-            "p25": -2.25,
-            "p75": 0.63,
-            "p90": 1.622,
-            "spread": 4.805
+            "interquartile_spread": 2.781,
+            "mean": -0.949,
+            "median": -0.968,
+            "p10": -3.052,
+            "p25": -2.339,
+            "p75": 0.442,
+            "p90": 1.14,
+            "spread": 4.192
           },
           "uncertainty_drivers": [
             "temperature_spread",
@@ -2028,7 +2030,7 @@
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.903,
+            "member_support": 0.839,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -2056,50 +2058,50 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.516,
-            "persistence_runs": 0,
-            "signal": "NONE",
-            "window": "2026-11-05/2026-11-07"
+            "member_support": 0.613,
+            "persistence_runs": 1,
+            "signal": "WEAK",
+            "window": "2026-11-06/2026-11-08"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.594,
-              "median_change_c": -0.159,
+              "mean_change_c": -1.424,
+              "median_change_c": -0.942,
               "member_count": 31,
-              "spread_c": 4.711,
+              "spread_c": 4.9,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-07",
+          "end_date": "2026-11-08",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 0.946,
+            "mean_temperature_c": 1.943,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D31_D33",
           "precipitation_background": {
-            "available_members": 31,
-            "member_support": 0.903,
-            "signal": "STRONG",
+            "available_members": 0,
+            "member_support": null,
+            "signal": "UNDETERMINED",
             "threshold": "window precipitation total >= 1 mm"
           },
           "requested_horizon_class": "D31_D33",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "INSUFFICIENT_HISTORY",
-            "trend": "UNDETERMINED"
+            "status": "NEW",
+            "trend": "STRENGTHENING"
           },
           "snow_background": {
-            "available_members": 31,
-            "member_support": 0.677,
-            "signal": "MODERATE",
+            "available_members": 0,
+            "member_support": null,
+            "signal": "UNDETERMINED",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-11-05",
+          "start_date": "2026-11-06",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -2110,33 +2112,33 @@
           "temperature_background": {
             "direction": "COLDER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "MODERATE"
+            "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.577,
-            "mean": -1.345,
-            "median": -0.869,
-            "p10": -3.779,
-            "p25": -2.688,
-            "p75": -0.111,
-            "p90": 0.932,
-            "spread": 4.711
+            "interquartile_spread": 3.106,
+            "mean": -2.373,
+            "median": -1.91,
+            "p10": -5.166,
+            "p25": -3.606,
+            "p75": -0.5,
+            "p90": -0.266,
+            "spread": 4.9
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "member_event_disagreement",
+            "event_variable_horizon",
             "longer_lead_time"
           ],
           "wet_snow_assessment": {
-            "available_members": 31,
-            "member_support": 0.677,
+            "available_members": 0,
+            "member_support": null,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
-            "status": "COARSE_POTENTIAL"
+            "status": "UNAVAILABLE"
           }
         },
         {
           "confidence": "VERY_LOW",
-          "end_date": "2026-11-09",
+          "end_date": "2026-11-10",
           "horizon_class": "D34_D35",
           "reason": "WINDOW_DATA_MISSING",
           "requested_horizon_class": "D34_D35",
@@ -2145,23 +2147,23 @@
             "status": "INSUFFICIENT_HISTORY",
             "trend": "UNDETERMINED"
           },
-          "start_date": "2026-11-08",
+          "start_date": "2026-11-09",
           "status": "UNAVAILABLE"
         }
       ]
     },
     "siguniang": {
       "forecast_last_timestamp": "2026-11-08T10:00",
-      "forecast_origin_date": "2026-10-05",
+      "forecast_origin_date": "2026-10-06",
       "historical_reference": {
         "kind": "historical_reference",
-        "period_end": "2025-11-09",
-        "period_start": "2025-10-21",
+        "period_end": "2025-11-10",
+        "period_start": "2025-10-22",
         "status": "PASS"
       },
       "overall_16_35d": {
         "cold_air": {
-          "signal": "WEAK"
+          "signal": "MODERATE"
         },
         "confidence": "VERY_LOW",
         "moisture": {
@@ -2169,54 +2171,53 @@
         },
         "notable_windows": [
           {
-            "end_date": "2026-10-23",
+            "end_date": "2026-10-24",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-21"
+            "start_date": "2026-10-22"
           },
           {
-            "end_date": "2026-10-26",
+            "end_date": "2026-10-27",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-24"
+            "start_date": "2026-10-25"
           },
           {
-            "end_date": "2026-10-29",
+            "end_date": "2026-10-30",
             "signals": [
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-27"
+            "start_date": "2026-10-28"
           },
           {
-            "end_date": "2026-11-01",
+            "end_date": "2026-11-02",
             "signals": [
               "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-10-30"
+            "start_date": "2026-10-31"
           },
           {
-            "end_date": "2026-11-04",
+            "end_date": "2026-11-05",
             "signals": [
               "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
-            "start_date": "2026-11-02"
+            "start_date": "2026-11-03"
           },
           {
-            "end_date": "2026-11-07",
+            "end_date": "2026-11-08",
             "signals": [
-              "SNOW_BACKGROUND",
-              "PRECIPITATION_BACKGROUND"
+              "COLD_WINDOW"
             ],
-            "start_date": "2026-11-05"
+            "start_date": "2026-11-06"
           }
         ],
         "snow": {
@@ -2256,11 +2257,12 @@
           "long_range_horizon_check": {
             "actual_lead_day_range": [
               0,
-              34
+              33
             ],
-            "actual_lead_days": 35,
+            "actual_lead_days": 34,
             "contiguous": true,
             "edge_shortfall_lead_days": [
+              34,
               35
             ],
             "expected_lead_day_range": [
@@ -2269,6 +2271,7 @@
             ],
             "method": "requires contiguous lead days 0..33; lead days 34..35 belong to the trailing 3-day block and are published only by the freshest long run",
             "missing_lead_days": [
+              34,
               35
             ],
             "missing_required_lead_days": [],
@@ -2278,7 +2281,7 @@
               33
             ],
             "status": "PASS",
-            "usable_background_through_lead_day": 34
+            "usable_background_through_lead_day": 33
           },
           "long_range_member_check": {
             "actual_member_counts_by_variable": {
@@ -2432,73 +2435,73 @@
             "status": "PASS",
             "variable_availability": {
               "precipitation": {
-                "all_members_complete_through_index": 824,
+                "all_members_complete_through_index": 800,
                 "edge_truncated": true,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 824,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 800,
                 "last_timestamp": "2026-11-08T08:00"
               },
               "snowfall": {
-                "all_members_complete_through_index": 824,
+                "all_members_complete_through_index": 800,
                 "edge_truncated": true,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 824,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 800,
                 "last_timestamp": "2026-11-08T08:00"
               },
               "temperature_2m": {
-                "all_members_complete_through_index": 826,
+                "all_members_complete_through_index": 802,
                 "edge_truncated": false,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 826,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 802,
                 "last_timestamp": "2026-11-08T10:00"
               },
               "wind_gusts_10m": {
-                "all_members_complete_through_index": 826,
+                "all_members_complete_through_index": 802,
                 "edge_truncated": false,
                 "first_complete_index": 0,
-                "first_timestamp": "2026-10-05T00:00",
-                "last_complete_index": 826,
+                "first_timestamp": "2026-10-06T00:00",
+                "last_complete_index": 802,
                 "last_timestamp": "2026-11-08T10:00"
               }
             }
           },
           "member_edge_audit": {
             "precipitation": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T08:00",
               "horizon_status": "TRUNCATED_EDGE_MISSING",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 2
             },
             "snowfall": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T08:00",
               "horizon_status": "TRUNCATED_EDGE_MISSING",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 2
             },
             "temperature_2m": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T10:00",
               "horizon_status": "COMPLETE",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 0
             },
             "wind_gusts_10m": {
-              "all_members_first_complete_timestamp": "2026-10-05T00:00",
+              "all_members_first_complete_timestamp": "2026-10-06T00:00",
               "all_members_last_complete_timestamp": "2026-11-08T10:00",
               "horizon_status": "COMPLETE",
               "leading_missing_rows": 0,
-              "original_timestep_count": 827,
+              "original_timestep_count": 803,
               "series_count": 31,
               "trailing_missing_rows": 0
             }
@@ -2511,11 +2514,11 @@
           "original_timestep_count": 840,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 827,
+          "retained_timestep_count": 803,
           "returned_elevation": 3580.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 13,
+          "trailing_missing_rows": 37,
           "trailing_missing_variables": [
             "temperature_2m"
           ],
@@ -2529,8 +2532,8 @@
             "cache_path": "data/cache/history/siguniang_jiuzhaigou/2025/SQG_SHUANGQIAO.json",
             "identity_mismatches": [],
             "missing_dates": [],
-            "requested_end_date": "2025-11-09",
-            "requested_start_date": "2025-10-21",
+            "requested_end_date": "2025-11-10",
+            "requested_start_date": "2025-10-22",
             "status": "PASS"
           },
           "coordinate_check": "PASS",
@@ -2589,7 +2592,7 @@
               },
               "below_2c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.968,
+                "member_support": 0.903,
                 "threshold_c": 2.0
               },
               "below_5c": {
@@ -2601,28 +2604,28 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.387,
+            "member_support": 0.452,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-21/2026-10-23"
+            "window": "2026-10-22/2026-10-24"
           },
-          "confidence": "LOW",
+          "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.016,
-              "median_change_c": -0.515,
+              "mean_change_c": -0.461,
+              "median_change_c": -0.835,
               "member_count": 31,
-              "spread_c": 2.517,
+              "spread_c": 3.836,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-23",
-          "forecast_uncertainty": "LOW",
+          "end_date": "2026-10-24",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": 0.511,
+            "mean_temperature_c": -0.375,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D16_D18",
@@ -2640,11 +2643,11 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.774,
+            "member_support": 0.806,
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-21",
+          "start_date": "2026-10-22",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -2655,24 +2658,24 @@
           "temperature_background": {
             "direction": "WARMER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "MODERATE"
+            "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.469,
-            "mean": 2.95,
-            "median": 2.817,
-            "p10": 1.875,
-            "p25": 2.149,
-            "p75": 3.618,
-            "p90": 4.392,
-            "spread": 2.517
+            "interquartile_spread": 1.298,
+            "mean": 2.796,
+            "median": 2.719,
+            "p10": 1.149,
+            "p25": 2.095,
+            "p75": 3.393,
+            "p90": 4.985,
+            "spread": 3.836
           },
           "uncertainty_drivers": [
-            "long_range_horizon"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.774,
+            "member_support": 0.742,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -2683,12 +2686,12 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.387,
+                "member_support": 0.516,
                 "threshold_c": 0.0
               },
               "below_2c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.968,
+                "member_support": 0.903,
                 "threshold_c": 2.0
               },
               "below_5c": {
@@ -2700,34 +2703,34 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.258,
+            "member_support": 0.194,
             "persistence_runs": 0,
             "signal": "NONE",
-            "window": "2026-10-24/2026-10-26"
+            "window": "2026-10-25/2026-10-27"
           },
-          "confidence": "LOW",
+          "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.149,
-              "median_change_c": 0.019,
+              "mean_change_c": -0.072,
+              "median_change_c": -0.006,
               "member_count": 31,
-              "spread_c": 3.484,
+              "spread_c": 3.91,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-10-26",
-          "forecast_uncertainty": "LOW",
+          "end_date": "2026-10-27",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": -2.917,
+            "mean_temperature_c": -3.792,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
           "horizon_class": "D19_D21",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 1.0,
+            "member_support": 0.968,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
@@ -2739,11 +2742,11 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.774,
+            "member_support": 0.742,
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-24",
+          "start_date": "2026-10-25",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -2757,113 +2760,14 @@
             "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.952,
-            "mean": 2.801,
-            "median": 2.836,
-            "p10": 0.924,
-            "p25": 1.703,
-            "p75": 3.655,
-            "p90": 4.408,
-            "spread": 3.484
-          },
-          "uncertainty_drivers": [
-            "long_range_horizon"
-          ],
-          "wet_snow_assessment": {
-            "available_members": 31,
-            "member_support": 0.774,
-            "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
-            "status": "COARSE_POTENTIAL"
-          }
-        },
-        {
-          "coarse_grid_threshold_signal": {
-            "reason": "0.5 degree ensemble grid cannot represent point-level absolute temperature",
-            "thresholds": {
-              "below_0c": {
-                "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.484,
-                "threshold_c": 0.0
-              },
-              "below_2c": {
-                "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.935,
-                "threshold_c": 2.0
-              },
-              "below_5c": {
-                "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 1.0,
-                "threshold_c": 5.0
-              }
-            },
-            "usable_for_local_absolute_temperature": false
-          },
-          "cold_window_signal": {
-            "member_support": 0.258,
-            "persistence_runs": 0,
-            "signal": "NONE",
-            "window": "2026-10-27/2026-10-29"
-          },
-          "confidence": "VERY_LOW",
-          "diagnostics": {
-            "cold_window": {
-              "mean_change_c": -0.09,
-              "median_change_c": 0.525,
-              "member_count": 31,
-              "spread_c": 3.887,
-              "status": "ASSESSED"
-            },
-            "member_count": 31
-          },
-          "end_date": "2026-10-29",
-          "forecast_uncertainty": "HIGH",
-          "historical_reference": {
-            "days_available": 3,
-            "kind": "historical_reference",
-            "mean_temperature_c": -3.831,
-            "model": "ECMWF IFS 9 km historical weather / analysis"
-          },
-          "horizon_class": "D22_D24",
-          "precipitation_background": {
-            "available_members": 31,
-            "member_support": 1.0,
-            "signal": "STRONG",
-            "threshold": "window precipitation total >= 1 mm"
-          },
-          "requested_horizon_class": "D22_D24",
-          "signal_evolution": {
-            "runs_seen": 6,
-            "status": "INSUFFICIENT_HISTORY",
-            "trend": "UNDETERMINED"
-          },
-          "snow_background": {
-            "available_members": 31,
-            "member_support": 0.71,
-            "signal": "STRONG",
-            "threshold": "window snowfall total > 0.1 cm"
-          },
-          "start_date": "2026-10-27",
-          "status": "OK",
-          "strong_wind_background": {
-            "available_members": 31,
-            "member_support": 0.0,
-            "signal": "NONE",
-            "threshold": "window maximum gust >= 50 km/h"
-          },
-          "temperature_background": {
-            "direction": "WARMER_THAN_REFERENCE",
-            "reference_status": "PASS",
-            "strength": "STRONG"
-          },
-          "temperature_distribution_c": {
-            "interquartile_spread": 2.815,
-            "mean": 2.711,
-            "median": 3.361,
-            "p10": 0.318,
-            "p25": 1.191,
-            "p75": 4.006,
-            "p90": 4.205,
-            "spread": 3.887
+            "interquartile_spread": 1.862,
+            "mean": 2.724,
+            "median": 2.713,
+            "p10": 0.856,
+            "p25": 1.884,
+            "p75": 3.746,
+            "p90": 4.766,
+            "spread": 3.91
           },
           "uncertainty_drivers": [
             "member_event_disagreement"
@@ -2881,7 +2785,7 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.677,
+                "member_support": 0.548,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -2898,50 +2802,50 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.516,
-            "persistence_runs": 1,
-            "signal": "WEAK",
-            "window": "2026-10-30/2026-11-01"
+            "member_support": 0.323,
+            "persistence_runs": 0,
+            "signal": "NONE",
+            "window": "2026-10-28/2026-10-30"
           },
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.197,
-              "median_change_c": -1.328,
+              "mean_change_c": -0.18,
+              "median_change_c": -0.018,
               "member_count": 31,
-              "spread_c": 4.414,
+              "spread_c": 4.078,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-01",
+          "end_date": "2026-10-30",
           "forecast_uncertainty": "MODERATE",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": -4.438,
+            "mean_temperature_c": -3.246,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
-          "horizon_class": "D25_D27",
+          "horizon_class": "D22_D24",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 0.968,
+            "member_support": 1.0,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
-          "requested_horizon_class": "D25_D27",
+          "requested_horizon_class": "D22_D24",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.903,
+            "member_support": 0.774,
             "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-10-30",
+          "start_date": "2026-10-28",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -2955,21 +2859,21 @@
             "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 3.175,
-            "mean": 1.514,
-            "median": 2.033,
-            "p10": -1.1,
-            "p25": -0.225,
-            "p75": 2.95,
-            "p90": 3.314,
-            "spread": 4.414
+            "interquartile_spread": 2.642,
+            "mean": 2.544,
+            "median": 2.695,
+            "p10": 0.261,
+            "p25": 1.289,
+            "p75": 3.931,
+            "p90": 4.339,
+            "spread": 4.078
           },
           "uncertainty_drivers": [
             "temperature_spread"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.871,
+            "member_support": 0.774,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -2980,7 +2884,206 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 0.968,
+                "member_support": 0.839,
+                "threshold_c": 0.0
+              },
+              "below_2c": {
+                "definition": "at least one coarse-grid daily minimum in this 3-day window",
+                "member_support": 1.0,
+                "threshold_c": 2.0
+              },
+              "below_5c": {
+                "definition": "at least one coarse-grid daily minimum in this 3-day window",
+                "member_support": 1.0,
+                "threshold_c": 5.0
+              }
+            },
+            "usable_for_local_absolute_temperature": false
+          },
+          "cold_window_signal": {
+            "member_support": 0.645,
+            "persistence_runs": 2,
+            "signal": "MODERATE",
+            "window": "2026-10-31/2026-11-02"
+          },
+          "confidence": "LOW",
+          "diagnostics": {
+            "cold_window": {
+              "mean_change_c": -1.698,
+              "median_change_c": -1.698,
+              "member_count": 31,
+              "spread_c": 5.024,
+              "status": "ASSESSED"
+            },
+            "member_count": 31
+          },
+          "end_date": "2026-11-02",
+          "forecast_uncertainty": "MODERATE",
+          "historical_reference": {
+            "days_available": 3,
+            "kind": "historical_reference",
+            "mean_temperature_c": -5.297,
+            "model": "ECMWF IFS 9 km historical weather / analysis"
+          },
+          "horizon_class": "D25_D27",
+          "precipitation_background": {
+            "available_members": 31,
+            "member_support": 1.0,
+            "signal": "STRONG",
+            "threshold": "window precipitation total >= 1 mm"
+          },
+          "requested_horizon_class": "D25_D27",
+          "signal_evolution": {
+            "runs_seen": 6,
+            "status": "STRENGTHENING",
+            "trend": "STRENGTHENING"
+          },
+          "snow_background": {
+            "available_members": 31,
+            "member_support": 0.935,
+            "signal": "STRONG",
+            "threshold": "window snowfall total > 0.1 cm"
+          },
+          "start_date": "2026-10-31",
+          "status": "OK",
+          "strong_wind_background": {
+            "available_members": 31,
+            "member_support": 0.0,
+            "signal": "NONE",
+            "threshold": "window maximum gust >= 50 km/h"
+          },
+          "temperature_background": {
+            "direction": "WARMER_THAN_REFERENCE",
+            "reference_status": "PASS",
+            "strength": "STRONG"
+          },
+          "temperature_distribution_c": {
+            "interquartile_spread": 2.415,
+            "mean": 0.846,
+            "median": 0.997,
+            "p10": -1.931,
+            "p25": -0.144,
+            "p75": 2.271,
+            "p90": 3.093,
+            "spread": 5.024
+          },
+          "uncertainty_drivers": [
+            "temperature_spread"
+          ],
+          "wet_snow_assessment": {
+            "available_members": 31,
+            "member_support": 0.935,
+            "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
+            "status": "COARSE_POTENTIAL"
+          }
+        },
+        {
+          "coarse_grid_threshold_signal": {
+            "reason": "0.5 degree ensemble grid cannot represent point-level absolute temperature",
+            "thresholds": {
+              "below_0c": {
+                "definition": "at least one coarse-grid daily minimum in this 3-day window",
+                "member_support": 1.0,
+                "threshold_c": 0.0
+              },
+              "below_2c": {
+                "definition": "at least one coarse-grid daily minimum in this 3-day window",
+                "member_support": 1.0,
+                "threshold_c": 2.0
+              },
+              "below_5c": {
+                "definition": "at least one coarse-grid daily minimum in this 3-day window",
+                "member_support": 1.0,
+                "threshold_c": 5.0
+              }
+            },
+            "usable_for_local_absolute_temperature": false
+          },
+          "cold_window_signal": {
+            "member_support": 0.516,
+            "persistence_runs": 2,
+            "signal": "WEAK",
+            "window": "2026-11-03/2026-11-05"
+          },
+          "confidence": "VERY_LOW",
+          "diagnostics": {
+            "cold_window": {
+              "mean_change_c": -1.255,
+              "median_change_c": -1.405,
+              "member_count": 31,
+              "spread_c": 4.609,
+              "status": "ASSESSED"
+            },
+            "member_count": 31
+          },
+          "end_date": "2026-11-05",
+          "forecast_uncertainty": "HIGH",
+          "historical_reference": {
+            "days_available": 3,
+            "kind": "historical_reference",
+            "mean_temperature_c": -4.889,
+            "model": "ECMWF IFS 9 km historical weather / analysis"
+          },
+          "horizon_class": "D28_D30",
+          "precipitation_background": {
+            "available_members": 31,
+            "member_support": 0.903,
+            "signal": "STRONG",
+            "threshold": "window precipitation total >= 1 mm"
+          },
+          "requested_horizon_class": "D28_D30",
+          "signal_evolution": {
+            "runs_seen": 6,
+            "status": "PERSISTENT",
+            "trend": "STABLE"
+          },
+          "snow_background": {
+            "available_members": 31,
+            "member_support": 0.839,
+            "signal": "STRONG",
+            "threshold": "window snowfall total > 0.1 cm"
+          },
+          "start_date": "2026-11-03",
+          "status": "OK",
+          "strong_wind_background": {
+            "available_members": 31,
+            "member_support": 0.0,
+            "signal": "NONE",
+            "threshold": "window maximum gust >= 50 km/h"
+          },
+          "temperature_background": {
+            "direction": "WARMER_THAN_REFERENCE",
+            "reference_status": "PASS",
+            "strength": "STRONG"
+          },
+          "temperature_distribution_c": {
+            "interquartile_spread": 3.331,
+            "mean": -0.409,
+            "median": -0.408,
+            "p10": -2.645,
+            "p25": -2.252,
+            "p75": 1.079,
+            "p90": 1.964,
+            "spread": 4.609
+          },
+          "uncertainty_drivers": [
+            "temperature_spread",
+            "longer_lead_time"
+          ],
+          "wet_snow_assessment": {
+            "available_members": 31,
+            "member_support": 0.839,
+            "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
+            "status": "COARSE_POTENTIAL"
+          }
+        },
+        {
+          "coarse_grid_threshold_signal": {
+            "reason": "0.5 degree ensemble grid cannot represent point-level absolute temperature",
+            "thresholds": {
+              "below_0c": {
+                "definition": "at least one coarse-grid daily minimum in this 3-day window",
+                "member_support": 1.0,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -3000,47 +3103,47 @@
             "member_support": 0.548,
             "persistence_runs": 1,
             "signal": "WEAK",
-            "window": "2026-11-02/2026-11-04"
+            "window": "2026-11-06/2026-11-08"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.694,
-              "median_change_c": -2.21,
+              "mean_change_c": -1.111,
+              "median_change_c": -1.231,
               "member_count": 31,
-              "spread_c": 5.539,
+              "spread_c": 5.515,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
-          "end_date": "2026-11-04",
+          "end_date": "2026-11-08",
           "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
-            "mean_temperature_c": -5.751,
+            "mean_temperature_c": -2.769,
             "model": "ECMWF IFS 9 km historical weather / analysis"
           },
-          "horizon_class": "D28_D30",
+          "horizon_class": "D31_D33",
           "precipitation_background": {
-            "available_members": 31,
-            "member_support": 1.0,
-            "signal": "STRONG",
+            "available_members": 0,
+            "member_support": null,
+            "signal": "UNDETERMINED",
             "threshold": "window precipitation total >= 1 mm"
           },
-          "requested_horizon_class": "D28_D30",
+          "requested_horizon_class": "D31_D33",
           "signal_evolution": {
             "runs_seen": 6,
             "status": "NEW",
             "trend": "STRENGTHENING"
           },
           "snow_background": {
-            "available_members": 31,
-            "member_support": 0.968,
-            "signal": "STRONG",
+            "available_members": 0,
+            "member_support": null,
+            "signal": "UNDETERMINED",
             "threshold": "window snowfall total > 0.1 cm"
           },
-          "start_date": "2026-11-02",
+          "start_date": "2026-11-06",
           "status": "OK",
           "strong_wind_background": {
             "available_members": 31,
@@ -3051,132 +3154,33 @@
           "temperature_background": {
             "direction": "WARMER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "STRONG"
+            "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 3.076,
-            "mean": -0.18,
-            "median": -0.177,
-            "p10": -3.311,
-            "p25": -1.717,
-            "p75": 1.359,
-            "p90": 2.228,
-            "spread": 5.539
-          },
-          "uncertainty_drivers": [
-            "temperature_spread",
-            "longer_lead_time"
-          ],
-          "wet_snow_assessment": {
-            "available_members": 31,
-            "member_support": 0.968,
-            "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
-            "status": "COARSE_POTENTIAL"
-          }
-        },
-        {
-          "coarse_grid_threshold_signal": {
-            "reason": "0.5 degree ensemble grid cannot represent point-level absolute temperature",
-            "thresholds": {
-              "below_0c": {
-                "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 1.0,
-                "threshold_c": 0.0
-              },
-              "below_2c": {
-                "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 1.0,
-                "threshold_c": 2.0
-              },
-              "below_5c": {
-                "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 1.0,
-                "threshold_c": 5.0
-              }
-            },
-            "usable_for_local_absolute_temperature": false
-          },
-          "cold_window_signal": {
-            "member_support": 0.387,
-            "persistence_runs": 0,
-            "signal": "NONE",
-            "window": "2026-11-05/2026-11-07"
-          },
-          "confidence": "VERY_LOW",
-          "diagnostics": {
-            "cold_window": {
-              "mean_change_c": -0.601,
-              "median_change_c": -0.59,
-              "member_count": 31,
-              "spread_c": 4.504,
-              "status": "ASSESSED"
-            },
-            "member_count": 31
-          },
-          "end_date": "2026-11-07",
-          "forecast_uncertainty": "HIGH",
-          "historical_reference": {
-            "days_available": 3,
-            "kind": "historical_reference",
-            "mean_temperature_c": -2.503,
-            "model": "ECMWF IFS 9 km historical weather / analysis"
-          },
-          "horizon_class": "D31_D33",
-          "precipitation_background": {
-            "available_members": 31,
-            "member_support": 0.871,
-            "signal": "STRONG",
-            "threshold": "window precipitation total >= 1 mm"
-          },
-          "requested_horizon_class": "D31_D33",
-          "signal_evolution": {
-            "runs_seen": 6,
-            "status": "INSUFFICIENT_HISTORY",
-            "trend": "UNDETERMINED"
-          },
-          "snow_background": {
-            "available_members": 31,
-            "member_support": 0.839,
-            "signal": "STRONG",
-            "threshold": "window snowfall total > 0.1 cm"
-          },
-          "start_date": "2026-11-05",
-          "status": "OK",
-          "strong_wind_background": {
-            "available_members": 31,
-            "member_support": 0.0,
-            "signal": "NONE",
-            "threshold": "window maximum gust >= 50 km/h"
-          },
-          "temperature_background": {
-            "direction": "WARMER_THAN_REFERENCE",
-            "reference_status": "PASS",
-            "strength": "MODERATE"
-          },
-          "temperature_distribution_c": {
-            "interquartile_spread": 2.723,
-            "mean": -0.781,
-            "median": -0.767,
-            "p10": -2.861,
+            "interquartile_spread": 2.486,
+            "mean": -1.52,
+            "median": -1.639,
+            "p10": -4.56,
             "p25": -2.202,
-            "p75": 0.521,
-            "p90": 1.643,
-            "spread": 4.504
+            "p75": 0.284,
+            "p90": 0.955,
+            "spread": 5.515
           },
           "uncertainty_drivers": [
             "temperature_spread",
+            "event_variable_horizon",
             "longer_lead_time"
           ],
           "wet_snow_assessment": {
-            "available_members": 31,
-            "member_support": 0.839,
+            "available_members": 0,
+            "member_support": null,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
-            "status": "COARSE_POTENTIAL"
+            "status": "UNAVAILABLE"
           }
         },
         {
           "confidence": "VERY_LOW",
-          "end_date": "2026-11-09",
+          "end_date": "2026-11-10",
           "horizon_class": "D34_D35",
           "reason": "WINDOW_DATA_MISSING",
           "requested_horizon_class": "D34_D35",
@@ -3185,7 +3189,7 @@
             "status": "INSUFFICIENT_HISTORY",
             "trend": "UNDETERMINED"
           },
-          "start_date": "2026-11-08",
+          "start_date": "2026-11-09",
           "status": "UNAVAILABLE"
         }
       ]
