@@ -53,7 +53,8 @@
     "2026-10-02",
     "2026-10-03",
     "2026-10-04",
-    "2026-10-05"
+    "2026-10-05",
+    "2026-10-06"
   ],
   "daily": [
     {
@@ -1273,10 +1274,41 @@
       "temperature_min_c": 0.3,
       "wind_gust_max_kmh": 26.6,
       "wind_speed_mean_kmh": 3.892
+    },
+    {
+      "complete": true,
+      "date": "2026-10-06",
+      "dtr_c": 14.7,
+      "freeze": true,
+      "freeze_and_snow": true,
+      "gust_ge_50": false,
+      "gust_ge_65": false,
+      "hard_freeze_le_minus5": false,
+      "mechanical_leaf_stress": {
+        "level": "MEDIUM",
+        "reasons": [
+          "freeze_plus_snow"
+        ],
+        "rule_version": "mechanical_leaf_stress_v1"
+      },
+      "night_min_c": -2.8,
+      "precipitation_mm": 0.7,
+      "rain_and_gust_ge_50": false,
+      "rain_day": true,
+      "snow_and_gust_ge_50": false,
+      "snow_day": true,
+      "snowfall_cm": 0.42,
+      "source_fingerprint": "cf2954e1d3857a15cc8dd619e6042a67401c243a9332e35f4e6dc7b0c8fba11a",
+      "source_state": "finalized_history",
+      "temperature_max_c": 11.5,
+      "temperature_mean_c": 3.5,
+      "temperature_min_c": -3.2,
+      "wind_gust_max_kmh": 25.9,
+      "wind_speed_mean_kmh": 2.371
     }
   ],
   "date_range": {
-    "end_date": "2026-10-05",
+    "end_date": "2026-10-06",
     "start_date": "2026-08-25"
   },
   "identity": {
@@ -1305,7 +1337,7 @@
     "utc_offset_seconds": 28800,
     "year": 2026
   },
-  "last_update": "2026-10-06T00:05:10Z",
+  "last_update": "2026-10-06T18:24:37Z",
   "namespace": "siguniang_jiuzhaigou",
   "point_id": "BPG_CENTER",
   "rule_versions": {
@@ -1356,7 +1388,8 @@
     "2026-10-02": "fd53aef73357c3ff39e9f341b83cd63427b95e562dc0ee3b1b1935ef01420747",
     "2026-10-03": "7cc833a134a63606825b7730c6409f7afc300bf3da4376e839ed138f89e5137c",
     "2026-10-04": "05b914d4f2bf721bff3f04b2c36d5582c6b40386cc45b6fd6c72f4e373b5c756",
-    "2026-10-05": "56fb14c046194bc44f7069e6c5afa1ee60085cd7506244495810824339edaf97"
+    "2026-10-05": "56fb14c046194bc44f7069e6c5afa1ee60085cd7506244495810824339edaf97",
+    "2026-10-06": "cf2954e1d3857a15cc8dd619e6042a67401c243a9332e35f4e6dc7b0c8fba11a"
   },
   "source_history_cache_key": "siguniang_jiuzhaigou:2026:BPG_CENTER:31.388400,102.995230",
   "source_history_cache_path": "data/cache/history/siguniang_jiuzhaigou/2026/BPG_CENTER.json",
