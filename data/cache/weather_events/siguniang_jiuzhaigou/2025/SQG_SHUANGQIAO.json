@@ -92,7 +92,8 @@
     "2025-11-10",
     "2025-11-11",
     "2025-11-12",
-    "2025-11-13"
+    "2025-11-13",
+    "2025-11-14"
   ],
   "daily": [
     {
@@ -2488,10 +2489,41 @@
       "temperature_min_c": -8.1,
       "wind_gust_max_kmh": 32.4,
       "wind_speed_mean_kmh": 4.208
+    },
+    {
+      "complete": true,
+      "date": "2025-11-14",
+      "dtr_c": 6.3,
+      "freeze": true,
+      "freeze_and_snow": true,
+      "gust_ge_50": false,
+      "gust_ge_65": false,
+      "hard_freeze_le_minus5": true,
+      "mechanical_leaf_stress": {
+        "level": "HIGH",
+        "reasons": [
+          "hard_freeze_plus_snow"
+        ],
+        "rule_version": "mechanical_leaf_stress_v1"
+      },
+      "night_min_c": -7.4,
+      "precipitation_mm": 0.2,
+      "rain_and_gust_ge_50": false,
+      "rain_day": true,
+      "snow_and_gust_ge_50": false,
+      "snow_day": true,
+      "snowfall_cm": 0.14,
+      "source_fingerprint": "cc4b705e950a25179672c5e36b233f4fde85606b1c202aae53f737b9326353fd",
+      "source_state": "finalized_history",
+      "temperature_max_c": -1.1,
+      "temperature_mean_c": -5.254,
+      "temperature_min_c": -7.4,
+      "wind_gust_max_kmh": 38.2,
+      "wind_speed_mean_kmh": 4.213
     }
   ],
   "date_range": {
-    "end_date": "2025-11-13",
+    "end_date": "2025-11-14",
     "start_date": "2025-08-25"
   },
   "identity": {
@@ -2520,7 +2552,7 @@
     "utc_offset_seconds": 28800,
     "year": 2025
   },
-  "last_update": "2026-10-08T23:23:04Z",
+  "last_update": "2026-10-09T22:40:31Z",
   "namespace": "siguniang_jiuzhaigou",
   "point_id": "SQG_SHUANGQIAO",
   "rule_versions": {
@@ -2610,7 +2642,8 @@
     "2025-11-10": "ed7f010f2796b0d36f4c0a67da6ba0a0f4407c5725a7927274e0709bce5ef01f",
     "2025-11-11": "cfb18eaea3ced818a25c92999ec29294b61d34aadf0d4793c896adc0494afce1",
     "2025-11-12": "8c89f0329ed7faac5e2cf684e2c693e3df9dde499bf7098541f29952b00be593",
-    "2025-11-13": "7f3e2ee8240ee01d330c1b264a90a2cecdfec99563bc3af0ee08a206ad8e0f68"
+    "2025-11-13": "7f3e2ee8240ee01d330c1b264a90a2cecdfec99563bc3af0ee08a206ad8e0f68",
+    "2025-11-14": "cc4b705e950a25179672c5e36b233f4fde85606b1c202aae53f737b9326353fd"
   },
   "source_history_cache_key": "siguniang_jiuzhaigou:2025:SQG_SHUANGQIAO:31.107204,102.933495",
   "source_history_cache_path": "data/cache/history/siguniang_jiuzhaigou/2025/SQG_SHUANGQIAO.json",
