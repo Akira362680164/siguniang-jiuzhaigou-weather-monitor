@@ -59,7 +59,8 @@
     "2026-10-08",
     "2026-10-09",
     "2026-10-10",
-    "2026-10-11"
+    "2026-10-11",
+    "2026-10-12"
   ],
   "daily": [
     {
@@ -1481,10 +1482,44 @@
       "temperature_min_c": -2.7,
       "wind_gust_max_kmh": 26.3,
       "wind_speed_mean_kmh": 3.458
+    },
+    {
+      "complete": true,
+      "date": "2026-10-12",
+      "dtr_c": 9.7,
+      "freeze": true,
+      "freeze_and_snow": true,
+      "gust_ge_50": true,
+      "gust_ge_65": false,
+      "hard_freeze_le_minus5": false,
+      "mechanical_leaf_stress": {
+        "level": "HIGH",
+        "reasons": [
+          "strong_wind",
+          "wind_plus_rain",
+          "wind_plus_snow",
+          "freeze_plus_snow"
+        ],
+        "rule_version": "mechanical_leaf_stress_v1"
+      },
+      "night_min_c": -2.1,
+      "precipitation_mm": 4.0,
+      "rain_and_gust_ge_50": true,
+      "rain_day": true,
+      "snow_and_gust_ge_50": true,
+      "snow_day": true,
+      "snowfall_cm": 2.8,
+      "source_fingerprint": "f73ac112ebb379b996e6fbabcb384c7921b76fb2c3c320bf41d47a15d14965af",
+      "source_state": "finalized_history",
+      "temperature_max_c": 7.1,
+      "temperature_mean_c": 1.054,
+      "temperature_min_c": -2.6,
+      "wind_gust_max_kmh": 54.4,
+      "wind_speed_mean_kmh": 9.787
     }
   ],
   "date_range": {
-    "end_date": "2026-10-11",
+    "end_date": "2026-10-12",
     "start_date": "2026-08-25"
   },
   "identity": {
@@ -1513,7 +1548,7 @@
     "utc_offset_seconds": 28800,
     "year": 2026
   },
-  "last_update": "2026-10-11T21:59:58Z",
+  "last_update": "2026-10-13T00:42:53Z",
   "namespace": "siguniang_jiuzhaigou",
   "point_id": "JZG_LONGHAI",
   "rule_versions": {
@@ -1570,7 +1605,8 @@
     "2026-10-08": "932bfb29e57e9284cab2ed406ebbeb19e7c272b5c7710a34dfd6f4e8c59bab73",
     "2026-10-09": "d8bdd59ec312f107b850dbfa400102b0084420d798f6d533a78411e066268a3b",
     "2026-10-10": "8b208c8ab96e42b20be1cdaa0a254dcfd83c04cbece8202d33c8cb8a946215b2",
-    "2026-10-11": "e822af05821f398c9555650de749cd995cc83257a5bcae4f7bf2239b4f932a2c"
+    "2026-10-11": "e822af05821f398c9555650de749cd995cc83257a5bcae4f7bf2239b4f932a2c",
+    "2026-10-12": "f73ac112ebb379b996e6fbabcb384c7921b76fb2c3c320bf41d47a15d14965af"
   },
   "source_history_cache_key": "siguniang_jiuzhaigou:2026:JZG_LONGHAI:33.005272,103.914116",
   "source_history_cache_path": "data/cache/history/siguniang_jiuzhaigou/2026/JZG_LONGHAI.json",
