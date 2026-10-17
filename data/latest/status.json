@@ -1,7 +1,7 @@
 {
   "data_date": "2026-10-16",
   "failure_policy": "Any request, QA, model, timezone, missing-data, or grid-representativeness failure is recorded as INVALID; no external weather fallback is used.",
-  "generated_at": "2026-10-17T10:48:02Z",
+  "generated_at": "2026-10-17T15:37:48Z",
   "history_years": [
     2023,
     2024,
@@ -389,13 +389,13 @@
     },
     "gfs": {
       "error": null,
-      "failed_points": 0,
+      "failed_points": 2,
       "model_key": "gfs_deterministic",
       "optional_unavailable_variables": [],
       "partial_points": null,
       "required_unavailable_variables": [],
-      "status": "OK",
-      "successful_points": 7,
+      "status": "FAILED",
+      "successful_points": 5,
       "variable_status": {
         "cloud_cover": "OK",
         "cloud_cover_high": "OK",
@@ -513,7 +513,7 @@
   "modules": {
     "ensemble": "OK",
     "gefs": "OK",
-    "gfs": "OK",
+    "gfs": "FAILED",
     "historical_comparison": "OK",
     "history": "OK",
     "history_forward": "OK",
@@ -525,7 +525,7 @@
     "target_summary": "OK",
     "weather_events": "OK"
   },
-  "pipeline_status": "OK",
+  "pipeline_status": "DEGRADED",
   "points": {
     "BPG_CENTER": {
       "name": "毕棚沟·游客中心",
@@ -588,7 +588,7 @@
         "target_date_in_model_window": true
       },
       "2026-11-01": {
-        "coverage_status": "GFS_AVAILABLE",
+        "coverage_status": "PARTIAL",
         "points_available": 4,
         "points_total": 4,
         "target_date_in_model_window": true
