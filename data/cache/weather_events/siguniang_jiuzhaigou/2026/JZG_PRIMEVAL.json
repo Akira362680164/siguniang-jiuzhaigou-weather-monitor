@@ -66,7 +66,8 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-19"
   ],
   "daily": [
     {
@@ -1663,10 +1664,41 @@
       "temperature_min_c": 1.2,
       "wind_gust_max_kmh": 27.4,
       "wind_speed_mean_kmh": 3.692
+    },
+    {
+      "complete": true,
+      "date": "2026-10-19",
+      "dtr_c": 16.5,
+      "freeze": true,
+      "freeze_and_snow": true,
+      "gust_ge_50": false,
+      "gust_ge_65": false,
+      "hard_freeze_le_minus5": false,
+      "mechanical_leaf_stress": {
+        "level": "MEDIUM",
+        "reasons": [
+          "freeze_plus_snow"
+        ],
+        "rule_version": "mechanical_leaf_stress_v1"
+      },
+      "night_min_c": -0.4,
+      "precipitation_mm": 1.9,
+      "rain_and_gust_ge_50": false,
+      "rain_day": true,
+      "snow_and_gust_ge_50": false,
+      "snow_day": true,
+      "snowfall_cm": 0.14,
+      "source_fingerprint": "eb87bb225ed9ff6ae13caa337292b282cdd6aadbd4e6a42317ba12bd75418b49",
+      "source_state": "finalized_history",
+      "temperature_max_c": 15.8,
+      "temperature_mean_c": 6.092,
+      "temperature_min_c": -0.7,
+      "wind_gust_max_kmh": 37.8,
+      "wind_speed_mean_kmh": 4.775
     }
   ],
   "date_range": {
-    "end_date": "2026-10-18",
+    "end_date": "2026-10-19",
     "start_date": "2026-08-25"
   },
   "identity": {
@@ -1695,7 +1727,7 @@
     "utc_offset_seconds": 28800,
     "year": 2026
   },
-  "last_update": "2026-10-18T20:46:38Z",
+  "last_update": "2026-10-19T22:23:21Z",
   "namespace": "siguniang_jiuzhaigou",
   "point_id": "JZG_PRIMEVAL",
   "rule_versions": {
@@ -1759,7 +1791,8 @@
     "2026-10-15": "e37164a9965b338851bc15792d68f0a6c255db187b735a1b8837e618cbc49ce2",
     "2026-10-16": "9e34be16aefe26b0fb644a67643e4c1f1f2dda0e904db23b34e861d4614574f6",
     "2026-10-17": "377ffa10491a47925f15427b3820edbcd999edc8e341982e3f8a1b26b770fa34",
-    "2026-10-18": "99eefe94e6dd96d812120ee5f967cdcf8909ae0063e876739c268f69af3af0b6"
+    "2026-10-18": "99eefe94e6dd96d812120ee5f967cdcf8909ae0063e876739c268f69af3af0b6",
+    "2026-10-19": "eb87bb225ed9ff6ae13caa337292b282cdd6aadbd4e6a42317ba12bd75418b49"
   },
   "source_history_cache_key": "siguniang_jiuzhaigou:2026:JZG_PRIMEVAL:33.356766,103.888890",
   "source_history_cache_path": "data/cache/history/siguniang_jiuzhaigou/2026/JZG_PRIMEVAL.json",
