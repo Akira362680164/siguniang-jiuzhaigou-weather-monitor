@@ -29,7 +29,7 @@
   "forecast_horizon_status": "PASS",
   "forecast_last_timestamp": "2026-11-24T10:00",
   "forecast_lead_days": 34,
-  "generated_at": "2026-10-21T04:51:44Z",
+  "generated_at": "2026-10-21T11:52:32Z",
   "history_cache": {
     "api_requests": 0,
     "cache_failed": 0,
@@ -521,24 +521,24 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.323,
+            "member_support": 0.419,
             "persistence_runs": 0,
             "signal": "NONE",
             "window": "2026-11-06/2026-11-08"
           },
-          "confidence": "VERY_LOW",
+          "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.721,
-              "median_change_c": -1.202,
+              "mean_change_c": -1.123,
+              "median_change_c": -1.179,
               "member_count": 31,
-              "spread_c": 4.216,
+              "spread_c": 3.981,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
           "end_date": "2026-11-08",
-          "forecast_uncertainty": "HIGH",
+          "forecast_uncertainty": "LOW",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -548,7 +548,7 @@
           "horizon_class": "D16_D18",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 0.839,
+            "member_support": 0.903,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
@@ -560,8 +560,8 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.677,
-            "signal": "MODERATE",
+            "member_support": 0.806,
+            "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
           "start_date": "2026-11-06",
@@ -578,22 +578,21 @@
             "strength": "MODERATE"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.006,
-            "mean": 0.596,
-            "median": 0.285,
-            "p10": -1.268,
-            "p25": -0.316,
-            "p75": 1.69,
-            "p90": 2.948,
-            "spread": 4.216
+            "interquartile_spread": 2.157,
+            "mean": 0.761,
+            "median": 0.758,
+            "p10": -0.971,
+            "p25": -0.408,
+            "p75": 1.749,
+            "p90": 3.01,
+            "spread": 3.981
           },
           "uncertainty_drivers": [
-            "temperature_spread",
-            "member_event_disagreement"
+            "long_range_horizon"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.677,
+            "member_support": 0.806,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -621,7 +620,7 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.226,
+            "member_support": 0.258,
             "persistence_runs": 0,
             "signal": "NONE",
             "window": "2026-11-09/2026-11-11"
@@ -629,8 +628,8 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": 0.227,
-              "median_change_c": 0.687,
+              "mean_change_c": 0.062,
+              "median_change_c": 0.214,
               "member_count": 31,
               "spread_c": 4.937,
               "status": "ASSESSED"
@@ -1137,7 +1136,6 @@
           {
             "end_date": "2026-11-08",
             "signals": [
-              "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
@@ -1567,18 +1565,18 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.516,
-            "persistence_runs": 1,
-            "signal": "WEAK",
+            "member_support": 0.484,
+            "persistence_runs": 0,
+            "signal": "NONE",
             "window": "2026-11-06/2026-11-08"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.342,
-              "median_change_c": -0.989,
+              "mean_change_c": -1.249,
+              "median_change_c": -1.56,
               "member_count": 31,
-              "spread_c": 4.062,
+              "spread_c": 3.2,
               "status": "ASSESSED"
             },
             "member_count": 31
@@ -1594,19 +1592,19 @@
           "horizon_class": "D16_D18",
           "precipitation_background": {
             "available_members": 31,
-            "member_support": 0.742,
+            "member_support": 0.774,
             "signal": "STRONG",
             "threshold": "window precipitation total >= 1 mm"
           },
           "requested_horizon_class": "D16_D18",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.548,
+            "member_support": 0.613,
             "signal": "MODERATE",
             "threshold": "window snowfall total > 0.1 cm"
           },
@@ -1624,22 +1622,21 @@
             "strength": "MODERATE"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.019,
-            "mean": -0.241,
-            "median": 0.039,
-            "p10": -2.749,
-            "p25": -1.24,
-            "p75": 0.779,
-            "p90": 1.313,
-            "spread": 4.062
+            "interquartile_spread": 1.872,
+            "mean": -0.012,
+            "median": 0.026,
+            "p10": -1.948,
+            "p25": -0.927,
+            "p75": 0.945,
+            "p90": 1.252,
+            "spread": 3.2
           },
           "uncertainty_drivers": [
-            "temperature_spread",
             "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.548,
+            "member_support": 0.613,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -1667,7 +1664,7 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.226,
+            "member_support": 0.258,
             "persistence_runs": 0,
             "signal": "NONE",
             "window": "2026-11-09/2026-11-11"
@@ -1675,8 +1672,8 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": 0.304,
-              "median_change_c": 0.229,
+              "mean_change_c": 0.075,
+              "median_change_c": 0.242,
               "member_count": 31,
               "spread_c": 3.656,
               "status": "ASSESSED"
@@ -2594,7 +2591,7 @@
             "thresholds": {
               "below_0c": {
                 "definition": "at least one coarse-grid daily minimum in this 3-day window",
-                "member_support": 1.0,
+                "member_support": 0.968,
                 "threshold_c": 0.0
               },
               "below_2c": {
@@ -2619,10 +2616,10 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.021,
-              "median_change_c": -0.708,
+              "mean_change_c": -1.2,
+              "median_change_c": -1.425,
               "member_count": 31,
-              "spread_c": 4.533,
+              "spread_c": 4.205,
               "status": "ASSESSED"
             },
             "member_count": 31
@@ -2650,8 +2647,8 @@
           },
           "snow_background": {
             "available_members": 31,
-            "member_support": 0.677,
-            "signal": "MODERATE",
+            "member_support": 0.742,
+            "signal": "STRONG",
             "threshold": "window snowfall total > 0.1 cm"
           },
           "start_date": "2026-11-06",
@@ -2665,17 +2662,17 @@
           "temperature_background": {
             "direction": "WARMER_THAN_REFERENCE",
             "reference_status": "PASS",
-            "strength": "MODERATE"
+            "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.114,
-            "mean": 0.218,
-            "median": 0.254,
-            "p10": -2.124,
-            "p25": -0.903,
-            "p75": 1.211,
-            "p90": 2.409,
-            "spread": 4.533
+            "interquartile_spread": 1.883,
+            "mean": 0.427,
+            "median": 0.471,
+            "p10": -1.463,
+            "p25": -0.692,
+            "p75": 1.191,
+            "p90": 2.742,
+            "spread": 4.205
           },
           "uncertainty_drivers": [
             "temperature_spread",
@@ -2683,7 +2680,7 @@
           ],
           "wet_snow_assessment": {
             "available_members": 31,
-            "member_support": 0.677,
+            "member_support": 0.742,
             "reason": "coarse 0.5 degree member overlap of snowfall and <=2C daily minimum; not local phase certainty",
             "status": "COARSE_POTENTIAL"
           }
@@ -2711,7 +2708,7 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.194,
+            "member_support": 0.258,
             "persistence_runs": 0,
             "signal": "NONE",
             "window": "2026-11-09/2026-11-11"
@@ -2719,8 +2716,8 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": 0.352,
-              "median_change_c": 0.093,
+              "mean_change_c": 0.143,
+              "median_change_c": -0.124,
               "member_count": 31,
               "spread_c": 3.893,
               "status": "ASSESSED"
