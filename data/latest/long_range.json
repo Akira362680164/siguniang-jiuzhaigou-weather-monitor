@@ -18,7 +18,7 @@
     ]
   },
   "coverage": "global; western Sichuan is within the global product domain",
-  "data_date": "2026-10-23",
+  "data_date": "2026-10-24",
   "endpoint": "https://ensemble-api.open-meteo.com/v1/ensemble",
   "ensemble_members": 31,
   "excluded_points": {},
@@ -28,18 +28,18 @@
   "forecast_horizon_status": "PASS",
   "forecast_last_timestamp": "2026-11-27T10:00",
   "forecast_lead_days": 33,
-  "generated_at": "2026-10-24T15:59:08Z",
+  "generated_at": "2026-10-24T20:52:33Z",
   "history_cache": {
-    "api_requests": 3,
+    "api_requests": 0,
     "cache_failed": 0,
-    "cache_fills": 3,
-    "cache_hits": 0,
+    "cache_fills": 0,
+    "cache_hits": 3,
     "cache_invalid": 0,
     "cache_misses": 0,
     "cache_refreshes": 0,
     "directory": "data/cache/history",
     "enabled": true,
-    "missing_dates_requested": 3,
+    "missing_dates_requested": 0,
     "refresh_requested": false
   },
   "interpretation_boundary": "16-35 day background signal only; not a date-level precise forecast and not a direct phenology lead/lag calculation.",
@@ -141,7 +141,7 @@
         "temperature": {
           "direction": "WARMER_THAN_REFERENCE"
         },
-        "uncertainty": "VERY_HIGH",
+        "uncertainty": "HIGH",
         "wind": {
           "signal": "NONE"
         }
@@ -520,17 +520,17 @@
           },
           "cold_window_signal": {
             "member_support": 0.516,
-            "persistence_runs": 1,
+            "persistence_runs": 2,
             "signal": "WEAK",
             "window": "2026-11-10/2026-11-12"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.989,
-              "median_change_c": -0.749,
+              "mean_change_c": -1.014,
+              "median_change_c": -1.059,
               "member_count": 31,
-              "spread_c": 3.694,
+              "spread_c": 3.705,
               "status": "ASSESSED"
             },
             "member_count": 31
@@ -553,8 +553,8 @@
           "requested_horizon_class": "D16_D18",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "PERSISTENT",
+            "trend": "STABLE"
           },
           "snow_background": {
             "available_members": 31,
@@ -576,14 +576,14 @@
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.645,
+            "interquartile_spread": 2.647,
             "mean": 0.962,
             "median": 1.143,
-            "p10": -1.136,
-            "p25": -0.49,
-            "p75": 2.155,
-            "p90": 2.558,
-            "spread": 3.694
+            "p10": -1.145,
+            "p25": -0.493,
+            "p75": 2.154,
+            "p90": 2.56,
+            "spread": 3.705
           },
           "uncertainty_drivers": [
             "member_event_disagreement"
@@ -652,8 +652,8 @@
           "requested_horizon_class": "D19_D21",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "DISAPPEARED",
-            "trend": "WEAKENING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -735,7 +735,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-18",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -752,8 +752,8 @@
           "requested_horizon_class": "D22_D24",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -786,8 +786,7 @@
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -836,7 +835,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-21",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -853,8 +852,8 @@
           "requested_horizon_class": "D25_D27",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -887,8 +886,7 @@
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -937,7 +935,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-24",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -954,8 +952,8 @@
           "requested_horizon_class": "D28_D30",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -989,8 +987,7 @@
           "uncertainty_drivers": [
             "temperature_spread",
             "member_event_disagreement",
-            "longer_lead_time",
-            "run_to_run_shift"
+            "longer_lead_time"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -1023,7 +1020,7 @@
           },
           "cold_window_signal": {
             "member_support": 0.548,
-            "persistence_runs": 1,
+            "persistence_runs": 2,
             "signal": "WEAK",
             "window": "2026-11-25/2026-11-27"
           },
@@ -1056,8 +1053,8 @@
           "requested_horizon_class": "D31_D33",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "PERSISTENT",
+            "trend": "STABLE"
           },
           "snow_background": {
             "available_members": 0,
@@ -1189,7 +1186,7 @@
         "temperature": {
           "direction": "WARMER_THAN_REFERENCE"
         },
-        "uncertainty": "VERY_HIGH",
+        "uncertainty": "HIGH",
         "wind": {
           "signal": "NONE"
         }
@@ -1567,7 +1564,7 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.419,
+            "member_support": 0.484,
             "persistence_runs": 0,
             "signal": "NONE",
             "window": "2026-11-10/2026-11-12"
@@ -1575,16 +1572,16 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.623,
-              "median_change_c": -0.216,
+              "mean_change_c": -0.555,
+              "median_change_c": -0.877,
               "member_count": 31,
-              "spread_c": 3.941,
+              "spread_c": 3.943,
               "status": "ASSESSED"
             },
             "member_count": 31
           },
           "end_date": "2026-11-12",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -1601,8 +1598,8 @@
           "requested_horizon_class": "D16_D18",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -1624,18 +1621,17 @@
             "strength": "MODERATE"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.339,
-            "mean": -0.084,
-            "median": 0.272,
+            "interquartile_spread": 2.35,
+            "mean": -0.085,
+            "median": 0.265,
             "p10": -2.224,
-            "p25": -1.351,
-            "p75": 0.988,
-            "p90": 1.717,
-            "spread": 3.941
+            "p25": -1.359,
+            "p75": 0.991,
+            "p90": 1.719,
+            "spread": 3.943
           },
           "uncertainty_drivers": [
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -1675,8 +1671,8 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.572,
-              "median_change_c": -0.915,
+              "mean_change_c": -0.571,
+              "median_change_c": -0.908,
               "member_count": 31,
               "spread_c": 3.109,
               "status": "ASSESSED"
@@ -1684,7 +1680,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-15",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -1701,8 +1697,8 @@
           "requested_horizon_class": "D19_D21",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -1734,8 +1730,7 @@
             "spread": 3.109
           },
           "uncertainty_drivers": [
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -1768,7 +1763,7 @@
           },
           "cold_window_signal": {
             "member_support": 0.548,
-            "persistence_runs": 1,
+            "persistence_runs": 2,
             "signal": "WEAK",
             "window": "2026-11-16/2026-11-18"
           },
@@ -1801,8 +1796,8 @@
           "requested_horizon_class": "D22_D24",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "PERSISTENT",
+            "trend": "STABLE"
           },
           "snow_background": {
             "available_members": 31,
@@ -1901,8 +1896,8 @@
           "requested_horizon_class": "D25_D27",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "DISAPPEARED",
-            "trend": "WEAKENING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -1984,7 +1979,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-24",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -2001,8 +1996,8 @@
           "requested_horizon_class": "D28_D30",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -2036,8 +2031,7 @@
           "uncertainty_drivers": [
             "temperature_spread",
             "member_event_disagreement",
-            "longer_lead_time",
-            "run_to_run_shift"
+            "longer_lead_time"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -2070,7 +2064,7 @@
           },
           "cold_window_signal": {
             "member_support": 0.71,
-            "persistence_runs": 1,
+            "persistence_runs": 2,
             "signal": "WEAK",
             "window": "2026-11-25/2026-11-27"
           },
@@ -2103,8 +2097,8 @@
           "requested_horizon_class": "D31_D33",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "PERSISTENT",
+            "trend": "STABLE"
           },
           "snow_background": {
             "available_members": 0,
@@ -2184,6 +2178,7 @@
           {
             "end_date": "2026-11-12",
             "signals": [
+              "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
@@ -2235,7 +2230,7 @@
         "temperature": {
           "direction": "WARMER_THAN_REFERENCE"
         },
-        "uncertainty": "VERY_HIGH",
+        "uncertainty": "HIGH",
         "wind": {
           "signal": "NONE"
         }
@@ -2613,16 +2608,16 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.484,
-            "persistence_runs": 0,
-            "signal": "NONE",
+            "member_support": 0.516,
+            "persistence_runs": 1,
+            "signal": "WEAK",
             "window": "2026-11-10/2026-11-12"
           },
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.874,
-              "median_change_c": -1.029,
+              "mean_change_c": -0.863,
+              "median_change_c": -1.056,
               "member_count": 31,
               "spread_c": 3.796,
               "status": "ASSESSED"
@@ -2630,7 +2625,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-12",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -2647,8 +2642,8 @@
           "requested_horizon_class": "D16_D18",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "NEW",
+            "trend": "STRENGTHENING"
           },
           "snow_background": {
             "available_members": 31,
@@ -2670,18 +2665,17 @@
             "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.186,
-            "mean": 0.4,
+            "interquartile_spread": 2.185,
+            "mean": 0.399,
             "median": 0.586,
-            "p10": -1.683,
-            "p25": -0.91,
-            "p75": 1.276,
-            "p90": 2.113,
+            "p10": -1.686,
+            "p25": -0.912,
+            "p75": 1.273,
+            "p90": 2.11,
             "spread": 3.796
           },
           "uncertainty_drivers": [
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -2721,7 +2715,7 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.634,
+              "mean_change_c": -0.633,
               "median_change_c": -0.508,
               "member_count": 31,
               "spread_c": 4.518,
@@ -2730,7 +2724,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-15",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -2747,8 +2741,8 @@
           "requested_horizon_class": "D19_D21",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -2781,8 +2775,7 @@
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -2831,7 +2824,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-18",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -2848,8 +2841,8 @@
           "requested_horizon_class": "D22_D24",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -2882,8 +2875,7 @@
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -2932,7 +2924,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-21",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -2949,8 +2941,8 @@
           "requested_horizon_class": "D25_D27",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -2983,8 +2975,7 @@
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "member_event_disagreement",
-            "run_to_run_shift"
+            "member_event_disagreement"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -3033,7 +3024,7 @@
             "member_count": 31
           },
           "end_date": "2026-11-24",
-          "forecast_uncertainty": "VERY_HIGH",
+          "forecast_uncertainty": "HIGH",
           "historical_reference": {
             "days_available": 3,
             "kind": "historical_reference",
@@ -3050,8 +3041,8 @@
           "requested_horizon_class": "D28_D30",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "SHIFTING",
-            "trend": "SHIFTING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -3084,8 +3075,7 @@
           },
           "uncertainty_drivers": [
             "temperature_spread",
-            "longer_lead_time",
-            "run_to_run_shift"
+            "longer_lead_time"
           ],
           "wet_snow_assessment": {
             "available_members": 31,
@@ -3118,7 +3108,7 @@
           },
           "cold_window_signal": {
             "member_support": 0.613,
-            "persistence_runs": 1,
+            "persistence_runs": 2,
             "signal": "WEAK",
             "window": "2026-11-25/2026-11-27"
           },
@@ -3151,8 +3141,8 @@
           "requested_horizon_class": "D31_D33",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "PERSISTENT",
+            "trend": "STABLE"
           },
           "snow_background": {
             "available_members": 0,
