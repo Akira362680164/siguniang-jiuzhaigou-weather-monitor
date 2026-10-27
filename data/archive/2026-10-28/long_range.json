@@ -29,18 +29,18 @@
   "forecast_horizon_status": "PASS",
   "forecast_last_timestamp": "2026-11-30T10:00",
   "forecast_lead_days": 33,
-  "generated_at": "2026-10-27T18:04:18Z",
+  "generated_at": "2026-10-27T22:16:19Z",
   "history_cache": {
-    "api_requests": 3,
+    "api_requests": 0,
     "cache_failed": 0,
-    "cache_fills": 3,
-    "cache_hits": 0,
+    "cache_fills": 0,
+    "cache_hits": 3,
     "cache_invalid": 0,
     "cache_misses": 0,
     "cache_refreshes": 0,
     "directory": "data/cache/history",
     "enabled": true,
-    "missing_dates_requested": 3,
+    "missing_dates_requested": 0,
     "refresh_requested": false
   },
   "hourly_values_omitted": true,
@@ -91,7 +91,6 @@
           {
             "end_date": "2026-11-15",
             "signals": [
-              "COLD_WINDOW",
               "SNOW_BACKGROUND",
               "PRECIPITATION_BACKGROUND"
             ],
@@ -515,18 +514,18 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.613,
-            "persistence_runs": 1,
-            "signal": "WEAK",
+            "member_support": 0.387,
+            "persistence_runs": 0,
+            "signal": "NONE",
             "window": "2026-11-13/2026-11-15"
           },
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.392,
-              "median_change_c": -1.523,
+              "mean_change_c": -0.602,
+              "median_change_c": -0.511,
               "member_count": 31,
-              "spread_c": 3.808,
+              "spread_c": 3.823,
               "status": "ASSESSED"
             },
             "member_count": 31
@@ -549,8 +548,8 @@
           "requested_horizon_class": "D16_D18",
           "signal_evolution": {
             "runs_seen": 6,
-            "status": "NEW",
-            "trend": "STRENGTHENING"
+            "status": "INSUFFICIENT_HISTORY",
+            "trend": "UNDETERMINED"
           },
           "snow_background": {
             "available_members": 31,
@@ -572,14 +571,14 @@
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 2.288,
-            "mean": 0.401,
-            "median": 0.32,
-            "p10": -1.644,
-            "p25": -0.465,
-            "p75": 1.823,
-            "p90": 2.164,
-            "spread": 3.808
+            "interquartile_spread": 2.289,
+            "mean": 0.403,
+            "median": 0.318,
+            "p10": -1.649,
+            "p25": -0.464,
+            "p75": 1.825,
+            "p90": 2.174,
+            "spread": 3.823
           },
           "uncertainty_drivers": [
             "long_range_horizon"
@@ -622,8 +621,8 @@
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -1.111,
-              "median_change_c": -0.759,
+              "mean_change_c": -1.113,
+              "median_change_c": -0.757,
               "member_count": 31,
               "spread_c": 5.954,
               "status": "ASSESSED"
@@ -1556,7 +1555,7 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.387,
+            "member_support": 0.29,
             "persistence_runs": 0,
             "signal": "NONE",
             "window": "2026-11-13/2026-11-15"
@@ -1564,10 +1563,10 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.435,
-              "median_change_c": -0.305,
+              "mean_change_c": -0.13,
+              "median_change_c": -0.066,
               "member_count": 31,
-              "spread_c": 2.934,
+              "spread_c": 2.935,
               "status": "ASSESSED"
             },
             "member_count": 31
@@ -1613,14 +1612,14 @@
             "strength": "WEAK"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.224,
-            "mean": -0.494,
+            "interquartile_spread": 1.226,
+            "mean": -0.493,
             "median": -0.399,
             "p10": -2.185,
-            "p25": -0.941,
-            "p75": 0.283,
-            "p90": 0.749,
-            "spread": 2.934
+            "p25": -0.942,
+            "p75": 0.284,
+            "p90": 0.75,
+            "spread": 2.935
           },
           "uncertainty_drivers": [
             "member_event_disagreement"
@@ -1663,7 +1662,7 @@
           "confidence": "VERY_LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.856,
+              "mean_change_c": -0.857,
               "median_change_c": -0.294,
               "member_count": 31,
               "spread_c": 4.377,
@@ -2592,7 +2591,7 @@
             "usable_for_local_absolute_temperature": false
           },
           "cold_window_signal": {
-            "member_support": 0.419,
+            "member_support": 0.323,
             "persistence_runs": 0,
             "signal": "NONE",
             "window": "2026-11-13/2026-11-15"
@@ -2600,10 +2599,10 @@
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.806,
-              "median_change_c": -0.645,
+              "mean_change_c": -0.198,
+              "median_change_c": 0.132,
               "member_count": 31,
-              "spread_c": 3.43,
+              "spread_c": 3.424,
               "status": "ASSESSED"
             },
             "member_count": 31
@@ -2649,14 +2648,14 @@
             "strength": "STRONG"
           },
           "temperature_distribution_c": {
-            "interquartile_spread": 1.218,
-            "mean": 0.08,
-            "median": 0.353,
-            "p10": -1.694,
-            "p25": -0.382,
+            "interquartile_spread": 1.217,
+            "mean": 0.081,
+            "median": 0.351,
+            "p10": -1.684,
+            "p25": -0.381,
             "p75": 0.836,
-            "p90": 1.736,
-            "spread": 3.43
+            "p90": 1.74,
+            "spread": 3.424
           },
           "uncertainty_drivers": [
             "long_range_horizon"
@@ -2699,8 +2698,8 @@
           "confidence": "LOW",
           "diagnostics": {
             "cold_window": {
-              "mean_change_c": -0.978,
-              "median_change_c": -0.636,
+              "mean_change_c": -0.979,
+              "median_change_c": -0.634,
               "member_count": 31,
               "spread_c": 4.402,
               "status": "ASSESSED"
