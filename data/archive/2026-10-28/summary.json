@@ -4,7 +4,7 @@
   "data_date": "2026-10-27",
   "forecast_date": "2026-10-28",
   "gefs_path": "data/latest/gefs.json",
-  "generated_at": "2026-10-28T05:45:31Z",
+  "generated_at": "2026-10-28T07:23:28Z",
   "history_years": [
     2023,
     2024,
@@ -23713,9 +23713,14 @@
         "window_days": 7
       },
       "forecast_16_35d": {
-        "cold_air_signal": "NONE",
+        "cold_air_signal": "WEAK",
         "interpretation": "16-35 day background signal only; not a date-level forecast or phenology lead/lag calculation",
         "notable_windows": [
+          {
+            "end_date": "2026-11-15",
+            "signal": "COLD_WINDOW",
+            "start_date": "2026-11-13"
+          },
           {
             "end_date": "2026-11-15",
             "signal": "SNOW_BACKGROUND",
@@ -23784,8 +23789,8 @@
             "horizon_class": "D16_D18",
             "runs_seen": 6,
             "start_date": "2026-11-13",
-            "status": "INSUFFICIENT_HISTORY",
-            "trend": "UNDETERMINED"
+            "status": "NEW",
+            "trend": "STRENGTHENING"
           },
           {
             "end_date": "2026-11-18",
@@ -43994,7 +43999,7 @@
               "available": true,
               "cloud": 33.0,
               "dew_point_c": 4.783,
-              "gust_kmh": 10.4,
+              "gust_kmh": 10.8,
               "high_cloud": 0.833,
               "low_cloud": 0.0,
               "mid_cloud": 29.833,
@@ -44138,7 +44143,7 @@
                   "gust_max_kmh": {
                     "comparison": "MEDIUM",
                     "tolerance": 20.0,
-                    "value": 24.9
+                    "value": 24.5
                   },
                   "high_cloud_pct": {
                     "comparison": "HIGH",
@@ -44481,7 +44486,7 @@
               "available": true,
               "cloud": 67.25,
               "dew_point_c": 2.3,
-              "gust_kmh": 6.8,
+              "gust_kmh": 5.8,
               "high_cloud": 39.25,
               "low_cloud": 0.0,
               "mid_cloud": 44.25,
@@ -44505,7 +44510,7 @@
               "cloud_cover": "INSIDE_IQR",
               "deterministic_outlier": true,
               "event_phase": "WEAK_SUPPORT",
-              "gust": "INSIDE_P10_P90",
+              "gust": "OUTLIER",
               "high_cloud": "UNAVAILABLE",
               "low_cloud": "UNAVAILABLE",
               "mid_cloud": "UNAVAILABLE",
@@ -44518,7 +44523,7 @@
               "cloud_cover": "INSIDE_IQR",
               "deterministic_outlier": true,
               "event_phase": "WEAK_SUPPORT",
-              "gust": "INSIDE_P10_P90",
+              "gust": "OUTLIER",
               "high_cloud": "UNAVAILABLE",
               "low_cloud": "UNAVAILABLE",
               "mid_cloud": "UNAVAILABLE",
@@ -44625,7 +44630,7 @@
                   "gust_max_kmh": {
                     "comparison": "HIGH",
                     "tolerance": 20.0,
-                    "value": 15.5
+                    "value": 16.5
                   },
                   "high_cloud_pct": {
                     "comparison": "MEDIUM",
@@ -44673,7 +44678,7 @@
                 "cloud_cover": "INSIDE_IQR",
                 "deterministic_outlier": true,
                 "event_phase": "WEAK_SUPPORT",
-                "gust": "INSIDE_P10_P90",
+                "gust": "OUTLIER",
                 "high_cloud": "UNAVAILABLE",
                 "low_cloud": "UNAVAILABLE",
                 "mid_cloud": "UNAVAILABLE",
@@ -44811,7 +44816,7 @@
               "available": true,
               "cloud": 93.286,
               "dew_point_c": 2.479,
-              "gust_kmh": 11.2,
+              "gust_kmh": 9.7,
               "high_cloud": 45.0,
               "low_cloud": 92.857,
               "mid_cloud": 86.786,
@@ -44950,15 +44955,15 @@
                 "wind": "INSIDE_IQR"
               },
               "ec_hres_vs_gfs_deterministic": {
-                "agreement": "HIGH",
+                "agreement": "MEDIUM",
                 "method": "independent comparison, no cross-model averaging",
                 "notes": [],
                 "pair": "ec_hres_vs_gfs_deterministic",
                 "variables": {
                   "gust_max_kmh": {
-                    "comparison": "HIGH",
+                    "comparison": "MEDIUM",
                     "tolerance": 20.0,
-                    "value": 19.4
+                    "value": 20.9
                   },
                   "high_cloud_pct": {
                     "comparison": "HIGH",
@@ -48608,7 +48613,7 @@
               "available": true,
               "cloud": 100.0,
               "dew_point_c": -0.617,
-              "gust_kmh": 6.1,
+              "gust_kmh": 7.9,
               "high_cloud": 100.0,
               "low_cloud": 90.0,
               "mid_cloud": 100.0,
@@ -48632,7 +48637,7 @@
               "cloud_cover": "INSIDE_IQR",
               "deterministic_outlier": false,
               "event_phase": "WEAK_SUPPORT",
-              "gust": "INSIDE_P10_P90",
+              "gust": "INSIDE_IQR",
               "high_cloud": "UNAVAILABLE",
               "low_cloud": "UNAVAILABLE",
               "mid_cloud": "UNAVAILABLE",
@@ -48645,7 +48650,7 @@
               "cloud_cover": "INSIDE_IQR",
               "deterministic_outlier": false,
               "event_phase": "WEAK_SUPPORT",
-              "gust": "INSIDE_P10_P90",
+              "gust": "INSIDE_IQR",
               "high_cloud": "UNAVAILABLE",
               "low_cloud": "UNAVAILABLE",
               "mid_cloud": "UNAVAILABLE",
@@ -48752,7 +48757,7 @@
                   "gust_max_kmh": {
                     "comparison": "MEDIUM",
                     "tolerance": 20.0,
-                    "value": 28.5
+                    "value": 26.7
                   },
                   "high_cloud_pct": {
                     "comparison": "MEDIUM",
@@ -48800,7 +48805,7 @@
                 "cloud_cover": "INSIDE_IQR",
                 "deterministic_outlier": false,
                 "event_phase": "WEAK_SUPPORT",
-                "gust": "INSIDE_P10_P90",
+                "gust": "INSIDE_IQR",
                 "high_cloud": "UNAVAILABLE",
                 "low_cloud": "UNAVAILABLE",
                 "mid_cloud": "UNAVAILABLE",
@@ -48872,7 +48877,7 @@
               "available": true,
               "cloud": 99.625,
               "dew_point_c": -0.371,
-              "gust_kmh": 11.2,
+              "gust_kmh": 9.0,
               "high_cloud": 76.75,
               "low_cloud": 90.542,
               "mid_cloud": 99.042,
@@ -49426,7 +49431,7 @@
               "available": true,
               "cloud": 98.5,
               "dew_point_c": -0.933,
-              "gust_kmh": 4.7,
+              "gust_kmh": 5.4,
               "high_cloud": 66.667,
               "low_cloud": 72.167,
               "mid_cloud": 96.167,
@@ -49448,9 +49453,9 @@
             },
             "gfs_deterministic_vs_gefs": {
               "cloud_cover": "INSIDE_IQR",
-              "deterministic_outlier": true,
+              "deterministic_outlier": false,
               "event_phase": "SUPPORTED",
-              "gust": "OUTLIER",
+              "gust": "INSIDE_P10_P90",
               "high_cloud": "UNAVAILABLE",
               "low_cloud": "UNAVAILABLE",
               "mid_cloud": "UNAVAILABLE",
@@ -49461,9 +49466,9 @@
             },
             "gfs_support": {
               "cloud_cover": "INSIDE_IQR",
-              "deterministic_outlier": true,
+              "deterministic_outlier": false,
               "event_phase": "SUPPORTED",
-              "gust": "OUTLIER",
+              "gust": "INSIDE_P10_P90",
               "high_cloud": "UNAVAILABLE",
               "low_cloud": "UNAVAILABLE",
               "mid_cloud": "UNAVAILABLE",
@@ -49570,7 +49575,7 @@
                   "gust_max_kmh": {
                     "comparison": "MEDIUM",
                     "tolerance": 20.0,
-                    "value": 29.9
+                    "value": 29.2
                   },
                   "high_cloud_pct": {
                     "comparison": "MEDIUM",
@@ -49616,9 +49621,9 @@
               },
               "gfs_deterministic_vs_gefs": {
                 "cloud_cover": "INSIDE_IQR",
-                "deterministic_outlier": true,
+                "deterministic_outlier": false,
                 "event_phase": "SUPPORTED",
-                "gust": "OUTLIER",
+                "gust": "INSIDE_P10_P90",
                 "high_cloud": "UNAVAILABLE",
                 "low_cloud": "UNAVAILABLE",
                 "mid_cloud": "UNAVAILABLE",
@@ -49667,7 +49672,7 @@
     },
     "excluded_location_ids": [],
     "forecast_date": "2026-10-28",
-    "generated_at": "2026-10-28T05:45:31Z",
+    "generated_at": "2026-10-28T07:23:28Z",
     "interpretation_boundary": "Machine-readable weather and model-consistency summary for 2026-10-24 through 2026-11-01; no phenology or travel conclusion.",
     "itinerary_focus": {
       "2026-10-24": {
