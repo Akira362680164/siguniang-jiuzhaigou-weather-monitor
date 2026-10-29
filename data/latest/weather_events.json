@@ -917,28 +917,50 @@
     "forecast": {
       "jiuzhaigou": [
         {
-          "baseline_temperature_mean_c": 5.594,
-          "dtr_max_c": 9.483,
-          "dtr_mean_c": 9.483,
+          "baseline_temperature_mean_c": 5.384,
+          "dtr_max_c": 9.183,
+          "dtr_mean_c": 9.183,
           "end_date": "2026-11-01",
           "freeze_days": 1,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_days": 0,
-          "minimum_daily_mean_c": 2.162,
-          "minimum_night_min_c": -1.5,
-          "precipitation_total_mm": 4.9,
+          "minimum_daily_mean_c": 2.325,
+          "minimum_night_min_c": -1.783,
+          "precipitation_total_mm": 4.35,
           "rain_and_gust_ge_50_days": 0,
           "recovery_status": "NOT_YET_OBSERVED",
           "rule_version": "cooling_episode_v1",
           "snow_and_gust_ge_50_days": 0,
-          "snowfall_total_cm": 2.065,
+          "snowfall_total_cm": 1.96,
           "start_date": "2026-11-01",
-          "temperature_drop_c": 3.432,
-          "wind_gust_max_kmh": 31.7
+          "temperature_drop_c": 3.059,
+          "wind_gust_max_kmh": 27.4
         }
       ],
-      "lixiaolu": [],
+      "lixiaolu": [
+        {
+          "baseline_temperature_mean_c": 5.632,
+          "dtr_max_c": 5.9,
+          "dtr_mean_c": 5.9,
+          "end_date": "2026-11-01",
+          "freeze_days": 1,
+          "gust_ge_50_days": 0,
+          "gust_ge_65_days": 0,
+          "hard_freeze_days": 0,
+          "minimum_daily_mean_c": 2.571,
+          "minimum_night_min_c": -1.0,
+          "precipitation_total_mm": 9.6,
+          "rain_and_gust_ge_50_days": 0,
+          "recovery_status": "NOT_YET_OBSERVED",
+          "rule_version": "cooling_episode_v1",
+          "snow_and_gust_ge_50_days": 0,
+          "snowfall_total_cm": 1.68,
+          "start_date": "2026-11-01",
+          "temperature_drop_c": 3.061,
+          "wind_gust_max_kmh": 27.0
+        }
+      ],
       "siguniang": []
     },
     "rule_version": "cooling_episode_v1"
@@ -64868,7 +64890,7 @@
           {
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 11.9,
+            "dtr_c": 13.4,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -64879,25 +64901,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.5,
+            "night_min_c": -2.3,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "ab4b6753380725a4d991d2314ee5b6e86366b47c23d85f4a118948cbd225dd65",
+            "source_fingerprint": "c90ea324621100948bf5d44167d57a57a596f1e198a6f4a05c9bdafee8ce8a72",
             "source_state": "forecast",
-            "temperature_max_c": 10.4,
-            "temperature_mean_c": 2.854,
-            "temperature_min_c": -1.5,
+            "temperature_max_c": 11.1,
+            "temperature_mean_c": 3.117,
+            "temperature_min_c": -2.3,
             "wind_gust_max_kmh": 32.8,
-            "wind_speed_mean_kmh": 3.717
+            "wind_speed_mean_kmh": 3.771
           },
           {
             "complete": true,
             "date": "2026-10-30",
-            "dtr_c": 20.1,
+            "dtr_c": 19.3,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -64908,54 +64930,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -3.9,
+            "night_min_c": -3.1,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "3e109febde704a53b47953c67b8ec08b7ddcff9028162d343096e7caba506aa8",
+            "source_fingerprint": "97e443b53018ccd81db0477dca713df0b66bd2ed83aeb461297733ec78827aea",
             "source_state": "forecast",
             "temperature_max_c": 16.2,
-            "temperature_mean_c": 4.683,
-            "temperature_min_c": -3.9,
-            "wind_gust_max_kmh": 32.0,
-            "wind_speed_mean_kmh": 3.467
+            "temperature_mean_c": 5.046,
+            "temperature_min_c": -3.1,
+            "wind_gust_max_kmh": 31.7,
+            "wind_speed_mean_kmh": 3.246
           },
           {
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 18.6,
-            "freeze": false,
-            "freeze_and_snow": false,
-            "gust_ge_50": false,
-            "gust_ge_65": false,
-            "hard_freeze_le_minus5": false,
-            "mechanical_leaf_stress": {
-              "level": "LOW",
-              "reasons": [],
-              "rule_version": "mechanical_leaf_stress_v1"
-            },
-            "night_min_c": 1.2,
-            "precipitation_mm": 0.0,
-            "rain_and_gust_ge_50": false,
-            "rain_day": false,
-            "snow_and_gust_ge_50": false,
-            "snow_day": false,
-            "snowfall_cm": 0.0,
-            "source_fingerprint": "6e4f46934fb187926ab3785ceedb0bcab472f32bc58221a63d6a6d10a6fdc1dd",
-            "source_state": "forecast",
-            "temperature_max_c": 19.8,
-            "temperature_mean_c": 8.621,
-            "temperature_min_c": 1.2,
-            "wind_gust_max_kmh": 43.9,
-            "wind_speed_mean_kmh": 2.354
-          },
-          {
-            "complete": true,
-            "date": "2026-11-01",
-            "dtr_c": 5.5,
+            "dtr_c": 19.0,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -64966,20 +64959,51 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 0.4,
-            "precipitation_mm": 7.8,
+            "night_min_c": 1.0,
+            "precipitation_mm": 1.2,
+            "rain_and_gust_ge_50": false,
+            "rain_day": true,
+            "snow_and_gust_ge_50": false,
+            "snow_day": false,
+            "snowfall_cm": 0.0,
+            "source_fingerprint": "93259160cbac4f6cd7b9c53355c6ced2f5cafa6053e5d9b1ac71c4cb071223b3",
+            "source_state": "forecast",
+            "temperature_max_c": 20.0,
+            "temperature_mean_c": 8.704,
+            "temperature_min_c": 1.0,
+            "wind_gust_max_kmh": 40.7,
+            "wind_speed_mean_kmh": 2.417
+          },
+          {
+            "complete": true,
+            "date": "2026-11-01",
+            "dtr_c": 4.6,
+            "freeze": true,
+            "freeze_and_snow": true,
+            "gust_ge_50": false,
+            "gust_ge_65": false,
+            "hard_freeze_le_minus5": false,
+            "mechanical_leaf_stress": {
+              "level": "MEDIUM",
+              "reasons": [
+                "freeze_plus_snow"
+              ],
+              "rule_version": "mechanical_leaf_stress_v1"
+            },
+            "night_min_c": -0.5,
+            "precipitation_mm": 8.4,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
-            "snowfall_cm": 0.84,
-            "source_fingerprint": "6cc3864e5ad4e27437f779717406f8cb2c0dfd08f427e7f3e750279a3e0154b8",
+            "snowfall_cm": 1.26,
+            "source_fingerprint": "19e41ed5e2dc07b1b8b7805db45b739ea77c7f4f5e287b47d9e12cd2d4887794",
             "source_state": "forecast",
-            "temperature_max_c": 5.9,
-            "temperature_mean_c": 2.962,
-            "temperature_min_c": 0.4,
-            "wind_gust_max_kmh": 28.4,
-            "wind_speed_mean_kmh": 2.683
+            "temperature_max_c": 4.1,
+            "temperature_mean_c": 2.396,
+            "temperature_min_c": -0.5,
+            "wind_gust_max_kmh": 23.8,
+            "wind_speed_mean_kmh": 2.842
           }
         ],
         "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -65007,44 +65031,46 @@
           "utc_offset_seconds": 28800
         },
         "metrics": {
-          "absolute_min_night_c": -3.9,
-          "combined_weather_stress_events": 3,
+          "absolute_min_night_c": -3.1,
+          "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 20.1,
-          "dtr_mean_c": 14.025,
-          "freeze_and_snow_days": 0,
-          "freeze_days": 2,
+          "dtr_max_c": 19.3,
+          "dtr_mean_c": 14.075,
+          "freeze_and_snow_days": 1,
+          "freeze_days": 3,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 7.8,
-          "max_daily_snowfall_cm": 0.84,
+          "max_daily_precipitation_mm": 8.4,
+          "max_daily_snowfall_cm": 1.26,
           "max_gust_source_grid_cell_key": null,
           "max_gust_source_point_id": null,
           "mechanical_leaf_stress": {
             "day_count_by_level": {
               "HIGH": 0,
-              "LOW": 1,
-              "MEDIUM": 3
+              "LOW": 0,
+              "MEDIUM": 4
             },
             "level": "MEDIUM",
-            "reasons": [],
+            "reasons": [
+              "freeze_plus_snow"
+            ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": -0.95,
+          "night_min_mean_c": -1.225,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
-          "precipitation_days": 1,
-          "precipitation_total_mm": 7.8,
+          "precipitation_days": 2,
+          "precipitation_total_mm": 9.6,
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 1,
-          "snowfall_total_cm": 0.84,
-          "temperature_max_mean_c": 13.075,
-          "temperature_mean_c": 4.78,
-          "temperature_min_mean_c": -0.95,
-          "wind_gust_max_kmh": 43.9,
-          "wind_speed_mean_kmh": 3.055
+          "snowfall_total_cm": 1.26,
+          "temperature_max_mean_c": 12.85,
+          "temperature_mean_c": 4.816,
+          "temperature_min_mean_c": -1.225,
+          "wind_gust_max_kmh": 40.7,
+          "wind_speed_mean_kmh": 3.069
         },
         "model": "ECMWF IFS HRES 9 km",
         "point_id": "BPG_CENTER",
@@ -65060,7 +65086,7 @@
           "forecast_cutoff_date": null,
           "grid_distance_km": 13.287,
           "grid_distance_limit_km": 16.5,
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "missing_variables": [],
@@ -65071,19 +65097,12 @@
           "original_timestep_count": 360,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 357,
+          "retained_timestep_count": 360,
           "returned_elevation": 3593.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "valid": true
         },
         "request_parameters": {
@@ -65099,32 +65118,25 @@
           "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=31.3806&longitude=102.9944&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cdew_point_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Ccloud_cover_mid%2Ccloud_cover_high%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m%2Csunshine_duration",
           "forecast_cutoff_applied": false,
           "forecast_cutoff_date": null,
-          "generationtime_ms": 0.6366968154907227,
+          "generationtime_ms": 5.673050880432129,
           "grid_coordinate": {
             "latitude": 31.5,
             "longitude": 103.0
           },
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "model_run_initialization": null,
           "original_timestep_count": 360,
-          "retained_timestep_count": 357,
-          "retrieval_time": "2026-10-29T05:51:20Z",
+          "retained_timestep_count": 360,
+          "retrieval_time": "2026-10-29T13:05:43Z",
           "returned_elevation": 3593.0,
           "returned_model": null,
           "returned_model_id": null,
           "rows_dropped_after_cutoff": 0,
           "timezone": "Asia/Shanghai",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "utc_offset_seconds": 28800
         },
         "source": "Open-Meteo",
@@ -65136,38 +65148,7 @@
           {
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 8.1,
-            "freeze": true,
-            "freeze_and_snow": true,
-            "gust_ge_50": false,
-            "gust_ge_65": false,
-            "hard_freeze_le_minus5": false,
-            "mechanical_leaf_stress": {
-              "level": "MEDIUM",
-              "reasons": [
-                "freeze_plus_snow"
-              ],
-              "rule_version": "mechanical_leaf_stress_v1"
-            },
-            "night_min_c": -1.2,
-            "precipitation_mm": 4.5,
-            "rain_and_gust_ge_50": false,
-            "rain_day": true,
-            "snow_and_gust_ge_50": false,
-            "snow_day": true,
-            "snowfall_cm": 0.42,
-            "source_fingerprint": "108d4c4150cbc293f78c46d7e3c967626e439e74f41c0b611fbc54747635320e",
-            "source_state": "forecast",
-            "temperature_max_c": 6.7,
-            "temperature_mean_c": 2.067,
-            "temperature_min_c": -1.4,
-            "wind_gust_max_kmh": 27.7,
-            "wind_speed_mean_kmh": 3.962
-          },
-          {
-            "complete": true,
-            "date": "2026-10-30",
-            "dtr_c": 13.8,
+            "dtr_c": 8.3,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -65178,25 +65159,54 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -2.1,
+            "night_min_c": -1.3,
+            "precipitation_mm": 3.6,
+            "rain_and_gust_ge_50": false,
+            "rain_day": true,
+            "snow_and_gust_ge_50": false,
+            "snow_day": false,
+            "snowfall_cm": 0.0,
+            "source_fingerprint": "44b05b10ae2ccaced77f775b420ad27b88e88aa966f88cb9b11383e480bc5a2b",
+            "source_state": "forecast",
+            "temperature_max_c": 6.8,
+            "temperature_mean_c": 2.112,
+            "temperature_min_c": -1.5,
+            "wind_gust_max_kmh": 27.7,
+            "wind_speed_mean_kmh": 3.779
+          },
+          {
+            "complete": true,
+            "date": "2026-10-30",
+            "dtr_c": 13.2,
+            "freeze": true,
+            "freeze_and_snow": false,
+            "gust_ge_50": false,
+            "gust_ge_65": false,
+            "hard_freeze_le_minus5": false,
+            "mechanical_leaf_stress": {
+              "level": "MEDIUM",
+              "reasons": [],
+              "rule_version": "mechanical_leaf_stress_v1"
+            },
+            "night_min_c": -1.8,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "eefb1339be4ec331f198e7fcca14c624cb11c93b9bad094a0bcd7358b08bb92a",
+            "source_fingerprint": "bd87091076b1ceb61aeebde5fc389abfdbaecda0348f55982af5f42ef1b37eec",
             "source_state": "forecast",
-            "temperature_max_c": 11.7,
-            "temperature_mean_c": 4.742,
-            "temperature_min_c": -2.1,
+            "temperature_max_c": 11.4,
+            "temperature_mean_c": 4.379,
+            "temperature_min_c": -1.8,
             "wind_gust_max_kmh": 29.2,
-            "wind_speed_mean_kmh": 4.2
+            "wind_speed_mean_kmh": 4.346
           },
           {
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 14.4,
+            "dtr_c": 14.9,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -65207,25 +65217,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 0.9,
-            "precipitation_mm": 2.4,
+            "night_min_c": 0.3,
+            "precipitation_mm": 3.3,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
-            "snow_day": true,
-            "snowfall_cm": 0.21,
-            "source_fingerprint": "b6b56bb531ea7e0f20b4ccde0e118c52ad5b651dcf728e649052cecea200d036",
+            "snow_day": false,
+            "snowfall_cm": 0.0,
+            "source_fingerprint": "4c7a43de9b169e9e6063e59c88be8fa87d8ace888af4dfd736e5b20206422697",
             "source_state": "forecast",
-            "temperature_max_c": 15.3,
-            "temperature_mean_c": 6.417,
-            "temperature_min_c": 0.9,
-            "wind_gust_max_kmh": 27.7,
-            "wind_speed_mean_kmh": 4.658
+            "temperature_max_c": 15.2,
+            "temperature_mean_c": 5.879,
+            "temperature_min_c": 0.3,
+            "wind_gust_max_kmh": 29.2,
+            "wind_speed_mean_kmh": 4.475
           },
           {
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 7.2,
+            "dtr_c": 5.8,
             "freeze": true,
             "freeze_and_snow": true,
             "gust_ge_50": false,
@@ -65238,20 +65248,20 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -2.2,
+            "night_min_c": -1.7,
             "precipitation_mm": 4.8,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
             "snowfall_cm": 2.73,
-            "source_fingerprint": "f01885bb527a089e492e2874a504fc681a7ebe3daa67f1d3cce7bab009a95a9d",
+            "source_fingerprint": "2f6957f261dc3c6ca7b2b035e3ac497dad098bc105aa20523e9c00ec7b935137",
             "source_state": "forecast",
-            "temperature_max_c": 5.0,
-            "temperature_mean_c": 0.708,
-            "temperature_min_c": -2.2,
-            "wind_gust_max_kmh": 23.4,
-            "wind_speed_mean_kmh": 3.742
+            "temperature_max_c": 4.1,
+            "temperature_mean_c": 0.8,
+            "temperature_min_c": -1.7,
+            "wind_gust_max_kmh": 19.1,
+            "wind_speed_mean_kmh": 2.717
           }
         ],
         "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -65279,12 +65289,12 @@
           "utc_offset_seconds": 28800
         },
         "metrics": {
-          "absolute_min_night_c": -2.2,
+          "absolute_min_night_c": -1.8,
           "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 14.4,
-          "dtr_mean_c": 10.875,
-          "freeze_and_snow_days": 2,
+          "dtr_max_c": 14.9,
+          "dtr_mean_c": 10.55,
+          "freeze_and_snow_days": 1,
           "freeze_days": 3,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
@@ -65305,20 +65315,20 @@
             ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": -1.15,
+          "night_min_mean_c": -1.125,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
           "precipitation_days": 3,
           "precipitation_total_mm": 11.7,
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
-          "snowfall_days": 3,
-          "snowfall_total_cm": 3.36,
-          "temperature_max_mean_c": 9.675,
-          "temperature_mean_c": 3.483,
-          "temperature_min_mean_c": -1.2,
+          "snowfall_days": 1,
+          "snowfall_total_cm": 2.73,
+          "temperature_max_mean_c": 9.375,
+          "temperature_mean_c": 3.292,
+          "temperature_min_mean_c": -1.175,
           "wind_gust_max_kmh": 29.2,
-          "wind_speed_mean_kmh": 4.141
+          "wind_speed_mean_kmh": 3.829
         },
         "model": "ECMWF IFS HRES 9 km",
         "point_id": "JZG_LONGHAI",
@@ -65334,7 +65344,7 @@
           "forecast_cutoff_date": null,
           "grid_distance_km": 7.503,
           "grid_distance_limit_km": 16.5,
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "missing_variables": [],
@@ -65345,19 +65355,12 @@
           "original_timestep_count": 360,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 357,
+          "retained_timestep_count": 360,
           "returned_elevation": 3596.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "valid": true
         },
         "request_parameters": {
@@ -65373,32 +65376,25 @@
           "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.036228&longitude=103.932113&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cdew_point_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Ccloud_cover_mid%2Ccloud_cover_high%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m%2Csunshine_duration",
           "forecast_cutoff_applied": false,
           "forecast_cutoff_date": null,
-          "generationtime_ms": 3.5448074340820312,
+          "generationtime_ms": 1.915574073791504,
           "grid_coordinate": {
             "latitude": 33.0,
             "longitude": 104.0
           },
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "model_run_initialization": null,
           "original_timestep_count": 360,
-          "retained_timestep_count": 357,
-          "retrieval_time": "2026-10-29T05:51:23Z",
+          "retained_timestep_count": 360,
+          "retrieval_time": "2026-10-29T13:05:45Z",
           "returned_elevation": 3596.0,
           "returned_model": null,
           "returned_model_id": null,
           "rows_dropped_after_cutoff": 0,
           "timezone": "Asia/Shanghai",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "utc_offset_seconds": 28800
         },
         "source": "Open-Meteo",
@@ -65410,36 +65406,7 @@
           {
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 9.9,
-            "freeze": false,
-            "freeze_and_snow": false,
-            "gust_ge_50": false,
-            "gust_ge_65": false,
-            "hard_freeze_le_minus5": false,
-            "mechanical_leaf_stress": {
-              "level": "MEDIUM",
-              "reasons": [],
-              "rule_version": "mechanical_leaf_stress_v1"
-            },
-            "night_min_c": 1.3,
-            "precipitation_mm": 1.5,
-            "rain_and_gust_ge_50": false,
-            "rain_day": true,
-            "snow_and_gust_ge_50": false,
-            "snow_day": false,
-            "snowfall_cm": 0.0,
-            "source_fingerprint": "4adfbc9f7f89aa63f01e21f6f3215f615e68b32f291cebb758de3691a50eae16",
-            "source_state": "forecast",
-            "temperature_max_c": 11.2,
-            "temperature_mean_c": 5.812,
-            "temperature_min_c": 1.3,
-            "wind_gust_max_kmh": 31.7,
-            "wind_speed_mean_kmh": 3.771
-          },
-          {
-            "complete": true,
-            "date": "2026-10-30",
-            "dtr_c": 16.2,
+            "dtr_c": 12.8,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -65450,25 +65417,54 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -0.8,
+            "night_min_c": -0.1,
+            "precipitation_mm": 1.5,
+            "rain_and_gust_ge_50": false,
+            "rain_day": true,
+            "snow_and_gust_ge_50": false,
+            "snow_day": false,
+            "snowfall_cm": 0.0,
+            "source_fingerprint": "a04b03b9d01aaf4538de4fc11c6b8beea2c163cdc998de6198c5570af5700e3b",
+            "source_state": "forecast",
+            "temperature_max_c": 12.7,
+            "temperature_mean_c": 5.733,
+            "temperature_min_c": -0.1,
+            "wind_gust_max_kmh": 30.2,
+            "wind_speed_mean_kmh": 3.504
+          },
+          {
+            "complete": true,
+            "date": "2026-10-30",
+            "dtr_c": 16.4,
+            "freeze": true,
+            "freeze_and_snow": false,
+            "gust_ge_50": false,
+            "gust_ge_65": false,
+            "hard_freeze_le_minus5": false,
+            "mechanical_leaf_stress": {
+              "level": "MEDIUM",
+              "reasons": [],
+              "rule_version": "mechanical_leaf_stress_v1"
+            },
+            "night_min_c": -1.2,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "8f298172756ec35492f59954d0d3df00c5965bbaae0924d17bb736d93e61a3c6",
+            "source_fingerprint": "3ceca9193370320f57f71257b2b3686848c2a5d6b6b34f831f8e958ee11802fe",
             "source_state": "forecast",
-            "temperature_max_c": 15.1,
-            "temperature_mean_c": 5.654,
-            "temperature_min_c": -1.1,
-            "wind_gust_max_kmh": 31.3,
-            "wind_speed_mean_kmh": 3.796
+            "temperature_max_c": 14.7,
+            "temperature_mean_c": 5.312,
+            "temperature_min_c": -1.7,
+            "wind_gust_max_kmh": 31.7,
+            "wind_speed_mean_kmh": 3.808
           },
           {
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 13.5,
+            "dtr_c": 13.6,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -65479,25 +65475,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.0,
-            "precipitation_mm": 1.5,
+            "night_min_c": 0.5,
+            "precipitation_mm": 3.9,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "38ce03965d7842fabbb5849a23d386fa9715ad6a7b453b078698f75b427fda6c",
+            "source_fingerprint": "4abaa31dd4455e73e5093177e726dd41b698053ac149af853af446691608d492",
             "source_state": "forecast",
-            "temperature_max_c": 14.5,
-            "temperature_mean_c": 6.375,
-            "temperature_min_c": 1.0,
-            "wind_gust_max_kmh": 34.6,
-            "wind_speed_mean_kmh": 3.942
+            "temperature_max_c": 14.1,
+            "temperature_mean_c": 5.896,
+            "temperature_min_c": 0.5,
+            "wind_gust_max_kmh": 33.8,
+            "wind_speed_mean_kmh": 3.829
           },
           {
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 10.4,
+            "dtr_c": 9.4,
             "freeze": true,
             "freeze_and_snow": true,
             "gust_ge_50": false,
@@ -65510,20 +65506,20 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.4,
-            "precipitation_mm": 5.1,
+            "night_min_c": -2.5,
+            "precipitation_mm": 4.5,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
-            "snowfall_cm": 1.68,
-            "source_fingerprint": "b8ff85da57db3a2bb4a0c00dc374f1081bb70d00499f9643539e4bbb1ef1f0e5",
+            "snowfall_cm": 1.47,
+            "source_fingerprint": "383e2e77373cb795acefd2b11168c947bc0e58aaf5d4d936f93ecd01e632ced5",
             "source_state": "forecast",
-            "temperature_max_c": 9.0,
-            "temperature_mean_c": 2.475,
-            "temperature_min_c": -1.4,
-            "wind_gust_max_kmh": 25.6,
-            "wind_speed_mean_kmh": 4.008
+            "temperature_max_c": 6.9,
+            "temperature_mean_c": 2.05,
+            "temperature_min_c": -2.5,
+            "wind_gust_max_kmh": 22.3,
+            "wind_speed_mean_kmh": 2.975
           }
         ],
         "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -65551,18 +65547,18 @@
           "utc_offset_seconds": 28800
         },
         "metrics": {
-          "absolute_min_night_c": -1.4,
+          "absolute_min_night_c": -2.5,
           "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 16.2,
-          "dtr_mean_c": 12.5,
+          "dtr_max_c": 16.4,
+          "dtr_mean_c": 13.05,
           "freeze_and_snow_days": 1,
-          "freeze_days": 2,
+          "freeze_days": 3,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 5.1,
-          "max_daily_snowfall_cm": 1.68,
+          "max_daily_precipitation_mm": 4.5,
+          "max_daily_snowfall_cm": 1.47,
           "max_gust_source_grid_cell_key": null,
           "max_gust_source_point_id": null,
           "mechanical_leaf_stress": {
@@ -65577,20 +65573,20 @@
             ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": 0.025,
+          "night_min_mean_c": -0.825,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
           "precipitation_days": 3,
-          "precipitation_total_mm": 8.1,
+          "precipitation_total_mm": 9.9,
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 1,
-          "snowfall_total_cm": 1.68,
-          "temperature_max_mean_c": 12.45,
-          "temperature_mean_c": 5.079,
-          "temperature_min_mean_c": -0.05,
-          "wind_gust_max_kmh": 34.6,
-          "wind_speed_mean_kmh": 3.879
+          "snowfall_total_cm": 1.47,
+          "temperature_max_mean_c": 12.1,
+          "temperature_mean_c": 4.748,
+          "temperature_min_mean_c": -0.95,
+          "wind_gust_max_kmh": 33.8,
+          "wind_speed_mean_kmh": 3.529
         },
         "model": "ECMWF IFS HRES 9 km",
         "point_id": "JZG_NORILANG",
@@ -65606,7 +65602,7 @@
           "forecast_cutoff_date": null,
           "grid_distance_km": 9.355,
           "grid_distance_limit_km": 16.5,
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "missing_variables": [],
@@ -65617,19 +65613,12 @@
           "original_timestep_count": 360,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 357,
+          "retained_timestep_count": 360,
           "returned_elevation": 3061.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "valid": true
         },
         "request_parameters": {
@@ -65645,32 +65634,25 @@
           "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.28&longitude=103.906&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cdew_point_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Ccloud_cover_mid%2Ccloud_cover_high%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m%2Csunshine_duration",
           "forecast_cutoff_applied": false,
           "forecast_cutoff_date": null,
-          "generationtime_ms": 0.5654096603393555,
+          "generationtime_ms": 6.681680679321289,
           "grid_coordinate": {
             "latitude": 33.25,
             "longitude": 104.0
           },
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "model_run_initialization": null,
           "original_timestep_count": 360,
-          "retained_timestep_count": 357,
-          "retrieval_time": "2026-10-29T05:51:22Z",
+          "retained_timestep_count": 360,
+          "retrieval_time": "2026-10-29T13:05:44Z",
           "returned_elevation": 3061.0,
           "returned_model": null,
           "returned_model_id": null,
           "rows_dropped_after_cutoff": 0,
           "timezone": "Asia/Shanghai",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "utc_offset_seconds": 28800
         },
         "source": "Open-Meteo",
@@ -65682,7 +65664,7 @@
           {
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 13.5,
+            "dtr_c": 13.3,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -65700,18 +65682,18 @@
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "6a3c51aeb99a3a70ebe0fff59deafd9864b37ad8c24d2f57b80a4d59db9de7f1",
+            "source_fingerprint": "345ff812d1dd9ae2ab48d8418c7fe05c4679b59e8f99bf54e6a2b34fc4ada109",
             "source_state": "forecast",
-            "temperature_max_c": 14.5,
-            "temperature_mean_c": 6.404,
+            "temperature_max_c": 14.3,
+            "temperature_mean_c": 6.371,
             "temperature_min_c": 1.0,
-            "wind_gust_max_kmh": 24.5,
-            "wind_speed_mean_kmh": 2.808
+            "wind_gust_max_kmh": 32.4,
+            "wind_speed_mean_kmh": 3.263
           },
           {
             "complete": true,
             "date": "2026-10-30",
-            "dtr_c": 19.7,
+            "dtr_c": 19.6,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -65722,25 +65704,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -2.6,
+            "night_min_c": -3.7,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "a8cfb0a7b92c3fa550a4ea2a281a5f6a49b77a45f90aa43c721fc1eb0a158c42",
+            "source_fingerprint": "85c460979c1067834d407c2e3d8d3c6b21423389f00d429718203001428d05e8",
             "source_state": "forecast",
-            "temperature_max_c": 16.7,
-            "temperature_mean_c": 5.504,
-            "temperature_min_c": -3.0,
-            "wind_gust_max_kmh": 37.4,
-            "wind_speed_mean_kmh": 4.979
+            "temperature_max_c": 15.9,
+            "temperature_mean_c": 4.95,
+            "temperature_min_c": -3.7,
+            "wind_gust_max_kmh": 40.3,
+            "wind_speed_mean_kmh": 5.242
           },
           {
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 18.4,
+            "dtr_c": 18.6,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": true,
@@ -65754,25 +65736,25 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 2.8,
-            "precipitation_mm": 1.5,
+            "night_min_c": 2.4,
+            "precipitation_mm": 1.2,
             "rain_and_gust_ge_50": true,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "032c66a6145d75e3c7fd12b7176571e32d051002321f14b0cc2103822481b834",
+            "source_fingerprint": "ea21e1ebb8ef508db62bbaee83b6e7ee750b2c954e8bbc5061b01125658f6f15",
             "source_state": "forecast",
-            "temperature_max_c": 21.2,
-            "temperature_mean_c": 8.808,
-            "temperature_min_c": 2.8,
-            "wind_gust_max_kmh": 51.5,
-            "wind_speed_mean_kmh": 5.783
+            "temperature_max_c": 21.0,
+            "temperature_mean_c": 8.85,
+            "temperature_min_c": 2.4,
+            "wind_gust_max_kmh": 51.8,
+            "wind_speed_mean_kmh": 5.358
           },
           {
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 11.3,
+            "dtr_c": 12.1,
             "freeze": true,
             "freeze_and_snow": true,
             "gust_ge_50": false,
@@ -65785,20 +65767,20 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -0.4,
-            "precipitation_mm": 4.5,
+            "night_min_c": -0.8,
+            "precipitation_mm": 3.6,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
             "snowfall_cm": 1.89,
-            "source_fingerprint": "bae0c1840e529b2b9014c15441dbc672593fa45763aea08675b68c7ad81161d8",
+            "source_fingerprint": "33a1ef7f9d4f35bb85c9c5a012556f567a90c61decd4afa392eca0af81e39cea",
             "source_state": "forecast",
-            "temperature_max_c": 10.9,
-            "temperature_mean_c": 4.133,
-            "temperature_min_c": -0.4,
-            "wind_gust_max_kmh": 31.7,
-            "wind_speed_mean_kmh": 4.05
+            "temperature_max_c": 11.3,
+            "temperature_mean_c": 4.408,
+            "temperature_min_c": -0.8,
+            "wind_gust_max_kmh": 24.5,
+            "wind_speed_mean_kmh": 3.521
           }
         ],
         "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -65826,17 +65808,17 @@
           "utc_offset_seconds": 28800
         },
         "metrics": {
-          "absolute_min_night_c": -2.6,
+          "absolute_min_night_c": -3.7,
           "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 19.7,
-          "dtr_mean_c": 15.725,
+          "dtr_max_c": 19.6,
+          "dtr_mean_c": 15.9,
           "freeze_and_snow_days": 1,
           "freeze_days": 2,
           "gust_ge_50_days": 1,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 4.5,
+          "max_daily_precipitation_mm": 3.6,
           "max_daily_snowfall_cm": 1.89,
           "max_gust_source_grid_cell_key": null,
           "max_gust_source_point_id": null,
@@ -65854,20 +65836,20 @@
             ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": 0.2,
+          "night_min_mean_c": -0.275,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
           "precipitation_days": 3,
-          "precipitation_total_mm": 6.3,
+          "precipitation_total_mm": 5.1,
           "rain_and_gust_ge_50_days": 1,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 1,
           "snowfall_total_cm": 1.89,
-          "temperature_max_mean_c": 15.825,
-          "temperature_mean_c": 6.212,
-          "temperature_min_mean_c": 0.1,
-          "wind_gust_max_kmh": 51.5,
-          "wind_speed_mean_kmh": 4.405
+          "temperature_max_mean_c": 15.625,
+          "temperature_mean_c": 6.145,
+          "temperature_min_mean_c": -0.275,
+          "wind_gust_max_kmh": 51.8,
+          "wind_speed_mean_kmh": 4.346
         },
         "model": "ECMWF IFS HRES 9 km",
         "point_id": "JZG_PRIMEVAL",
@@ -65883,7 +65865,7 @@
           "forecast_cutoff_date": null,
           "grid_distance_km": 15.185,
           "grid_distance_limit_km": 16.5,
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "missing_variables": [],
@@ -65894,19 +65876,12 @@
           "original_timestep_count": 360,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 357,
+          "retained_timestep_count": 360,
           "returned_elevation": 3277.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "valid": true
         },
         "request_parameters": {
@@ -65922,32 +65897,25 @@
           "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.347&longitude=103.865&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cdew_point_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Ccloud_cover_mid%2Ccloud_cover_high%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m%2Csunshine_duration",
           "forecast_cutoff_applied": false,
           "forecast_cutoff_date": null,
-          "generationtime_ms": 0.6387233734130859,
+          "generationtime_ms": 0.5953311920166016,
           "grid_coordinate": {
             "latitude": 33.25,
             "longitude": 103.75
           },
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "model_run_initialization": null,
           "original_timestep_count": 360,
-          "retained_timestep_count": 357,
-          "retrieval_time": "2026-10-29T05:51:23Z",
+          "retained_timestep_count": 360,
+          "retrieval_time": "2026-10-29T13:05:44Z",
           "returned_elevation": 3277.0,
           "returned_model": null,
           "returned_model_id": null,
           "rows_dropped_after_cutoff": 0,
           "timezone": "Asia/Shanghai",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "utc_offset_seconds": 28800
         },
         "source": "Open-Meteo",
@@ -65959,7 +65927,7 @@
           {
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 9.9,
+            "dtr_c": 11.1,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -65970,20 +65938,20 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.3,
-            "precipitation_mm": 1.5,
+            "night_min_c": 1.0,
+            "precipitation_mm": 1.8,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "4adfbc9f7f89aa63f01e21f6f3215f615e68b32f291cebb758de3691a50eae16",
+            "source_fingerprint": "365ff28ede21bed2d5b8cc84c8eb663320405d91c7804a576f16e851b4a85cea",
             "source_state": "forecast",
-            "temperature_max_c": 11.2,
-            "temperature_mean_c": 5.812,
-            "temperature_min_c": 1.3,
-            "wind_gust_max_kmh": 31.7,
-            "wind_speed_mean_kmh": 3.771
+            "temperature_max_c": 12.1,
+            "temperature_mean_c": 5.775,
+            "temperature_min_c": 1.0,
+            "wind_gust_max_kmh": 31.3,
+            "wind_speed_mean_kmh": 3.583
           },
           {
             "complete": true,
@@ -65999,25 +65967,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -0.8,
+            "night_min_c": -1.2,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "8f298172756ec35492f59954d0d3df00c5965bbaae0924d17bb736d93e61a3c6",
+            "source_fingerprint": "f999465f3c592f2b63f636d2019bc419ef55d918e7dbd60010997cef93a6ffda",
             "source_state": "forecast",
-            "temperature_max_c": 15.1,
-            "temperature_mean_c": 5.654,
-            "temperature_min_c": -1.1,
+            "temperature_max_c": 14.7,
+            "temperature_mean_c": 5.321,
+            "temperature_min_c": -1.5,
             "wind_gust_max_kmh": 31.3,
-            "wind_speed_mean_kmh": 3.796
+            "wind_speed_mean_kmh": 3.808
           },
           {
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 13.5,
+            "dtr_c": 14.2,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -66028,25 +65996,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.0,
-            "precipitation_mm": 1.5,
+            "night_min_c": 0.9,
+            "precipitation_mm": 2.1,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "38ce03965d7842fabbb5849a23d386fa9715ad6a7b453b078698f75b427fda6c",
+            "source_fingerprint": "2fc70e77a125641ef8f8e8b98f2da1b6090dcee2be64ccfbe6c0d905a0da96a1",
             "source_state": "forecast",
-            "temperature_max_c": 14.5,
-            "temperature_mean_c": 6.375,
-            "temperature_min_c": 1.0,
-            "wind_gust_max_kmh": 34.6,
-            "wind_speed_mean_kmh": 3.942
+            "temperature_max_c": 15.1,
+            "temperature_mean_c": 6.433,
+            "temperature_min_c": 0.9,
+            "wind_gust_max_kmh": 32.8,
+            "wind_speed_mean_kmh": 3.879
           },
           {
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 10.4,
+            "dtr_c": 11.0,
             "freeze": true,
             "freeze_and_snow": true,
             "gust_ge_50": false,
@@ -66059,20 +66027,20 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.4,
-            "precipitation_mm": 5.1,
+            "night_min_c": -2.0,
+            "precipitation_mm": 4.2,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
-            "snowfall_cm": 1.68,
-            "source_fingerprint": "b8ff85da57db3a2bb4a0c00dc374f1081bb70d00499f9643539e4bbb1ef1f0e5",
+            "snowfall_cm": 1.47,
+            "source_fingerprint": "9236489bd509040976e4987f0976936a94a27b3ed0baa39cc38714838042867e",
             "source_state": "forecast",
             "temperature_max_c": 9.0,
-            "temperature_mean_c": 2.475,
-            "temperature_min_c": -1.4,
-            "wind_gust_max_kmh": 25.6,
-            "wind_speed_mean_kmh": 4.008
+            "temperature_mean_c": 2.946,
+            "temperature_min_c": -2.0,
+            "wind_gust_max_kmh": 27.4,
+            "wind_speed_mean_kmh": 3.829
           }
         ],
         "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -66100,18 +66068,18 @@
           "utc_offset_seconds": 28800
         },
         "metrics": {
-          "absolute_min_night_c": -1.4,
+          "absolute_min_night_c": -2.0,
           "combined_weather_stress_events": 4,
           "days_available": 4,
           "dtr_max_c": 16.2,
-          "dtr_mean_c": 12.5,
+          "dtr_mean_c": 13.125,
           "freeze_and_snow_days": 1,
           "freeze_days": 2,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 5.1,
-          "max_daily_snowfall_cm": 1.68,
+          "max_daily_precipitation_mm": 4.2,
+          "max_daily_snowfall_cm": 1.47,
           "max_gust_source_grid_cell_key": null,
           "max_gust_source_point_id": null,
           "mechanical_leaf_stress": {
@@ -66126,7 +66094,7 @@
             ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": 0.025,
+          "night_min_mean_c": -0.325,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
           "precipitation_days": 3,
@@ -66134,12 +66102,12 @@
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 1,
-          "snowfall_total_cm": 1.68,
-          "temperature_max_mean_c": 12.45,
-          "temperature_mean_c": 5.079,
-          "temperature_min_mean_c": -0.05,
-          "wind_gust_max_kmh": 34.6,
-          "wind_speed_mean_kmh": 3.879
+          "snowfall_total_cm": 1.47,
+          "temperature_max_mean_c": 12.725,
+          "temperature_mean_c": 5.119,
+          "temperature_min_mean_c": -0.4,
+          "wind_gust_max_kmh": 32.8,
+          "wind_speed_mean_kmh": 3.775
         },
         "model": "ECMWF IFS HRES 9 km",
         "point_id": "JZG_TREESHENG",
@@ -66155,7 +66123,7 @@
           "forecast_cutoff_date": null,
           "grid_distance_km": 11.102,
           "grid_distance_limit_km": 16.5,
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "missing_variables": [],
@@ -66166,19 +66134,12 @@
           "original_timestep_count": 360,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 357,
+          "retained_timestep_count": 360,
           "returned_elevation": 3061.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "valid": true
         },
         "request_parameters": {
@@ -66194,32 +66155,25 @@
           "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=33.198939&longitude=103.897435&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cdew_point_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Ccloud_cover_mid%2Ccloud_cover_high%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m%2Csunshine_duration",
           "forecast_cutoff_applied": false,
           "forecast_cutoff_date": null,
-          "generationtime_ms": 2.0046234130859375,
+          "generationtime_ms": 0.6601810455322266,
           "grid_coordinate": {
             "latitude": 33.25,
             "longitude": 104.0
           },
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "model_run_initialization": null,
           "original_timestep_count": 360,
-          "retained_timestep_count": 357,
-          "retrieval_time": "2026-10-29T05:51:21Z",
+          "retained_timestep_count": 360,
+          "retrieval_time": "2026-10-29T13:05:43Z",
           "returned_elevation": 3061.0,
           "returned_model": null,
           "returned_model_id": null,
           "rows_dropped_after_cutoff": 0,
           "timezone": "Asia/Shanghai",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "utc_offset_seconds": 28800
         },
         "source": "Open-Meteo",
@@ -66231,7 +66185,7 @@
           {
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 13.7,
+            "dtr_c": 14.6,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -66242,25 +66196,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.8,
+            "night_min_c": -1.4,
             "precipitation_mm": 0.3,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "c0b825545694bf12c44de7d756db2ea6acb90612ad298cf28a36ce586ebef149",
+            "source_fingerprint": "f08d85c929840e7e2717900bc5eb7f08fae3868de16dcda7bfb4a77e6c03a86e",
             "source_state": "forecast",
-            "temperature_max_c": 11.9,
-            "temperature_mean_c": 3.325,
-            "temperature_min_c": -1.8,
-            "wind_gust_max_kmh": 29.9,
-            "wind_speed_mean_kmh": 2.133
+            "temperature_max_c": 13.1,
+            "temperature_mean_c": 3.825,
+            "temperature_min_c": -1.5,
+            "wind_gust_max_kmh": 35.3,
+            "wind_speed_mean_kmh": 2.892
           },
           {
             "complete": true,
             "date": "2026-10-30",
-            "dtr_c": 17.5,
+            "dtr_c": 17.2,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -66271,54 +66225,54 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -2.1,
+            "night_min_c": -1.7,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "816fc7c579fa26d74fbae411ac85894e7b9a2d461f65dc536af0e370bbe458ef",
+            "source_fingerprint": "97577e2a43c8fe2d4578029e88b65d9138407b873ce1f5c92b6c291b2b8b6d65",
             "source_state": "forecast",
-            "temperature_max_c": 15.4,
-            "temperature_mean_c": 5.279,
-            "temperature_min_c": -2.1,
-            "wind_gust_max_kmh": 42.5,
-            "wind_speed_mean_kmh": 4.754
+            "temperature_max_c": 15.5,
+            "temperature_mean_c": 5.692,
+            "temperature_min_c": -1.7,
+            "wind_gust_max_kmh": 42.1,
+            "wind_speed_mean_kmh": 4.742
           },
           {
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 14.7,
+            "dtr_c": 15.5,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
             "gust_ge_65": false,
             "hard_freeze_le_minus5": false,
             "mechanical_leaf_stress": {
-              "level": "LOW",
+              "level": "MEDIUM",
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.1,
-            "precipitation_mm": 0.0,
+            "night_min_c": 0.8,
+            "precipitation_mm": 0.3,
             "rain_and_gust_ge_50": false,
-            "rain_day": false,
+            "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "79467c0840360c7d1b4892bcdaa98fa47a16e28853ccb2af88e2994472b0093f",
+            "source_fingerprint": "8a743087bff56de6344e1f57a1dd8989ca06549147592c156e3e8e2ddd05e777",
             "source_state": "forecast",
-            "temperature_max_c": 15.8,
-            "temperature_mean_c": 7.213,
-            "temperature_min_c": 1.1,
+            "temperature_max_c": 16.3,
+            "temperature_mean_c": 7.379,
+            "temperature_min_c": 0.8,
             "wind_gust_max_kmh": 43.6,
-            "wind_speed_mean_kmh": 5.575
+            "wind_speed_mean_kmh": 5.421
           },
           {
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 10.3,
+            "dtr_c": 5.9,
             "freeze": true,
             "freeze_and_snow": true,
             "gust_ge_50": false,
@@ -66331,20 +66285,20 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.7,
-            "precipitation_mm": 8.4,
+            "night_min_c": -1.0,
+            "precipitation_mm": 9.6,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
-            "snowfall_cm": 2.31,
-            "source_fingerprint": "40b11086a40c94805b8441d4da77667e9b640e5dbbcb55786e8d31966fd528e5",
+            "snowfall_cm": 1.68,
+            "source_fingerprint": "eac4bf77b05c3799c2f7dad5022a03d131ca9b1ae0adae107ef8b341f52584e8",
             "source_state": "forecast",
-            "temperature_max_c": 8.6,
-            "temperature_mean_c": 2.992,
-            "temperature_min_c": -1.7,
-            "wind_gust_max_kmh": 32.4,
-            "wind_speed_mean_kmh": 2.013
+            "temperature_max_c": 4.9,
+            "temperature_mean_c": 2.571,
+            "temperature_min_c": -1.0,
+            "wind_gust_max_kmh": 27.0,
+            "wind_speed_mean_kmh": 2.354
           }
         ],
         "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -66372,25 +66326,25 @@
           "utc_offset_seconds": 28800
         },
         "metrics": {
-          "absolute_min_night_c": -2.1,
-          "combined_weather_stress_events": 3,
+          "absolute_min_night_c": -1.7,
+          "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 17.5,
-          "dtr_mean_c": 14.05,
+          "dtr_max_c": 17.2,
+          "dtr_mean_c": 13.3,
           "freeze_and_snow_days": 1,
           "freeze_days": 3,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 8.4,
-          "max_daily_snowfall_cm": 2.31,
+          "max_daily_precipitation_mm": 9.6,
+          "max_daily_snowfall_cm": 1.68,
           "max_gust_source_grid_cell_key": null,
           "max_gust_source_point_id": null,
           "mechanical_leaf_stress": {
             "day_count_by_level": {
               "HIGH": 0,
-              "LOW": 1,
-              "MEDIUM": 3
+              "LOW": 0,
+              "MEDIUM": 4
             },
             "level": "MEDIUM",
             "reasons": [
@@ -66398,20 +66352,20 @@
             ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": -1.125,
+          "night_min_mean_c": -0.825,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
-          "precipitation_days": 2,
-          "precipitation_total_mm": 8.7,
+          "precipitation_days": 3,
+          "precipitation_total_mm": 10.2,
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 1,
-          "snowfall_total_cm": 2.31,
-          "temperature_max_mean_c": 12.925,
-          "temperature_mean_c": 4.702,
-          "temperature_min_mean_c": -1.125,
+          "snowfall_total_cm": 1.68,
+          "temperature_max_mean_c": 12.45,
+          "temperature_mean_c": 4.867,
+          "temperature_min_mean_c": -0.85,
           "wind_gust_max_kmh": 43.6,
-          "wind_speed_mean_kmh": 3.619
+          "wind_speed_mean_kmh": 3.852
         },
         "model": "ECMWF IFS HRES 9 km",
         "point_id": "LXL_HIGH_PASS",
@@ -66427,7 +66381,7 @@
           "forecast_cutoff_date": null,
           "grid_distance_km": 14.019,
           "grid_distance_limit_km": 16.5,
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "missing_variables": [],
@@ -66438,19 +66392,12 @@
           "original_timestep_count": 360,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 357,
+          "retained_timestep_count": 360,
           "returned_elevation": 3927.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "valid": true
         },
         "request_parameters": {
@@ -66466,32 +66413,25 @@
           "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=31.4&longitude=102.84&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cdew_point_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Ccloud_cover_mid%2Ccloud_cover_high%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m%2Csunshine_duration",
           "forecast_cutoff_applied": false,
           "forecast_cutoff_date": null,
-          "generationtime_ms": 0.5667209625244141,
+          "generationtime_ms": 0.48792362213134766,
           "grid_coordinate": {
             "latitude": 31.5,
             "longitude": 102.75
           },
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "model_run_initialization": null,
           "original_timestep_count": 360,
-          "retained_timestep_count": 357,
-          "retrieval_time": "2026-10-29T05:51:21Z",
+          "retained_timestep_count": 360,
+          "retrieval_time": "2026-10-29T13:05:43Z",
           "returned_elevation": 3927.0,
           "returned_model": null,
           "returned_model_id": null,
           "rows_dropped_after_cutoff": 0,
           "timezone": "Asia/Shanghai",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "utc_offset_seconds": 28800
         },
         "source": "Open-Meteo",
@@ -66503,7 +66443,7 @@
           {
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 5.9,
+            "dtr_c": 8.3,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -66515,24 +66455,24 @@
               "rule_version": "mechanical_leaf_stress_v1"
             },
             "night_min_c": -0.5,
-            "precipitation_mm": 0.0,
+            "precipitation_mm": 0.3,
             "rain_and_gust_ge_50": false,
-            "rain_day": false,
+            "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "8c22e60e8eabb4256287f272e49fc9bdb813ada1d5e9befc35aa7e3be2bee0ce",
+            "source_fingerprint": "bb70d4b84b6bcdd5212331737ca753257716e5c4b29d673e9896fc1fa52feb5b",
             "source_state": "forecast",
-            "temperature_max_c": 5.4,
-            "temperature_mean_c": 1.679,
-            "temperature_min_c": -0.5,
-            "wind_gust_max_kmh": 28.4,
-            "wind_speed_mean_kmh": 3.292
+            "temperature_max_c": 7.7,
+            "temperature_mean_c": 2.325,
+            "temperature_min_c": -0.6,
+            "wind_gust_max_kmh": 29.5,
+            "wind_speed_mean_kmh": 3.108
           },
           {
             "complete": true,
             "date": "2026-10-30",
-            "dtr_c": 14.8,
+            "dtr_c": 15.0,
             "freeze": true,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -66543,25 +66483,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -2.4,
+            "night_min_c": -2.7,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "5ba0b14d0ba74cf7960e36fffba6c630166ca6054e88d857798b1ce47a5b2a90",
+            "source_fingerprint": "49406394ee5b450c3ffbbbc10112db3dbeda4eb8a8516ba38a21d4d8a266f592",
             "source_state": "forecast",
-            "temperature_max_c": 12.4,
-            "temperature_mean_c": 4.492,
-            "temperature_min_c": -2.4,
-            "wind_gust_max_kmh": 26.3,
-            "wind_speed_mean_kmh": 3.258
+            "temperature_max_c": 12.3,
+            "temperature_mean_c": 4.271,
+            "temperature_min_c": -2.7,
+            "wind_gust_max_kmh": 27.4,
+            "wind_speed_mean_kmh": 3.442
           },
           {
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 14.4,
+            "dtr_c": 14.0,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -66572,25 +66512,25 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.9,
+            "night_min_c": 1.8,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "0ed0e606dd7b6f45cef3e1c2755a367eb0ff95d4ce853b74c8d72e31c286acd5",
+            "source_fingerprint": "326089e1f6470ef38fe810d0d20bbf73a6a395d180ad8933da52305d8234c106",
             "source_state": "forecast",
-            "temperature_max_c": 16.3,
-            "temperature_mean_c": 7.483,
-            "temperature_min_c": 1.9,
-            "wind_gust_max_kmh": 32.4,
-            "wind_speed_mean_kmh": 2.621
+            "temperature_max_c": 15.8,
+            "temperature_mean_c": 7.275,
+            "temperature_min_c": 1.8,
+            "wind_gust_max_kmh": 29.5,
+            "wind_speed_mean_kmh": 2.508
           },
           {
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 3.3,
+            "dtr_c": 3.0,
             "freeze": false,
             "freeze_and_snow": false,
             "gust_ge_50": false,
@@ -66601,20 +66541,20 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.3,
-            "precipitation_mm": 2.4,
+            "night_min_c": 0.7,
+            "precipitation_mm": 3.6,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
-            "source_fingerprint": "6398f9a84cd937ed17647d87670760a79e5e468ff3f198d8801cad653bcc5728",
+            "source_fingerprint": "c5759d70b8a3116e195975f8e85a1d3c118df669eedd3ccaa394d652406dfe34",
             "source_state": "forecast",
-            "temperature_max_c": 4.6,
-            "temperature_mean_c": 2.592,
-            "temperature_min_c": 1.3,
-            "wind_gust_max_kmh": 25.6,
-            "wind_speed_mean_kmh": 2.817
+            "temperature_max_c": 3.7,
+            "temperature_mean_c": 1.9,
+            "temperature_min_c": 0.7,
+            "wind_gust_max_kmh": 23.4,
+            "wind_speed_mean_kmh": 3.021
           }
         ],
         "endpoint": "https://api.open-meteo.com/v1/ecmwf",
@@ -66642,17 +66582,17 @@
           "utc_offset_seconds": 28800
         },
         "metrics": {
-          "absolute_min_night_c": -2.4,
+          "absolute_min_night_c": -2.7,
           "combined_weather_stress_events": 3,
           "days_available": 4,
-          "dtr_max_c": 14.8,
-          "dtr_mean_c": 9.6,
+          "dtr_max_c": 15.0,
+          "dtr_mean_c": 10.075,
           "freeze_and_snow_days": 0,
           "freeze_days": 2,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 2.4,
+          "max_daily_precipitation_mm": 3.6,
           "max_daily_snowfall_cm": 0.0,
           "max_gust_source_grid_cell_key": null,
           "max_gust_source_point_id": null,
@@ -66666,20 +66606,20 @@
             "reasons": [],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": 0.075,
+          "night_min_mean_c": -0.175,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
-          "precipitation_days": 1,
-          "precipitation_total_mm": 2.4,
+          "precipitation_days": 2,
+          "precipitation_total_mm": 3.9,
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 0,
           "snowfall_total_cm": 0.0,
-          "temperature_max_mean_c": 9.675,
-          "temperature_mean_c": 4.061,
-          "temperature_min_mean_c": 0.075,
-          "wind_gust_max_kmh": 32.4,
-          "wind_speed_mean_kmh": 2.997
+          "temperature_max_mean_c": 9.875,
+          "temperature_mean_c": 3.943,
+          "temperature_min_mean_c": -0.2,
+          "wind_gust_max_kmh": 29.5,
+          "wind_speed_mean_kmh": 3.02
         },
         "model": "ECMWF IFS HRES 9 km",
         "point_id": "SQG_SHUANGQIAO",
@@ -66695,7 +66635,7 @@
           "forecast_cutoff_date": null,
           "grid_distance_km": 13.602,
           "grid_distance_limit_km": 16.5,
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "missing_variables": [],
@@ -66706,19 +66646,12 @@
           "original_timestep_count": 360,
           "reason": null,
           "requested_elevation": "nan",
-          "retained_timestep_count": 357,
+          "retained_timestep_count": 360,
           "returned_elevation": 3752.0,
           "rows_dropped_after_cutoff": 0,
           "timezone_check": "PASS",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "valid": true
         },
         "request_parameters": {
@@ -66734,32 +66667,25 @@
           "endpoint_url": "https://api.open-meteo.com/v1/ecmwf?latitude=31.1035&longitude=102.9239&timezone=Asia%2FShanghai&cell_selection=nearest&elevation=nan&forecast_days=15&hourly=temperature_2m%2Cdew_point_2m%2Crelative_humidity_2m%2Cprecipitation%2Crain%2Csnowfall%2Ccloud_cover%2Ccloud_cover_low%2Ccloud_cover_mid%2Ccloud_cover_high%2Cwind_speed_10m%2Cwind_direction_10m%2Cwind_gusts_10m%2Csunshine_duration",
           "forecast_cutoff_applied": false,
           "forecast_cutoff_date": null,
-          "generationtime_ms": 1.530766487121582,
+          "generationtime_ms": 5.231499671936035,
           "grid_coordinate": {
             "latitude": 31.0,
             "longitude": 103.0
           },
-          "horizon_status": "TRUNCATED_EDGE_MISSING",
+          "horizon_status": "COMPLETE",
           "leading_missing_rows": 0,
           "leading_missing_variables": [],
           "model_run_initialization": null,
           "original_timestep_count": 360,
-          "retained_timestep_count": 357,
-          "retrieval_time": "2026-10-29T05:51:20Z",
+          "retained_timestep_count": 360,
+          "retrieval_time": "2026-10-29T13:05:42Z",
           "returned_elevation": 3752.0,
           "returned_model": null,
           "returned_model_id": null,
           "rows_dropped_after_cutoff": 0,
           "timezone": "Asia/Shanghai",
-          "trailing_missing_rows": 3,
-          "trailing_missing_variables": [
-            "cloud_cover",
-            "precipitation",
-            "snowfall",
-            "sunshine_duration",
-            "temperature_2m",
-            "wind_gusts_10m"
-          ],
+          "trailing_missing_rows": 0,
+          "trailing_missing_variables": [],
           "utc_offset_seconds": 28800
         },
         "source": "Open-Meteo",
@@ -66770,7 +66696,7 @@
     "source": "Open-Meteo",
     "source_state": "forecast"
   },
-  "generated_at": "2026-10-29T05:51:19Z",
+  "generated_at": "2026-10-29T13:05:41Z",
   "interpretation_boundary": "Weather events and transparent heuristics only; no ecological or travel conclusion is generated.",
   "module": "weather_events",
   "qa": {
@@ -91366,17 +91292,17 @@
               "available_subregion_count": 3,
               "complete": true,
               "date": "2026-10-29",
-              "dtr_c": 9.9,
+              "dtr_c": 10.817,
               "event_counts": {
                 "freeze": {
                   "any_grid_event": true,
                   "total_unique_grid_count": 4,
-                  "triggered_unique_grid_count": 1
+                  "triggered_unique_grid_count": 2
                 },
                 "freeze_and_snow": {
-                  "any_grid_event": true,
+                  "any_grid_event": false,
                   "total_unique_grid_count": 4,
-                  "triggered_unique_grid_count": 1
+                  "triggered_unique_grid_count": 0
                 },
                 "gust_ge_50": {
                   "any_grid_event": false,
@@ -91409,45 +91335,43 @@
                   "triggered_unique_grid_count": 0
                 },
                 "snow_day": {
-                  "any_grid_event": true,
+                  "any_grid_event": false,
                   "total_unique_grid_count": 4,
-                  "triggered_unique_grid_count": 1
+                  "triggered_unique_grid_count": 0
                 }
               },
               "freeze": true,
-              "freeze_and_snow": true,
+              "freeze_and_snow": false,
               "gust_ge_50": false,
               "gust_ge_65": false,
               "hard_freeze_le_minus5": false,
-              "max_gust_source_grid_cell_key": "33.250000,104.000000",
-              "max_gust_source_point_id": "JZG_TREESHENG",
+              "max_gust_source_grid_cell_key": "33.250000,103.750000",
+              "max_gust_source_point_id": "JZG_PRIMEVAL",
               "mechanical_leaf_stress": {
                 "level": "MEDIUM",
-                "reasons": [
-                  "freeze_plus_snow"
-                ],
+                "reasons": [],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": 0.417,
-              "precipitation_mm": 2.3,
+              "night_min_c": 0.05,
+              "precipitation_mm": 2.1,
               "rain_and_gust_ge_50": false,
               "rain_day": true,
               "snow_and_gust_ge_50": false,
-              "snow_day": true,
-              "snowfall_cm": 0.14,
+              "snow_day": false,
+              "snowfall_cm": 0.0,
               "source_state": "forecast",
-              "temperature_max_c": 10.25,
-              "temperature_mean_c": 4.662,
-              "temperature_min_c": 0.35,
+              "temperature_max_c": 10.8,
+              "temperature_mean_c": 4.646,
+              "temperature_min_c": -0.017,
               "total_subregion_count": 3,
-              "wind_gust_max_kmh": 31.7,
-              "wind_speed_mean_kmh": 3.674
+              "wind_gust_max_kmh": 32.4,
+              "wind_speed_mean_kmh": 3.582
             },
             {
               "available_subregion_count": 3,
               "complete": true,
               "date": "2026-10-30",
-              "dtr_c": 15.983,
+              "dtr_c": 15.8,
               "event_counts": {
                 "freeze": {
                   "any_grid_event": true,
@@ -91507,7 +91431,7 @@
                 "reasons": [],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": -1.533,
+              "night_min_c": -1.817,
               "precipitation_mm": 0.0,
               "rain_and_gust_ge_50": false,
               "rain_day": false,
@@ -91515,18 +91439,18 @@
               "snow_day": false,
               "snowfall_cm": 0.0,
               "source_state": "forecast",
-              "temperature_max_c": 14.233,
-              "temperature_mean_c": 5.325,
-              "temperature_min_c": -1.75,
+              "temperature_max_c": 13.8,
+              "temperature_mean_c": 4.944,
+              "temperature_min_c": -2.0,
               "total_subregion_count": 3,
-              "wind_gust_max_kmh": 37.4,
-              "wind_speed_mean_kmh": 4.128
+              "wind_gust_max_kmh": 40.3,
+              "wind_speed_mean_kmh": 4.226
             },
             {
               "available_subregion_count": 3,
               "complete": true,
               "date": "2026-10-31",
-              "dtr_c": 14.617,
+              "dtr_c": 15.067,
               "event_counts": {
                 "freeze": {
                   "any_grid_event": false,
@@ -91569,9 +91493,9 @@
                   "triggered_unique_grid_count": 0
                 },
                 "snow_day": {
-                  "any_grid_event": true,
+                  "any_grid_event": false,
                   "total_unique_grid_count": 4,
-                  "triggered_unique_grid_count": 1
+                  "triggered_unique_grid_count": 0
                 }
               },
               "freeze": false,
@@ -91582,34 +91506,33 @@
               "max_gust_source_grid_cell_key": "33.250000,103.750000",
               "max_gust_source_point_id": "JZG_PRIMEVAL",
               "mechanical_leaf_stress": {
-                "level": "HIGH",
+                "level": "MEDIUM",
                 "reasons": [
                   "strong_wind",
-                  "wind_plus_rain",
-                  "wind_plus_snow"
+                  "wind_plus_rain"
                 ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": 1.267,
-              "precipitation_mm": 1.8,
+              "night_min_c": 0.883,
+              "precipitation_mm": 2.65,
               "rain_and_gust_ge_50": true,
               "rain_day": true,
               "snow_and_gust_ge_50": false,
-              "snow_day": true,
-              "snowfall_cm": 0.07,
+              "snow_day": false,
+              "snowfall_cm": 0.0,
               "source_state": "forecast",
-              "temperature_max_c": 15.883,
-              "temperature_mean_c": 6.794,
-              "temperature_min_c": 1.267,
+              "temperature_max_c": 15.95,
+              "temperature_mean_c": 6.562,
+              "temperature_min_c": 0.883,
               "total_subregion_count": 3,
-              "wind_gust_max_kmh": 51.5,
-              "wind_speed_mean_kmh": 4.488
+              "wind_gust_max_kmh": 51.8,
+              "wind_speed_mean_kmh": 4.316
             },
             {
               "available_subregion_count": 3,
               "complete": true,
               "date": "2026-11-01",
-              "dtr_c": 9.483,
+              "dtr_c": 9.183,
               "event_counts": {
                 "freeze": {
                   "any_grid_event": true,
@@ -91662,8 +91585,8 @@
               "gust_ge_50": false,
               "gust_ge_65": false,
               "hard_freeze_le_minus5": false,
-              "max_gust_source_grid_cell_key": "33.250000,103.750000",
-              "max_gust_source_point_id": "JZG_PRIMEVAL",
+              "max_gust_source_grid_cell_key": "33.250000,104.000000",
+              "max_gust_source_point_id": "JZG_TREESHENG",
               "mechanical_leaf_stress": {
                 "level": "MEDIUM",
                 "reasons": [
@@ -91671,66 +91594,65 @@
                 ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": -1.5,
-              "precipitation_mm": 4.9,
+              "night_min_c": -1.783,
+              "precipitation_mm": 4.35,
               "rain_and_gust_ge_50": false,
               "rain_day": true,
               "snow_and_gust_ge_50": false,
               "snow_day": true,
-              "snowfall_cm": 2.065,
+              "snowfall_cm": 1.96,
               "source_state": "forecast",
-              "temperature_max_c": 7.983,
-              "temperature_mean_c": 2.162,
-              "temperature_min_c": -1.5,
+              "temperature_max_c": 7.4,
+              "temperature_mean_c": 2.325,
+              "temperature_min_c": -1.783,
               "total_subregion_count": 3,
-              "wind_gust_max_kmh": 31.7,
-              "wind_speed_mean_kmh": 3.926
+              "wind_gust_max_kmh": 27.4,
+              "wind_speed_mean_kmh": 3.265
             }
           ],
           "metrics": {
-            "absolute_min_night_c": -1.533,
+            "absolute_min_night_c": -1.817,
             "combined_weather_stress_events": 4,
             "days_available": 4,
-            "dtr_max_c": 15.983,
-            "dtr_mean_c": 12.496,
-            "freeze_and_snow_days": 2,
+            "dtr_max_c": 15.8,
+            "dtr_mean_c": 12.717,
+            "freeze_and_snow_days": 1,
             "freeze_days": 3,
             "gust_ge_50_days": 1,
             "gust_ge_65_days": 0,
             "hard_freeze_le_minus5_days": 0,
-            "max_daily_precipitation_mm": 4.9,
-            "max_daily_snowfall_cm": 2.065,
+            "max_daily_precipitation_mm": 4.35,
+            "max_daily_snowfall_cm": 1.96,
             "max_gust_source_grid_cell_key": "33.250000,103.750000",
             "max_gust_source_point_id": "JZG_PRIMEVAL",
             "mechanical_leaf_stress": {
               "day_count_by_level": {
-                "HIGH": 1,
+                "HIGH": 0,
                 "LOW": 0,
-                "MEDIUM": 3
+                "MEDIUM": 4
               },
-              "level": "HIGH",
+              "level": "MEDIUM",
               "reasons": [
                 "freeze_plus_snow",
                 "strong_wind",
-                "wind_plus_rain",
-                "wind_plus_snow"
+                "wind_plus_rain"
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_mean_c": -0.337,
+            "night_min_mean_c": -0.667,
             "period_end": "2026-11-01",
             "period_start": "2026-10-29",
             "precipitation_days": 3,
-            "precipitation_total_mm": 9.0,
+            "precipitation_total_mm": 9.1,
             "rain_and_gust_ge_50_days": 1,
             "snow_and_gust_ge_50_days": 0,
-            "snowfall_days": 3,
-            "snowfall_total_cm": 2.275,
-            "temperature_max_mean_c": 12.087,
-            "temperature_mean_c": 4.736,
-            "temperature_min_mean_c": -0.408,
-            "wind_gust_max_kmh": 51.5,
-            "wind_speed_mean_kmh": 4.054
+            "snowfall_days": 1,
+            "snowfall_total_cm": 1.96,
+            "temperature_max_mean_c": 11.988,
+            "temperature_mean_c": 4.619,
+            "temperature_min_mean_c": -0.729,
+            "wind_gust_max_kmh": 51.8,
+            "wind_speed_mean_kmh": 3.847
           },
           "missing_or_partial_subregions": [],
           "source_state": "forecast",
@@ -91747,49 +91669,48 @@
               "expected_days": 4,
               "incomplete_dates": [],
               "metrics": {
-                "absolute_min_night_c": -1.533,
+                "absolute_min_night_c": -1.817,
                 "combined_weather_stress_events": 4,
                 "days_available": 4,
-                "dtr_max_c": 15.983,
-                "dtr_mean_c": 12.496,
-                "freeze_and_snow_days": 2,
+                "dtr_max_c": 15.8,
+                "dtr_mean_c": 12.717,
+                "freeze_and_snow_days": 1,
                 "freeze_days": 3,
                 "gust_ge_50_days": 1,
                 "gust_ge_65_days": 0,
                 "hard_freeze_le_minus5_days": 0,
-                "max_daily_precipitation_mm": 4.9,
-                "max_daily_snowfall_cm": 2.065,
+                "max_daily_precipitation_mm": 4.35,
+                "max_daily_snowfall_cm": 1.96,
                 "max_gust_source_grid_cell_key": "33.250000,103.750000",
                 "max_gust_source_point_id": "JZG_PRIMEVAL",
                 "mechanical_leaf_stress": {
                   "day_count_by_level": {
-                    "HIGH": 1,
+                    "HIGH": 0,
                     "LOW": 0,
-                    "MEDIUM": 3
+                    "MEDIUM": 4
                   },
-                  "level": "HIGH",
+                  "level": "MEDIUM",
                   "reasons": [
                     "freeze_plus_snow",
                     "strong_wind",
-                    "wind_plus_rain",
-                    "wind_plus_snow"
+                    "wind_plus_rain"
                   ],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_mean_c": -0.337,
+                "night_min_mean_c": -0.667,
                 "period_end": "2026-11-01",
                 "period_start": "2026-10-29",
                 "precipitation_days": 3,
-                "precipitation_total_mm": 9.0,
+                "precipitation_total_mm": 9.1,
                 "rain_and_gust_ge_50_days": 1,
                 "snow_and_gust_ge_50_days": 0,
-                "snowfall_days": 3,
-                "snowfall_total_cm": 2.275,
-                "temperature_max_mean_c": 12.087,
-                "temperature_mean_c": 4.736,
-                "temperature_min_mean_c": -0.408,
-                "wind_gust_max_kmh": 51.5,
-                "wind_speed_mean_kmh": 4.054
+                "snowfall_days": 1,
+                "snowfall_total_cm": 1.96,
+                "temperature_max_mean_c": 11.988,
+                "temperature_mean_c": 4.619,
+                "temperature_min_mean_c": -0.729,
+                "wind_gust_max_kmh": 51.8,
+                "wind_speed_mean_kmh": 3.847
               },
               "missing_dates": [],
               "reason": null,
@@ -92094,25 +92015,25 @@
         },
         "forecast": [
           {
-            "baseline_temperature_mean_c": 5.594,
-            "dtr_max_c": 9.483,
-            "dtr_mean_c": 9.483,
+            "baseline_temperature_mean_c": 5.384,
+            "dtr_max_c": 9.183,
+            "dtr_mean_c": 9.183,
             "end_date": "2026-11-01",
             "freeze_days": 1,
             "gust_ge_50_days": 0,
             "gust_ge_65_days": 0,
             "hard_freeze_days": 0,
-            "minimum_daily_mean_c": 2.162,
-            "minimum_night_min_c": -1.5,
-            "precipitation_total_mm": 4.9,
+            "minimum_daily_mean_c": 2.325,
+            "minimum_night_min_c": -1.783,
+            "precipitation_total_mm": 4.35,
             "rain_and_gust_ge_50_days": 0,
             "recovery_status": "NOT_YET_OBSERVED",
             "rule_version": "cooling_episode_v1",
             "snow_and_gust_ge_50_days": 0,
-            "snowfall_total_cm": 2.065,
+            "snowfall_total_cm": 1.96,
             "start_date": "2026-11-01",
-            "temperature_drop_c": 3.432,
-            "wind_gust_max_kmh": 31.7
+            "temperature_drop_c": 3.059,
+            "wind_gust_max_kmh": 27.4
           }
         ],
         "rule_version": "cooling_episode_v1"
@@ -116690,17 +116611,17 @@
             "available_subregion_count": 3,
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 9.9,
+            "dtr_c": 10.817,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
                 "total_unique_grid_count": 4,
-                "triggered_unique_grid_count": 1
+                "triggered_unique_grid_count": 2
               },
               "freeze_and_snow": {
-                "any_grid_event": true,
+                "any_grid_event": false,
                 "total_unique_grid_count": 4,
-                "triggered_unique_grid_count": 1
+                "triggered_unique_grid_count": 0
               },
               "gust_ge_50": {
                 "any_grid_event": false,
@@ -116733,45 +116654,43 @@
                 "triggered_unique_grid_count": 0
               },
               "snow_day": {
-                "any_grid_event": true,
+                "any_grid_event": false,
                 "total_unique_grid_count": 4,
-                "triggered_unique_grid_count": 1
+                "triggered_unique_grid_count": 0
               }
             },
             "freeze": true,
-            "freeze_and_snow": true,
+            "freeze_and_snow": false,
             "gust_ge_50": false,
             "gust_ge_65": false,
             "hard_freeze_le_minus5": false,
-            "max_gust_source_grid_cell_key": "33.250000,104.000000",
-            "max_gust_source_point_id": "JZG_TREESHENG",
+            "max_gust_source_grid_cell_key": "33.250000,103.750000",
+            "max_gust_source_point_id": "JZG_PRIMEVAL",
             "mechanical_leaf_stress": {
               "level": "MEDIUM",
-              "reasons": [
-                "freeze_plus_snow"
-              ],
+              "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 0.417,
-            "precipitation_mm": 2.3,
+            "night_min_c": 0.05,
+            "precipitation_mm": 2.1,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
-            "snow_day": true,
-            "snowfall_cm": 0.14,
+            "snow_day": false,
+            "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 10.25,
-            "temperature_mean_c": 4.662,
-            "temperature_min_c": 0.35,
+            "temperature_max_c": 10.8,
+            "temperature_mean_c": 4.646,
+            "temperature_min_c": -0.017,
             "total_subregion_count": 3,
-            "wind_gust_max_kmh": 31.7,
-            "wind_speed_mean_kmh": 3.674
+            "wind_gust_max_kmh": 32.4,
+            "wind_speed_mean_kmh": 3.582
           },
           {
             "available_subregion_count": 3,
             "complete": true,
             "date": "2026-10-30",
-            "dtr_c": 15.983,
+            "dtr_c": 15.8,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
@@ -116831,7 +116750,7 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.533,
+            "night_min_c": -1.817,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
@@ -116839,18 +116758,18 @@
             "snow_day": false,
             "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 14.233,
-            "temperature_mean_c": 5.325,
-            "temperature_min_c": -1.75,
+            "temperature_max_c": 13.8,
+            "temperature_mean_c": 4.944,
+            "temperature_min_c": -2.0,
             "total_subregion_count": 3,
-            "wind_gust_max_kmh": 37.4,
-            "wind_speed_mean_kmh": 4.128
+            "wind_gust_max_kmh": 40.3,
+            "wind_speed_mean_kmh": 4.226
           },
           {
             "available_subregion_count": 3,
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 14.617,
+            "dtr_c": 15.067,
             "event_counts": {
               "freeze": {
                 "any_grid_event": false,
@@ -116893,9 +116812,9 @@
                 "triggered_unique_grid_count": 0
               },
               "snow_day": {
-                "any_grid_event": true,
+                "any_grid_event": false,
                 "total_unique_grid_count": 4,
-                "triggered_unique_grid_count": 1
+                "triggered_unique_grid_count": 0
               }
             },
             "freeze": false,
@@ -116906,34 +116825,33 @@
             "max_gust_source_grid_cell_key": "33.250000,103.750000",
             "max_gust_source_point_id": "JZG_PRIMEVAL",
             "mechanical_leaf_stress": {
-              "level": "HIGH",
+              "level": "MEDIUM",
               "reasons": [
                 "strong_wind",
-                "wind_plus_rain",
-                "wind_plus_snow"
+                "wind_plus_rain"
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.267,
-            "precipitation_mm": 1.8,
+            "night_min_c": 0.883,
+            "precipitation_mm": 2.65,
             "rain_and_gust_ge_50": true,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
-            "snow_day": true,
-            "snowfall_cm": 0.07,
+            "snow_day": false,
+            "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 15.883,
-            "temperature_mean_c": 6.794,
-            "temperature_min_c": 1.267,
+            "temperature_max_c": 15.95,
+            "temperature_mean_c": 6.562,
+            "temperature_min_c": 0.883,
             "total_subregion_count": 3,
-            "wind_gust_max_kmh": 51.5,
-            "wind_speed_mean_kmh": 4.488
+            "wind_gust_max_kmh": 51.8,
+            "wind_speed_mean_kmh": 4.316
           },
           {
             "available_subregion_count": 3,
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 9.483,
+            "dtr_c": 9.183,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
@@ -116986,8 +116904,8 @@
             "gust_ge_50": false,
             "gust_ge_65": false,
             "hard_freeze_le_minus5": false,
-            "max_gust_source_grid_cell_key": "33.250000,103.750000",
-            "max_gust_source_point_id": "JZG_PRIMEVAL",
+            "max_gust_source_grid_cell_key": "33.250000,104.000000",
+            "max_gust_source_point_id": "JZG_TREESHENG",
             "mechanical_leaf_stress": {
               "level": "MEDIUM",
               "reasons": [
@@ -116995,66 +116913,65 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.5,
-            "precipitation_mm": 4.9,
+            "night_min_c": -1.783,
+            "precipitation_mm": 4.35,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
-            "snowfall_cm": 2.065,
+            "snowfall_cm": 1.96,
             "source_state": "forecast",
-            "temperature_max_c": 7.983,
-            "temperature_mean_c": 2.162,
-            "temperature_min_c": -1.5,
+            "temperature_max_c": 7.4,
+            "temperature_mean_c": 2.325,
+            "temperature_min_c": -1.783,
             "total_subregion_count": 3,
-            "wind_gust_max_kmh": 31.7,
-            "wind_speed_mean_kmh": 3.926
+            "wind_gust_max_kmh": 27.4,
+            "wind_speed_mean_kmh": 3.265
           }
         ],
         "metrics": {
-          "absolute_min_night_c": -1.533,
+          "absolute_min_night_c": -1.817,
           "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 15.983,
-          "dtr_mean_c": 12.496,
-          "freeze_and_snow_days": 2,
+          "dtr_max_c": 15.8,
+          "dtr_mean_c": 12.717,
+          "freeze_and_snow_days": 1,
           "freeze_days": 3,
           "gust_ge_50_days": 1,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 4.9,
-          "max_daily_snowfall_cm": 2.065,
+          "max_daily_precipitation_mm": 4.35,
+          "max_daily_snowfall_cm": 1.96,
           "max_gust_source_grid_cell_key": "33.250000,103.750000",
           "max_gust_source_point_id": "JZG_PRIMEVAL",
           "mechanical_leaf_stress": {
             "day_count_by_level": {
-              "HIGH": 1,
+              "HIGH": 0,
               "LOW": 0,
-              "MEDIUM": 3
+              "MEDIUM": 4
             },
-            "level": "HIGH",
+            "level": "MEDIUM",
             "reasons": [
               "freeze_plus_snow",
               "strong_wind",
-              "wind_plus_rain",
-              "wind_plus_snow"
+              "wind_plus_rain"
             ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": -0.337,
+          "night_min_mean_c": -0.667,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
           "precipitation_days": 3,
-          "precipitation_total_mm": 9.0,
+          "precipitation_total_mm": 9.1,
           "rain_and_gust_ge_50_days": 1,
           "snow_and_gust_ge_50_days": 0,
-          "snowfall_days": 3,
-          "snowfall_total_cm": 2.275,
-          "temperature_max_mean_c": 12.087,
-          "temperature_mean_c": 4.736,
-          "temperature_min_mean_c": -0.408,
-          "wind_gust_max_kmh": 51.5,
-          "wind_speed_mean_kmh": 4.054
+          "snowfall_days": 1,
+          "snowfall_total_cm": 1.96,
+          "temperature_max_mean_c": 11.988,
+          "temperature_mean_c": 4.619,
+          "temperature_min_mean_c": -0.729,
+          "wind_gust_max_kmh": 51.8,
+          "wind_speed_mean_kmh": 3.847
         },
         "missing_or_partial_subregions": [],
         "source_state": "forecast",
@@ -117071,49 +116988,48 @@
             "expected_days": 4,
             "incomplete_dates": [],
             "metrics": {
-              "absolute_min_night_c": -1.533,
+              "absolute_min_night_c": -1.817,
               "combined_weather_stress_events": 4,
               "days_available": 4,
-              "dtr_max_c": 15.983,
-              "dtr_mean_c": 12.496,
-              "freeze_and_snow_days": 2,
+              "dtr_max_c": 15.8,
+              "dtr_mean_c": 12.717,
+              "freeze_and_snow_days": 1,
               "freeze_days": 3,
               "gust_ge_50_days": 1,
               "gust_ge_65_days": 0,
               "hard_freeze_le_minus5_days": 0,
-              "max_daily_precipitation_mm": 4.9,
-              "max_daily_snowfall_cm": 2.065,
+              "max_daily_precipitation_mm": 4.35,
+              "max_daily_snowfall_cm": 1.96,
               "max_gust_source_grid_cell_key": "33.250000,103.750000",
               "max_gust_source_point_id": "JZG_PRIMEVAL",
               "mechanical_leaf_stress": {
                 "day_count_by_level": {
-                  "HIGH": 1,
+                  "HIGH": 0,
                   "LOW": 0,
-                  "MEDIUM": 3
+                  "MEDIUM": 4
                 },
-                "level": "HIGH",
+                "level": "MEDIUM",
                 "reasons": [
                   "freeze_plus_snow",
                   "strong_wind",
-                  "wind_plus_rain",
-                  "wind_plus_snow"
+                  "wind_plus_rain"
                 ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": -0.337,
+              "night_min_mean_c": -0.667,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
               "precipitation_days": 3,
-              "precipitation_total_mm": 9.0,
+              "precipitation_total_mm": 9.1,
               "rain_and_gust_ge_50_days": 1,
               "snow_and_gust_ge_50_days": 0,
-              "snowfall_days": 3,
-              "snowfall_total_cm": 2.275,
-              "temperature_max_mean_c": 12.087,
-              "temperature_mean_c": 4.736,
-              "temperature_min_mean_c": -0.408,
-              "wind_gust_max_kmh": 51.5,
-              "wind_speed_mean_kmh": 4.054
+              "snowfall_days": 1,
+              "snowfall_total_cm": 1.96,
+              "temperature_max_mean_c": 11.988,
+              "temperature_mean_c": 4.619,
+              "temperature_min_mean_c": -0.729,
+              "wind_gust_max_kmh": 51.8,
+              "wind_speed_mean_kmh": 3.847
             },
             "missing_dates": [],
             "reason": null,
@@ -141663,12 +141579,12 @@
                 "available_grid_count": 2,
                 "complete": true,
                 "date": "2026-10-29",
-                "dtr_c": 11.7,
+                "dtr_c": 13.05,
                 "event_counts": {
                   "freeze": {
-                    "any_grid_event": false,
+                    "any_grid_event": true,
                     "total_unique_grid_count": 2,
-                    "triggered_unique_grid_count": 0
+                    "triggered_unique_grid_count": 1
                   },
                   "freeze_and_snow": {
                     "any_grid_event": false,
@@ -141711,19 +141627,19 @@
                     "triggered_unique_grid_count": 0
                   }
                 },
-                "freeze": false,
+                "freeze": true,
                 "freeze_and_snow": false,
                 "gust_ge_50": false,
                 "gust_ge_65": false,
                 "hard_freeze_le_minus5": false,
-                "max_gust_source_grid_cell_key": "33.250000,104.000000",
-                "max_gust_source_point_id": "JZG_NORILANG",
+                "max_gust_source_grid_cell_key": "33.250000,103.750000",
+                "max_gust_source_point_id": "JZG_PRIMEVAL",
                 "mechanical_leaf_stress": {
                   "level": "MEDIUM",
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 1.15,
+                "night_min_c": 0.45,
                 "precipitation_mm": 0.9,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
@@ -141731,18 +141647,18 @@
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 12.85,
-                "temperature_mean_c": 6.108,
-                "temperature_min_c": 1.15,
+                "temperature_max_c": 13.5,
+                "temperature_mean_c": 6.052,
+                "temperature_min_c": 0.45,
                 "total_unique_grid_count": 2,
-                "wind_gust_max_kmh": 31.7,
-                "wind_speed_mean_kmh": 3.289
+                "wind_gust_max_kmh": 32.4,
+                "wind_speed_mean_kmh": 3.383
               },
               {
                 "available_grid_count": 2,
                 "complete": true,
                 "date": "2026-10-30",
-                "dtr_c": 17.95,
+                "dtr_c": 18.0,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -141802,7 +141718,7 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -1.7,
+                "night_min_c": -2.45,
                 "precipitation_mm": 0.0,
                 "rain_and_gust_ge_50": false,
                 "rain_day": false,
@@ -141810,18 +141726,18 @@
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 15.9,
-                "temperature_mean_c": 5.579,
-                "temperature_min_c": -2.05,
+                "temperature_max_c": 15.3,
+                "temperature_mean_c": 5.131,
+                "temperature_min_c": -2.7,
                 "total_unique_grid_count": 2,
-                "wind_gust_max_kmh": 37.4,
-                "wind_speed_mean_kmh": 4.388
+                "wind_gust_max_kmh": 40.3,
+                "wind_speed_mean_kmh": 4.525
               },
               {
                 "available_grid_count": 2,
                 "complete": true,
                 "date": "2026-10-31",
-                "dtr_c": 15.95,
+                "dtr_c": 16.1,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": false,
@@ -141884,26 +141800,26 @@
                   ],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 1.9,
-                "precipitation_mm": 1.5,
+                "night_min_c": 1.45,
+                "precipitation_mm": 2.55,
                 "rain_and_gust_ge_50": true,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 17.85,
-                "temperature_mean_c": 7.591,
-                "temperature_min_c": 1.9,
+                "temperature_max_c": 17.55,
+                "temperature_mean_c": 7.373,
+                "temperature_min_c": 1.45,
                 "total_unique_grid_count": 2,
-                "wind_gust_max_kmh": 51.5,
-                "wind_speed_mean_kmh": 4.863
+                "wind_gust_max_kmh": 51.8,
+                "wind_speed_mean_kmh": 4.593
               },
               {
                 "available_grid_count": 2,
                 "complete": true,
                 "date": "2026-11-01",
-                "dtr_c": 10.85,
+                "dtr_c": 10.75,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -141965,35 +141881,35 @@
                   ],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -0.9,
-                "precipitation_mm": 4.8,
+                "night_min_c": -1.65,
+                "precipitation_mm": 4.05,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": true,
-                "snowfall_cm": 1.785,
+                "snowfall_cm": 1.68,
                 "source_state": "forecast",
-                "temperature_max_c": 9.95,
-                "temperature_mean_c": 3.304,
-                "temperature_min_c": -0.9,
+                "temperature_max_c": 9.1,
+                "temperature_mean_c": 3.229,
+                "temperature_min_c": -1.65,
                 "total_unique_grid_count": 2,
-                "wind_gust_max_kmh": 31.7,
-                "wind_speed_mean_kmh": 4.029
+                "wind_gust_max_kmh": 24.5,
+                "wind_speed_mean_kmh": 3.248
               }
             ],
             "metrics": {
-              "absolute_min_night_c": -1.7,
+              "absolute_min_night_c": -2.45,
               "combined_weather_stress_events": 4,
               "days_available": 4,
-              "dtr_max_c": 17.95,
-              "dtr_mean_c": 14.112,
+              "dtr_max_c": 18.0,
+              "dtr_mean_c": 14.475,
               "freeze_and_snow_days": 1,
-              "freeze_days": 2,
+              "freeze_days": 3,
               "gust_ge_50_days": 1,
               "gust_ge_65_days": 0,
               "hard_freeze_le_minus5_days": 0,
-              "max_daily_precipitation_mm": 4.8,
-              "max_daily_snowfall_cm": 1.785,
+              "max_daily_precipitation_mm": 4.05,
+              "max_daily_snowfall_cm": 1.68,
               "max_gust_source_grid_cell_key": "33.250000,103.750000",
               "max_gust_source_point_id": "JZG_PRIMEVAL",
               "mechanical_leaf_stress": {
@@ -142010,20 +141926,20 @@
                 ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": 0.112,
+              "night_min_mean_c": -0.55,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
               "precipitation_days": 3,
-              "precipitation_total_mm": 7.2,
+              "precipitation_total_mm": 7.5,
               "rain_and_gust_ge_50_days": 1,
               "snow_and_gust_ge_50_days": 0,
               "snowfall_days": 1,
-              "snowfall_total_cm": 1.785,
-              "temperature_max_mean_c": 14.137,
-              "temperature_mean_c": 5.646,
-              "temperature_min_mean_c": 0.025,
-              "wind_gust_max_kmh": 51.5,
-              "wind_speed_mean_kmh": 4.142
+              "snowfall_total_cm": 1.68,
+              "temperature_max_mean_c": 13.863,
+              "temperature_mean_c": 5.446,
+              "temperature_min_mean_c": -0.613,
+              "wind_gust_max_kmh": 51.8,
+              "wind_speed_mean_kmh": 3.937
             },
             "point_ids": [
               "JZG_NORILANG",
@@ -142142,18 +142058,18 @@
                 "expected_days": 4,
                 "incomplete_dates": [],
                 "metrics": {
-                  "absolute_min_night_c": -1.7,
+                  "absolute_min_night_c": -2.45,
                   "combined_weather_stress_events": 4,
                   "days_available": 4,
-                  "dtr_max_c": 17.95,
-                  "dtr_mean_c": 14.112,
+                  "dtr_max_c": 18.0,
+                  "dtr_mean_c": 14.475,
                   "freeze_and_snow_days": 1,
-                  "freeze_days": 2,
+                  "freeze_days": 3,
                   "gust_ge_50_days": 1,
                   "gust_ge_65_days": 0,
                   "hard_freeze_le_minus5_days": 0,
-                  "max_daily_precipitation_mm": 4.8,
-                  "max_daily_snowfall_cm": 1.785,
+                  "max_daily_precipitation_mm": 4.05,
+                  "max_daily_snowfall_cm": 1.68,
                   "max_gust_source_grid_cell_key": "33.250000,103.750000",
                   "max_gust_source_point_id": "JZG_PRIMEVAL",
                   "mechanical_leaf_stress": {
@@ -142170,20 +142086,20 @@
                     ],
                     "rule_version": "mechanical_leaf_stress_v1"
                   },
-                  "night_min_mean_c": 0.112,
+                  "night_min_mean_c": -0.55,
                   "period_end": "2026-11-01",
                   "period_start": "2026-10-29",
                   "precipitation_days": 3,
-                  "precipitation_total_mm": 7.2,
+                  "precipitation_total_mm": 7.5,
                   "rain_and_gust_ge_50_days": 1,
                   "snow_and_gust_ge_50_days": 0,
                   "snowfall_days": 1,
-                  "snowfall_total_cm": 1.785,
-                  "temperature_max_mean_c": 14.137,
-                  "temperature_mean_c": 5.646,
-                  "temperature_min_mean_c": 0.025,
-                  "wind_gust_max_kmh": 51.5,
-                  "wind_speed_mean_kmh": 4.142
+                  "snowfall_total_cm": 1.68,
+                  "temperature_max_mean_c": 13.863,
+                  "temperature_mean_c": 5.446,
+                  "temperature_min_mean_c": -0.613,
+                  "wind_gust_max_kmh": 51.8,
+                  "wind_speed_mean_kmh": 3.937
                 },
                 "missing_dates": [],
                 "reason": null,
@@ -167686,7 +167602,7 @@
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-29",
-                "dtr_c": 9.9,
+                "dtr_c": 11.1,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": false,
@@ -167746,20 +167662,20 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 1.3,
-                "precipitation_mm": 1.5,
+                "night_min_c": 1.0,
+                "precipitation_mm": 1.8,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 11.2,
-                "temperature_mean_c": 5.812,
-                "temperature_min_c": 1.3,
+                "temperature_max_c": 12.1,
+                "temperature_mean_c": 5.775,
+                "temperature_min_c": 1.0,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 31.7,
-                "wind_speed_mean_kmh": 3.771
+                "wind_gust_max_kmh": 31.3,
+                "wind_speed_mean_kmh": 3.583
               },
               {
                 "available_grid_count": 1,
@@ -167825,7 +167741,7 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -0.8,
+                "night_min_c": -1.2,
                 "precipitation_mm": 0.0,
                 "rain_and_gust_ge_50": false,
                 "rain_day": false,
@@ -167833,18 +167749,18 @@
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 15.1,
-                "temperature_mean_c": 5.654,
-                "temperature_min_c": -1.1,
+                "temperature_max_c": 14.7,
+                "temperature_mean_c": 5.321,
+                "temperature_min_c": -1.5,
                 "total_unique_grid_count": 1,
                 "wind_gust_max_kmh": 31.3,
-                "wind_speed_mean_kmh": 3.796
+                "wind_speed_mean_kmh": 3.808
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-31",
-                "dtr_c": 13.5,
+                "dtr_c": 14.2,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": false,
@@ -167904,26 +167820,26 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 1.0,
-                "precipitation_mm": 1.5,
+                "night_min_c": 0.9,
+                "precipitation_mm": 2.1,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 14.5,
-                "temperature_mean_c": 6.375,
-                "temperature_min_c": 1.0,
+                "temperature_max_c": 15.1,
+                "temperature_mean_c": 6.433,
+                "temperature_min_c": 0.9,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 34.6,
-                "wind_speed_mean_kmh": 3.942
+                "wind_gust_max_kmh": 32.8,
+                "wind_speed_mean_kmh": 3.879
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-11-01",
-                "dtr_c": 10.4,
+                "dtr_c": 11.0,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -167985,35 +167901,35 @@
                   ],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -1.4,
-                "precipitation_mm": 5.1,
+                "night_min_c": -2.0,
+                "precipitation_mm": 4.2,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": true,
-                "snowfall_cm": 1.68,
+                "snowfall_cm": 1.47,
                 "source_state": "forecast",
                 "temperature_max_c": 9.0,
-                "temperature_mean_c": 2.475,
-                "temperature_min_c": -1.4,
+                "temperature_mean_c": 2.946,
+                "temperature_min_c": -2.0,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 25.6,
-                "wind_speed_mean_kmh": 4.008
+                "wind_gust_max_kmh": 27.4,
+                "wind_speed_mean_kmh": 3.829
               }
             ],
             "metrics": {
-              "absolute_min_night_c": -1.4,
+              "absolute_min_night_c": -2.0,
               "combined_weather_stress_events": 4,
               "days_available": 4,
               "dtr_max_c": 16.2,
-              "dtr_mean_c": 12.5,
+              "dtr_mean_c": 13.125,
               "freeze_and_snow_days": 1,
               "freeze_days": 2,
               "gust_ge_50_days": 0,
               "gust_ge_65_days": 0,
               "hard_freeze_le_minus5_days": 0,
-              "max_daily_precipitation_mm": 5.1,
-              "max_daily_snowfall_cm": 1.68,
+              "max_daily_precipitation_mm": 4.2,
+              "max_daily_snowfall_cm": 1.47,
               "max_gust_source_grid_cell_key": "33.250000,104.000000",
               "max_gust_source_point_id": "JZG_TREESHENG",
               "mechanical_leaf_stress": {
@@ -168028,7 +167944,7 @@
                 ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": 0.025,
+              "night_min_mean_c": -0.325,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
               "precipitation_days": 3,
@@ -168036,12 +167952,12 @@
               "rain_and_gust_ge_50_days": 0,
               "snow_and_gust_ge_50_days": 0,
               "snowfall_days": 1,
-              "snowfall_total_cm": 1.68,
-              "temperature_max_mean_c": 12.45,
-              "temperature_mean_c": 5.079,
-              "temperature_min_mean_c": -0.05,
-              "wind_gust_max_kmh": 34.6,
-              "wind_speed_mean_kmh": 3.879
+              "snowfall_total_cm": 1.47,
+              "temperature_max_mean_c": 12.725,
+              "temperature_mean_c": 5.119,
+              "temperature_min_mean_c": -0.4,
+              "wind_gust_max_kmh": 32.8,
+              "wind_speed_mean_kmh": 3.775
             },
             "point_ids": [
               "JZG_TREESHENG"
@@ -168119,18 +168035,18 @@
                 "expected_days": 4,
                 "incomplete_dates": [],
                 "metrics": {
-                  "absolute_min_night_c": -1.4,
+                  "absolute_min_night_c": -2.0,
                   "combined_weather_stress_events": 4,
                   "days_available": 4,
                   "dtr_max_c": 16.2,
-                  "dtr_mean_c": 12.5,
+                  "dtr_mean_c": 13.125,
                   "freeze_and_snow_days": 1,
                   "freeze_days": 2,
                   "gust_ge_50_days": 0,
                   "gust_ge_65_days": 0,
                   "hard_freeze_le_minus5_days": 0,
-                  "max_daily_precipitation_mm": 5.1,
-                  "max_daily_snowfall_cm": 1.68,
+                  "max_daily_precipitation_mm": 4.2,
+                  "max_daily_snowfall_cm": 1.47,
                   "max_gust_source_grid_cell_key": "33.250000,104.000000",
                   "max_gust_source_point_id": "JZG_TREESHENG",
                   "mechanical_leaf_stress": {
@@ -168145,7 +168061,7 @@
                     ],
                     "rule_version": "mechanical_leaf_stress_v1"
                   },
-                  "night_min_mean_c": 0.025,
+                  "night_min_mean_c": -0.325,
                   "period_end": "2026-11-01",
                   "period_start": "2026-10-29",
                   "precipitation_days": 3,
@@ -168153,12 +168069,12 @@
                   "rain_and_gust_ge_50_days": 0,
                   "snow_and_gust_ge_50_days": 0,
                   "snowfall_days": 1,
-                  "snowfall_total_cm": 1.68,
-                  "temperature_max_mean_c": 12.45,
-                  "temperature_mean_c": 5.079,
-                  "temperature_min_mean_c": -0.05,
-                  "wind_gust_max_kmh": 34.6,
-                  "wind_speed_mean_kmh": 3.879
+                  "snowfall_total_cm": 1.47,
+                  "temperature_max_mean_c": 12.725,
+                  "temperature_mean_c": 5.119,
+                  "temperature_min_mean_c": -0.4,
+                  "wind_gust_max_kmh": 32.8,
+                  "wind_speed_mean_kmh": 3.775
                 },
                 "missing_dates": [],
                 "reason": null,
@@ -190905,7 +190821,7 @@
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-29",
-                "dtr_c": 8.1,
+                "dtr_c": 8.3,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -190913,9 +190829,9 @@
                     "triggered_unique_grid_count": 1
                   },
                   "freeze_and_snow": {
-                    "any_grid_event": true,
+                    "any_grid_event": false,
                     "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 1
+                    "triggered_unique_grid_count": 0
                   },
                   "gust_ge_50": {
                     "any_grid_event": false,
@@ -190948,13 +190864,13 @@
                     "triggered_unique_grid_count": 0
                   },
                   "snow_day": {
-                    "any_grid_event": true,
+                    "any_grid_event": false,
                     "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 1
+                    "triggered_unique_grid_count": 0
                   }
                 },
                 "freeze": true,
-                "freeze_and_snow": true,
+                "freeze_and_snow": false,
                 "gust_ge_50": false,
                 "gust_ge_65": false,
                 "hard_freeze_le_minus5": false,
@@ -190962,31 +190878,29 @@
                 "max_gust_source_point_id": "JZG_LONGHAI",
                 "mechanical_leaf_stress": {
                   "level": "MEDIUM",
-                  "reasons": [
-                    "freeze_plus_snow"
-                  ],
+                  "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -1.2,
-                "precipitation_mm": 4.5,
+                "night_min_c": -1.3,
+                "precipitation_mm": 3.6,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
-                "snow_day": true,
-                "snowfall_cm": 0.42,
+                "snow_day": false,
+                "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 6.7,
-                "temperature_mean_c": 2.067,
-                "temperature_min_c": -1.4,
+                "temperature_max_c": 6.8,
+                "temperature_mean_c": 2.112,
+                "temperature_min_c": -1.5,
                 "total_unique_grid_count": 1,
                 "wind_gust_max_kmh": 27.7,
-                "wind_speed_mean_kmh": 3.962
+                "wind_speed_mean_kmh": 3.779
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-30",
-                "dtr_c": 13.8,
+                "dtr_c": 13.2,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -191046,7 +190960,7 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -2.1,
+                "night_min_c": -1.8,
                 "precipitation_mm": 0.0,
                 "rain_and_gust_ge_50": false,
                 "rain_day": false,
@@ -191054,18 +190968,18 @@
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 11.7,
-                "temperature_mean_c": 4.742,
-                "temperature_min_c": -2.1,
+                "temperature_max_c": 11.4,
+                "temperature_mean_c": 4.379,
+                "temperature_min_c": -1.8,
                 "total_unique_grid_count": 1,
                 "wind_gust_max_kmh": 29.2,
-                "wind_speed_mean_kmh": 4.2
+                "wind_speed_mean_kmh": 4.346
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-31",
-                "dtr_c": 14.4,
+                "dtr_c": 14.9,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": false,
@@ -191108,9 +191022,9 @@
                     "triggered_unique_grid_count": 0
                   },
                   "snow_day": {
-                    "any_grid_event": true,
+                    "any_grid_event": false,
                     "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 1
+                    "triggered_unique_grid_count": 0
                   }
                 },
                 "freeze": false,
@@ -191125,26 +191039,26 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 0.9,
-                "precipitation_mm": 2.4,
+                "night_min_c": 0.3,
+                "precipitation_mm": 3.3,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
-                "snow_day": true,
-                "snowfall_cm": 0.21,
+                "snow_day": false,
+                "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 15.3,
-                "temperature_mean_c": 6.417,
-                "temperature_min_c": 0.9,
+                "temperature_max_c": 15.2,
+                "temperature_mean_c": 5.879,
+                "temperature_min_c": 0.3,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 27.7,
-                "wind_speed_mean_kmh": 4.658
+                "wind_gust_max_kmh": 29.2,
+                "wind_speed_mean_kmh": 4.475
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-11-01",
-                "dtr_c": 7.2,
+                "dtr_c": 5.8,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -191206,7 +191120,7 @@
                   ],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -2.2,
+                "night_min_c": -1.7,
                 "precipitation_mm": 4.8,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
@@ -191214,21 +191128,21 @@
                 "snow_day": true,
                 "snowfall_cm": 2.73,
                 "source_state": "forecast",
-                "temperature_max_c": 5.0,
-                "temperature_mean_c": 0.708,
-                "temperature_min_c": -2.2,
+                "temperature_max_c": 4.1,
+                "temperature_mean_c": 0.8,
+                "temperature_min_c": -1.7,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 23.4,
-                "wind_speed_mean_kmh": 3.742
+                "wind_gust_max_kmh": 19.1,
+                "wind_speed_mean_kmh": 2.717
               }
             ],
             "metrics": {
-              "absolute_min_night_c": -2.2,
+              "absolute_min_night_c": -1.8,
               "combined_weather_stress_events": 4,
               "days_available": 4,
-              "dtr_max_c": 14.4,
-              "dtr_mean_c": 10.875,
-              "freeze_and_snow_days": 2,
+              "dtr_max_c": 14.9,
+              "dtr_mean_c": 10.55,
+              "freeze_and_snow_days": 1,
               "freeze_days": 3,
               "gust_ge_50_days": 0,
               "gust_ge_65_days": 0,
@@ -191249,20 +191163,20 @@
                 ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": -1.15,
+              "night_min_mean_c": -1.125,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
               "precipitation_days": 3,
               "precipitation_total_mm": 11.7,
               "rain_and_gust_ge_50_days": 0,
               "snow_and_gust_ge_50_days": 0,
-              "snowfall_days": 3,
-              "snowfall_total_cm": 3.36,
-              "temperature_max_mean_c": 9.675,
-              "temperature_mean_c": 3.483,
-              "temperature_min_mean_c": -1.2,
+              "snowfall_days": 1,
+              "snowfall_total_cm": 2.73,
+              "temperature_max_mean_c": 9.375,
+              "temperature_mean_c": 3.292,
+              "temperature_min_mean_c": -1.175,
               "wind_gust_max_kmh": 29.2,
-              "wind_speed_mean_kmh": 4.141
+              "wind_speed_mean_kmh": 3.829
             },
             "point_ids": [
               "JZG_LONGHAI"
@@ -191340,12 +191254,12 @@
                 "expected_days": 4,
                 "incomplete_dates": [],
                 "metrics": {
-                  "absolute_min_night_c": -2.2,
+                  "absolute_min_night_c": -1.8,
                   "combined_weather_stress_events": 4,
                   "days_available": 4,
-                  "dtr_max_c": 14.4,
-                  "dtr_mean_c": 10.875,
-                  "freeze_and_snow_days": 2,
+                  "dtr_max_c": 14.9,
+                  "dtr_mean_c": 10.55,
+                  "freeze_and_snow_days": 1,
                   "freeze_days": 3,
                   "gust_ge_50_days": 0,
                   "gust_ge_65_days": 0,
@@ -191366,20 +191280,20 @@
                     ],
                     "rule_version": "mechanical_leaf_stress_v1"
                   },
-                  "night_min_mean_c": -1.15,
+                  "night_min_mean_c": -1.125,
                   "period_end": "2026-11-01",
                   "period_start": "2026-10-29",
                   "precipitation_days": 3,
                   "precipitation_total_mm": 11.7,
                   "rain_and_gust_ge_50_days": 0,
                   "snow_and_gust_ge_50_days": 0,
-                  "snowfall_days": 3,
-                  "snowfall_total_cm": 3.36,
-                  "temperature_max_mean_c": 9.675,
-                  "temperature_mean_c": 3.483,
-                  "temperature_min_mean_c": -1.2,
+                  "snowfall_days": 1,
+                  "snowfall_total_cm": 2.73,
+                  "temperature_max_mean_c": 9.375,
+                  "temperature_mean_c": 3.292,
+                  "temperature_min_mean_c": -1.175,
                   "wind_gust_max_kmh": 29.2,
-                  "wind_speed_mean_kmh": 4.141
+                  "wind_speed_mean_kmh": 3.829
                 },
                 "missing_dates": [],
                 "reason": null,
@@ -192275,7 +192189,29 @@
             }
           ]
         },
-        "forecast": [],
+        "forecast": [
+          {
+            "baseline_temperature_mean_c": 5.632,
+            "dtr_max_c": 5.9,
+            "dtr_mean_c": 5.9,
+            "end_date": "2026-11-01",
+            "freeze_days": 1,
+            "gust_ge_50_days": 0,
+            "gust_ge_65_days": 0,
+            "hard_freeze_days": 0,
+            "minimum_daily_mean_c": 2.571,
+            "minimum_night_min_c": -1.0,
+            "precipitation_total_mm": 9.6,
+            "rain_and_gust_ge_50_days": 0,
+            "recovery_status": "NOT_YET_OBSERVED",
+            "rule_version": "cooling_episode_v1",
+            "snow_and_gust_ge_50_days": 0,
+            "snowfall_total_cm": 1.68,
+            "start_date": "2026-11-01",
+            "temperature_drop_c": 3.061,
+            "wind_gust_max_kmh": 27.0
+          }
+        ],
         "rule_version": "cooling_episode_v1"
       },
       "finalized_history": {
@@ -216897,7 +216833,7 @@
             "available_grid_count": 1,
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 13.7,
+            "dtr_c": 14.6,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
@@ -216957,7 +216893,7 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.8,
+            "night_min_c": -1.4,
             "precipitation_mm": 0.3,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
@@ -216965,18 +216901,18 @@
             "snow_day": false,
             "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 11.9,
-            "temperature_mean_c": 3.325,
-            "temperature_min_c": -1.8,
+            "temperature_max_c": 13.1,
+            "temperature_mean_c": 3.825,
+            "temperature_min_c": -1.5,
             "total_unique_grid_count": 1,
-            "wind_gust_max_kmh": 29.9,
-            "wind_speed_mean_kmh": 2.133
+            "wind_gust_max_kmh": 35.3,
+            "wind_speed_mean_kmh": 2.892
           },
           {
             "available_grid_count": 1,
             "complete": true,
             "date": "2026-10-30",
-            "dtr_c": 17.5,
+            "dtr_c": 17.2,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
@@ -217036,7 +216972,7 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -2.1,
+            "night_min_c": -1.7,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
@@ -217044,18 +216980,18 @@
             "snow_day": false,
             "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 15.4,
-            "temperature_mean_c": 5.279,
-            "temperature_min_c": -2.1,
+            "temperature_max_c": 15.5,
+            "temperature_mean_c": 5.692,
+            "temperature_min_c": -1.7,
             "total_unique_grid_count": 1,
-            "wind_gust_max_kmh": 42.5,
-            "wind_speed_mean_kmh": 4.754
+            "wind_gust_max_kmh": 42.1,
+            "wind_speed_mean_kmh": 4.742
           },
           {
             "available_grid_count": 1,
             "complete": true,
             "date": "2026-10-31",
-            "dtr_c": 14.7,
+            "dtr_c": 15.5,
             "event_counts": {
               "freeze": {
                 "any_grid_event": false,
@@ -217088,9 +217024,9 @@
                 "triggered_unique_grid_count": 0
               },
               "rain_day": {
-                "any_grid_event": false,
+                "any_grid_event": true,
                 "total_unique_grid_count": 1,
-                "triggered_unique_grid_count": 0
+                "triggered_unique_grid_count": 1
               },
               "snow_and_gust_ge_50": {
                 "any_grid_event": false,
@@ -217111,30 +217047,30 @@
             "max_gust_source_grid_cell_key": "31.500000,102.750000",
             "max_gust_source_point_id": "LXL_HIGH_PASS",
             "mechanical_leaf_stress": {
-              "level": "LOW",
+              "level": "MEDIUM",
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.1,
-            "precipitation_mm": 0.0,
+            "night_min_c": 0.8,
+            "precipitation_mm": 0.3,
             "rain_and_gust_ge_50": false,
-            "rain_day": false,
+            "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 15.8,
-            "temperature_mean_c": 7.213,
-            "temperature_min_c": 1.1,
+            "temperature_max_c": 16.3,
+            "temperature_mean_c": 7.379,
+            "temperature_min_c": 0.8,
             "total_unique_grid_count": 1,
             "wind_gust_max_kmh": 43.6,
-            "wind_speed_mean_kmh": 5.575
+            "wind_speed_mean_kmh": 5.421
           },
           {
             "available_grid_count": 1,
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 10.3,
+            "dtr_c": 5.9,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
@@ -217196,42 +217132,42 @@
               ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.7,
-            "precipitation_mm": 8.4,
+            "night_min_c": -1.0,
+            "precipitation_mm": 9.6,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
-            "snowfall_cm": 2.31,
+            "snowfall_cm": 1.68,
             "source_state": "forecast",
-            "temperature_max_c": 8.6,
-            "temperature_mean_c": 2.992,
-            "temperature_min_c": -1.7,
+            "temperature_max_c": 4.9,
+            "temperature_mean_c": 2.571,
+            "temperature_min_c": -1.0,
             "total_unique_grid_count": 1,
-            "wind_gust_max_kmh": 32.4,
-            "wind_speed_mean_kmh": 2.013
+            "wind_gust_max_kmh": 27.0,
+            "wind_speed_mean_kmh": 2.354
           }
         ],
         "metrics": {
-          "absolute_min_night_c": -2.1,
-          "combined_weather_stress_events": 3,
+          "absolute_min_night_c": -1.7,
+          "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 17.5,
-          "dtr_mean_c": 14.05,
+          "dtr_max_c": 17.2,
+          "dtr_mean_c": 13.3,
           "freeze_and_snow_days": 1,
           "freeze_days": 3,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 8.4,
-          "max_daily_snowfall_cm": 2.31,
+          "max_daily_precipitation_mm": 9.6,
+          "max_daily_snowfall_cm": 1.68,
           "max_gust_source_grid_cell_key": "31.500000,102.750000",
           "max_gust_source_point_id": "LXL_HIGH_PASS",
           "mechanical_leaf_stress": {
             "day_count_by_level": {
               "HIGH": 0,
-              "LOW": 1,
-              "MEDIUM": 3
+              "LOW": 0,
+              "MEDIUM": 4
             },
             "level": "MEDIUM",
             "reasons": [
@@ -217239,20 +217175,20 @@
             ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": -1.125,
+          "night_min_mean_c": -0.825,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
-          "precipitation_days": 2,
-          "precipitation_total_mm": 8.7,
+          "precipitation_days": 3,
+          "precipitation_total_mm": 10.2,
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 1,
-          "snowfall_total_cm": 2.31,
-          "temperature_max_mean_c": 12.925,
-          "temperature_mean_c": 4.702,
-          "temperature_min_mean_c": -1.125,
+          "snowfall_total_cm": 1.68,
+          "temperature_max_mean_c": 12.45,
+          "temperature_mean_c": 4.867,
+          "temperature_min_mean_c": -0.85,
           "wind_gust_max_kmh": 43.6,
-          "wind_speed_mean_kmh": 3.619
+          "wind_speed_mean_kmh": 3.852
         },
         "point_ids": [
           "LXL_HIGH_PASS"
@@ -217330,25 +217266,25 @@
             "expected_days": 4,
             "incomplete_dates": [],
             "metrics": {
-              "absolute_min_night_c": -2.1,
-              "combined_weather_stress_events": 3,
+              "absolute_min_night_c": -1.7,
+              "combined_weather_stress_events": 4,
               "days_available": 4,
-              "dtr_max_c": 17.5,
-              "dtr_mean_c": 14.05,
+              "dtr_max_c": 17.2,
+              "dtr_mean_c": 13.3,
               "freeze_and_snow_days": 1,
               "freeze_days": 3,
               "gust_ge_50_days": 0,
               "gust_ge_65_days": 0,
               "hard_freeze_le_minus5_days": 0,
-              "max_daily_precipitation_mm": 8.4,
-              "max_daily_snowfall_cm": 2.31,
+              "max_daily_precipitation_mm": 9.6,
+              "max_daily_snowfall_cm": 1.68,
               "max_gust_source_grid_cell_key": "31.500000,102.750000",
               "max_gust_source_point_id": "LXL_HIGH_PASS",
               "mechanical_leaf_stress": {
                 "day_count_by_level": {
                   "HIGH": 0,
-                  "LOW": 1,
-                  "MEDIUM": 3
+                  "LOW": 0,
+                  "MEDIUM": 4
                 },
                 "level": "MEDIUM",
                 "reasons": [
@@ -217356,20 +217292,20 @@
                 ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": -1.125,
+              "night_min_mean_c": -0.825,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
-              "precipitation_days": 2,
-              "precipitation_total_mm": 8.7,
+              "precipitation_days": 3,
+              "precipitation_total_mm": 10.2,
               "rain_and_gust_ge_50_days": 0,
               "snow_and_gust_ge_50_days": 0,
               "snowfall_days": 1,
-              "snowfall_total_cm": 2.31,
-              "temperature_max_mean_c": 12.925,
-              "temperature_mean_c": 4.702,
-              "temperature_min_mean_c": -1.125,
+              "snowfall_total_cm": 1.68,
+              "temperature_max_mean_c": 12.45,
+              "temperature_mean_c": 4.867,
+              "temperature_min_mean_c": -0.85,
               "wind_gust_max_kmh": 43.6,
-              "wind_speed_mean_kmh": 3.619
+              "wind_speed_mean_kmh": 3.852
             },
             "missing_dates": [],
             "reason": null,
@@ -243363,7 +243299,7 @@
               "available_subregion_count": 2,
               "complete": true,
               "date": "2026-10-29",
-              "dtr_c": 8.9,
+              "dtr_c": 10.85,
               "event_counts": {
                 "freeze": {
                   "any_grid_event": true,
@@ -243396,9 +243332,9 @@
                   "triggered_unique_grid_count": 0
                 },
                 "rain_day": {
-                  "any_grid_event": false,
+                  "any_grid_event": true,
                   "total_unique_grid_count": 2,
-                  "triggered_unique_grid_count": 0
+                  "triggered_unique_grid_count": 1
                 },
                 "snow_and_gust_ge_50": {
                   "any_grid_event": false,
@@ -243423,26 +243359,26 @@
                 "reasons": [],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": -1.0,
-              "precipitation_mm": 0.0,
+              "night_min_c": -1.4,
+              "precipitation_mm": 0.15,
               "rain_and_gust_ge_50": false,
-              "rain_day": false,
+              "rain_day": true,
               "snow_and_gust_ge_50": false,
               "snow_day": false,
               "snowfall_cm": 0.0,
               "source_state": "forecast",
-              "temperature_max_c": 7.9,
-              "temperature_mean_c": 2.267,
-              "temperature_min_c": -1.0,
+              "temperature_max_c": 9.4,
+              "temperature_mean_c": 2.721,
+              "temperature_min_c": -1.45,
               "total_subregion_count": 2,
               "wind_gust_max_kmh": 32.8,
-              "wind_speed_mean_kmh": 3.505
+              "wind_speed_mean_kmh": 3.439
             },
             {
               "available_subregion_count": 2,
               "complete": true,
               "date": "2026-10-30",
-              "dtr_c": 17.45,
+              "dtr_c": 17.15,
               "event_counts": {
                 "freeze": {
                   "any_grid_event": true,
@@ -243502,7 +243438,7 @@
                 "reasons": [],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": -3.15,
+              "night_min_c": -2.9,
               "precipitation_mm": 0.0,
               "rain_and_gust_ge_50": false,
               "rain_day": false,
@@ -243510,12 +243446,12 @@
               "snow_day": false,
               "snowfall_cm": 0.0,
               "source_state": "forecast",
-              "temperature_max_c": 14.3,
-              "temperature_mean_c": 4.588,
-              "temperature_min_c": -3.15,
+              "temperature_max_c": 14.25,
+              "temperature_mean_c": 4.659,
+              "temperature_min_c": -2.9,
               "total_subregion_count": 2,
-              "wind_gust_max_kmh": 32.0,
-              "wind_speed_mean_kmh": 3.362
+              "wind_gust_max_kmh": 31.7,
+              "wind_speed_mean_kmh": 3.344
             },
             {
               "available_subregion_count": 2,
@@ -243554,9 +243490,9 @@
                   "triggered_unique_grid_count": 0
                 },
                 "rain_day": {
-                  "any_grid_event": false,
+                  "any_grid_event": true,
                   "total_unique_grid_count": 2,
-                  "triggered_unique_grid_count": 0
+                  "triggered_unique_grid_count": 1
                 },
                 "snow_and_gust_ge_50": {
                   "any_grid_event": false,
@@ -243577,40 +243513,40 @@
               "max_gust_source_grid_cell_key": "31.500000,103.000000",
               "max_gust_source_point_id": "BPG_CENTER",
               "mechanical_leaf_stress": {
-                "level": "LOW",
+                "level": "MEDIUM",
                 "reasons": [],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": 1.55,
-              "precipitation_mm": 0.0,
+              "night_min_c": 1.4,
+              "precipitation_mm": 0.6,
               "rain_and_gust_ge_50": false,
-              "rain_day": false,
+              "rain_day": true,
               "snow_and_gust_ge_50": false,
               "snow_day": false,
               "snowfall_cm": 0.0,
               "source_state": "forecast",
-              "temperature_max_c": 18.05,
-              "temperature_mean_c": 8.052,
-              "temperature_min_c": 1.55,
+              "temperature_max_c": 17.9,
+              "temperature_mean_c": 7.99,
+              "temperature_min_c": 1.4,
               "total_subregion_count": 2,
-              "wind_gust_max_kmh": 43.9,
-              "wind_speed_mean_kmh": 2.487
+              "wind_gust_max_kmh": 40.7,
+              "wind_speed_mean_kmh": 2.462
             },
             {
               "available_subregion_count": 2,
               "complete": true,
               "date": "2026-11-01",
-              "dtr_c": 4.4,
+              "dtr_c": 3.8,
               "event_counts": {
                 "freeze": {
-                  "any_grid_event": false,
+                  "any_grid_event": true,
                   "total_unique_grid_count": 2,
-                  "triggered_unique_grid_count": 0
+                  "triggered_unique_grid_count": 1
                 },
                 "freeze_and_snow": {
-                  "any_grid_event": false,
+                  "any_grid_event": true,
                   "total_unique_grid_count": 2,
-                  "triggered_unique_grid_count": 0
+                  "triggered_unique_grid_count": 1
                 },
                 "gust_ge_50": {
                   "any_grid_event": false,
@@ -243648,8 +243584,8 @@
                   "triggered_unique_grid_count": 1
                 }
               },
-              "freeze": false,
-              "freeze_and_snow": false,
+              "freeze": true,
+              "freeze_and_snow": true,
               "gust_ge_50": false,
               "gust_ge_65": false,
               "hard_freeze_le_minus5": false,
@@ -243657,64 +243593,68 @@
               "max_gust_source_point_id": "BPG_CENTER",
               "mechanical_leaf_stress": {
                 "level": "MEDIUM",
-                "reasons": [],
+                "reasons": [
+                  "freeze_plus_snow"
+                ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_c": 0.85,
-              "precipitation_mm": 5.1,
+              "night_min_c": 0.1,
+              "precipitation_mm": 6.0,
               "rain_and_gust_ge_50": false,
               "rain_day": true,
               "snow_and_gust_ge_50": false,
               "snow_day": true,
-              "snowfall_cm": 0.42,
+              "snowfall_cm": 0.63,
               "source_state": "forecast",
-              "temperature_max_c": 5.25,
-              "temperature_mean_c": 2.777,
-              "temperature_min_c": 0.85,
+              "temperature_max_c": 3.9,
+              "temperature_mean_c": 2.148,
+              "temperature_min_c": 0.1,
               "total_subregion_count": 2,
-              "wind_gust_max_kmh": 28.4,
-              "wind_speed_mean_kmh": 2.75
+              "wind_gust_max_kmh": 23.8,
+              "wind_speed_mean_kmh": 2.931
             }
           ],
           "metrics": {
-            "absolute_min_night_c": -3.15,
-            "combined_weather_stress_events": 3,
+            "absolute_min_night_c": -2.9,
+            "combined_weather_stress_events": 4,
             "days_available": 4,
-            "dtr_max_c": 17.45,
-            "dtr_mean_c": 11.812,
-            "freeze_and_snow_days": 0,
-            "freeze_days": 2,
+            "dtr_max_c": 17.15,
+            "dtr_mean_c": 12.075,
+            "freeze_and_snow_days": 1,
+            "freeze_days": 3,
             "gust_ge_50_days": 0,
             "gust_ge_65_days": 0,
             "hard_freeze_le_minus5_days": 0,
-            "max_daily_precipitation_mm": 5.1,
-            "max_daily_snowfall_cm": 0.42,
+            "max_daily_precipitation_mm": 6.0,
+            "max_daily_snowfall_cm": 0.63,
             "max_gust_source_grid_cell_key": "31.500000,103.000000",
             "max_gust_source_point_id": "BPG_CENTER",
             "mechanical_leaf_stress": {
               "day_count_by_level": {
                 "HIGH": 0,
-                "LOW": 1,
-                "MEDIUM": 3
+                "LOW": 0,
+                "MEDIUM": 4
               },
               "level": "MEDIUM",
-              "reasons": [],
+              "reasons": [
+                "freeze_plus_snow"
+              ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_mean_c": -0.438,
+            "night_min_mean_c": -0.7,
             "period_end": "2026-11-01",
             "period_start": "2026-10-29",
-            "precipitation_days": 1,
-            "precipitation_total_mm": 5.1,
+            "precipitation_days": 3,
+            "precipitation_total_mm": 6.75,
             "rain_and_gust_ge_50_days": 0,
             "snow_and_gust_ge_50_days": 0,
             "snowfall_days": 1,
-            "snowfall_total_cm": 0.42,
-            "temperature_max_mean_c": 11.375,
-            "temperature_mean_c": 4.421,
-            "temperature_min_mean_c": -0.438,
-            "wind_gust_max_kmh": 43.9,
-            "wind_speed_mean_kmh": 3.026
+            "snowfall_total_cm": 0.63,
+            "temperature_max_mean_c": 11.362,
+            "temperature_mean_c": 4.38,
+            "temperature_min_mean_c": -0.713,
+            "wind_gust_max_kmh": 40.7,
+            "wind_speed_mean_kmh": 3.044
           },
           "missing_or_partial_subregions": [],
           "source_state": "forecast",
@@ -243730,44 +243670,46 @@
               "expected_days": 4,
               "incomplete_dates": [],
               "metrics": {
-                "absolute_min_night_c": -3.15,
-                "combined_weather_stress_events": 3,
+                "absolute_min_night_c": -2.9,
+                "combined_weather_stress_events": 4,
                 "days_available": 4,
-                "dtr_max_c": 17.45,
-                "dtr_mean_c": 11.812,
-                "freeze_and_snow_days": 0,
-                "freeze_days": 2,
+                "dtr_max_c": 17.15,
+                "dtr_mean_c": 12.075,
+                "freeze_and_snow_days": 1,
+                "freeze_days": 3,
                 "gust_ge_50_days": 0,
                 "gust_ge_65_days": 0,
                 "hard_freeze_le_minus5_days": 0,
-                "max_daily_precipitation_mm": 5.1,
-                "max_daily_snowfall_cm": 0.42,
+                "max_daily_precipitation_mm": 6.0,
+                "max_daily_snowfall_cm": 0.63,
                 "max_gust_source_grid_cell_key": "31.500000,103.000000",
                 "max_gust_source_point_id": "BPG_CENTER",
                 "mechanical_leaf_stress": {
                   "day_count_by_level": {
                     "HIGH": 0,
-                    "LOW": 1,
-                    "MEDIUM": 3
+                    "LOW": 0,
+                    "MEDIUM": 4
                   },
                   "level": "MEDIUM",
-                  "reasons": [],
+                  "reasons": [
+                    "freeze_plus_snow"
+                  ],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_mean_c": -0.438,
+                "night_min_mean_c": -0.7,
                 "period_end": "2026-11-01",
                 "period_start": "2026-10-29",
-                "precipitation_days": 1,
-                "precipitation_total_mm": 5.1,
+                "precipitation_days": 3,
+                "precipitation_total_mm": 6.75,
                 "rain_and_gust_ge_50_days": 0,
                 "snow_and_gust_ge_50_days": 0,
                 "snowfall_days": 1,
-                "snowfall_total_cm": 0.42,
-                "temperature_max_mean_c": 11.375,
-                "temperature_mean_c": 4.421,
-                "temperature_min_mean_c": -0.438,
-                "wind_gust_max_kmh": 43.9,
-                "wind_speed_mean_kmh": 3.026
+                "snowfall_total_cm": 0.63,
+                "temperature_max_mean_c": 11.362,
+                "temperature_mean_c": 4.38,
+                "temperature_min_mean_c": -0.713,
+                "wind_gust_max_kmh": 40.7,
+                "wind_speed_mean_kmh": 3.044
               },
               "missing_dates": [],
               "reason": null,
@@ -268586,7 +268528,7 @@
             "available_subregion_count": 2,
             "complete": true,
             "date": "2026-10-29",
-            "dtr_c": 8.9,
+            "dtr_c": 10.85,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
@@ -268619,9 +268561,9 @@
                 "triggered_unique_grid_count": 0
               },
               "rain_day": {
-                "any_grid_event": false,
+                "any_grid_event": true,
                 "total_unique_grid_count": 2,
-                "triggered_unique_grid_count": 0
+                "triggered_unique_grid_count": 1
               },
               "snow_and_gust_ge_50": {
                 "any_grid_event": false,
@@ -268646,26 +268588,26 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -1.0,
-            "precipitation_mm": 0.0,
+            "night_min_c": -1.4,
+            "precipitation_mm": 0.15,
             "rain_and_gust_ge_50": false,
-            "rain_day": false,
+            "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 7.9,
-            "temperature_mean_c": 2.267,
-            "temperature_min_c": -1.0,
+            "temperature_max_c": 9.4,
+            "temperature_mean_c": 2.721,
+            "temperature_min_c": -1.45,
             "total_subregion_count": 2,
             "wind_gust_max_kmh": 32.8,
-            "wind_speed_mean_kmh": 3.505
+            "wind_speed_mean_kmh": 3.439
           },
           {
             "available_subregion_count": 2,
             "complete": true,
             "date": "2026-10-30",
-            "dtr_c": 17.45,
+            "dtr_c": 17.15,
             "event_counts": {
               "freeze": {
                 "any_grid_event": true,
@@ -268725,7 +268667,7 @@
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": -3.15,
+            "night_min_c": -2.9,
             "precipitation_mm": 0.0,
             "rain_and_gust_ge_50": false,
             "rain_day": false,
@@ -268733,12 +268675,12 @@
             "snow_day": false,
             "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 14.3,
-            "temperature_mean_c": 4.588,
-            "temperature_min_c": -3.15,
+            "temperature_max_c": 14.25,
+            "temperature_mean_c": 4.659,
+            "temperature_min_c": -2.9,
             "total_subregion_count": 2,
-            "wind_gust_max_kmh": 32.0,
-            "wind_speed_mean_kmh": 3.362
+            "wind_gust_max_kmh": 31.7,
+            "wind_speed_mean_kmh": 3.344
           },
           {
             "available_subregion_count": 2,
@@ -268777,9 +268719,9 @@
                 "triggered_unique_grid_count": 0
               },
               "rain_day": {
-                "any_grid_event": false,
+                "any_grid_event": true,
                 "total_unique_grid_count": 2,
-                "triggered_unique_grid_count": 0
+                "triggered_unique_grid_count": 1
               },
               "snow_and_gust_ge_50": {
                 "any_grid_event": false,
@@ -268800,40 +268742,40 @@
             "max_gust_source_grid_cell_key": "31.500000,103.000000",
             "max_gust_source_point_id": "BPG_CENTER",
             "mechanical_leaf_stress": {
-              "level": "LOW",
+              "level": "MEDIUM",
               "reasons": [],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 1.55,
-            "precipitation_mm": 0.0,
+            "night_min_c": 1.4,
+            "precipitation_mm": 0.6,
             "rain_and_gust_ge_50": false,
-            "rain_day": false,
+            "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": false,
             "snowfall_cm": 0.0,
             "source_state": "forecast",
-            "temperature_max_c": 18.05,
-            "temperature_mean_c": 8.052,
-            "temperature_min_c": 1.55,
+            "temperature_max_c": 17.9,
+            "temperature_mean_c": 7.99,
+            "temperature_min_c": 1.4,
             "total_subregion_count": 2,
-            "wind_gust_max_kmh": 43.9,
-            "wind_speed_mean_kmh": 2.487
+            "wind_gust_max_kmh": 40.7,
+            "wind_speed_mean_kmh": 2.462
           },
           {
             "available_subregion_count": 2,
             "complete": true,
             "date": "2026-11-01",
-            "dtr_c": 4.4,
+            "dtr_c": 3.8,
             "event_counts": {
               "freeze": {
-                "any_grid_event": false,
+                "any_grid_event": true,
                 "total_unique_grid_count": 2,
-                "triggered_unique_grid_count": 0
+                "triggered_unique_grid_count": 1
               },
               "freeze_and_snow": {
-                "any_grid_event": false,
+                "any_grid_event": true,
                 "total_unique_grid_count": 2,
-                "triggered_unique_grid_count": 0
+                "triggered_unique_grid_count": 1
               },
               "gust_ge_50": {
                 "any_grid_event": false,
@@ -268871,8 +268813,8 @@
                 "triggered_unique_grid_count": 1
               }
             },
-            "freeze": false,
-            "freeze_and_snow": false,
+            "freeze": true,
+            "freeze_and_snow": true,
             "gust_ge_50": false,
             "gust_ge_65": false,
             "hard_freeze_le_minus5": false,
@@ -268880,64 +268822,68 @@
             "max_gust_source_point_id": "BPG_CENTER",
             "mechanical_leaf_stress": {
               "level": "MEDIUM",
-              "reasons": [],
+              "reasons": [
+                "freeze_plus_snow"
+              ],
               "rule_version": "mechanical_leaf_stress_v1"
             },
-            "night_min_c": 0.85,
-            "precipitation_mm": 5.1,
+            "night_min_c": 0.1,
+            "precipitation_mm": 6.0,
             "rain_and_gust_ge_50": false,
             "rain_day": true,
             "snow_and_gust_ge_50": false,
             "snow_day": true,
-            "snowfall_cm": 0.42,
+            "snowfall_cm": 0.63,
             "source_state": "forecast",
-            "temperature_max_c": 5.25,
-            "temperature_mean_c": 2.777,
-            "temperature_min_c": 0.85,
+            "temperature_max_c": 3.9,
+            "temperature_mean_c": 2.148,
+            "temperature_min_c": 0.1,
             "total_subregion_count": 2,
-            "wind_gust_max_kmh": 28.4,
-            "wind_speed_mean_kmh": 2.75
+            "wind_gust_max_kmh": 23.8,
+            "wind_speed_mean_kmh": 2.931
           }
         ],
         "metrics": {
-          "absolute_min_night_c": -3.15,
-          "combined_weather_stress_events": 3,
+          "absolute_min_night_c": -2.9,
+          "combined_weather_stress_events": 4,
           "days_available": 4,
-          "dtr_max_c": 17.45,
-          "dtr_mean_c": 11.812,
-          "freeze_and_snow_days": 0,
-          "freeze_days": 2,
+          "dtr_max_c": 17.15,
+          "dtr_mean_c": 12.075,
+          "freeze_and_snow_days": 1,
+          "freeze_days": 3,
           "gust_ge_50_days": 0,
           "gust_ge_65_days": 0,
           "hard_freeze_le_minus5_days": 0,
-          "max_daily_precipitation_mm": 5.1,
-          "max_daily_snowfall_cm": 0.42,
+          "max_daily_precipitation_mm": 6.0,
+          "max_daily_snowfall_cm": 0.63,
           "max_gust_source_grid_cell_key": "31.500000,103.000000",
           "max_gust_source_point_id": "BPG_CENTER",
           "mechanical_leaf_stress": {
             "day_count_by_level": {
               "HIGH": 0,
-              "LOW": 1,
-              "MEDIUM": 3
+              "LOW": 0,
+              "MEDIUM": 4
             },
             "level": "MEDIUM",
-            "reasons": [],
+            "reasons": [
+              "freeze_plus_snow"
+            ],
             "rule_version": "mechanical_leaf_stress_v1"
           },
-          "night_min_mean_c": -0.438,
+          "night_min_mean_c": -0.7,
           "period_end": "2026-11-01",
           "period_start": "2026-10-29",
-          "precipitation_days": 1,
-          "precipitation_total_mm": 5.1,
+          "precipitation_days": 3,
+          "precipitation_total_mm": 6.75,
           "rain_and_gust_ge_50_days": 0,
           "snow_and_gust_ge_50_days": 0,
           "snowfall_days": 1,
-          "snowfall_total_cm": 0.42,
-          "temperature_max_mean_c": 11.375,
-          "temperature_mean_c": 4.421,
-          "temperature_min_mean_c": -0.438,
-          "wind_gust_max_kmh": 43.9,
-          "wind_speed_mean_kmh": 3.026
+          "snowfall_total_cm": 0.63,
+          "temperature_max_mean_c": 11.362,
+          "temperature_mean_c": 4.38,
+          "temperature_min_mean_c": -0.713,
+          "wind_gust_max_kmh": 40.7,
+          "wind_speed_mean_kmh": 3.044
         },
         "missing_or_partial_subregions": [],
         "source_state": "forecast",
@@ -268953,44 +268899,46 @@
             "expected_days": 4,
             "incomplete_dates": [],
             "metrics": {
-              "absolute_min_night_c": -3.15,
-              "combined_weather_stress_events": 3,
+              "absolute_min_night_c": -2.9,
+              "combined_weather_stress_events": 4,
               "days_available": 4,
-              "dtr_max_c": 17.45,
-              "dtr_mean_c": 11.812,
-              "freeze_and_snow_days": 0,
-              "freeze_days": 2,
+              "dtr_max_c": 17.15,
+              "dtr_mean_c": 12.075,
+              "freeze_and_snow_days": 1,
+              "freeze_days": 3,
               "gust_ge_50_days": 0,
               "gust_ge_65_days": 0,
               "hard_freeze_le_minus5_days": 0,
-              "max_daily_precipitation_mm": 5.1,
-              "max_daily_snowfall_cm": 0.42,
+              "max_daily_precipitation_mm": 6.0,
+              "max_daily_snowfall_cm": 0.63,
               "max_gust_source_grid_cell_key": "31.500000,103.000000",
               "max_gust_source_point_id": "BPG_CENTER",
               "mechanical_leaf_stress": {
                 "day_count_by_level": {
                   "HIGH": 0,
-                  "LOW": 1,
-                  "MEDIUM": 3
+                  "LOW": 0,
+                  "MEDIUM": 4
                 },
                 "level": "MEDIUM",
-                "reasons": [],
+                "reasons": [
+                  "freeze_plus_snow"
+                ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": -0.438,
+              "night_min_mean_c": -0.7,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
-              "precipitation_days": 1,
-              "precipitation_total_mm": 5.1,
+              "precipitation_days": 3,
+              "precipitation_total_mm": 6.75,
               "rain_and_gust_ge_50_days": 0,
               "snow_and_gust_ge_50_days": 0,
               "snowfall_days": 1,
-              "snowfall_total_cm": 0.42,
-              "temperature_max_mean_c": 11.375,
-              "temperature_mean_c": 4.421,
-              "temperature_min_mean_c": -0.438,
-              "wind_gust_max_kmh": 43.9,
-              "wind_speed_mean_kmh": 3.026
+              "snowfall_total_cm": 0.63,
+              "temperature_max_mean_c": 11.362,
+              "temperature_mean_c": 4.38,
+              "temperature_min_mean_c": -0.713,
+              "wind_gust_max_kmh": 40.7,
+              "wind_speed_mean_kmh": 3.044
             },
             "missing_dates": [],
             "reason": null,
@@ -292821,7 +292769,7 @@
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-29",
-                "dtr_c": 11.9,
+                "dtr_c": 13.4,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -292881,7 +292829,7 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -1.5,
+                "night_min_c": -2.3,
                 "precipitation_mm": 0.0,
                 "rain_and_gust_ge_50": false,
                 "rain_day": false,
@@ -292889,18 +292837,18 @@
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 10.4,
-                "temperature_mean_c": 2.854,
-                "temperature_min_c": -1.5,
+                "temperature_max_c": 11.1,
+                "temperature_mean_c": 3.117,
+                "temperature_min_c": -2.3,
                 "total_unique_grid_count": 1,
                 "wind_gust_max_kmh": 32.8,
-                "wind_speed_mean_kmh": 3.717
+                "wind_speed_mean_kmh": 3.771
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-30",
-                "dtr_c": 20.1,
+                "dtr_c": 19.3,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -292960,7 +292908,7 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -3.9,
+                "night_min_c": -3.1,
                 "precipitation_mm": 0.0,
                 "rain_and_gust_ge_50": false,
                 "rain_day": false,
@@ -292969,96 +292917,17 @@
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
                 "temperature_max_c": 16.2,
-                "temperature_mean_c": 4.683,
-                "temperature_min_c": -3.9,
+                "temperature_mean_c": 5.046,
+                "temperature_min_c": -3.1,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 32.0,
-                "wind_speed_mean_kmh": 3.467
+                "wind_gust_max_kmh": 31.7,
+                "wind_speed_mean_kmh": 3.246
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-31",
-                "dtr_c": 18.6,
-                "event_counts": {
-                  "freeze": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "freeze_and_snow": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "gust_ge_50": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "gust_ge_65": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "hard_freeze_le_minus5": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "rain_and_gust_ge_50": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "rain_day": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "snow_and_gust_ge_50": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  },
-                  "snow_day": {
-                    "any_grid_event": false,
-                    "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
-                  }
-                },
-                "freeze": false,
-                "freeze_and_snow": false,
-                "gust_ge_50": false,
-                "gust_ge_65": false,
-                "hard_freeze_le_minus5": false,
-                "max_gust_source_grid_cell_key": "31.500000,103.000000",
-                "max_gust_source_point_id": "BPG_CENTER",
-                "mechanical_leaf_stress": {
-                  "level": "LOW",
-                  "reasons": [],
-                  "rule_version": "mechanical_leaf_stress_v1"
-                },
-                "night_min_c": 1.2,
-                "precipitation_mm": 0.0,
-                "rain_and_gust_ge_50": false,
-                "rain_day": false,
-                "snow_and_gust_ge_50": false,
-                "snow_day": false,
-                "snowfall_cm": 0.0,
-                "source_state": "forecast",
-                "temperature_max_c": 19.8,
-                "temperature_mean_c": 8.621,
-                "temperature_min_c": 1.2,
-                "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 43.9,
-                "wind_speed_mean_kmh": 2.354
-              },
-              {
-                "available_grid_count": 1,
-                "complete": true,
-                "date": "2026-11-01",
-                "dtr_c": 5.5,
+                "dtr_c": 19.0,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": false,
@@ -293101,9 +292970,9 @@
                     "triggered_unique_grid_count": 0
                   },
                   "snow_day": {
-                    "any_grid_event": true,
+                    "any_grid_event": false,
                     "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 1
+                    "triggered_unique_grid_count": 0
                   }
                 },
                 "freeze": false,
@@ -293118,61 +292987,144 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 0.4,
-                "precipitation_mm": 7.8,
+                "night_min_c": 1.0,
+                "precipitation_mm": 1.2,
+                "rain_and_gust_ge_50": false,
+                "rain_day": true,
+                "snow_and_gust_ge_50": false,
+                "snow_day": false,
+                "snowfall_cm": 0.0,
+                "source_state": "forecast",
+                "temperature_max_c": 20.0,
+                "temperature_mean_c": 8.704,
+                "temperature_min_c": 1.0,
+                "total_unique_grid_count": 1,
+                "wind_gust_max_kmh": 40.7,
+                "wind_speed_mean_kmh": 2.417
+              },
+              {
+                "available_grid_count": 1,
+                "complete": true,
+                "date": "2026-11-01",
+                "dtr_c": 4.6,
+                "event_counts": {
+                  "freeze": {
+                    "any_grid_event": true,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 1
+                  },
+                  "freeze_and_snow": {
+                    "any_grid_event": true,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 1
+                  },
+                  "gust_ge_50": {
+                    "any_grid_event": false,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 0
+                  },
+                  "gust_ge_65": {
+                    "any_grid_event": false,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 0
+                  },
+                  "hard_freeze_le_minus5": {
+                    "any_grid_event": false,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 0
+                  },
+                  "rain_and_gust_ge_50": {
+                    "any_grid_event": false,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 0
+                  },
+                  "rain_day": {
+                    "any_grid_event": true,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 1
+                  },
+                  "snow_and_gust_ge_50": {
+                    "any_grid_event": false,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 0
+                  },
+                  "snow_day": {
+                    "any_grid_event": true,
+                    "total_unique_grid_count": 1,
+                    "triggered_unique_grid_count": 1
+                  }
+                },
+                "freeze": true,
+                "freeze_and_snow": true,
+                "gust_ge_50": false,
+                "gust_ge_65": false,
+                "hard_freeze_le_minus5": false,
+                "max_gust_source_grid_cell_key": "31.500000,103.000000",
+                "max_gust_source_point_id": "BPG_CENTER",
+                "mechanical_leaf_stress": {
+                  "level": "MEDIUM",
+                  "reasons": [
+                    "freeze_plus_snow"
+                  ],
+                  "rule_version": "mechanical_leaf_stress_v1"
+                },
+                "night_min_c": -0.5,
+                "precipitation_mm": 8.4,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": true,
-                "snowfall_cm": 0.84,
+                "snowfall_cm": 1.26,
                 "source_state": "forecast",
-                "temperature_max_c": 5.9,
-                "temperature_mean_c": 2.962,
-                "temperature_min_c": 0.4,
+                "temperature_max_c": 4.1,
+                "temperature_mean_c": 2.396,
+                "temperature_min_c": -0.5,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 28.4,
-                "wind_speed_mean_kmh": 2.683
+                "wind_gust_max_kmh": 23.8,
+                "wind_speed_mean_kmh": 2.842
               }
             ],
             "metrics": {
-              "absolute_min_night_c": -3.9,
-              "combined_weather_stress_events": 3,
+              "absolute_min_night_c": -3.1,
+              "combined_weather_stress_events": 4,
               "days_available": 4,
-              "dtr_max_c": 20.1,
-              "dtr_mean_c": 14.025,
-              "freeze_and_snow_days": 0,
-              "freeze_days": 2,
+              "dtr_max_c": 19.3,
+              "dtr_mean_c": 14.075,
+              "freeze_and_snow_days": 1,
+              "freeze_days": 3,
               "gust_ge_50_days": 0,
               "gust_ge_65_days": 0,
               "hard_freeze_le_minus5_days": 0,
-              "max_daily_precipitation_mm": 7.8,
-              "max_daily_snowfall_cm": 0.84,
+              "max_daily_precipitation_mm": 8.4,
+              "max_daily_snowfall_cm": 1.26,
               "max_gust_source_grid_cell_key": "31.500000,103.000000",
               "max_gust_source_point_id": "BPG_CENTER",
               "mechanical_leaf_stress": {
                 "day_count_by_level": {
                   "HIGH": 0,
-                  "LOW": 1,
-                  "MEDIUM": 3
+                  "LOW": 0,
+                  "MEDIUM": 4
                 },
                 "level": "MEDIUM",
-                "reasons": [],
+                "reasons": [
+                  "freeze_plus_snow"
+                ],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": -0.95,
+              "night_min_mean_c": -1.225,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
-              "precipitation_days": 1,
-              "precipitation_total_mm": 7.8,
+              "precipitation_days": 2,
+              "precipitation_total_mm": 9.6,
               "rain_and_gust_ge_50_days": 0,
               "snow_and_gust_ge_50_days": 0,
               "snowfall_days": 1,
-              "snowfall_total_cm": 0.84,
-              "temperature_max_mean_c": 13.075,
-              "temperature_mean_c": 4.78,
-              "temperature_min_mean_c": -0.95,
-              "wind_gust_max_kmh": 43.9,
-              "wind_speed_mean_kmh": 3.055
+              "snowfall_total_cm": 1.26,
+              "temperature_max_mean_c": 12.85,
+              "temperature_mean_c": 4.816,
+              "temperature_min_mean_c": -1.225,
+              "wind_gust_max_kmh": 40.7,
+              "wind_speed_mean_kmh": 3.069
             },
             "point_ids": [
               "BPG_CENTER"
@@ -293250,44 +293202,46 @@
                 "expected_days": 4,
                 "incomplete_dates": [],
                 "metrics": {
-                  "absolute_min_night_c": -3.9,
-                  "combined_weather_stress_events": 3,
+                  "absolute_min_night_c": -3.1,
+                  "combined_weather_stress_events": 4,
                   "days_available": 4,
-                  "dtr_max_c": 20.1,
-                  "dtr_mean_c": 14.025,
-                  "freeze_and_snow_days": 0,
-                  "freeze_days": 2,
+                  "dtr_max_c": 19.3,
+                  "dtr_mean_c": 14.075,
+                  "freeze_and_snow_days": 1,
+                  "freeze_days": 3,
                   "gust_ge_50_days": 0,
                   "gust_ge_65_days": 0,
                   "hard_freeze_le_minus5_days": 0,
-                  "max_daily_precipitation_mm": 7.8,
-                  "max_daily_snowfall_cm": 0.84,
+                  "max_daily_precipitation_mm": 8.4,
+                  "max_daily_snowfall_cm": 1.26,
                   "max_gust_source_grid_cell_key": "31.500000,103.000000",
                   "max_gust_source_point_id": "BPG_CENTER",
                   "mechanical_leaf_stress": {
                     "day_count_by_level": {
                       "HIGH": 0,
-                      "LOW": 1,
-                      "MEDIUM": 3
+                      "LOW": 0,
+                      "MEDIUM": 4
                     },
                     "level": "MEDIUM",
-                    "reasons": [],
+                    "reasons": [
+                      "freeze_plus_snow"
+                    ],
                     "rule_version": "mechanical_leaf_stress_v1"
                   },
-                  "night_min_mean_c": -0.95,
+                  "night_min_mean_c": -1.225,
                   "period_end": "2026-11-01",
                   "period_start": "2026-10-29",
-                  "precipitation_days": 1,
-                  "precipitation_total_mm": 7.8,
+                  "precipitation_days": 2,
+                  "precipitation_total_mm": 9.6,
                   "rain_and_gust_ge_50_days": 0,
                   "snow_and_gust_ge_50_days": 0,
                   "snowfall_days": 1,
-                  "snowfall_total_cm": 0.84,
-                  "temperature_max_mean_c": 13.075,
-                  "temperature_mean_c": 4.78,
-                  "temperature_min_mean_c": -0.95,
-                  "wind_gust_max_kmh": 43.9,
-                  "wind_speed_mean_kmh": 3.055
+                  "snowfall_total_cm": 1.26,
+                  "temperature_max_mean_c": 12.85,
+                  "temperature_mean_c": 4.816,
+                  "temperature_min_mean_c": -1.225,
+                  "wind_gust_max_kmh": 40.7,
+                  "wind_speed_mean_kmh": 3.069
                 },
                 "missing_dates": [],
                 "reason": null,
@@ -318539,7 +318493,7 @@
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-29",
-                "dtr_c": 5.9,
+                "dtr_c": 8.3,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -318572,9 +318526,9 @@
                     "triggered_unique_grid_count": 0
                   },
                   "rain_day": {
-                    "any_grid_event": false,
+                    "any_grid_event": true,
                     "total_unique_grid_count": 1,
-                    "triggered_unique_grid_count": 0
+                    "triggered_unique_grid_count": 1
                   },
                   "snow_and_gust_ge_50": {
                     "any_grid_event": false,
@@ -318600,25 +318554,25 @@
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
                 "night_min_c": -0.5,
-                "precipitation_mm": 0.0,
+                "precipitation_mm": 0.3,
                 "rain_and_gust_ge_50": false,
-                "rain_day": false,
+                "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 5.4,
-                "temperature_mean_c": 1.679,
-                "temperature_min_c": -0.5,
+                "temperature_max_c": 7.7,
+                "temperature_mean_c": 2.325,
+                "temperature_min_c": -0.6,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 28.4,
-                "wind_speed_mean_kmh": 3.292
+                "wind_gust_max_kmh": 29.5,
+                "wind_speed_mean_kmh": 3.108
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-30",
-                "dtr_c": 14.8,
+                "dtr_c": 15.0,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": true,
@@ -318678,7 +318632,7 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": -2.4,
+                "night_min_c": -2.7,
                 "precipitation_mm": 0.0,
                 "rain_and_gust_ge_50": false,
                 "rain_day": false,
@@ -318686,18 +318640,18 @@
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 12.4,
-                "temperature_mean_c": 4.492,
-                "temperature_min_c": -2.4,
+                "temperature_max_c": 12.3,
+                "temperature_mean_c": 4.271,
+                "temperature_min_c": -2.7,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 26.3,
-                "wind_speed_mean_kmh": 3.258
+                "wind_gust_max_kmh": 27.4,
+                "wind_speed_mean_kmh": 3.442
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-10-31",
-                "dtr_c": 14.4,
+                "dtr_c": 14.0,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": false,
@@ -318757,7 +318711,7 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 1.9,
+                "night_min_c": 1.8,
                 "precipitation_mm": 0.0,
                 "rain_and_gust_ge_50": false,
                 "rain_day": false,
@@ -318765,18 +318719,18 @@
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 16.3,
-                "temperature_mean_c": 7.483,
-                "temperature_min_c": 1.9,
+                "temperature_max_c": 15.8,
+                "temperature_mean_c": 7.275,
+                "temperature_min_c": 1.8,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 32.4,
-                "wind_speed_mean_kmh": 2.621
+                "wind_gust_max_kmh": 29.5,
+                "wind_speed_mean_kmh": 2.508
               },
               {
                 "available_grid_count": 1,
                 "complete": true,
                 "date": "2026-11-01",
-                "dtr_c": 3.3,
+                "dtr_c": 3.0,
                 "event_counts": {
                   "freeze": {
                     "any_grid_event": false,
@@ -318836,34 +318790,34 @@
                   "reasons": [],
                   "rule_version": "mechanical_leaf_stress_v1"
                 },
-                "night_min_c": 1.3,
-                "precipitation_mm": 2.4,
+                "night_min_c": 0.7,
+                "precipitation_mm": 3.6,
                 "rain_and_gust_ge_50": false,
                 "rain_day": true,
                 "snow_and_gust_ge_50": false,
                 "snow_day": false,
                 "snowfall_cm": 0.0,
                 "source_state": "forecast",
-                "temperature_max_c": 4.6,
-                "temperature_mean_c": 2.592,
-                "temperature_min_c": 1.3,
+                "temperature_max_c": 3.7,
+                "temperature_mean_c": 1.9,
+                "temperature_min_c": 0.7,
                 "total_unique_grid_count": 1,
-                "wind_gust_max_kmh": 25.6,
-                "wind_speed_mean_kmh": 2.817
+                "wind_gust_max_kmh": 23.4,
+                "wind_speed_mean_kmh": 3.021
               }
             ],
             "metrics": {
-              "absolute_min_night_c": -2.4,
+              "absolute_min_night_c": -2.7,
               "combined_weather_stress_events": 3,
               "days_available": 4,
-              "dtr_max_c": 14.8,
-              "dtr_mean_c": 9.6,
+              "dtr_max_c": 15.0,
+              "dtr_mean_c": 10.075,
               "freeze_and_snow_days": 0,
               "freeze_days": 2,
               "gust_ge_50_days": 0,
               "gust_ge_65_days": 0,
               "hard_freeze_le_minus5_days": 0,
-              "max_daily_precipitation_mm": 2.4,
+              "max_daily_precipitation_mm": 3.6,
               "max_daily_snowfall_cm": 0.0,
               "max_gust_source_grid_cell_key": "31.000000,103.000000",
               "max_gust_source_point_id": "SQG_SHUANGQIAO",
@@ -318877,20 +318831,20 @@
                 "reasons": [],
                 "rule_version": "mechanical_leaf_stress_v1"
               },
-              "night_min_mean_c": 0.075,
+              "night_min_mean_c": -0.175,
               "period_end": "2026-11-01",
               "period_start": "2026-10-29",
-              "precipitation_days": 1,
-              "precipitation_total_mm": 2.4,
+              "precipitation_days": 2,
+              "precipitation_total_mm": 3.9,
               "rain_and_gust_ge_50_days": 0,
               "snow_and_gust_ge_50_days": 0,
               "snowfall_days": 0,
               "snowfall_total_cm": 0.0,
-              "temperature_max_mean_c": 9.675,
-              "temperature_mean_c": 4.061,
-              "temperature_min_mean_c": 0.075,
-              "wind_gust_max_kmh": 32.4,
-              "wind_speed_mean_kmh": 2.997
+              "temperature_max_mean_c": 9.875,
+              "temperature_mean_c": 3.943,
+              "temperature_min_mean_c": -0.2,
+              "wind_gust_max_kmh": 29.5,
+              "wind_speed_mean_kmh": 3.02
             },
             "point_ids": [
               "SQG_SHUANGQIAO"
@@ -318968,17 +318922,17 @@
                 "expected_days": 4,
                 "incomplete_dates": [],
                 "metrics": {
-                  "absolute_min_night_c": -2.4,
+                  "absolute_min_night_c": -2.7,
                   "combined_weather_stress_events": 3,
                   "days_available": 4,
-                  "dtr_max_c": 14.8,
-                  "dtr_mean_c": 9.6,
+                  "dtr_max_c": 15.0,
+                  "dtr_mean_c": 10.075,
                   "freeze_and_snow_days": 0,
                   "freeze_days": 2,
                   "gust_ge_50_days": 0,
                   "gust_ge_65_days": 0,
                   "hard_freeze_le_minus5_days": 0,
-                  "max_daily_precipitation_mm": 2.4,
+                  "max_daily_precipitation_mm": 3.6,
                   "max_daily_snowfall_cm": 0.0,
                   "max_gust_source_grid_cell_key": "31.000000,103.000000",
                   "max_gust_source_point_id": "SQG_SHUANGQIAO",
@@ -318992,20 +318946,20 @@
                     "reasons": [],
                     "rule_version": "mechanical_leaf_stress_v1"
                   },
-                  "night_min_mean_c": 0.075,
+                  "night_min_mean_c": -0.175,
                   "period_end": "2026-11-01",
                   "period_start": "2026-10-29",
-                  "precipitation_days": 1,
-                  "precipitation_total_mm": 2.4,
+                  "precipitation_days": 2,
+                  "precipitation_total_mm": 3.9,
                   "rain_and_gust_ge_50_days": 0,
                   "snow_and_gust_ge_50_days": 0,
                   "snowfall_days": 0,
                   "snowfall_total_cm": 0.0,
-                  "temperature_max_mean_c": 9.675,
-                  "temperature_mean_c": 4.061,
-                  "temperature_min_mean_c": 0.075,
-                  "wind_gust_max_kmh": 32.4,
-                  "wind_speed_mean_kmh": 2.997
+                  "temperature_max_mean_c": 9.875,
+                  "temperature_mean_c": 3.943,
+                  "temperature_min_mean_c": -0.2,
+                  "wind_gust_max_kmh": 29.5,
+                  "wind_speed_mean_kmh": 3.02
                 },
                 "missing_dates": [],
                 "reason": null,
