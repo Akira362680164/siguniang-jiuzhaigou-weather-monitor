@@ -113,7 +113,8 @@
     "2025-12-01",
     "2025-12-02",
     "2025-12-03",
-    "2025-12-04"
+    "2025-12-04",
+    "2025-12-05"
   ],
   "daily": [
     {
@@ -3160,10 +3161,41 @@
       "temperature_min_c": -10.0,
       "wind_gust_max_kmh": 33.5,
       "wind_speed_mean_kmh": 1.817
+    },
+    {
+      "complete": true,
+      "date": "2025-12-05",
+      "dtr_c": 18.5,
+      "freeze": true,
+      "freeze_and_snow": true,
+      "gust_ge_50": false,
+      "gust_ge_65": false,
+      "hard_freeze_le_minus5": true,
+      "mechanical_leaf_stress": {
+        "level": "HIGH",
+        "reasons": [
+          "hard_freeze_plus_snow"
+        ],
+        "rule_version": "mechanical_leaf_stress_v1"
+      },
+      "night_min_c": -13.1,
+      "precipitation_mm": 0.4,
+      "rain_and_gust_ge_50": false,
+      "rain_day": true,
+      "snow_and_gust_ge_50": false,
+      "snow_day": true,
+      "snowfall_cm": 0.28,
+      "source_fingerprint": "b04e6858ffc39d463c8c088ed35497d1bb6322fba28341be3986620b024de91f",
+      "source_state": "finalized_history",
+      "temperature_max_c": 5.1,
+      "temperature_mean_c": -5.162,
+      "temperature_min_c": -13.4,
+      "wind_gust_max_kmh": 39.6,
+      "wind_speed_mean_kmh": 2.829
     }
   ],
   "date_range": {
-    "end_date": "2025-12-04",
+    "end_date": "2025-12-05",
     "start_date": "2025-08-25"
   },
   "identity": {
@@ -3192,7 +3224,7 @@
     "utc_offset_seconds": 28800,
     "year": 2025
   },
-  "last_update": "2026-10-29T22:47:40Z",
+  "last_update": "2026-10-30T22:23:17Z",
   "namespace": "siguniang_jiuzhaigou",
   "point_id": "LXL_HIGH_PASS",
   "rule_versions": {
@@ -3303,7 +3335,8 @@
     "2025-12-01": "e7291ad3f9d875431bb3ad410fd4f8bb1ef687233f5f1f7951172018719c27d4",
     "2025-12-02": "8ef04423c4fc5daf45c3ead2465f62606c034af7c1c89ce8c859615209821bab",
     "2025-12-03": "c49138f091aa1334fd871e9aed6d5daf1ffbf7868d4073e2b1637b9ff9c645c1",
-    "2025-12-04": "b769943da82fadac924587283c54efecebc22b7350692e617bd49a1318d19182"
+    "2025-12-04": "b769943da82fadac924587283c54efecebc22b7350692e617bd49a1318d19182",
+    "2025-12-05": "b04e6858ffc39d463c8c088ed35497d1bb6322fba28341be3986620b024de91f"
   },
   "source_history_cache_key": "siguniang_jiuzhaigou:2025:LXL_HIGH_PASS:31.388400,102.887830",
   "source_history_cache_path": "data/cache/history/siguniang_jiuzhaigou/2025/LXL_HIGH_PASS.json",
