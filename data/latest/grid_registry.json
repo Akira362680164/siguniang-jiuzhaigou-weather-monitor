@@ -1,7 +1,7 @@
 {
-  "data_date": "2026-10-31",
+  "data_date": "2026-11-01",
   "deduplication_key": "returned_grid_coordinate",
-  "generated_at": "2026-11-01T13:28:32Z",
+  "generated_at": "2026-11-01T22:05:50Z",
   "history_forward": {
     "points": {
       "BPG_CENTER": {
@@ -12,15 +12,15 @@
             "2024",
             "2025"
           ],
-          "cross_year_comparison_usable": true,
-          "final_status": "PASS",
+          "cross_year_comparison_usable": false,
+          "final_status": "FAILED",
           "grid_distance_limit_km": 13.5,
           "pairwise": {
-            "2023_vs_2024": "PASS",
-            "2023_vs_2025": "PASS",
-            "2024_vs_2025": "PASS"
+            "2023_vs_2024": "UNAVAILABLE",
+            "2023_vs_2025": "UNAVAILABLE",
+            "2024_vs_2025": "UNAVAILABLE"
           },
-          "reason": null,
+          "reason": "HISTORY_FORWARD_YEAR_QA_FAILED:2023,2024,2025",
           "requested_coordinates": {
             "2023": {
               "latitude": 31.3806,
@@ -35,119 +35,98 @@
               "longitude": 102.9944
             }
           },
-          "returned_grid_2025": {
-            "latitude": 31.3884,
-            "longitude": 102.99523
-          },
+          "returned_grid_2025": null,
           "returned_grid_2026": null,
           "returned_grids": {
-            "2023": {
-              "latitude": 31.3884,
-              "longitude": 102.99523
-            },
-            "2024": {
-              "latitude": 31.3884,
-              "longitude": 102.99523
-            },
-            "2025": {
-              "latitude": 31.3884,
-              "longitude": 102.99523
-            }
+            "2023": null,
+            "2024": null,
+            "2025": null
           },
           "same_requested_coordinate": "PASS",
-          "status": "PASS",
+          "status": "FAIL",
           "year_qa": {
             "2023": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 0.871,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2024": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 0.871,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2025": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 0.871,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             }
           }
         },
         "years": {
           "2023": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.388400,102.995230",
-            "grid_distance_km": 0.871,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "BPG_CENTER",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.3806,
               "longitude": 102.9944
             },
-            "returned_elevation": 3457.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.3884,
-              "longitude": 102.99523
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2023
           },
           "2024": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.388400,102.995230",
-            "grid_distance_km": 0.871,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "BPG_CENTER",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.3806,
               "longitude": 102.9944
             },
-            "returned_elevation": 3457.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.3884,
-              "longitude": 102.99523
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2024
           },
           "2025": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.388400,102.995230",
-            "grid_distance_km": 0.871,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "BPG_CENTER",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.3806,
               "longitude": 102.9944
             },
-            "returned_elevation": 3457.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.3884,
-              "longitude": 102.99523
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2025
           }
         }
@@ -160,15 +139,15 @@
             "2024",
             "2025"
           ],
-          "cross_year_comparison_usable": true,
-          "final_status": "PASS",
+          "cross_year_comparison_usable": false,
+          "final_status": "FAILED",
           "grid_distance_limit_km": 13.5,
           "pairwise": {
-            "2023_vs_2024": "PASS",
-            "2023_vs_2025": "PASS",
-            "2024_vs_2025": "PASS"
+            "2023_vs_2024": "UNAVAILABLE",
+            "2023_vs_2025": "UNAVAILABLE",
+            "2024_vs_2025": "UNAVAILABLE"
           },
-          "reason": null,
+          "reason": "HISTORY_FORWARD_YEAR_QA_FAILED:2023,2024,2025",
           "requested_coordinates": {
             "2023": {
               "latitude": 33.036228,
@@ -183,119 +162,98 @@
               "longitude": 103.932113
             }
           },
-          "returned_grid_2025": {
-            "latitude": 33.005272,
-            "longitude": 103.914116
-          },
+          "returned_grid_2025": null,
           "returned_grid_2026": null,
           "returned_grids": {
-            "2023": {
-              "latitude": 33.005272,
-              "longitude": 103.914116
-            },
-            "2024": {
-              "latitude": 33.005272,
-              "longitude": 103.914116
-            },
-            "2025": {
-              "latitude": 33.005272,
-              "longitude": 103.914116
-            }
+            "2023": null,
+            "2024": null,
+            "2025": null
           },
           "same_requested_coordinate": "PASS",
-          "status": "PASS",
+          "status": "FAIL",
           "year_qa": {
             "2023": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 3.829,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2024": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 3.829,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2025": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 3.829,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             }
           }
         },
         "years": {
           "2023": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.005272,103.914116",
-            "grid_distance_km": 3.829,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_LONGHAI",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.036228,
               "longitude": 103.932113
             },
-            "returned_elevation": 4003.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.005272,
-              "longitude": 103.914116
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2023
           },
           "2024": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.005272,103.914116",
-            "grid_distance_km": 3.829,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_LONGHAI",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.036228,
               "longitude": 103.932113
             },
-            "returned_elevation": 4003.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.005272,
-              "longitude": 103.914116
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2024
           },
           "2025": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.005272,103.914116",
-            "grid_distance_km": 3.829,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_LONGHAI",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.036228,
               "longitude": 103.932113
             },
-            "returned_elevation": 4003.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.005272,
-              "longitude": 103.914116
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2025
           }
         }
@@ -308,15 +266,15 @@
             "2024",
             "2025"
           ],
-          "cross_year_comparison_usable": true,
-          "final_status": "PASS",
+          "cross_year_comparison_usable": false,
+          "final_status": "FAILED",
           "grid_distance_limit_km": 13.5,
           "pairwise": {
-            "2023_vs_2024": "PASS",
-            "2023_vs_2025": "PASS",
-            "2024_vs_2025": "PASS"
+            "2023_vs_2024": "UNAVAILABLE",
+            "2023_vs_2025": "UNAVAILABLE",
+            "2024_vs_2025": "UNAVAILABLE"
           },
-          "reason": null,
+          "reason": "HISTORY_FORWARD_YEAR_QA_FAILED:2023,2024,2025",
           "requested_coordinates": {
             "2023": {
               "latitude": 33.28,
@@ -331,119 +289,98 @@
               "longitude": 103.906
             }
           },
-          "returned_grid_2025": {
-            "latitude": 33.286465,
-            "longitude": 103.87176
-          },
+          "returned_grid_2025": null,
           "returned_grid_2026": null,
           "returned_grids": {
-            "2023": {
-              "latitude": 33.286465,
-              "longitude": 103.87176
-            },
-            "2024": {
-              "latitude": 33.286465,
-              "longitude": 103.87176
-            },
-            "2025": {
-              "latitude": 33.286465,
-              "longitude": 103.87176
-            }
+            "2023": null,
+            "2024": null,
+            "2025": null
           },
           "same_requested_coordinate": "PASS",
-          "status": "PASS",
+          "status": "FAIL",
           "year_qa": {
             "2023": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 3.263,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2024": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 3.263,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2025": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 3.263,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             }
           }
         },
         "years": {
           "2023": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.286465,103.871760",
-            "grid_distance_km": 3.263,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_NORILANG",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.28,
               "longitude": 103.906
             },
-            "returned_elevation": 3086.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.286465,
-              "longitude": 103.87176
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2023
           },
           "2024": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.286465,103.871760",
-            "grid_distance_km": 3.263,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_NORILANG",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.28,
               "longitude": 103.906
             },
-            "returned_elevation": 3086.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.286465,
-              "longitude": 103.87176
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2024
           },
           "2025": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.286465,103.871760",
-            "grid_distance_km": 3.263,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_NORILANG",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.28,
               "longitude": 103.906
             },
-            "returned_elevation": 3086.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.286465,
-              "longitude": 103.87176
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2025
           }
         }
@@ -456,15 +393,15 @@
             "2024",
             "2025"
           ],
-          "cross_year_comparison_usable": true,
-          "final_status": "PASS",
+          "cross_year_comparison_usable": false,
+          "final_status": "FAILED",
           "grid_distance_limit_km": 13.5,
           "pairwise": {
-            "2023_vs_2024": "PASS",
-            "2023_vs_2025": "PASS",
-            "2024_vs_2025": "PASS"
+            "2023_vs_2024": "UNAVAILABLE",
+            "2023_vs_2025": "UNAVAILABLE",
+            "2024_vs_2025": "UNAVAILABLE"
           },
-          "reason": null,
+          "reason": "HISTORY_FORWARD_YEAR_QA_FAILED:2023,2024,2025",
           "requested_coordinates": {
             "2023": {
               "latitude": 33.347,
@@ -479,119 +416,98 @@
               "longitude": 103.865
             }
           },
-          "returned_grid_2025": {
-            "latitude": 33.356766,
-            "longitude": 103.88889
-          },
+          "returned_grid_2025": null,
           "returned_grid_2026": null,
           "returned_grids": {
-            "2023": {
-              "latitude": 33.356766,
-              "longitude": 103.88889
-            },
-            "2024": {
-              "latitude": 33.356766,
-              "longitude": 103.88889
-            },
-            "2025": {
-              "latitude": 33.356766,
-              "longitude": 103.88889
-            }
+            "2023": null,
+            "2024": null,
+            "2025": null
           },
           "same_requested_coordinate": "PASS",
-          "status": "PASS",
+          "status": "FAIL",
           "year_qa": {
             "2023": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 2.47,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2024": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 2.47,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2025": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 2.47,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             }
           }
         },
         "years": {
           "2023": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.356766,103.888890",
-            "grid_distance_km": 2.47,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_PRIMEVAL",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.347,
               "longitude": 103.865
             },
-            "returned_elevation": 3167.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.356766,
-              "longitude": 103.88889
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2023
           },
           "2024": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.356766,103.888890",
-            "grid_distance_km": 2.47,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_PRIMEVAL",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.347,
               "longitude": 103.865
             },
-            "returned_elevation": 3167.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.356766,
-              "longitude": 103.88889
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2024
           },
           "2025": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.356766,103.888890",
-            "grid_distance_km": 2.47,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_PRIMEVAL",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.347,
               "longitude": 103.865
             },
-            "returned_elevation": 3167.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.356766,
-              "longitude": 103.88889
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2025
           }
         }
@@ -604,15 +520,15 @@
             "2024",
             "2025"
           ],
-          "cross_year_comparison_usable": true,
-          "final_status": "PASS",
+          "cross_year_comparison_usable": false,
+          "final_status": "FAILED",
           "grid_distance_limit_km": 13.5,
           "pairwise": {
-            "2023_vs_2024": "PASS",
-            "2023_vs_2025": "PASS",
-            "2024_vs_2025": "PASS"
+            "2023_vs_2024": "UNAVAILABLE",
+            "2023_vs_2025": "UNAVAILABLE",
+            "2024_vs_2025": "UNAVAILABLE"
           },
-          "reason": null,
+          "reason": "HISTORY_FORWARD_YEAR_QA_FAILED:2023,2024,2025",
           "requested_coordinates": {
             "2023": {
               "latitude": 33.198939,
@@ -627,119 +543,98 @@
               "longitude": 103.897435
             }
           },
-          "returned_grid_2025": {
-            "latitude": 33.216167,
-            "longitude": 103.854675
-          },
+          "returned_grid_2025": null,
           "returned_grid_2026": null,
           "returned_grids": {
-            "2023": {
-              "latitude": 33.216167,
-              "longitude": 103.854675
-            },
-            "2024": {
-              "latitude": 33.216167,
-              "longitude": 103.854675
-            },
-            "2025": {
-              "latitude": 33.216167,
-              "longitude": 103.854675
-            }
+            "2023": null,
+            "2024": null,
+            "2025": null
           },
           "same_requested_coordinate": "PASS",
-          "status": "PASS",
+          "status": "FAIL",
           "year_qa": {
             "2023": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 4.415,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2024": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 4.415,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2025": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 4.415,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             }
           }
         },
         "years": {
           "2023": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.216167,103.854675",
-            "grid_distance_km": 4.415,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_TREESHENG",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.198939,
               "longitude": 103.897435
             },
-            "returned_elevation": 3149.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.216167,
-              "longitude": 103.854675
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2023
           },
           "2024": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.216167,103.854675",
-            "grid_distance_km": 4.415,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_TREESHENG",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.198939,
               "longitude": 103.897435
             },
-            "returned_elevation": 3149.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.216167,
-              "longitude": 103.854675
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2024
           },
           "2025": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "33.216167,103.854675",
-            "grid_distance_km": 4.415,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "JZG_TREESHENG",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 33.198939,
               "longitude": 103.897435
             },
-            "returned_elevation": 3149.0,
-            "returned_grid_coordinate": {
-              "latitude": 33.216167,
-              "longitude": 103.854675
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2025
           }
         }
@@ -752,15 +647,15 @@
             "2024",
             "2025"
           ],
-          "cross_year_comparison_usable": true,
-          "final_status": "PASS",
+          "cross_year_comparison_usable": false,
+          "final_status": "FAILED",
           "grid_distance_limit_km": 13.5,
           "pairwise": {
-            "2023_vs_2024": "PASS",
-            "2023_vs_2025": "PASS",
-            "2024_vs_2025": "PASS"
+            "2023_vs_2024": "UNAVAILABLE",
+            "2023_vs_2025": "UNAVAILABLE",
+            "2024_vs_2025": "UNAVAILABLE"
           },
-          "reason": null,
+          "reason": "HISTORY_FORWARD_YEAR_QA_FAILED:2023,2024,2025",
           "requested_coordinates": {
             "2023": {
               "latitude": 31.4,
@@ -775,119 +670,98 @@
               "longitude": 102.84
             }
           },
-          "returned_grid_2025": {
-            "latitude": 31.3884,
-            "longitude": 102.88783
-          },
+          "returned_grid_2025": null,
           "returned_grid_2026": null,
           "returned_grids": {
-            "2023": {
-              "latitude": 31.3884,
-              "longitude": 102.88783
-            },
-            "2024": {
-              "latitude": 31.3884,
-              "longitude": 102.88783
-            },
-            "2025": {
-              "latitude": 31.3884,
-              "longitude": 102.88783
-            }
+            "2023": null,
+            "2024": null,
+            "2025": null
           },
           "same_requested_coordinate": "PASS",
-          "status": "PASS",
+          "status": "FAIL",
           "year_qa": {
             "2023": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 4.72,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2024": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 4.72,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2025": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 4.72,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             }
           }
         },
         "years": {
           "2023": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.388400,102.887830",
-            "grid_distance_km": 4.72,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "LXL_HIGH_PASS",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.4,
               "longitude": 102.84
             },
-            "returned_elevation": 3613.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.3884,
-              "longitude": 102.88783
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2023
           },
           "2024": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.388400,102.887830",
-            "grid_distance_km": 4.72,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "LXL_HIGH_PASS",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.4,
               "longitude": 102.84
             },
-            "returned_elevation": 3613.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.3884,
-              "longitude": 102.88783
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2024
           },
           "2025": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.388400,102.887830",
-            "grid_distance_km": 4.72,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "LXL_HIGH_PASS",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.4,
               "longitude": 102.84
             },
-            "returned_elevation": 3613.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.3884,
-              "longitude": 102.88783
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2025
           }
         }
@@ -900,15 +774,15 @@
             "2024",
             "2025"
           ],
-          "cross_year_comparison_usable": true,
-          "final_status": "PASS",
+          "cross_year_comparison_usable": false,
+          "final_status": "FAILED",
           "grid_distance_limit_km": 13.5,
           "pairwise": {
-            "2023_vs_2024": "PASS",
-            "2023_vs_2025": "PASS",
-            "2024_vs_2025": "PASS"
+            "2023_vs_2024": "UNAVAILABLE",
+            "2023_vs_2025": "UNAVAILABLE",
+            "2024_vs_2025": "UNAVAILABLE"
           },
-          "reason": null,
+          "reason": "HISTORY_FORWARD_YEAR_QA_FAILED:2023,2024,2025",
           "requested_coordinates": {
             "2023": {
               "latitude": 31.1035,
@@ -923,119 +797,98 @@
               "longitude": 102.9239
             }
           },
-          "returned_grid_2025": {
-            "latitude": 31.107204,
-            "longitude": 102.933495
-          },
+          "returned_grid_2025": null,
           "returned_grid_2026": null,
           "returned_grids": {
-            "2023": {
-              "latitude": 31.107204,
-              "longitude": 102.933495
-            },
-            "2024": {
-              "latitude": 31.107204,
-              "longitude": 102.933495
-            },
-            "2025": {
-              "latitude": 31.107204,
-              "longitude": 102.933495
-            }
+            "2023": null,
+            "2024": null,
+            "2025": null
           },
           "same_requested_coordinate": "PASS",
-          "status": "PASS",
+          "status": "FAIL",
           "year_qa": {
             "2023": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 1.002,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2024": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 1.002,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             },
             "2025": {
-              "distance_check": "PASS",
-              "final_status": "PASS",
-              "grid_distance_km": 1.002,
+              "distance_check": "FAIL",
+              "final_status": "INVALID",
+              "grid_distance_km": null,
               "grid_distance_limit_km": 13.5,
-              "record_status": "PASS"
+              "record_status": "INVALID"
             }
           }
         },
         "years": {
           "2023": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.107204,102.933495",
-            "grid_distance_km": 1.002,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "SQG_SHUANGQIAO",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.1035,
               "longitude": 102.9239
             },
-            "returned_elevation": 4332.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.107204,
-              "longitude": 102.933495
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2023
           },
           "2024": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.107204,102.933495",
-            "grid_distance_km": 1.002,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "SQG_SHUANGQIAO",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.1035,
               "longitude": 102.9239
             },
-            "returned_elevation": 4332.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.107204,
-              "longitude": 102.933495
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2024
           },
           "2025": {
             "endpoint": "https://archive-api.open-meteo.com/v1/archive",
-            "grid_cell_key": "31.107204,102.933495",
-            "grid_distance_km": 1.002,
-            "grid_distance_limit_km": 13.5,
+            "grid_cell_key": null,
+            "grid_distance_km": null,
+            "grid_distance_limit_km": null,
             "model": "ECMWF IFS 9 km historical weather / analysis",
             "point_id": "SQG_SHUANGQIAO",
-            "qa_final_status": "PASS",
+            "qa_final_status": "INVALID",
             "requested_coordinate": {
               "latitude": 31.1035,
               "longitude": 102.9239
             },
-            "returned_elevation": 4332.0,
-            "returned_grid_coordinate": {
-              "latitude": 31.107204,
-              "longitude": 102.933495
-            },
+            "returned_elevation": null,
+            "returned_grid_coordinate": null,
             "source": "Open-Meteo",
-            "status": "PASS",
-            "timezone": "Asia/Shanghai",
-            "utc_offset_seconds": 28800,
+            "status": "INVALID",
+            "timezone": null,
+            "utc_offset_seconds": null,
             "year": 2025
           }
         }
@@ -1211,18 +1064,9 @@
   "jiuzhaigou_subregions": {
     "rize": {
       "history_unique_grid_ids_by_year": {
-        "2023": [
-          "33.286465,103.871760",
-          "33.356766,103.888890"
-        ],
-        "2024": [
-          "33.286465,103.871760",
-          "33.356766,103.888890"
-        ],
-        "2025": [
-          "33.286465,103.871760",
-          "33.356766,103.888890"
-        ]
+        "2023": [],
+        "2024": [],
+        "2025": []
       },
       "hres_unique_grid_ids": [
         "33.250000,104.000000",
@@ -1239,15 +1083,9 @@
     },
     "shuzheng": {
       "history_unique_grid_ids_by_year": {
-        "2023": [
-          "33.216167,103.854675"
-        ],
-        "2024": [
-          "33.216167,103.854675"
-        ],
-        "2025": [
-          "33.216167,103.854675"
-        ]
+        "2023": [],
+        "2024": [],
+        "2025": []
       },
       "hres_unique_grid_ids": [
         "33.250000,104.000000"
@@ -1261,15 +1099,9 @@
     },
     "zezhawa": {
       "history_unique_grid_ids_by_year": {
-        "2023": [
-          "33.005272,103.914116"
-        ],
-        "2024": [
-          "33.005272,103.914116"
-        ],
-        "2025": [
-          "33.005272,103.914116"
-        ]
+        "2023": [],
+        "2024": [],
+        "2025": []
       },
       "hres_unique_grid_ids": [
         "33.000000,104.000000"
@@ -1287,15 +1119,9 @@
   "siguniang_subregions": {
     "bipenggou": {
       "history_unique_grid_ids_by_year": {
-        "2023": [
-          "31.388400,102.995230"
-        ],
-        "2024": [
-          "31.388400,102.995230"
-        ],
-        "2025": [
-          "31.388400,102.995230"
-        ]
+        "2023": [],
+        "2024": [],
+        "2025": []
       },
       "hres_unique_grid_ids": [
         "31.500000,103.000000"
@@ -1309,15 +1135,9 @@
     },
     "shuangqiao": {
       "history_unique_grid_ids_by_year": {
-        "2023": [
-          "31.107204,102.933495"
-        ],
-        "2024": [
-          "31.107204,102.933495"
-        ],
-        "2025": [
-          "31.107204,102.933495"
-        ]
+        "2023": [],
+        "2024": [],
+        "2025": []
       },
       "hres_unique_grid_ids": [
         "31.000000,103.000000"
@@ -1335,18 +1155,9 @@
     "jiuzhaigou": {
       "rize": {
         "history_unique_grid_ids_by_year": {
-          "2023": [
-            "33.286465,103.871760",
-            "33.356766,103.888890"
-          ],
-          "2024": [
-            "33.286465,103.871760",
-            "33.356766,103.888890"
-          ],
-          "2025": [
-            "33.286465,103.871760",
-            "33.356766,103.888890"
-          ]
+          "2023": [],
+          "2024": [],
+          "2025": []
         },
         "hres_unique_grid_ids": [
           "33.250000,104.000000",
@@ -1363,15 +1174,9 @@
       },
       "shuzheng": {
         "history_unique_grid_ids_by_year": {
-          "2023": [
-            "33.216167,103.854675"
-          ],
-          "2024": [
-            "33.216167,103.854675"
-          ],
-          "2025": [
-            "33.216167,103.854675"
-          ]
+          "2023": [],
+          "2024": [],
+          "2025": []
         },
         "hres_unique_grid_ids": [
           "33.250000,104.000000"
@@ -1385,15 +1190,9 @@
       },
       "zezhawa": {
         "history_unique_grid_ids_by_year": {
-          "2023": [
-            "33.005272,103.914116"
-          ],
-          "2024": [
-            "33.005272,103.914116"
-          ],
-          "2025": [
-            "33.005272,103.914116"
-          ]
+          "2023": [],
+          "2024": [],
+          "2025": []
         },
         "hres_unique_grid_ids": [
           "33.000000,104.000000"
@@ -1409,15 +1208,9 @@
     "siguniang": {
       "bipenggou": {
         "history_unique_grid_ids_by_year": {
-          "2023": [
-            "31.388400,102.995230"
-          ],
-          "2024": [
-            "31.388400,102.995230"
-          ],
-          "2025": [
-            "31.388400,102.995230"
-          ]
+          "2023": [],
+          "2024": [],
+          "2025": []
         },
         "hres_unique_grid_ids": [
           "31.500000,103.000000"
@@ -1431,15 +1224,9 @@
       },
       "shuangqiao": {
         "history_unique_grid_ids_by_year": {
-          "2023": [
-            "31.107204,102.933495"
-          ],
-          "2024": [
-            "31.107204,102.933495"
-          ],
-          "2025": [
-            "31.107204,102.933495"
-          ]
+          "2023": [],
+          "2024": [],
+          "2025": []
         },
         "hres_unique_grid_ids": [
           "31.000000,103.000000"

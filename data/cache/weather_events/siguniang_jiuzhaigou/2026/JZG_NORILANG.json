@@ -79,7 +79,8 @@
     "2026-10-28",
     "2026-10-29",
     "2026-10-30",
-    "2026-10-31"
+    "2026-10-31",
+    "2026-11-01"
   ],
   "daily": [
     {
@@ -2067,10 +2068,41 @@
       "temperature_min_c": 2.4,
       "wind_gust_max_kmh": 41.4,
       "wind_speed_mean_kmh": 3.808
+    },
+    {
+      "complete": true,
+      "date": "2026-11-01",
+      "dtr_c": 13.1,
+      "freeze": true,
+      "freeze_and_snow": true,
+      "gust_ge_50": false,
+      "gust_ge_65": false,
+      "hard_freeze_le_minus5": false,
+      "mechanical_leaf_stress": {
+        "level": "MEDIUM",
+        "reasons": [
+          "freeze_plus_snow"
+        ],
+        "rule_version": "mechanical_leaf_stress_v1"
+      },
+      "night_min_c": -0.1,
+      "precipitation_mm": 7.3,
+      "rain_and_gust_ge_50": false,
+      "rain_day": true,
+      "snow_and_gust_ge_50": false,
+      "snow_day": true,
+      "snowfall_cm": 3.5,
+      "source_fingerprint": "24218548fded7a9d371ef79202fdc8e4d632c4128f64a86ad5735fd3882ddb1c",
+      "source_state": "finalized_history",
+      "temperature_max_c": 12.6,
+      "temperature_mean_c": 4.404,
+      "temperature_min_c": -0.5,
+      "wind_gust_max_kmh": 29.2,
+      "wind_speed_mean_kmh": 3.958
     }
   ],
   "date_range": {
-    "end_date": "2026-10-31",
+    "end_date": "2026-11-01",
     "start_date": "2026-08-25"
   },
   "identity": {
@@ -2099,7 +2131,7 @@
     "utc_offset_seconds": 28800,
     "year": 2026
   },
-  "last_update": "2026-10-31T21:37:44Z",
+  "last_update": "2026-11-01T22:05:50Z",
   "namespace": "siguniang_jiuzhaigou",
   "point_id": "JZG_NORILANG",
   "rule_versions": {
@@ -2176,7 +2208,8 @@
     "2026-10-28": "2508fe30508f6df36b77f1df784ef00a3bee49e04e3d6c8bd06dd2d54bba4dba",
     "2026-10-29": "073f757000ac636521a4134ff7cea966b44e76028093d388035254781cf6b32a",
     "2026-10-30": "094d8462ca596321deba58e02e6603a42ce5283a51476f28333fe1865634b667",
-    "2026-10-31": "bd522b09c826ba9a8ccb68998a4a48572ff58525bf1e2b6a66d6c4065a73b66c"
+    "2026-10-31": "bd522b09c826ba9a8ccb68998a4a48572ff58525bf1e2b6a66d6c4065a73b66c",
+    "2026-11-01": "24218548fded7a9d371ef79202fdc8e4d632c4128f64a86ad5735fd3882ddb1c"
   },
   "source_history_cache_key": "siguniang_jiuzhaigou:2026:JZG_NORILANG:33.286465,103.871760",
   "source_history_cache_path": "data/cache/history/siguniang_jiuzhaigou/2026/JZG_NORILANG.json",
